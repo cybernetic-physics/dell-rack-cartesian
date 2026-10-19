@@ -1,0 +1,208 @@
+{
+  "reporting_errors": [],
+  "pair_count": 14,
+  "physics_dt": 0.004166666666666667,
+  "pairs": [
+    {
+      "colliders": [
+        "/World/Robot/Bridge/CarrierMounts/LiftMoving1",
+        "/World/Robot/ServiceCarriers/Lift/Link017/Crossbar0"
+      ],
+      "reports": 2043,
+      "minimum_separation_m": -5.896701622987166e-06,
+      "peak_pair_contact_force_n": 9.012388826035165,
+      "phase_peaks_n": {
+        "initialize": 8.19841486137777,
+        "approach": 9.012388826035165,
+        "align": 6.707845377859242
+      },
+      "peak_time_s": 1.058333333333331,
+      "peak_phase": "approach"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Carriage/CarrierMounts/TraverseMoving1",
+        "/World/Robot/Frame/CrossMember1"
+      ],
+      "reports": 242,
+      "minimum_separation_m": -5.2225775704073385e-08,
+      "peak_pair_contact_force_n": 36.078096436103806,
+      "phase_peaks_n": {
+        "initialize": 36.07284914556658,
+        "approach": 36.078096436103806
+      },
+      "peak_time_s": 0.8874999999999981,
+      "peak_phase": "approach"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link16",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 130,
+      "minimum_separation_m": -3.527384251356125e-07,
+      "peak_pair_contact_force_n": 0.017119577969424427,
+      "phase_peaks_n": {
+        "initialize": 0.017119577969424427,
+        "approach": 0.01273370609851554
+      },
+      "peak_time_s": 0.09583333333333333,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/Floor"
+      ],
+      "reports": 130,
+      "minimum_separation_m": -1.5091594605110004e-06,
+      "peak_pair_contact_force_n": 1.0078658249171684,
+      "phase_peaks_n": {
+        "initialize": 1.0078658249171684,
+        "approach": 0.988193374281238
+      },
+      "peak_time_s": 0.09166666666666666,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Tooth",
+        "/World/PortRow/Port01/LatchLip"
+      ],
+      "reports": 130,
+      "minimum_separation_m": -4.114895091333892e-07,
+      "peak_pair_contact_force_n": 0.06642484841834896,
+      "phase_peaks_n": {
+        "initialize": 0.06642484841834896,
+        "approach": 0.06083980691973378
+      },
+      "peak_time_s": 0.11249999999999999,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Arm",
+        "/World/PortRow/Port01/LatchLip"
+      ],
+      "reports": 130,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "initialize": 0,
+        "approach": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShouldern1"
+      ],
+      "reports": 130,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.480329564306885,
+      "phase_peaks_n": {
+        "initialize": 0.480329564306885,
+        "approach": 0.47249458031728864
+      },
+      "peak_time_s": 0.09166666666666666,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShoulder1"
+      ],
+      "reports": 130,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.18946515516290674,
+      "phase_peaks_n": {
+        "initialize": 0.18946515516290674,
+        "approach": 0.18318296686629765
+      },
+      "peak_time_s": 0.029166666666666664,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link26",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 34,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.00030097220587776974,
+      "phase_peaks_n": {
+        "initialize": 0.00030097220587776974
+      },
+      "peak_time_s": 0.004166666666666667,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link25",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 33,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "initialize": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link24",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 22,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "initialize": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Robot/Bridge/CarrierMounts/LiftMoving1",
+        "/World/Robot/ServiceCarriers/Lift/Link018/Crossbar2"
+      ],
+      "reports": 1794,
+      "minimum_separation_m": -2.0180266346869757e-06,
+      "peak_pair_contact_force_n": 2.6928565095641814,
+      "phase_peaks_n": {
+        "approach": 2.6928565095641814,
+        "align": 2.685345398630212
+      },
+      "peak_time_s": 2.070833333333331,
+      "peak_phase": "approach"
+    },
+    {
+      "colliders": [
+        "/World/Robot/ServiceCarriers/Insertion/Link000/Crossbar0",
+        "/World/Robot/ToolMount/CarrierMounts/InsertionMoving2"
+      ],
+      "reports": 1245,
+      "minimum_separation_m": -7.843456728551246e-07,
+      "peak_pair_contact_force_n": 6.348000957339926,
+      "phase_peaks_n": {
+        "align": 6.348000957339926
+      },
+      "peak_time_s": 3.3375000000000608,
+      "peak_phase": "align"
+    },
+    {
+      "colliders": [
+        "/World/Robot/ServiceCarriers/Insertion/Link000/Crossbar2",
+        "/World/Robot/ToolMount/CarrierMounts/InsertionMoving2"
+      ],
+      "reports": 1245,
+      "minimum_separation_m": -1.0227640814264305e-06,
+      "peak_pair_contact_force_n": 3.796690256856316,
+      "phase_peaks_n": {
+        "align": 3.796690256856316
+      },
+      "peak_time_s": 3.3375000000000608,
+      "peak_phase": "align"
+    }
+  ],
+  "scope": "Contact impulse magnitude sum per collider pair divided by dt; no friction-anchor impulses; not motor force or a safety certification."
+}

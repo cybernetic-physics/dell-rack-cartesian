@@ -1,0 +1,237 @@
+{
+  "revision": "passive_motor_brakes_v1",
+  "architecture": "C",
+  "brakes": [
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0",
+      "motor": "/World/Robot/Frame/StationaryMotor0",
+      "motor_original_center_m": [
+        -0.245,
+        0.818,
+        1.035
+      ],
+      "motor_new_center_m": [
+        -0.245,
+        0.8634999995529652,
+        1.035
+      ],
+      "axis": "Y",
+      "mount_face_m": [
+        -0.245,
+        0.798,
+        1.035
+      ],
+      "body_length_m": 0.0455,
+      "shaft_projection_m": 0.024,
+      "package_mass_kg": 0.28
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1",
+      "motor": "/World/Robot/Frame/StationaryMotor1",
+      "motor_original_center_m": [
+        -0.245,
+        0.818,
+        1.865
+      ],
+      "motor_new_center_m": [
+        -0.245,
+        0.8634999995529652,
+        1.865
+      ],
+      "axis": "Y",
+      "mount_face_m": [
+        -0.245,
+        0.798,
+        1.865
+      ],
+      "body_length_m": 0.0455,
+      "shaft_projection_m": 0.024,
+      "package_mass_kg": 0.28
+    }
+  ],
+  "parts": [
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountPlate/U0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.215e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0194805,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountPlate/V0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.898e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0078246,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountPlate/U2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.215e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0194805,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountPlate/V2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.898e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0078246,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/Housing",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 0.0,
+      "density_kg_m3": null,
+      "mass_basis": "Nanotec BCD42 complete brake package drawing mass",
+      "estimated_mass_kg": 0.28,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountPlate/U0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.215e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0194805,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountPlate/V0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.898e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0078246,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountPlate/U2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.215e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0194805,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountPlate/V2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.898e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0078246,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/Housing",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 0.0,
+      "density_kg_m3": null,
+      "mass_basis": "Nanotec BCD42 complete brake package drawing mass",
+      "estimated_mass_kg": 0.28,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    }
+  ],
+  "reworked_plates": [
+    {
+      "old_plate": "/World/Robot/Frame/MotorPlate0",
+      "assumed_removed_aluminum_mass_kg": 0.06317999681957068
+    },
+    {
+      "old_plate": "/World/Robot/Frame/MotorPlate1",
+      "assumed_removed_aluminum_mass_kg": 0.06317999681957068
+    }
+  ],
+  "added_mass_kg_by_body": {
+    "/World/Robot/Frame": 0.54907510494819
+  },
+  "reference": "https://www.nanotec.com/fileadmin/files/Datenblaetter/Bremsen/BCD/BRAKE-BCD42-0_4-5.pdf",
+  "limitations": [
+    "Original dimensioned outer envelopes, not vendor CAD or an approved motor/brake assembly.",
+    "Vendor offers brakes with motors; selected complete motor assembly still requires verification.",
+    "Brake outer hull is solid collision proxy; bearing/disc/shaft/friction contact is not simulated.",
+    "M3 drawing interface used; mounting strength, cable routing and dynamic stopping are unqualified.",
+    "Replacement-plate mass delta assumes aluminum; baseline lumped masses remain estimates."
+  ]
+}

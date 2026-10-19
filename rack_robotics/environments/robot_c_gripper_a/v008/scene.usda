@@ -1,0 +1,73 @@
+#usda 1.0
+(
+    subLayers = [
+        @../v007/scene.usda@,
+        @cameras.usda@
+    ]
+)
+
+over "Render"
+{
+    over "OmniverseKit"
+    {
+        over "HydraTextures"
+        {
+            over "omni_kit_widget_viewport_ViewportTexture_0"
+            {
+                rel camera = </OmniverseKit_Persp>
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 800)
+            }
+        }
+    }
+}
+
+over "World"
+{
+    over "HandDrive" (
+        prepend apiSchemas = ["PhysicsDriveAPI:transX", "PhysicsDriveAPI:transY", "PhysicsDriveAPI:transZ", "PhysicsDriveAPI:rotX", "PhysicsDriveAPI:rotY", "PhysicsDriveAPI:rotZ"]
+    )
+    {
+        float drive:rotX:physics:damping = 0.01
+        float drive:rotX:physics:maxForce = 0.08
+        float drive:rotX:physics:stiffness = 0.15
+        float drive:rotX:physics:targetPosition = 0
+        uniform token drive:rotX:physics:type = "force"
+        float drive:rotY:physics:damping = 0.01
+        float drive:rotY:physics:maxForce = 0.08
+        float drive:rotY:physics:stiffness = 0.15
+        float drive:rotY:physics:targetPosition = 0
+        uniform token drive:rotY:physics:type = "force"
+        float drive:rotZ:physics:damping = 0.01
+        float drive:rotZ:physics:maxForce = 0.08
+        float drive:rotZ:physics:stiffness = 0.15
+        float drive:rotZ:physics:targetPosition = 0
+        uniform token drive:rotZ:physics:type = "force"
+        float drive:transX:physics:damping = 10
+        float drive:transX:physics:maxForce = 5
+        float drive:transX:physics:stiffness = 4000
+        float drive:transX:physics:targetPosition = 0
+        uniform token drive:transX:physics:type = "force"
+        float drive:transY:physics:damping = 10
+        float drive:transY:physics:maxForce = 5
+        float drive:transY:physics:stiffness = 4000
+        float drive:transY:physics:targetPosition = 0.05
+        uniform token drive:transY:physics:type = "force"
+        float drive:transZ:physics:damping = 10
+        float drive:transZ:physics:maxForce = 5
+        float drive:transZ:physics:stiffness = 4000
+        float drive:transZ:physics:targetPosition = 0
+        uniform token drive:transZ:physics:type = "force"
+        rel physics:body1 = </World/Plug>
+        point3f physics:localPos0 = (0.1875, 0.429, 1.66)
+    }
+
+    over "Physics" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        uint physxScene:timeStepsPerSecond = 480
+    }
+}
+

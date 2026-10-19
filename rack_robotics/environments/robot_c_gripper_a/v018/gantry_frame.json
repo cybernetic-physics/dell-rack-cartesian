@@ -1,0 +1,420 @@
+{
+  "revision": "corexz_open_guide_frame_v2",
+  "architecture": "C",
+  "changes": [
+    {
+      "path": "/World/Robot/Bridge/Beam",
+      "old_size_m": [
+        0.5400000214576721,
+        0.03200000151991844,
+        0.03999999910593033
+      ],
+      "new_size_m": [
+        0.47,
+        0.032,
+        0.04
+      ],
+      "mass_delta_kg": -0.24192012108564367,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Frame/Stop0_0",
+      "old_size_m": [
+        0.023000000044703484,
+        0.01600000075995922,
+        0.00800000037997961
+      ],
+      "new_size_m": [
+        0.023,
+        0.01,
+        0.008
+      ],
+      "mass_delta_kg": -0.002980800770545025,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Frame/Stop0_1",
+      "old_size_m": [
+        0.023000000044703484,
+        0.01600000075995922,
+        0.00800000037997961
+      ],
+      "new_size_m": [
+        0.023,
+        0.01,
+        0.008
+      ],
+      "mass_delta_kg": -0.002980800770545025,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Frame/Standoff0_1",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/PostClamp0_1",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_1_0",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_1_1",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/Stop1_0",
+      "old_size_m": [
+        0.023000000044703484,
+        0.01600000075995922,
+        0.00800000037997961
+      ],
+      "new_size_m": [
+        0.023,
+        0.01,
+        0.008
+      ],
+      "mass_delta_kg": -0.002980800770545025,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Frame/Stop1_1",
+      "old_size_m": [
+        0.023000000044703484,
+        0.01600000075995922,
+        0.00800000037997961
+      ],
+      "new_size_m": [
+        0.023,
+        0.01,
+        0.008
+      ],
+      "mass_delta_kg": -0.002980800770545025,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Frame/Standoff1_1",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/PostClamp1_1",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_1_0",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_1_1",
+      "translation_delta_m": [
+        0,
+        0,
+        0.025
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/TraverseRailShim",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 5.64e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015228,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LiftBlock0/Crown",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LiftBlock0/Side0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LiftBlock0/Side1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LowerArm0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 2.247e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.006066899999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/ArmRiser0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.575e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0042525,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockPlate0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 7.354800000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.019857960000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt0_0_0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt0_0_1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt0_1_0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt0_1_1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/RailShim0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.1040000000000001e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.029808,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LiftBlock1/Crown",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LiftBlock1/Side0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LiftBlock1/Side1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/LowerArm1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 2.247e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.006066899999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/ArmRiser1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.575e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0042525,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockPlate1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 7.354800000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.019857960000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt1_0_0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt1_0_1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt1_1_0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/GuideInterfaces/BlockBolt1_1_1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/RailShim1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.1040000000000001e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.029808,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/TraverseBlock0/Crown",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/TraverseBlock0/Side0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/TraverseBlock0/Side1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/TraverseBlock1/Crown",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/TraverseBlock1/Side0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/TraverseBlock1/Side1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    }
+  ],
+  "mass_delta_kg_by_body": {
+    "/World/Robot/Bridge": -0.1621202841870974,
+    "/World/Robot/Frame": 0.0476927969178199
+  },
+  "guide_dimensions_source": "https://www.hiwin.de/en/Products/Linear-guideways/Blocks/Miniature-guides/MGN-HIRES-series/c/4500",
+  "scope": "CoreXZ lift/traverse guide and beam interfaces; unchanged kinematics/controller/connector",
+  "limitations": [
+    "U channels abstract recirculating balls/races; prismatic joints carry bearing loads.",
+    "0.1 mm channel clearance is a modeling assumption, not manufacturer bearing clearance.",
+    "Replacement block mass remains allocated in original rigid-body mass; beam delta uses aluminum volume proxy.",
+    "Not full-rack, non-box, carrier, belt-wrap, stiffness or fastener qualification."
+  ]
+}

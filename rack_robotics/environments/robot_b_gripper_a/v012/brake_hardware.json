@@ -1,0 +1,129 @@
+{
+  "revision": "passive_motor_brakes_v1",
+  "architecture": "B",
+  "brakes": [
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift",
+      "motor": "/World/Robot/Frame/LiftMotor",
+      "motor_original_center_m": [
+        -0.26,
+        0.775,
+        1.98
+      ],
+      "motor_new_center_m": [
+        -0.26,
+        0.775,
+        2.0260000008940695
+      ],
+      "axis": "Z",
+      "mount_face_m": [
+        -0.26,
+        0.775,
+        1.958
+      ],
+      "body_length_m": 0.0455,
+      "shaft_projection_m": 0.024,
+      "package_mass_kg": 0.28
+    }
+  ],
+  "parts": [
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountPlate/U0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.450000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.025515000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountPlate/V0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 3.588e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.009687600000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountPlate/U2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.450000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.025515000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountPlate/V2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 3.588e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.009687600000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/Housing",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 0.0,
+      "density_kg_m3": null,
+      "mass_basis": "Nanotec BCD42 complete brake package drawing mass",
+      "estimated_mass_kg": 0.28,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    }
+  ],
+  "reworked_plates": [
+    {
+      "old_plate": "/World/Robot/Frame/MotorPlate",
+      "assumed_removed_aluminum_mass_kg": 0.07897500092787656
+    }
+  ],
+  "added_mass_kg_by_body": {
+    "/World/Robot/Frame": 0.2745375483657892
+  },
+  "reference": "https://www.nanotec.com/fileadmin/files/Datenblaetter/Bremsen/BCD/BRAKE-BCD42-0_4-5.pdf",
+  "limitations": [
+    "Original dimensioned outer envelopes, not vendor CAD or an approved motor/brake assembly.",
+    "Vendor offers brakes with motors; selected complete motor assembly still requires verification.",
+    "Brake outer hull is solid collision proxy; bearing/disc/shaft/friction contact is not simulated.",
+    "M3 drawing interface used; mounting strength, cable routing and dynamic stopping are unqualified.",
+    "Replacement-plate mass delta assumes aluminum; baseline lumped masses remain estimates."
+  ]
+}

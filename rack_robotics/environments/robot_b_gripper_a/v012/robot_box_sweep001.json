@@ -1,0 +1,1117 @@
+{
+  "passed": false,
+  "parts": 64,
+  "distinct_body_pairs_checked": 1594,
+  "joints": [
+    {
+      "name": "Lift",
+      "parent": "/World/Robot/Frame",
+      "child": "/World/Robot/LiftCarriage",
+      "axis": "Z",
+      "dimension": 2,
+      "sign": 1,
+      "initial_m": 4.768371586472142e-08,
+      "limits_m": [
+        -0.699999988079071,
+        0.0
+      ]
+    },
+    {
+      "name": "OuterExtension",
+      "parent": "/World/Robot/LiftCarriage",
+      "child": "/World/Robot/MiddleBoom",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.0050000000000000044,
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "name": "InnerExtension",
+      "parent": "/World/Robot/MiddleBoom",
+      "child": "/World/Robot/Carriage",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.0050000000000000044,
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "name": "Insertion",
+      "parent": "/World/Robot/Carriage",
+      "child": "/World/Robot/ToolMount",
+      "axis": "Y",
+      "dimension": 1,
+      "sign": 1,
+      "initial_m": 0.0,
+      "limits_m": [
+        -0.125,
+        0.0
+      ]
+    }
+  ],
+  "mount_parts": 0,
+  "include_robot_boxes": true,
+  "all_robot_box_pairs": true,
+  "omitted_geometry": [
+    {
+      "path": "/World/Robot/Frame/LiftScrew",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/LiftCoupler",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/Housing",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/OutputShaft",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/M8ConnectorEnvelope",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/Screw",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/Coupler",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/Screw",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/Coupler",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthScrew",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthCoupler",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthSupportBearing",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt0",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt1",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/MountBolt0",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/MountBolt1",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthNut",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt0",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt1",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/Finger",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/Pad",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/UpperGuideLand",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/UpperGuide",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/LowerGuideLand",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/LowerGuide",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/Finger",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/Pad",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/UpperGuideLand",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/UpperGuide",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/LowerGuideLand",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/LowerGuide",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/Tip",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/Neck",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/RaisedArm",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    }
+  ],
+  "possible_overlaps": [
+    {
+      "parts": [
+        "/World/Robot/Frame/Upright",
+        "/World/Robot/LiftCarriage/Boom"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.08999999999999997,
+          -0.08999999999999997
+        ],
+        [
+          -0.03499999999999992,
+          -0.03499999999999992
+        ],
+        [
+          -0.3000000357627868,
+          0.39999995231628427
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.1750000063329935,
+        0.036000000312924385,
+        0.5199999995529652
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide0",
+        "/World/Robot/LiftCarriage/VerticalPlate"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.020000000000000018,
+          0.020000000000000018
+        ],
+        [
+          -0.0050000000000000044,
+          -0.0050000000000000044
+        ],
+        [
+          -0.3400000357627868,
+          0.35999995231628423
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.056000000797212124,
+        0.01000000024214387,
+        0.5499999970197678
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide0",
+        "/World/Robot/LiftCarriage/LiftBlock0_0"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0040000000000000036,
+          -0.0040000000000000036
+        ],
+        [
+          -0.40000003576278687,
+          0.2999999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.019500000402331352,
+        0.010500000324100256,
+        0.4926999993622303
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide0",
+        "/World/Robot/LiftCarriage/LiftBlock0_1"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0040000000000000036,
+          -0.0040000000000000036
+        ],
+        [
+          -0.3000000357627868,
+          0.39999995231628427
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.019500000402331352,
+        0.010500000324100256,
+        0.4926999993622303
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide0",
+        "/World/Robot/LiftCarriage/Boom"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.06999999999999995,
+          -0.06999999999999995
+        ],
+        [
+          -0.009000000000000008,
+          -0.009000000000000008
+        ],
+        [
+          -0.3200000357627868,
+          0.37999995231628425
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.15600000601261854,
+        0.020000000949949026,
+        0.48999999836087227
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide1",
+        "/World/Robot/LiftCarriage/VerticalPlate"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.020000000000000018,
+          -0.020000000000000018
+        ],
+        [
+          -0.0050000000000000044,
+          -0.0050000000000000044
+        ],
+        [
+          -0.3400000357627868,
+          0.35999995231628423
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.056000000797212124,
+        0.01000000024214387,
+        0.5499999970197678
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide1",
+        "/World/Robot/LiftCarriage/LiftBlock1_0"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0040000000000000036,
+          -0.0040000000000000036
+        ],
+        [
+          -0.40000003576278687,
+          0.2999999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.01950000040233134,
+        0.010500000324100256,
+        0.4926999993622303
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide1",
+        "/World/Robot/LiftCarriage/LiftBlock1_1"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0040000000000000036,
+          -0.0040000000000000036
+        ],
+        [
+          -0.3000000357627868,
+          0.39999995231628427
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.01950000040233134,
+        0.010500000324100256,
+        0.4926999993622303
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/VerticalGuide1",
+        "/World/Robot/LiftCarriage/Boom"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.10999999999999999,
+          -0.10999999999999999
+        ],
+        [
+          -0.009000000000000008,
+          -0.009000000000000008
+        ],
+        [
+          -0.3200000357627868,
+          0.37999995231628425
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.15600000601261854,
+        0.020000000949949026,
+        0.48999999836087227
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/Boom",
+        "/World/Robot/MiddleBoom/LeadNut"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.09500000000000003,
+          0.10500000298023221
+        ],
+        [
+          -0.02300000000000002,
+          -0.02300000000000002
+        ],
+        [
+          0.028000000000000025,
+          0.028000000000000025
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.16100000590085983,
+        0.026000000536441803,
+        0.03099999949336052
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/HorizontalGuide",
+        "/World/Robot/MiddleBoom/MotorPlate"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.15700000000000003,
+          0.04300000298023221
+        ],
+        [
+          -0.03700000000000003,
+          -0.03700000000000003
+        ],
+        [
+          0.014999999999999902,
+          0.014999999999999902
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.1530000059865415,
+        0.03900000033900142,
+        0.03849999886006117
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/HorizontalGuide",
+        "/World/Robot/MiddleBoom/Bearing0"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.12000000000000005,
+          0.08000000298023219
+        ],
+        [
+          -0.0035000000000000586,
+          -0.0035000000000000586
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.17270000651478767,
+        0.010500000324100256,
+        0.019500000402331352
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/HorizontalGuide",
+        "/World/Robot/MiddleBoom/Bearing1"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.07000000000000006,
+          0.13000000298023218
+        ],
+        [
+          -0.0035000000000000586,
+          -0.0035000000000000586
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.17270000651478767,
+        0.010500000324100256,
+        0.019500000402331352
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/MotorPlate",
+        "/World/Robot/MiddleBoom/MotorPlate"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.20000000298023224
+        ],
+        [
+          -0.050000000000000044,
+          -0.050000000000000044
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.006000000052154064,
+        0.07000000029802322,
+        0.06499999761581421
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/EndStop0",
+        "/World/Robot/MiddleBoom/Boom"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.14,
+          0.34000000298023225
+        ],
+        [
+          -0.018000000000000016,
+          -0.018000000000000016
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.1530000059865415,
+        0.023000000976026058,
+        0.028999999165534973
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/EndStop0",
+        "/World/Robot/MiddleBoom/MotorPlate"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.017000000000000015,
+          0.18300000298023222
+        ],
+        [
+          -0.026000000000000023,
+          -0.026000000000000023
+        ],
+        [
+          0.014999999999999902,
+          0.014999999999999902
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.006000000052154064,
+        0.04200000036507845,
+        0.04149999842047691
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/EndStop0",
+        "/World/Robot/MiddleBoom/Bearing0"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.019999999999999962,
+          0.2200000029802322
+        ],
+        [
+          0.007499999999999951,
+          0.007499999999999951
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.02570000058040023,
+        0.013500000350177288,
+        0.022499999962747097
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/EndStop1",
+        "/World/Robot/MiddleBoom/Boom"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.13999999999999996,
+          0.06000000298023228
+        ],
+        [
+          -0.018000000000000016,
+          -0.018000000000000016
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.1530000059865415,
+        0.023000000976026058,
+        0.028999999165534973
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/EndStop1",
+        "/World/Robot/MiddleBoom/Bearing1"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "varying_joints": [
+        "OuterExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.21000000000000002,
+          -0.009999997019767781
+        ],
+        [
+          0.007499999999999951,
+          0.007499999999999951
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.02570000058040023,
+        0.013500000350177288,
+        0.022499999962747097
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/Boom",
+        "/World/Robot/Carriage/LeadNut"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "InnerExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.09500000000000003,
+          0.10500000298023221
+        ],
+        [
+          -0.02299999999999991,
+          -0.02299999999999991
+        ],
+        [
+          0.028000000000000025,
+          0.028000000000000025
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.16100000590085983,
+        0.026000000536441803,
+        0.03099999949336052
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/HorizontalGuide",
+        "/World/Robot/Carriage/Bearing0"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "InnerExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.12000000000000005,
+          0.08000000298023219
+        ],
+        [
+          -0.0034999999999999476,
+          -0.0034999999999999476
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.17270000651478767,
+        0.010500000324100256,
+        0.019500000402331352
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/HorizontalGuide",
+        "/World/Robot/Carriage/Bearing1"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "InnerExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.07000000000000006,
+          0.13000000298023218
+        ],
+        [
+          -0.0034999999999999476,
+          -0.0034999999999999476
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.17270000651478767,
+        0.010500000324100256,
+        0.019500000402331352
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/EndStop0",
+        "/World/Robot/Carriage/Boom"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "InnerExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.14,
+          0.34000000298023225
+        ],
+        [
+          -0.017999999999999905,
+          -0.017999999999999905
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.1530000059865415,
+        0.023000000976026058,
+        0.028999999165534973
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/EndStop0",
+        "/World/Robot/Carriage/Bearing0"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "InnerExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.019999999999999962,
+          0.2200000029802322
+        ],
+        [
+          0.007500000000000062,
+          0.007500000000000062
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.02570000058040023,
+        0.013500000350177288,
+        0.022499999962747097
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/EndStop1",
+        "/World/Robot/Carriage/Boom"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "InnerExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.13999999999999996,
+          0.06000000298023228
+        ],
+        [
+          -0.017999999999999905,
+          -0.017999999999999905
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.1530000059865415,
+        0.023000000976026058,
+        0.028999999165534973
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/EndStop1",
+        "/World/Robot/Carriage/Bearing1"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "InnerExtension"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.21000000000000002,
+          -0.009999997019767781
+        ],
+        [
+          0.007500000000000062,
+          0.007500000000000062
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.02570000058040023,
+        0.013500000350177288,
+        0.022499999962747097
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "All independent Cartesian joint limits, all supported Cartesian-body robot box pairs; no pose writes, irrespective of collision filtering. Not dynamic links, rack, non-box or omitted geometry, deflection, fastener or strength acceptance.",
+  "scene": "/workspace/rack_robotics/experiments/b_a_insertion001/scene.usda",
+  "scene_sha256": "009d636addb7811ea4f7156c4ce2f27ec61030e478da359342a5989ea2759631",
+  "source_sha256": {
+    "rack_robotics/scripts/audit_carrier_mounts.py": "32bff4872d94818e8f482481848c693d72a928a52184d6a5213e38d410aaa19b",
+    "rack_robotics/carrier_mount_screen.py": "06f82c674229ff94fc921a6964dab51b651e37af5322b86ea5271331b774c56f"
+  },
+  "source_directory": "robot_box_sweep001_sources"
+}

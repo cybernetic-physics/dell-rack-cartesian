@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "errors": [],
+  "inactive_demo_actuators": [
+    "/World/HandDrive",
+    "/World/ClipPressSlide",
+    "/World/ClipPress"
+  ],
+  "dynamic_connector_and_cable_bodies": 38,
+  "active_connector_socket_colliders": 133,
+  "plug_joints": [
+    {
+      "path": "/World/LatchHinge",
+      "bodies": [
+        "/World/Plug",
+        "/World/Latch"
+      ],
+      "type": "PhysicsRevoluteJoint"
+    },
+    {
+      "path": "/World/Cable/Joint00",
+      "bodies": [
+        "/World/Plug",
+        "/World/Cable/Link00"
+      ],
+      "type": "PhysicsJoint"
+    }
+  ]
+}

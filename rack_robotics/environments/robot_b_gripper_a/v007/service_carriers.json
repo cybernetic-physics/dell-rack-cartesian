@@ -1,0 +1,562 @@
+{
+  "revision": "passive_service_carriers_v6b",
+  "architecture": "B",
+  "chains": [
+    {
+      "name": "Lift",
+      "path": "/World/Robot/ServiceCarriers/Lift",
+      "body_paths": [
+        "/World/Robot/ServiceCarriers/Lift/Link000",
+        "/World/Robot/ServiceCarriers/Lift/Link001",
+        "/World/Robot/ServiceCarriers/Lift/Link002",
+        "/World/Robot/ServiceCarriers/Lift/Link003",
+        "/World/Robot/ServiceCarriers/Lift/Link004",
+        "/World/Robot/ServiceCarriers/Lift/Link005",
+        "/World/Robot/ServiceCarriers/Lift/Link006",
+        "/World/Robot/ServiceCarriers/Lift/Link007",
+        "/World/Robot/ServiceCarriers/Lift/Link008",
+        "/World/Robot/ServiceCarriers/Lift/Link009",
+        "/World/Robot/ServiceCarriers/Lift/Link010",
+        "/World/Robot/ServiceCarriers/Lift/Link011",
+        "/World/Robot/ServiceCarriers/Lift/Link012",
+        "/World/Robot/ServiceCarriers/Lift/Link013",
+        "/World/Robot/ServiceCarriers/Lift/Link014",
+        "/World/Robot/ServiceCarriers/Lift/Link015",
+        "/World/Robot/ServiceCarriers/Lift/Link016",
+        "/World/Robot/ServiceCarriers/Lift/Link017",
+        "/World/Robot/ServiceCarriers/Lift/Link018",
+        "/World/Robot/ServiceCarriers/Lift/Link019",
+        "/World/Robot/ServiceCarriers/Lift/Link020",
+        "/World/Robot/ServiceCarriers/Lift/Link021",
+        "/World/Robot/ServiceCarriers/Lift/Link022",
+        "/World/Robot/ServiceCarriers/Lift/Link023",
+        "/World/Robot/ServiceCarriers/Lift/Link024",
+        "/World/Robot/ServiceCarriers/Lift/Link025",
+        "/World/Robot/ServiceCarriers/Lift/Link026",
+        "/World/Robot/ServiceCarriers/Lift/Link027",
+        "/World/Robot/ServiceCarriers/Lift/Link028",
+        "/World/Robot/ServiceCarriers/Lift/Link029",
+        "/World/Robot/ServiceCarriers/Lift/Link030",
+        "/World/Robot/ServiceCarriers/Lift/Link031",
+        "/World/Robot/ServiceCarriers/Lift/Link032",
+        "/World/Robot/ServiceCarriers/Lift/Link033",
+        "/World/Robot/ServiceCarriers/Lift/Link034",
+        "/World/Robot/ServiceCarriers/Lift/Link035",
+        "/World/Robot/ServiceCarriers/Lift/Link036",
+        "/World/Robot/ServiceCarriers/Lift/Link037"
+      ],
+      "attachments": [
+        "/World/Robot/Frame",
+        "/World/Robot/LiftCarriage"
+      ],
+      "initial_endpoints_m": [
+        [
+          -0.33,
+          0.91,
+          1.44
+        ],
+        [
+          -0.33,
+          0.9872740661031253,
+          1.8000000000000003
+        ]
+      ],
+      "links": 38,
+      "pitch_m": 0.02,
+      "length_m": 0.76,
+      "joint_limits_deg": [
+        0,
+        30.0
+      ],
+      "polygon_bend_radius_m": 0.038637033051562734,
+      "outer_width_m": 0.027,
+      "outer_height_m": 0.015,
+      "inner_width_m": 0.02,
+      "inner_height_m": 0.0105,
+      "mass_kg": 0.15960000000000002,
+      "catalog_chain_mass_kg_m": 0.17,
+      "assumed_fill_mass_kg_m": 0.04
+    },
+    {
+      "name": "Outer",
+      "path": "/World/Robot/ServiceCarriers/Outer",
+      "body_paths": [
+        "/World/Robot/ServiceCarriers/Outer/Link000",
+        "/World/Robot/ServiceCarriers/Outer/Link001",
+        "/World/Robot/ServiceCarriers/Outer/Link002",
+        "/World/Robot/ServiceCarriers/Outer/Link003",
+        "/World/Robot/ServiceCarriers/Outer/Link004",
+        "/World/Robot/ServiceCarriers/Outer/Link005",
+        "/World/Robot/ServiceCarriers/Outer/Link006",
+        "/World/Robot/ServiceCarriers/Outer/Link007",
+        "/World/Robot/ServiceCarriers/Outer/Link008",
+        "/World/Robot/ServiceCarriers/Outer/Link009",
+        "/World/Robot/ServiceCarriers/Outer/Link010",
+        "/World/Robot/ServiceCarriers/Outer/Link011",
+        "/World/Robot/ServiceCarriers/Outer/Link012",
+        "/World/Robot/ServiceCarriers/Outer/Link013",
+        "/World/Robot/ServiceCarriers/Outer/Link014",
+        "/World/Robot/ServiceCarriers/Outer/Link015",
+        "/World/Robot/ServiceCarriers/Outer/Link016",
+        "/World/Robot/ServiceCarriers/Outer/Link017",
+        "/World/Robot/ServiceCarriers/Outer/Link018",
+        "/World/Robot/ServiceCarriers/Outer/Link019",
+        "/World/Robot/ServiceCarriers/Outer/Link020",
+        "/World/Robot/ServiceCarriers/Outer/Link021"
+      ],
+      "attachments": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "initial_endpoints_m": [
+        [
+          -0.275,
+          0.92,
+          1.92
+        ],
+        [
+          -0.195,
+          0.92,
+          1.9972740661031256
+        ]
+      ],
+      "links": 22,
+      "pitch_m": 0.02,
+      "length_m": 0.44,
+      "joint_limits_deg": [
+        0,
+        30.0
+      ],
+      "polygon_bend_radius_m": 0.038637033051562734,
+      "outer_width_m": 0.027,
+      "outer_height_m": 0.015,
+      "inner_width_m": 0.02,
+      "inner_height_m": 0.0105,
+      "mass_kg": 0.09240000000000001,
+      "catalog_chain_mass_kg_m": 0.17,
+      "assumed_fill_mass_kg_m": 0.04
+    },
+    {
+      "name": "Inner",
+      "path": "/World/Robot/ServiceCarriers/Inner",
+      "body_paths": [
+        "/World/Robot/ServiceCarriers/Inner/Link000",
+        "/World/Robot/ServiceCarriers/Inner/Link001",
+        "/World/Robot/ServiceCarriers/Inner/Link002",
+        "/World/Robot/ServiceCarriers/Inner/Link003",
+        "/World/Robot/ServiceCarriers/Inner/Link004",
+        "/World/Robot/ServiceCarriers/Inner/Link005",
+        "/World/Robot/ServiceCarriers/Inner/Link006",
+        "/World/Robot/ServiceCarriers/Inner/Link007",
+        "/World/Robot/ServiceCarriers/Inner/Link008",
+        "/World/Robot/ServiceCarriers/Inner/Link009",
+        "/World/Robot/ServiceCarriers/Inner/Link010",
+        "/World/Robot/ServiceCarriers/Inner/Link011",
+        "/World/Robot/ServiceCarriers/Inner/Link012",
+        "/World/Robot/ServiceCarriers/Inner/Link013",
+        "/World/Robot/ServiceCarriers/Inner/Link014",
+        "/World/Robot/ServiceCarriers/Inner/Link015",
+        "/World/Robot/ServiceCarriers/Inner/Link016",
+        "/World/Robot/ServiceCarriers/Inner/Link017",
+        "/World/Robot/ServiceCarriers/Inner/Link018",
+        "/World/Robot/ServiceCarriers/Inner/Link019",
+        "/World/Robot/ServiceCarriers/Inner/Link020",
+        "/World/Robot/ServiceCarriers/Inner/Link021"
+      ],
+      "attachments": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "initial_endpoints_m": [
+        [
+          -0.27,
+          1.02,
+          1.92
+        ],
+        [
+          -0.19,
+          1.02,
+          1.9972740661031256
+        ]
+      ],
+      "links": 22,
+      "pitch_m": 0.02,
+      "length_m": 0.44,
+      "joint_limits_deg": [
+        0,
+        30.0
+      ],
+      "polygon_bend_radius_m": 0.038637033051562734,
+      "outer_width_m": 0.027,
+      "outer_height_m": 0.015,
+      "inner_width_m": 0.02,
+      "inner_height_m": 0.0105,
+      "mass_kg": 0.09240000000000001,
+      "catalog_chain_mass_kg_m": 0.17,
+      "assumed_fill_mass_kg_m": 0.04
+    },
+    {
+      "name": "Insertion",
+      "path": "/World/Robot/ServiceCarriers/Insertion",
+      "body_paths": [
+        "/World/Robot/ServiceCarriers/Insertion/Link000",
+        "/World/Robot/ServiceCarriers/Insertion/Link001",
+        "/World/Robot/ServiceCarriers/Insertion/Link002",
+        "/World/Robot/ServiceCarriers/Insertion/Link003",
+        "/World/Robot/ServiceCarriers/Insertion/Link004",
+        "/World/Robot/ServiceCarriers/Insertion/Link005",
+        "/World/Robot/ServiceCarriers/Insertion/Link006",
+        "/World/Robot/ServiceCarriers/Insertion/Link007",
+        "/World/Robot/ServiceCarriers/Insertion/Link008",
+        "/World/Robot/ServiceCarriers/Insertion/Link009",
+        "/World/Robot/ServiceCarriers/Insertion/Link010",
+        "/World/Robot/ServiceCarriers/Insertion/Link011",
+        "/World/Robot/ServiceCarriers/Insertion/Link012",
+        "/World/Robot/ServiceCarriers/Insertion/Link013",
+        "/World/Robot/ServiceCarriers/Insertion/Link014"
+      ],
+      "attachments": [
+        "/World/Robot/Carriage",
+        "/World/Robot/ToolMount"
+      ],
+      "initial_endpoints_m": [
+        [
+          -0.19,
+          0.66,
+          1.86
+        ],
+        [
+          -0.19,
+          0.68,
+          1.9372740661031258
+        ]
+      ],
+      "links": 15,
+      "pitch_m": 0.02,
+      "length_m": 0.3,
+      "joint_limits_deg": [
+        0,
+        30.0
+      ],
+      "polygon_bend_radius_m": 0.038637033051562734,
+      "outer_width_m": 0.027,
+      "outer_height_m": 0.015,
+      "inner_width_m": 0.02,
+      "inner_height_m": 0.0105,
+      "mass_kg": 0.06300000000000001,
+      "catalog_chain_mass_kg_m": 0.17,
+      "assumed_fill_mass_kg_m": 0.04
+    }
+  ],
+  "brackets": [
+    {
+      "path": "/World/Robot/Frame/CarrierMounts/LiftFixed1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 4.992000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.013478400000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/CarrierMounts/LiftFixed2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 6.592000000000006e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.017798400000000016,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/LiftMoving0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 4.992000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.013478400000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/LiftMoving1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 5.631999999999985e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.01520639999999996,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/LiftMoving2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.3777540230600018e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.03719935862262005,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/LiftMoving4",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 3.0720000000000004e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0082944,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/OuterFixed0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.7919999999999993e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.004838399999999998,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/OuterFixed1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 9.472000000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.025574400000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/OuterFixed2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 5.312000000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.014342400000000005,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/CarrierMounts/OuterFixed3",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 2.4319999999999926e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00656639999999998,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/OuterMoving0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 2.7519999999999992e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.007430399999999998,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/OuterMoving1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.5232000000000004e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.041126400000000014,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/OuterMoving2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 6.417540230600037e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0173273586226201,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/OuterMoving5",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 3.0720000000000004e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0082944,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 2.1120000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.005702400000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.1519999999999997e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0031103999999999993,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.9072000000000003e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.05149440000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed3",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 6.912000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.018662400000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed4",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 3.0719999999999924e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00829439999999998,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InnerMoving0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.1120000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.005702400000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InnerMoving1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.1119999999999994e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.005702399999999998,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InnerMoving2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.4831999999999995e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.06704639999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InnerMoving3",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 7.0575402306000375e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.019055358622620103,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InnerMoving4",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.1120000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.005702400000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InnerMoving6",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.0719999999999987e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.008294399999999997,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InsertionFixed0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.7519999999999997e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.007430399999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/CarrierMounts/InsertionMoving0",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 3.072e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0082944,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/CarrierMounts/InsertionMoving1",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 7.69754023060005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.020783358622620134,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/CarrierMounts/InsertionMoving4",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 3.072e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0082944,
+      "collision": true
+    }
+  ],
+  "bracket_added_mass_kg_by_body": {
+    "/World/Robot/Frame": 0.03127680000000002,
+    "/World/Robot/LiftCarriage": 0.12550015862261998,
+    "/World/Robot/MiddleBoom": 0.16144255862262008,
+    "/World/Robot/Carriage": 0.1189337586226201,
+    "/World/Robot/ToolMount": 0.03737215862262014
+  },
+  "scope": "Passive rigid-link service carriers; attached ends, joint bending stops, self/environment collisions and estimated fill mass",
+  "limitations": [
+    "Original simplified geometry, not vendor CAD or qualified carrier installation.",
+    "Wire fill is lumped mass; independent wire bending, friction, pull forces and electrical routing are not modeled.",
+    "Ideal revolute stops have no measured pin friction, camber, wear or strength.",
+    "Neighboring connected-link and end-attachment collision pairs only are excluded.",
+    "Full-stroke clearance, powered-off support and repeated task validation remain separate gates."
+  ],
+  "startup_cartesian_states": [
+    {
+      "joint": "/World/Robot/Joints/Lift",
+      "position_m": 0.0,
+      "off_axis_residual_m": 2.876503115331394e-08,
+      "previous_position_m": null
+    },
+    {
+      "joint": "/World/Robot/Joints/Insertion",
+      "position_m": 0.0,
+      "off_axis_residual_m": 0.0,
+      "previous_position_m": null
+    },
+    {
+      "joint": "/World/Robot/Joints/OuterExtension",
+      "position_m": 0.0050000000000000044,
+      "off_axis_residual_m": 7.450580152834618e-10,
+      "previous_position_m": null
+    },
+    {
+      "joint": "/World/Robot/Joints/InnerExtension",
+      "position_m": 0.0050000000000000044,
+      "off_axis_residual_m": 7.450581263057643e-10,
+      "previous_position_m": null
+    }
+  ],
+  "authored_metrics": {
+    "maximum_anchor_gap_m": 6.409686476631975e-08,
+    "minimum_hinge_deg": 0.0,
+    "maximum_hinge_deg": 30.000004202500026,
+    "hinges": 93,
+    "errors": []
+  }
+}

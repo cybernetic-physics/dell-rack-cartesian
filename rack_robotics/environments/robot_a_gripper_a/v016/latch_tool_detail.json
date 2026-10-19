@@ -1,0 +1,22 @@
+{
+  "revision": "precision_forward_latch_neck_v1",
+  "path": "/World/Robot/LatchTongue/Neck",
+  "old_local_position_m": [
+    0.0,
+    0.002,
+    0.003
+  ],
+  "new_local_position_m": [
+    0.0,
+    0.0005,
+    0.003
+  ],
+  "mass_delta_kg": 0.0,
+  "scope": "Move only the tool neck 1.5 mm toward the socket; unchanged tip, raised arm, drive, joint travel and connector",
+  "reason": "480 Hz contact evidence: neck/boot peaks at3.90 N while tip/latch reports zero positive impulse; boot contact blocks depression.",
+  "limitations": [
+    "Original rigid tool shape, not vendor-qualified tooling or strength analysis.",
+    "Nominal neck/arm overlap is0.5 mm; stiffness and fatigue remain unmodeled.",
+    "Actual force, retention, pitch/friction variation and repeated-cycle tests still required."
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "revision": "passive_service_carriers_v2",
+  "architecture": "C",
+  "chains": [
+    {
+      "name": "Lift",
+      "path": "/World/Robot/ServiceCarriers/Lift",
+      "body_paths": [
+        "/World/Robot/ServiceCarriers/Lift/Link000",
+        "/World/Robot/ServiceCarriers/Lift/Link001",
+        "/World/Robot/ServiceCarriers/Lift/Link002",
+        "/World/Robot/ServiceCarriers/Lift/Link003",
+        "/World/Robot/ServiceCarriers/Lift/Link004",
+        "/World/Robot/ServiceCarriers/Lift/Link005",
+        "/World/Robot/ServiceCarriers/Lift/Link006",
+        "/World/Robot/ServiceCarriers/Lift/Link007",
+        "/World/Robot/ServiceCarriers/Lift/Link008",
+        "/World/Robot/ServiceCarriers/Lift/Link009",
+        "/World/Robot/ServiceCarriers/Lift/Link010",
+        "/World/Robot/ServiceCarriers/Lift/Link011",
+        "/World/Robot/ServiceCarriers/Lift/Link012",
+        "/World/Robot/ServiceCarriers/Lift/Link013",
+        "/World/Robot/ServiceCarriers/Lift/Link014",
+        "/World/Robot/ServiceCarriers/Lift/Link015",
+        "/World/Robot/ServiceCarriers/Lift/Link016",
+        "/World/Robot/ServiceCarriers/Lift/Link017",
+        "/World/Robot/ServiceCarriers/Lift/Link018",
+        "/World/Robot/ServiceCarriers/Lift/Link019",
+        "/World/Robot/ServiceCarriers/Lift/Link020",
+        "/World/Robot/ServiceCarriers/Lift/Link021",
+        "/World/Robot/ServiceCarriers/Lift/Link022",
+        "/World/Robot/ServiceCarriers/Lift/Link023",
+        "/World/Robot/ServiceCarriers/Lift/Link024",
+        "/World/Robot/ServiceCarriers/Lift/Link025",
+        "/World/Robot/ServiceCarriers/Lift/Link026",
+        "/World/Robot/ServiceCarriers/Lift/Link027",
+        "/World/Robot/ServiceCarriers/Lift/Link028",
+        "/World/Robot/ServiceCarriers/Lift/Link029",
+        "/World/Robot/ServiceCarriers/Lift/Link030",
+        "/World/Robot/ServiceCarriers/Lift/Link031",
+        "/World/Robot/ServiceCarriers/Lift/Link032",
+        "/World/Robot/ServiceCarriers/Lift/Link033",
+        "/World/Robot/ServiceCarriers/Lift/Link034",
+        "/World/Robot/ServiceCarriers/Lift/Link035",
+        "/World/Robot/ServiceCarriers/Lift/Link036",
+        "/World/Robot/ServiceCarriers/Lift/Link037"
+      ],
+      "attachments": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "initial_endpoints_m": [
+        [
+          -0.31,
+          0.86,
+          1.44
+        ],
+        [
+          -0.31,
+          0.9372740661031252,
+          1.8000000000000003
+        ]
+      ],
+      "links": 38,
+      "pitch_m": 0.02,
+      "length_m": 0.76,
+      "joint_limits_deg": [
+        0,
+        30.0
+      ],
+      "polygon_bend_radius_m": 0.038637033051562734,
+      "outer_width_m": 0.027,
+      "outer_height_m": 0.015,
+      "inner_width_m": 0.02,
+      "inner_height_m": 0.0105,
+      "mass_kg": 0.15960000000000002,
+      "catalog_chain_mass_kg_m": 0.17,
+      "assumed_fill_mass_kg_m": 0.04
+    },
+    {
+      "name": "Traverse",
+      "path": "/World/Robot/ServiceCarriers/Traverse",
+      "body_paths": [
+        "/World/Robot/ServiceCarriers/Traverse/Link000",
+        "/World/Robot/ServiceCarriers/Traverse/Link001",
+        "/World/Robot/ServiceCarriers/Traverse/Link002",
+        "/World/Robot/ServiceCarriers/Traverse/Link003",
+        "/World/Robot/ServiceCarriers/Traverse/Link004",
+        "/World/Robot/ServiceCarriers/Traverse/Link005",
+        "/World/Robot/ServiceCarriers/Traverse/Link006",
+        "/World/Robot/ServiceCarriers/Traverse/Link007",
+        "/World/Robot/ServiceCarriers/Traverse/Link008",
+        "/World/Robot/ServiceCarriers/Traverse/Link009",
+        "/World/Robot/ServiceCarriers/Traverse/Link010",
+        "/World/Robot/ServiceCarriers/Traverse/Link011",
+        "/World/Robot/ServiceCarriers/Traverse/Link012",
+        "/World/Robot/ServiceCarriers/Traverse/Link013",
+        "/World/Robot/ServiceCarriers/Traverse/Link014",
+        "/World/Robot/ServiceCarriers/Traverse/Link015",
+        "/World/Robot/ServiceCarriers/Traverse/Link016",
+        "/World/Robot/ServiceCarriers/Traverse/Link017",
+        "/World/Robot/ServiceCarriers/Traverse/Link018",
+        "/World/Robot/ServiceCarriers/Traverse/Link019",
+        "/World/Robot/ServiceCarriers/Traverse/Link020",
+        "/World/Robot/ServiceCarriers/Traverse/Link021",
+        "/World/Robot/ServiceCarriers/Traverse/Link022",
+        "/World/Robot/ServiceCarriers/Traverse/Link023",
+        "/World/Robot/ServiceCarriers/Traverse/Link024",
+        "/World/Robot/ServiceCarriers/Traverse/Link025",
+        "/World/Robot/ServiceCarriers/Traverse/Link026",
+        "/World/Robot/ServiceCarriers/Traverse/Link027"
+      ],
+      "attachments": [
+        "/World/Robot/Bridge",
+        "/World/Robot/Carriage"
+      ],
+      "initial_endpoints_m": [
+        [
+          -0.01,
+          0.86,
+          1.86
+        ],
+        [
+          0.15000000000000002,
+          0.86,
+          1.9372740661031258
+        ]
+      ],
+      "links": 28,
+      "pitch_m": 0.02,
+      "length_m": 0.56,
+      "joint_limits_deg": [
+        0,
+        30.0
+      ],
+      "polygon_bend_radius_m": 0.038637033051562734,
+      "outer_width_m": 0.027,
+      "outer_height_m": 0.015,
+      "inner_width_m": 0.02,
+      "inner_height_m": 0.0105,
+      "mass_kg": 0.11760000000000001,
+      "catalog_chain_mass_kg_m": 0.17,
+      "assumed_fill_mass_kg_m": 0.04
+    },
+    {
+      "name": "Insertion",
+      "path": "/World/Robot/ServiceCarriers/Insertion",
+      "body_paths": [
+        "/World/Robot/ServiceCarriers/Insertion/Link000",
+        "/World/Robot/ServiceCarriers/Insertion/Link001",
+        "/World/Robot/ServiceCarriers/Insertion/Link002",
+        "/World/Robot/ServiceCarriers/Insertion/Link003",
+        "/World/Robot/ServiceCarriers/Insertion/Link004",
+        "/World/Robot/ServiceCarriers/Insertion/Link005",
+        "/World/Robot/ServiceCarriers/Insertion/Link006",
+        "/World/Robot/ServiceCarriers/Insertion/Link007",
+        "/World/Robot/ServiceCarriers/Insertion/Link008",
+        "/World/Robot/ServiceCarriers/Insertion/Link009",
+        "/World/Robot/ServiceCarriers/Insertion/Link010",
+        "/World/Robot/ServiceCarriers/Insertion/Link011",
+        "/World/Robot/ServiceCarriers/Insertion/Link012",
+        "/World/Robot/ServiceCarriers/Insertion/Link013",
+        "/World/Robot/ServiceCarriers/Insertion/Link014"
+      ],
+      "attachments": [
+        "/World/Robot/Carriage",
+        "/World/Robot/ToolMount"
+      ],
+      "initial_endpoints_m": [
+        [
+          0.15,
+          0.66,
+          1.86
+        ],
+        [
+          0.15,
+          0.68,
+          1.9372740661031258
+        ]
+      ],
+      "links": 15,
+      "pitch_m": 0.02,
+      "length_m": 0.3,
+      "joint_limits_deg": [
+        0,
+        30.0
+      ],
+      "polygon_bend_radius_m": 0.038637033051562734,
+      "outer_width_m": 0.027,
+      "outer_height_m": 0.015,
+      "inner_width_m": 0.02,
+      "inner_height_m": 0.0105,
+      "mass_kg": 0.06300000000000001,
+      "catalog_chain_mass_kg_m": 0.17,
+      "assumed_fill_mass_kg_m": 0.04
+    }
+  ],
+  "brackets": [
+    {
+      "path": "/World/Robot/Frame/CarrierMounts/LiftFixed0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 3.7119999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010022399999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/CarrierMounts/LiftFixed1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 8.512e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.022982400000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/CarrierMounts/LiftMoving2",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 2.111999999999986e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.005702399999999962,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/CarrierMounts/LiftMoving0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 3.7119999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010022399999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/CarrierMounts/LiftMoving1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.4417540230600019e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.03892735862262005,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/CarrierMounts/TraverseFixed2",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 2.7519999999999997e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.007430399999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/CarrierMounts/TraverseFixed1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 9.472000000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.025574400000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/TraverseMoving2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 7.69754023060005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.020783358622620134,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/TraverseMoving1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.2031999999999998e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.03248639999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/CarrierMounts/InsertionFixed2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.7519999999999997e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.007430399999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/CarrierMounts/InsertionMoving2",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 7.69754023060005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.020783358622620134,
+      "collision": true
+    }
+  ],
+  "bracket_added_mass_kg_by_body": {
+    "/World/Robot/Frame": 0.0330048,
+    "/World/Robot/Bridge": 0.08765695862262002,
+    "/World/Robot/Carriage": 0.06070015862262012,
+    "/World/Robot/ToolMount": 0.020783358622620134
+  },
+  "scope": "Passive rigid-link service carriers; attached ends, joint bending stops, self/environment collisions and estimated fill mass",
+  "limitations": [
+    "Original simplified geometry, not vendor CAD or qualified carrier installation.",
+    "Wire fill is lumped mass; independent wire bending, friction, pull forces and electrical routing are not modeled.",
+    "Ideal revolute stops have no measured pin friction, camber, wear or strength.",
+    "Neighboring connected-link and end-attachment collision pairs only are excluded.",
+    "Full-stroke clearance, powered-off support and repeated task validation remain separate gates."
+  ],
+  "startup_cartesian_states": [
+    {
+      "joint": "/World/Robot/Joints/Lift",
+      "position_m": 0.0,
+      "off_axis_residual_m": 2.8610229518832853e-08,
+      "previous_position_m": null
+    },
+    {
+      "joint": "/World/Robot/Joints/Insertion",
+      "position_m": 0.0,
+      "off_axis_residual_m": 0.0,
+      "previous_position_m": null
+    },
+    {
+      "joint": "/World/Robot/Joints/Traverse",
+      "position_m": 0.15,
+      "off_axis_residual_m": 8.940695961356937e-10,
+      "previous_position_m": null
+    }
+  ],
+  "authored_metrics": {
+    "maximum_anchor_gap_m": 5.88130258198135e-08,
+    "minimum_hinge_deg": 0.0,
+    "maximum_hinge_deg": 30.000004202500026,
+    "hinges": 78,
+    "errors": []
+  }
+}

@@ -1,0 +1,1576 @@
+{
+  "robot": "B_side_telescoping",
+  "gripper": "A_precision_parallel",
+  "architecture": "B",
+  "baseline": "../../../assets/shared_rack/baseline-001",
+  "scene": "scene.usda",
+  "physics_dt": 0.0020833333333333333,
+  "recording_fps": 30,
+  "target_port": 1,
+  "initialization": "Physical pre-seat using baseline hand drive; remove it before robot trial",
+  "camera_paths": {
+    "wide": "/World/Cameras/wide",
+    "rear": "/World/Cameras/rear",
+    "macro": "/World/Cameras/macro",
+    "side": "/World/Cameras/side"
+  },
+  "status": "single_feasibility_pass",
+  "reload_verified": false,
+  "randomized_trials": 0,
+  "limitations": [
+    "Development prototype, not a calibrated commercial digital twin.",
+    "Controller uses simulator pose feedback, not modeled perception.",
+    "No randomized reliability or complete rack collision audit yet.",
+    "Bounded recovery implemented; randomized physical fault-injection validation pending."
+  ],
+  "hardware_revision": "drive_connections_v4",
+  "insertion_revision": "open_insertion_stage_v2",
+  "front_support_revision": "cable_clearance_insertion_front_support_v2",
+  "telescoping_frame_revision": "telescoping_open_guide_frame_v1",
+  "brake_revision": "passive_motor_brakes_v1",
+  "service_carrier_revision": "passive_service_carriers_telescoping_open_v1",
+  "carrier_gate_revision": "startup_and_task_sampled_carriers_v1",
+  "latch_press_target_m": -0.005,
+  "latch_tool_revision": "precision_forward_latch_neck_v1",
+  "robot_box_sweep001_passed": true,
+  "robot_box_sweep001": "robot_box_sweep001.json",
+  "joint_parameters": {
+    "/World/Robot/Joints/RackMount": {
+      "bodies": {
+        "physics:body1": [
+          "/World/Robot/Frame"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Lift": {
+      "drive:linear:physics:damping": 700.0,
+      "drive:linear:physics:maxForce": 100.0,
+      "drive:linear:physics:stiffness": 200000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Z",
+      "physics:lowerLimit": -0.699999988079071,
+      "physics:upperLimit": 0.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Frame"
+        ],
+        "physics:body1": [
+          "/World/Robot/LiftCarriage"
+        ]
+      }
+    },
+    "/World/Robot/Joints/OuterExtension": {
+      "drive:linear:physics:damping": 300.0,
+      "drive:linear:physics:maxForce": 35.0,
+      "drive:linear:physics:stiffness": 100000.0,
+      "drive:linear:physics:targetPosition": 0.004999999888241291,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 0.20000000298023224,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/LiftCarriage"
+        ],
+        "physics:body1": [
+          "/World/Robot/MiddleBoom"
+        ]
+      }
+    },
+    "/World/Robot/Joints/InnerExtension": {
+      "drive:linear:physics:damping": 300.0,
+      "drive:linear:physics:maxForce": 35.0,
+      "drive:linear:physics:stiffness": 100000.0,
+      "drive:linear:physics:targetPosition": 0.004999999888241291,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 0.20000000298023224,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/MiddleBoom"
+        ],
+        "physics:body1": [
+          "/World/Robot/Carriage"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Insertion": {
+      "drive:linear:physics:damping": 35.0,
+      "drive:linear:physics:maxForce": 8.0,
+      "drive:linear:physics:stiffness": 15000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Y",
+      "physics:lowerLimit": -0.125,
+      "physics:upperLimit": 0.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Carriage"
+        ],
+        "physics:body1": [
+          "/World/Robot/ToolMount"
+        ]
+      }
+    },
+    "/World/Robot/Joints/LeftJaw": {
+      "drive:linear:physics:damping": 8.0,
+      "drive:linear:physics:maxForce": 10.0,
+      "drive:linear:physics:stiffness": 20000.0,
+      "drive:linear:physics:targetPosition": -0.00930000003427267,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": -0.00930000003427267,
+      "physics:upperLimit": -0.006300000008195639,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/LeftJaw"
+        ]
+      }
+    },
+    "/World/Robot/Joints/RightJaw": {
+      "drive:linear:physics:damping": 8.0,
+      "drive:linear:physics:maxForce": 10.0,
+      "drive:linear:physics:stiffness": 20000.0,
+      "drive:linear:physics:targetPosition": 0.00930000003427267,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": 0.006300000008195639,
+      "physics:upperLimit": 0.00930000003427267,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/RightJaw"
+        ]
+      }
+    },
+    "/World/Robot/Joints/LatchPress": {
+      "drive:linear:physics:damping": 8.0,
+      "drive:linear:physics:maxForce": 4.0,
+      "drive:linear:physics:stiffness": 12000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Z",
+      "physics:lowerLimit": -0.005499999970197678,
+      "physics:upperLimit": 0.0010000000474974513,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/LatchTongue"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge001": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link000"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link001"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge002": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link001"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link002"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge003": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link002"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link003"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge004": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link003"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link004"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge005": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link004"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link005"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge006": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link005"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link006"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge007": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link006"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link007"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge008": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link007"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link008"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge009": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link008"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link009"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge010": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link009"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link010"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge011": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link010"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link011"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge012": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link011"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link012"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge013": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link012"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link013"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge014": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link013"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link014"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge015": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link014"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link015"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge016": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link015"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link016"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge017": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link016"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link017"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge018": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link017"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link018"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge019": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link018"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link019"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge020": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link019"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link020"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge021": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link020"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link021"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge022": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link021"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link022"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge023": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link022"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link023"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge024": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link023"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link024"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge025": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link024"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link025"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge026": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link025"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link026"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge027": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link026"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link027"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge028": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link027"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link028"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge029": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link028"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link029"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge030": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link029"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link030"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge031": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link030"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link031"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge032": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link031"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link032"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge033": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link032"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link033"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge034": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link033"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link034"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge035": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link034"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link035"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge036": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link035"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link036"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/Hinge037": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link036"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link037"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/FixedEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Frame"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Lift/Link000"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Lift/MovingEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Lift/Link037"
+        ],
+        "physics:body1": [
+          "/World/Robot/LiftCarriage"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge001": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link000"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link001"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge002": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link001"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link002"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge003": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link002"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link003"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge004": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link003"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link004"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge005": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link004"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link005"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge006": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link005"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link006"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge007": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link006"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link007"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge008": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link007"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link008"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge009": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link008"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link009"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge010": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link009"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link010"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge011": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link010"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link011"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge012": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link011"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link012"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge013": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link012"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link013"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge014": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link013"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link014"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge015": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link014"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link015"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge016": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link015"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link016"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge017": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link016"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link017"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge018": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link017"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link018"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge019": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link018"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link019"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge020": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link019"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link020"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/Hinge021": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link020"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link021"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/FixedEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/LiftCarriage"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Outer/Link000"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Outer/MovingEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Outer/Link021"
+        ],
+        "physics:body1": [
+          "/World/Robot/MiddleBoom"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge001": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link000"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link001"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge002": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link001"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link002"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge003": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link002"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link003"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge004": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link003"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link004"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge005": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link004"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link005"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge006": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link005"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link006"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge007": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link006"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link007"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge008": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link007"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link008"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge009": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link008"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link009"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge010": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link009"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link010"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge011": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link010"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link011"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge012": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link011"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link012"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge013": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link012"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link013"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge014": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link013"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link014"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge015": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link014"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link015"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge016": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link015"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link016"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge017": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link016"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link017"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge018": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link017"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link018"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge019": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link018"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link019"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge020": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link019"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link020"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/Hinge021": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link020"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link021"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/FixedEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/MiddleBoom"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Inner/Link000"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Inner/MovingEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Inner/Link021"
+        ],
+        "physics:body1": [
+          "/World/Robot/Carriage"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge001": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link000"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link001"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge002": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link001"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link002"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge003": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link002"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link003"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge004": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link003"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link004"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge005": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link004"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link005"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge006": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link005"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link006"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge007": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link006"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link007"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge008": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link007"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link008"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge009": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link008"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link009"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge010": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link009"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link010"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge011": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link010"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link011"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge012": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link011"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link012"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge013": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link012"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link013"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/Hinge014": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 30.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link013"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link014"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/FixedEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Carriage"
+        ],
+        "physics:body1": [
+          "/World/Robot/ServiceCarriers/Insertion/Link000"
+        ]
+      }
+    },
+    "/World/Robot/ServiceCarriers/Insertion/MovingEnd": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ServiceCarriers/Insertion/Link014"
+        ],
+        "physics:body1": [
+          "/World/Robot/ToolMount"
+        ]
+      }
+    }
+  },
+  "body_masses_kg": {
+    "/World/Robot/Frame": 4.842157363891602,
+    "/World/Robot/LiftCarriage": 1.1433690786361694,
+    "/World/Robot/MiddleBoom": 1.564821720123291,
+    "/World/Robot/Carriage": 1.3679803609848022,
+    "/World/Robot/ToolMount": 0.4706884026527405,
+    "/World/Robot/LeftJaw": 0.014000000432133675,
+    "/World/Robot/RightJaw": 0.014000000432133675,
+    "/World/Robot/LatchTongue": 0.004000000189989805,
+    "/World/Robot/ServiceCarriers/Lift/Link000": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link001": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link002": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link003": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link004": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link005": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link006": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link007": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link008": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link009": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link010": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link011": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link012": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link013": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link014": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link015": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link016": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link017": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link018": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link019": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link020": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link021": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link022": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link023": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link024": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link025": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link026": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link027": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link028": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link029": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link030": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link031": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link032": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link033": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link034": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link035": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link036": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Lift/Link037": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link000": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link001": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link002": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link003": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link004": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link005": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link006": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link007": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link008": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link009": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link010": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link011": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link012": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link013": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link014": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link015": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link016": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link017": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link018": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link019": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link020": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Outer/Link021": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link000": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link001": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link002": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link003": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link004": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link005": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link006": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link007": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link008": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link009": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link010": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link011": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link012": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link013": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link014": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link015": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link016": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link017": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link018": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link019": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link020": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Inner/Link021": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link000": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link001": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link002": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link003": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link004": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link005": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link006": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link007": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link008": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link009": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link010": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link011": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link012": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link013": 0.00419999985024333,
+    "/World/Robot/ServiceCarriers/Insertion/Link014": 0.00419999985024333
+  },
+  "parameter_scope": "Authored simulator joint settings and lumped masses; not calibrated hardware ratings."
+}

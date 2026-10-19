@@ -1,0 +1,26 @@
+{
+  "robot": "B_side_telescoping",
+  "gripper": "A_precision_parallel",
+  "architecture": "B",
+  "baseline": "../../../assets/shared_rack/baseline-001",
+  "scene": "scene.usda",
+  "physics_dt": 0.004166666666666667,
+  "recording_fps": 30,
+  "target_port": 1,
+  "initialization": "Physical pre-seat using baseline hand drive; remove it before robot trial",
+  "camera_paths": {
+    "wide": "/World/Cameras/wide",
+    "rear": "/World/Cameras/rear",
+    "macro": "/World/Cameras/macro",
+    "side": "/World/Cameras/side"
+  },
+  "status": "single_feasibility_pass",
+  "reload_verified": false,
+  "randomized_trials": 0,
+  "limitations": [
+    "Development prototype, not a calibrated commercial digital twin.",
+    "Controller uses simulator pose feedback, not modeled perception.",
+    "No randomized reliability or complete rack collision audit yet.",
+    "Bounded recovery implemented; randomized physical fault-injection validation pending."
+  ]
+}

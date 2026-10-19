@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-backed comparison of rack-mounted Cartesian robots and RJ45 grippers.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>Rack robotics · Design laboratory</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a href="#" class="brand">RACK / ROBOTICS</a><span>PRIVATE · SSH TUNNEL</span></header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">ISAAC SIM / PHYSICAL DESIGN EXPLORATION</p>
+      <h1>One connector.<br>Different machines.</h1>
+      <p class="lede">Compare rack-mounted Cartesian architectures, latch-capable tools and their measured unplug/replug cycles.</p>
+      <div id="totals" class="totals" aria-live="polite"></div>
+    </section>
+    <aside class="notice"><strong>Current designs and historical trials are deliberately separate.</strong> Current nominal results come from each newest saved package. Randomized cohorts retain fixture failures in the planned-start denominator. Separate nominal cable-force estimates are not safe-load ratings or extra reliability trials. Powered-off fault recovery has unresolved failures. Video acceptance is recorded per clip below; it does not certify hardware safety or close the overall delivery audit.</aside>
+    <section id="recommendation" aria-labelledby="recommendation-title" hidden>
+      <div class="section-heading"><h2 id="recommendation-title">Recommendation and tradeoffs</h2><a id="recommendation-source">Full hardware comparison ↗</a></div>
+      <p><strong>C/A for the simulation showcase; A/A for the independent-axis prototype comparison.</strong> Both completed 22/22 valid trials. Their 70.52-point scores are a practical tie, not a statistically meaningful win. C/A is faster and lighter; A/A has fewer unresolved coupled-belt transmission assumptions. Neither is hardware-safety qualified.</p>
+      <p><strong>Retain A/C as a lower-peak-load development alternative.</strong> Its specialized tool produced lower nominal cable-force peaks, but its 21/22 valid cycles and slower successful mean do not displace the leading reliability tier. B/A remains an option for one-sided mounting with available service space; B/C has lower observed reliability.</p>
+      <p class="muted">Scores retain the original 45/20/10/15/8/2 rubric; new force measurements and improved media have not been used to silently rescore it. All current power-loss screens have unresolved failures. Complete hardware costs remain unknown: documented candidate component subtotals are not finished-robot prices.</p>
+      <div class="table-scroll" tabindex="0" aria-label="Scrollable score and nominal load table"><table><caption>Predeclared score alongside a separate one-cycle nominal cable diagnostic</caption><thead><tr><th>Design</th><th>Rubric /100</th><th>Peak axial estimate</th><th>Plug–cable joint peak</th><th>Time above5 N</th></tr></thead><tbody id="recommendation-comparison"></tbody></table></div>
+      <p class="muted">Force values are momentum-balance estimates for the free-ended simulated cable at 480 Hz, including normal and friction impulses. 5 N is a descriptive threshold, not a damage limit. The observed precision-tool crossings each last one 2.08 ms solver step. Randomized force distributions and two-ended slack exhaustion remain untested.</p>
+      <div id="recommendation-links" class="links"></div>
+    </section>
+    <section aria-labelledby="current-title">
+      <div class="section-heading"><h2 id="current-title">Current-version results</h2><a href="#notes-title">Methods and evidence ↓</a></div>
+      <p class="muted">Valid trials began with a physically retained connector. Planned starts also include fixture failures. These are simulation outcomes, not hardware reliability estimates. A/C uses a separately disclosed seating-controller revision.</p>
+      <div class="table-scroll" tabindex="0" aria-label="Scrollable current-version results"><table><caption>Exact current saved versions · historical results are never substituted</caption><thead><tr><th>Design</th><th>Version / feasibility</th><th>Valid full cycles</th><th>All planned starts</th><th>Fixture failures</th><th>Conditional 95% Wilson</th><th>Successful mean</th></tr></thead><tbody id="current-comparison"></tbody></table></div>
+    </section>
+    <section aria-labelledby="comparison-title">
+      <div class="section-heading"><h2 id="comparison-title">Historical development results</h2><a id="benchmark-source">Historical benchmark evidence ↗</a></div>
+      <p class="muted">Complete-cycle counts include failed manipulations. Times are means of successful cycles only. Neighbor clearance requires task success, stable fixture and no reported robot–neighbor contact.</p>
+      <div class="table-scroll" tabindex="0" aria-label="Scrollable comparison table"><table><caption>Latest nominal feasibility alongside explicitly historical benchmarks, neighbor tests and masses</caption><thead><tr><th>Design</th><th>Current feasibility</th><th>Historical version</th><th>Historical full cycles</th><th>95% Wilson interval</th><th>Successful time</th><th>Neighbor clearance</th><th>Historical modeled mass</th></tr></thead><tbody id="comparison"></tbody></table></div>
+    </section>
+    <section aria-labelledby="designs-title">
+      <div class="section-heading"><h2 id="designs-title">Explore configurations</h2><span id="result-count" aria-live="polite"></span></div>
+      <div class="filters">
+        <label>Architecture<select id="robot-filter"><option value="all">All three architectures</option><option value="A">A · Screw gantry</option><option value="B">B · Telescoping carriage</option><option value="C">C · CoreXZ</option></select></label>
+        <label>Tool<select id="tool-filter"><option value="all">All three tools</option><option value="A">A · Precision parallel</option><option value="B">B · RG2 linkage</option><option value="C">C · RJ45-specific</option></select></label>
+        <label>Outcome<select id="outcome-filter"><option value="all">All outcomes</option><option value="tested">Has historical randomized trials</option><option value="passed">Current nominal pass</option><option value="failed">Current feasibility failed</option></select></label>
+        <button id="reset-filters" type="button">Reset filters</button>
+      </div>
+      <div id="designs" class="cards"></div>
+      <p id="empty" hidden>No configurations match. Reset the filters to see all nine.</p>
+    </section>
+    <section class="notes" aria-labelledby="notes-title"><h2 id="notes-title">How to read this laboratory</h2>
+      <p>All videos come from recorded physical trajectories. Render-only replay never substitutes for the manipulation test. Each clip identifies its original version and quality limits; a diagnostic clip is not a finished photorealistic deliverable.</p>
+      <p>Saved environments stay on the existing VM under <code>/workspace/rack_robotics/environments</code>. Expand a version below its design for the exact run command and packaged evidence. The immutable shared rack and vendor assets are required: a scene file alone is not a portable environment.</p>
+      <p>Numbers describe this simulation, with estimated masses, idealized joints and simulator pose feedback. Nominal cable-reaction estimates have isolated calibration and full trace verification; they do not establish real-material strength. No electrical Ethernet traffic, physical reliability or certified rack load is claimed. Historical reload discrepancies remain visible.</p>
+      <div id="evidence-links" class="links"></div>
+      <p id="snapshot" class="muted"></p>
+    </section>
+    <p id="error" role="alert" hidden></p>
+    <noscript>This gallery needs JavaScript to display the evidence. <a href="data.json">Download the complete data snapshot</a>.</noscript>
+  </main>
+  <footer>Measured motion. Preserved failures. Version-specific evidence.</footer>
+</body>
+</html>

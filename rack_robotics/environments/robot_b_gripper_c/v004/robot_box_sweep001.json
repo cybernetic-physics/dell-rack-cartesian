@@ -1,0 +1,2574 @@
+{
+  "passed": true,
+  "parts": 173,
+  "distinct_body_pairs_checked": 11601,
+  "joints": [
+    {
+      "name": "Lift",
+      "parent": "/World/Robot/Frame",
+      "child": "/World/Robot/LiftCarriage",
+      "axis": "Z",
+      "dimension": 2,
+      "sign": 1,
+      "initial_m": 4.768371586472142e-08,
+      "limits_m": [
+        -0.699999988079071,
+        0.0
+      ]
+    },
+    {
+      "name": "OuterExtension",
+      "parent": "/World/Robot/LiftCarriage",
+      "child": "/World/Robot/MiddleBoom",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.0050000000000000044,
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "name": "InnerExtension",
+      "parent": "/World/Robot/MiddleBoom",
+      "child": "/World/Robot/Carriage",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.0050000000000000044,
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "name": "Insertion",
+      "parent": "/World/Robot/Carriage",
+      "child": "/World/Robot/ToolMount",
+      "axis": "Y",
+      "dimension": 1,
+      "sign": 1,
+      "initial_m": 0.0,
+      "limits_m": [
+        -0.125,
+        0.0
+      ]
+    }
+  ],
+  "mount_parts": 32,
+  "include_robot_boxes": true,
+  "all_robot_box_pairs": true,
+  "omitted_geometry": [
+    {
+      "path": "/World/Robot/Frame/LiftScrew",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/Housing",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/OutputShaft",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/M8ConnectorEnvelope",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift/MountBolt1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftCoupler",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftReducer",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearing0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearing1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/Screw",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_0_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_0_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_1_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_1_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_0_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_0_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_1_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_1_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_0_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_0_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_1_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_1_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_0_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_0_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_1_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_1_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/LiftNut",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/Coupler",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/CouplerReducer",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorShaft",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt0_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt0_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt1_0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt1_1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/Bearing0",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/Bearing1",
+      "owner": "/World/Robot/LiftCarriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/Screw",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_0_0",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_0_1",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_1_0",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_1_1",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_0_0",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_0_1",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_1_0",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_1_1",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/LeadNut",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/Coupler",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/CouplerReducer",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorShaft",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt0_0",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt0_1",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt1_0",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt1_1",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/Bearing0",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/Bearing1",
+      "owner": "/World/Robot/MiddleBoom",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthScrew",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthCoupler",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthSupportBearing",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt0",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt1",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_0_0",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_0_1",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_1_0",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_1_1",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_0_0",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_0_1",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_1_0",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_1_1",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/ScrewInterfaces/LeadNut",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/FlangeBolt0",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/FlangeBolt1",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthNut",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt0",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt1",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/WristSlide/Slide",
+      "owner": "/World/Robot/WristSlide",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/BackPlate",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/PitchAxle",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/UpperSpine",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/HS422Envelope",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/ServoBracket",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/ServoShaft",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/RackGuide",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/RackStop0",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/RackStop1",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/PQ12Envelope",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolFrame/TongueRod",
+      "owner": "/World/Robot/ToolFrame",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/Finger",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/Pad",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/UpperGuideLand",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/UpperGuide",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/LowerGuideLand",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/LowerGuide",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/Root",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/Finger",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/Pad",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/UpperGuideLand",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/UpperGuide",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/LowerGuideLand",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/LowerGuide",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/Rack",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/RackBracket",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/JawPinion/Gear",
+      "owner": "/World/Robot/JawPinion",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/Tip",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/Neck",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/RaisedArm",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link000/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link000/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link000/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link000/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link001/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link001/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link001/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link001/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link002/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link002/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link002/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link002/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link003/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link003/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link003/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link003/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link004/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link004/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link004/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link004/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link005/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link005/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link005/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link005/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link006/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link006/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link006/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link006/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link007/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link007/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link007/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link007/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link008/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link008/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link008/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link008/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link009/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link009/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link009/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link009/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link010/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link010/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link010/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link010/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link011/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link011/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link011/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link011/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link012/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link012/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link012/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link012/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link013/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link013/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link013/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link013/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link014/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link014/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link014/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link014/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link015/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link015/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link015/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link015/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link016/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link016/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link016/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link016/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link017/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link017/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link017/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link017/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link018/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link018/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link018/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link018/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link019/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link019/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link019/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link019/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link020/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link020/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link020/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link020/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link021/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link021/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link021/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link021/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link022/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link022",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link022/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link022",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link022/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link022",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link022/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link022",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link023/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link023",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link023/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link023",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link023/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link023",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link023/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link023",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link024/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link024",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link024/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link024",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link024/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link024",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link024/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link024",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link025/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link025",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link025/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link025",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link025/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link025",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link025/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link025",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link026/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link026",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link026/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link026",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link026/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link026",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link026/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link026",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link027/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link027",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link027/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link027",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link027/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link027",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link027/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link027",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link028/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link028",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link028/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link028",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link028/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link028",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link028/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link028",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link029/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link029",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link029/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link029",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link029/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link029",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link029/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link029",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link030/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link030",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link030/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link030",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link030/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link030",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link030/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link030",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link031/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link031",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link031/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link031",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link031/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link031",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link031/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link031",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link032/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link032",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link032/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link032",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link032/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link032",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link032/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link032",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link033/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link033",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link033/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link033",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link033/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link033",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link033/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link033",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link034/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link034",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link034/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link034",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link034/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link034",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link034/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link034",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link035/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link035",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link035/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link035",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link035/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link035",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link035/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link035",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link036/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link036",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link036/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link036",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link036/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link036",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link036/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link036",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link037/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link037",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link037/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link037",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link037/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link037",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Lift/Link037/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Lift/Link037",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link000/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link000/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link000/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link000/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link001/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link001/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link001/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link001/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link002/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link002/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link002/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link002/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link003/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link003/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link003/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link003/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link004/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link004/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link004/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link004/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link005/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link005/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link005/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link005/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link006/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link006/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link006/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link006/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link007/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link007/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link007/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link007/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link008/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link008/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link008/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link008/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link009/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link009/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link009/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link009/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link010/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link010/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link010/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link010/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link011/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link011/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link011/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link011/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link012/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link012/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link012/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link012/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link013/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link013/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link013/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link013/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link014/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link014/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link014/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link014/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link015/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link015/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link015/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link015/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link016/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link016/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link016/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link016/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link017/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link017/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link017/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link017/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link018/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link018/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link018/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link018/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link019/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link019/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link019/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link019/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link020/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link020/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link020/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link020/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link021/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link021/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link021/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Outer/Link021/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Outer/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link000/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link000/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link000/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link000/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link001/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link001/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link001/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link001/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link002/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link002/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link002/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link002/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link003/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link003/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link003/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link003/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link004/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link004/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link004/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link004/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link005/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link005/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link005/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link005/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link006/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link006/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link006/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link006/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link007/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link007/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link007/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link007/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link008/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link008/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link008/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link008/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link009/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link009/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link009/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link009/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link010/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link010/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link010/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link010/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link011/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link011/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link011/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link011/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link012/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link012/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link012/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link012/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link013/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link013/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link013/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link013/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link014/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link014/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link014/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link014/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link015/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link015/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link015/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link015/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link015",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link016/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link016/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link016/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link016/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link016",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link017/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link017/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link017/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link017/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link017",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link018/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link018/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link018/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link018/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link018",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link019/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link019/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link019/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link019/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link019",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link020/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link020/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link020/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link020/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link020",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link021/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link021/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link021/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Inner/Link021/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Inner/Link021",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link000/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link000/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link000/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link000/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link000",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link001/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link001/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link001/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link001/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link001",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link002/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link002/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link002/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link002/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link002",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link003/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link003/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link003/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link003/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link003",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link004/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link004/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link004/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link004/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link004",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link005/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link005/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link005/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link005/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link005",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link006/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link006/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link006/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link006/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link006",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link007/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link007/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link007/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link007/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link007",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link008/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link008/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link008/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link008/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link008",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link009/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link009/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link009/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link009/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link009",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link010/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link010/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link010/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link010/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link010",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link011/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link011/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link011/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link011/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link011",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link012/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link012/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link012/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link012/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link012",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link013/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link013/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link013/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link013/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link013",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link014/Side0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link014/Crossbar0",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link014/Side2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link014",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ServiceCarriers/Insertion/Link014/Crossbar2",
+      "owner": "/World/Robot/ServiceCarriers/Insertion/Link014",
+      "reason": "unsupported rigid owner"
+    }
+  ],
+  "possible_overlaps": [],
+  "errors": [],
+  "scope": "All independent Cartesian joint limits, all supported Cartesian-body robot box pairs; no pose writes, irrespective of collision filtering. Not dynamic links, rack, non-box or omitted geometry, deflection, fastener or strength acceptance.",
+  "scene": "/workspace/rack_robotics/experiments/tool-matrix001/BC/scene.usda",
+  "scene_sha256": "ddbf61797116819009041651b644048f9b4fbcc86c93d171d3c68891b41c6564",
+  "source_sha256": {
+    "rack_robotics/scripts/audit_carrier_mounts.py": "32bff4872d94818e8f482481848c693d72a928a52184d6a5213e38d410aaa19b",
+    "rack_robotics/carrier_mount_screen.py": "06f82c674229ff94fc921a6964dab51b651e37af5322b86ea5271331b774c56f"
+  },
+  "source_directory": "robot_box_sweep001_sources"
+}

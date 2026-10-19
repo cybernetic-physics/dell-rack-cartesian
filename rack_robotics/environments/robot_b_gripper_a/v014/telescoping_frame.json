@@ -1,0 +1,1618 @@
+{
+  "revision": "telescoping_open_guide_frame_v1",
+  "architecture": "B",
+  "changes": [
+    {
+      "path": "/World/Robot/Frame/Upright",
+      "translation_delta_m": [
+        0,
+        0.02,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/VerticalPlate",
+      "center_m": [
+        -0.06,
+        0.017,
+        0.03
+      ],
+      "size_m": [
+        0.1,
+        0.006,
+        0.16
+      ],
+      "mass_delta_kg": -0.2592000006437299
+    },
+    {
+      "path": "/World/Robot/Frame/VerticalGuide0",
+      "translation_delta_m": [
+        0,
+        0.02,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/VerticalGuide1",
+      "translation_delta_m": [
+        0,
+        0.02,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/RackStandoff0",
+      "center_m": [
+        -0.275,
+        0.71,
+        1.01
+      ],
+      "size_m": [
+        0.04,
+        0.27,
+        0.008
+      ],
+      "mass_delta_kg": 0.01727999456852701
+    },
+    {
+      "path": "/World/Robot/Frame/RackStandoff1",
+      "center_m": [
+        -0.275,
+        0.71,
+        1.92
+      ],
+      "size_m": [
+        0.04,
+        0.27,
+        0.008
+      ],
+      "mass_delta_kg": 0.01727999456852701
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotor",
+      "translation_delta_m": [
+        -0.06,
+        0.04,
+        0.014
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Lift",
+      "translation_delta_m": [
+        -0.06,
+        0.04,
+        0.014
+      ]
+    },
+    {
+      "path": "/World/Robot/Frame/LiftScrew",
+      "center_m": [
+        -0.32,
+        0.815,
+        1.473
+      ],
+      "length_m": 0.946,
+      "mass_delta_kg": 0.00236750422374527
+    },
+    {
+      "path": "/World/Robot/Frame/LiftCoupler",
+      "replaced": true,
+      "mass_delta_kg": -0.02175144505565965
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/Boom",
+      "center_m": [
+        -0.145,
+        0,
+        0.05
+      ],
+      "size_m": [
+        0.31,
+        0.032,
+        0.04
+      ],
+      "mass_delta_kg": 0.03455993273019793
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/HorizontalGuide",
+      "center_m": [
+        -0.145,
+        -0.021,
+        0.05
+      ],
+      "size_m": [
+        0.31,
+        0.008,
+        0.012
+      ],
+      "mass_delta_kg": 0.007535978312998411
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/EndStop0",
+      "center_m": [
+        -0.2967,
+        -0.024,
+        0.05
+      ],
+      "size_m": [
+        0.006,
+        0.012,
+        0.012
+      ],
+      "mass_delta_kg": -0.0017495999857574643
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/EndStop1",
+      "center_m": [
+        0.0067,
+        -0.024,
+        0.05
+      ],
+      "size_m": [
+        0.006,
+        0.012,
+        0.012
+      ],
+      "mass_delta_kg": -0.0017495999857574643
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/Motor",
+      "translation_delta_m": [
+        0,
+        0,
+        -0.138
+      ]
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/Screw",
+      "center_m": [
+        -0.154,
+        -0.023,
+        -0.06
+      ],
+      "length_m": 0.288,
+      "mass_delta_kg": 0.0031566722983270047
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/Coupler",
+      "replaced": true,
+      "mass_delta_kg": -0.024168272284066282
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/MotorPlate",
+      "replaced": true,
+      "mass_delta_kg": -0.07370999825086441
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/LeadNut",
+      "replaced": true,
+      "mass_delta_kg": -0.026135999132573612
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/Boom",
+      "center_m": [
+        -0.145,
+        0,
+        0.05
+      ],
+      "size_m": [
+        0.31,
+        0.032,
+        0.04
+      ],
+      "mass_delta_kg": 0.03455993273019793
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/HorizontalGuide",
+      "center_m": [
+        -0.145,
+        -0.021,
+        0.05
+      ],
+      "size_m": [
+        0.31,
+        0.008,
+        0.012
+      ],
+      "mass_delta_kg": 0.007535978312998411
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/EndStop0",
+      "center_m": [
+        -0.2967,
+        -0.024,
+        0.05
+      ],
+      "size_m": [
+        0.006,
+        0.012,
+        0.012
+      ],
+      "mass_delta_kg": -0.0017495999857574643
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/EndStop1",
+      "center_m": [
+        0.0067,
+        -0.024,
+        0.05
+      ],
+      "size_m": [
+        0.006,
+        0.012,
+        0.012
+      ],
+      "mass_delta_kg": -0.0017495999857574643
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/Motor",
+      "translation_delta_m": [
+        0,
+        0,
+        -0.138
+      ]
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/Screw",
+      "center_m": [
+        -0.154,
+        -0.023,
+        -0.06
+      ],
+      "length_m": 0.288,
+      "mass_delta_kg": 0.0031566722983270047
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/Coupler",
+      "replaced": true,
+      "mass_delta_kg": -0.024168272284066282
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/MotorPlate",
+      "replaced": true,
+      "mass_delta_kg": -0.07370999825086441
+    },
+    {
+      "path": "/World/Robot/Carriage/LeadNut",
+      "replaced": true,
+      "mass_delta_kg": -0.026135999132573612
+    }
+  ],
+  "parts": [
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/RailShim0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.256e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.060912,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock0_0/Crown",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock0_0/Side0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock0_0/Side1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_0_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_0_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_1_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_0_1_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock0_1/Crown",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock0_1/Side0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock0_1/Side1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_0_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_0_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_1_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt0_1_1_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/VerticalStop0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.600000000000001e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0025920000000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/VerticalStop0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.600000000000001e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0025920000000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/RailShim1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.256e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.060912,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock1_0/Crown",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock1_0/Side0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock1_0/Side1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_0_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_0_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_1_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_0_1_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock1_1/Crown",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock1_1/Side0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/LiftBlock1_1/Side1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.713396e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_0_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_0_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_1_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/BlockBolt1_1_1_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.715154297048183e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005271396123182824,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/VerticalStop1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.600000000000001e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0025920000000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/GuideInterfaces/VerticalStop1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.600000000000001e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0025920000000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftCoupler",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.820301615342998e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.014289367680442535,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftReducer",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 3.23819662768768e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.002541984352734829,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/MotorBridge",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 6.72e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.18144,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearing0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 3.896580200100491e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.030588154570788856,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock0/U0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.2992e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00350784,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock0/V0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0300800000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0027812160000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock0/U2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.2992e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00350784,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock0/V2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0300800000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0027812160000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingArm0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.9968e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0539136,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearing1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 3.896580200100491e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.030588154570788856,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock1/U0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.2992e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00350784,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock1/V0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0300800000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0027812160000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock1/U2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.2992e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00350784,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingBlock1/V2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0300800000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0027812160000000004,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/ScrewInterfaces/LiftBearingArm1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.9968e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0539136,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/LiftNut",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 2.372028117166437e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.01862042071975653,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/LiftNutBlock/U0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.276e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0034452,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/LiftNutBlock/V0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 9.395999999999999e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00253692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/LiftNutBlock/U2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.276e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0034452,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/LiftNutBlock/V2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 9.395999999999999e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00253692,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/LiftNutArm",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 7.3920000000000005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0199584,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/GuideInterfaces/RailShim",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 3.72e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010043999999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBlock0/Crown",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBlock0/Side0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBlock0/Side1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_0_0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_0_1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_1_0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt0_1_1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBlock1/Crown",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBlock1/Side0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBlock1/Side1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_0_0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_0_1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_1_0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBolt1_1_1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/HorizontalBackPlate",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.1200000000000001e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.030240000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/Coupler",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 2.022557350381109e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015877075200491704,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/CouplerReducer",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 2.590557302150144e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.002033587482187863,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorPlate/U0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 5.400000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.014580000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorPlate/V0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.3680000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.003693600000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorPlate/U2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 5.400000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.014580000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorPlate/V2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.3680000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.003693600000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorFoot",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 6.479999999999999e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.17495999999999998,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorShaft",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 2.1598449493429825e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0016954782852342412,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt0_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt0_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt1_0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/MotorBolt1_1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/Bearing0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.9905131053144926e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015625527876718767,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock0/U0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock0/V0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock0/U2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock0/V2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingWeb0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 3.234e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.08731799999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/Bearing1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.9905131053144926e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015625527876718767,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock1/U0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock1/V0",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock1/U2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingBlock1/V2",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/LiftCarriage/ScrewInterfaces/BearingWeb1",
+      "rigid_parent": "/World/Robot/LiftCarriage",
+      "volume_m3": 3.234e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.08731799999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/LeadNut",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 4.4364943135464335e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0348264803613395,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/NutBlock/U0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.8095999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.004885919999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/NutBlock/V0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.3722799999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0037051559999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/NutBlock/U2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.8095999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.004885919999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/NutBlock/V2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.3722799999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0037051559999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/NutWeb",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 6.084e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.164268,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/GuideInterfaces/RailShim",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 3.72e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010043999999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBlock0/Crown",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBlock0/Side0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBlock0/Side1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_0_0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_0_1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_1_0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt0_1_1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBlock1/Crown",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 6.00642e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.03438348252959861,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBlock1/Side0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBlock1/Side1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.7133960000000003e-06,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.009808258735200694,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_0_0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_0_1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_1_0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBolt1_1_1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 5.3014376029327756e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00041616285183022287,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/GuideInterfaces/HorizontalBackPlate",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.1200000000000001e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.030240000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/Coupler",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 2.022557350381109e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015877075200491704,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/CouplerReducer",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 2.590557302150144e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.002033587482187863,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorPlate/U0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.400000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.014580000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorPlate/V0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.3680000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.003693600000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorPlate/U2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 5.400000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.014580000000000003,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorPlate/V2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.3680000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.003693600000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorFoot",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 6.479999999999999e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.17495999999999998,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorShaft",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 2.1598449493429825e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0016954782852342412,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt0_0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt0_1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt1_0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/MotorBolt1_1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/Bearing0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.9905131053144926e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015625527876718767,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock0/U0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock0/V0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock0/U2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock0/V2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingWeb0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 3.234e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.08731799999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/Bearing1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.9905131053144926e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015625527876718767,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock1/U0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock1/V0",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock1/U2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 1.4195999999999995e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0038329199999999988,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingBlock1/V2",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 9.937199999999998e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0026830439999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/MiddleBoom/ScrewInterfaces/BearingWeb1",
+      "rigid_parent": "/World/Robot/MiddleBoom",
+      "volume_m3": 3.234e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.08731799999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/ScrewInterfaces/LeadNut",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 4.4364943135464335e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0348264803613395,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/ScrewInterfaces/NutBlock/U0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.8095999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.004885919999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/ScrewInterfaces/NutBlock/V0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.3722799999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0037051559999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/ScrewInterfaces/NutBlock/U2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.8095999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.004885919999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/ScrewInterfaces/NutBlock/V2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.3722799999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0037051559999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/ScrewInterfaces/NutWeb",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 6.084e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.164268,
+      "collision": true
+    }
+  ],
+  "mass_delta_kg_by_body": {
+    "/World/Robot/LiftCarriage": 0.2194241016812617,
+    "/World/Robot/Frame": 0.5397991334798945,
+    "/World/Robot/MiddleBoom": 0.64335674385155,
+    "/World/Robot/Carriage": 0.2237099360434077
+  },
+  "scope": "Geometry/mass-only open nested-boom interfaces; unchanged joints and TCP",
+  "limitations": [
+    "Custom dimensions and volume-based lumped masses, not rated vendor stages or manufacturing drawings.",
+    "Bearing races, preload, screw rotation/thread contacts, structural compliance and fastener strength remain abstract.",
+    "Needs full-rack, non-box, compatible carrier, payload, power-loss and repeated-task qualification."
+  ]
+}

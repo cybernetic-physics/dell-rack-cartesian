@@ -1,0 +1,211 @@
+{
+  "reporting_errors": [],
+  "pair_count": 14,
+  "physics_dt": 0.004166666666666667,
+  "pairs": [
+    {
+      "colliders": [
+        "/World/Robot/Frame/Upright",
+        "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed0"
+      ],
+      "reports": 1321,
+      "minimum_separation_m": -0.018998345360159874,
+      "peak_pair_contact_force_n": 79006.80944681168,
+      "phase_peaks_n": {
+        "initialize": 79006.44723203033,
+        "approach": 79006.80944681168
+      },
+      "peak_time_s": 2.995833333333377,
+      "peak_phase": "approach"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Frame/VerticalGuide0",
+        "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed0"
+      ],
+      "reports": 1321,
+      "minimum_separation_m": -2.1369196474552155e-06,
+      "peak_pair_contact_force_n": 78936.2634497881,
+      "phase_peaks_n": {
+        "initialize": 78936.2634497881,
+        "approach": 78904.21451155096
+      },
+      "peak_time_s": 0.3583333333333333,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Carriage/CarrierMounts/InnerMoving1",
+        "/World/Robot/ServiceCarriers/Outer/Link003/Side2"
+      ],
+      "reports": 1321,
+      "minimum_separation_m": -2.536475585657172e-05,
+      "peak_pair_contact_force_n": 96.52085570032204,
+      "phase_peaks_n": {
+        "initialize": 96.52085570032204,
+        "approach": 96.4399790138763
+      },
+      "peak_time_s": 0.10416666666666666,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Carriage/CarrierMounts/InnerMoving1",
+        "/World/Robot/ServiceCarriers/Outer/Link004/Side2"
+      ],
+      "reports": 1321,
+      "minimum_separation_m": -3.511239583531278e-06,
+      "peak_pair_contact_force_n": 37.85164988691841,
+      "phase_peaks_n": {
+        "initialize": 37.833240100849295,
+        "approach": 37.85164988691841
+      },
+      "peak_time_s": 1.7374999999999952,
+      "peak_phase": "approach"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Carriage/CarrierMounts/InnerMoving4",
+        "/World/Robot/ServiceCarriers/Outer/Link021/Side2"
+      ],
+      "reports": 1321,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 325.94332594525406,
+      "phase_peaks_n": {
+        "initialize": 325.48154591088934,
+        "approach": 325.94332594525406
+      },
+      "peak_time_s": 5.300000000000019,
+      "peak_phase": "approach"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Carriage/CarrierMounts/InnerMoving1",
+        "/World/Robot/ServiceCarriers/Outer/Link021/Side2"
+      ],
+      "reports": 1321,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 46.73431748460315,
+      "phase_peaks_n": {
+        "initialize": 46.66599170571405,
+        "approach": 46.73431748460315
+      },
+      "peak_time_s": 5.1166666666666965,
+      "peak_phase": "approach"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link16",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 122,
+      "minimum_separation_m": -4.169996827840805e-07,
+      "peak_pair_contact_force_n": 0.0178786413744092,
+      "phase_peaks_n": {
+        "initialize": 0.0178786413744092,
+        "approach": 0.012624621740542352
+      },
+      "peak_time_s": 0.1375,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/Floor"
+      ],
+      "reports": 122,
+      "minimum_separation_m": -1.3991524383527576e-06,
+      "peak_pair_contact_force_n": 0.9667329322236978,
+      "phase_peaks_n": {
+        "initialize": 0.9667329322236978,
+        "approach": 0.9424684156847127
+      },
+      "peak_time_s": 0.13333333333333333,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Tooth",
+        "/World/PortRow/Port01/LatchLip"
+      ],
+      "reports": 122,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.01561602671662432,
+      "phase_peaks_n": {
+        "initialize": 0.01561602671662432,
+        "approach": 0.014946580089659881
+      },
+      "peak_time_s": 0.049999999999999996,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShouldern1"
+      ],
+      "reports": 122,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.4671574174426496,
+      "phase_peaks_n": {
+        "initialize": 0.4671574174426496,
+        "approach": 0.4579482972621918
+      },
+      "peak_time_s": 0.13333333333333333,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShoulder1"
+      ],
+      "reports": 122,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.1509880727462587,
+      "phase_peaks_n": {
+        "initialize": 0.1509880727462587,
+        "approach": 0.1464845036753104
+      },
+      "peak_time_s": 0.13333333333333333,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link26",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 34,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0002996674993482884,
+      "phase_peaks_n": {
+        "initialize": 0.0002996674993482884
+      },
+      "peak_time_s": 0.024999999999999998,
+      "peak_phase": "initialize"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link25",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 33,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "initialize": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link24",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 26,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "initialize": 0
+      }
+    }
+  ],
+  "scope": "Contact impulse magnitude sum per collider pair divided by dt; no friction-anchor impulses; not motor force or a safety certification."
+}

@@ -1,0 +1,709 @@
+{
+  "reporting_errors": [],
+  "pair_count": 40,
+  "physics_dt": 0.004166666666666667,
+  "pairs": [
+    {
+      "colliders": [
+        "/World/Cable/Link16",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 1050,
+      "minimum_separation_m": -1.482432708144188e-06,
+      "peak_pair_contact_force_n": 0.2600064966827631,
+      "phase_peaks_n": {
+        "initialize": 0.017371204448863864,
+        "grasp": 0.2600064966827631,
+        "release_latch": 0.01726491143926978,
+        "withdraw": 0.01310746738454327,
+        "insert": 0.011782965157181025,
+        "seat_and_latch": 0.01378267421387136,
+        "release_gripper": 0.04119833582080901
+      },
+      "peak_time_s": 5.512500000000007,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/Floor"
+      ],
+      "reports": 145,
+      "minimum_separation_m": -0.0003237810742575675,
+      "peak_pair_contact_force_n": 2.8686368937984548,
+      "phase_peaks_n": {
+        "initialize": 0.9332084560802874,
+        "grasp": 0,
+        "release_gripper": 2.8686368937984548
+      },
+      "peak_time_s": 15.858333333332753,
+      "peak_phase": "release_gripper"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Tooth",
+        "/World/PortRow/Port01/LatchLip"
+      ],
+      "reports": 389,
+      "minimum_separation_m": -0.00029349280521273613,
+      "peak_pair_contact_force_n": 1.4029044728011384,
+      "phase_peaks_n": {
+        "initialize": 0,
+        "grasp": 0,
+        "release_latch": 0,
+        "seat_and_latch": 0,
+        "release_gripper": 1.4029044728011384
+      },
+      "peak_time_s": 15.854166666666087,
+      "peak_phase": "release_gripper"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShouldern1"
+      ],
+      "reports": 145,
+      "minimum_separation_m": -1.7182901501655579e-07,
+      "peak_pair_contact_force_n": 1.058705197647214,
+      "phase_peaks_n": {
+        "initialize": 0.36722593009471893,
+        "grasp": 0.8593111205846071,
+        "release_gripper": 1.058705197647214
+      },
+      "peak_time_s": 15.858333333332753,
+      "peak_phase": "release_gripper"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShoulder1"
+      ],
+      "reports": 145,
+      "minimum_separation_m": -2.621673047542572e-07,
+      "peak_pair_contact_force_n": 4.178951105423039,
+      "phase_peaks_n": {
+        "initialize": 0.216468321159482,
+        "grasp": 4.178951105423039,
+        "release_gripper": 0.6469734013080597
+      },
+      "peak_time_s": 5.512500000000007,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link26",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 342,
+      "minimum_separation_m": -1.1797528713941574e-06,
+      "peak_pair_contact_force_n": 0.009986775694414973,
+      "phase_peaks_n": {
+        "initialize": 0.0006892818782944232,
+        "grasp": 0,
+        "release_latch": 0,
+        "withdraw": 0.0014163111336529255,
+        "insert": 0.009986775694414973,
+        "seat_and_latch": 0.0011687044752761722,
+        "release_gripper": 0
+      },
+      "peak_time_s": 14.004166666666192,
+      "peak_phase": "insert"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link25",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 282,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0015947887277434347,
+      "phase_peaks_n": {
+        "initialize": 0,
+        "grasp": 0,
+        "release_latch": 0,
+        "withdraw": 0.0015947887277434347,
+        "insert": 0,
+        "seat_and_latch": 0,
+        "release_gripper": 0
+      },
+      "peak_time_s": 7.499999999999894,
+      "peak_phase": "withdraw"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link24",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 225,
+      "minimum_separation_m": -5.511101335287094e-07,
+      "peak_pair_contact_force_n": 0.003942150069633499,
+      "phase_peaks_n": {
+        "initialize": 0,
+        "grasp": 0,
+        "release_latch": 0.003698312648339197,
+        "withdraw": 0.003942150069633499,
+        "insert": 0,
+        "seat_and_latch": 0,
+        "release_gripper": 0
+      },
+      "peak_time_s": 7.495833333333228,
+      "peak_phase": "withdraw"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/RightJaw/Pad"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.0005397374625317752,
+      "peak_pair_contact_force_n": 10.722196931375827,
+      "phase_peaks_n": {
+        "grasp": 10.722196931375827,
+        "release_latch": 9.701735675584835,
+        "withdraw": 8.774568506047343,
+        "separate": 9.038113514410067,
+        "realign": 9.093006070532688,
+        "insert": 9.087696757662501,
+        "seat_and_latch": 8.8145856372808,
+        "release_gripper": 0
+      },
+      "peak_time_s": 5.512500000000007,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/RightJaw/LowerGuideLand"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.0010686531895771623,
+      "peak_pair_contact_force_n": 13.84403177003136,
+      "phase_peaks_n": {
+        "grasp": 13.84403177003136,
+        "release_latch": 9.288815773577465,
+        "withdraw": 2.0727824860299227,
+        "separate": 3.7750694972908896,
+        "realign": 3.236067847097486,
+        "insert": 1.744264694940507,
+        "seat_and_latch": 0.6511670162397666,
+        "release_gripper": 0.4956543032168936
+      },
+      "peak_time_s": 5.512500000000007,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Boot",
+        "/World/Robot/RightJaw/LowerGuideLand"
+      ],
+      "reports": 2,
+      "minimum_separation_m": -0.00013562222011387348,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "grasp": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/RightJaw/Finger"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.0005398341454565525,
+      "peak_pair_contact_force_n": 7.256152546615345,
+      "phase_peaks_n": {
+        "grasp": 7.256152546615345,
+        "release_latch": 0.051634238419777864,
+        "withdraw": 0,
+        "separate": 0.06521110482102072,
+        "realign": 0.04638468594716965,
+        "insert": 0.017392353657323462,
+        "seat_and_latch": 0.015424670387592382,
+        "release_gripper": 0
+      },
+      "peak_time_s": 5.512500000000007,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Boot",
+        "/World/Robot/RightJaw/LowerGuide"
+      ],
+      "reports": 2,
+      "minimum_separation_m": -0.00013552699238061905,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "grasp": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/RightJaw/LowerGuide"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.0010686027817428112,
+      "peak_pair_contact_force_n": 3.927836629729421,
+      "phase_peaks_n": {
+        "grasp": 3.326707406823795,
+        "release_latch": 3.927836629729421,
+        "withdraw": 1.266203325571164,
+        "separate": 1.3806743419664769,
+        "realign": 1.3013387793053002,
+        "insert": 1.1227701921158995,
+        "seat_and_latch": 0.9433687809686139,
+        "release_gripper": 0.41568435701354606
+      },
+      "peak_time_s": 6.224999999999967,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Boot",
+        "/World/Robot/LeftJaw/LowerGuide"
+      ],
+      "reports": 2,
+      "minimum_separation_m": -0.00013420544564723969,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "grasp": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Plug/Boot",
+        "/World/Robot/LeftJaw/LowerGuideLand"
+      ],
+      "reports": 2,
+      "minimum_separation_m": -0.00013419474998954684,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "grasp": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/LeftJaw/LowerGuide"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.0010685729794204235,
+      "peak_pair_contact_force_n": 7.925148506067222,
+      "phase_peaks_n": {
+        "grasp": 6.655758797942012,
+        "release_latch": 7.925148506067222,
+        "withdraw": 4.182580815660914,
+        "separate": 5.622819997320792,
+        "realign": 5.458356995369149,
+        "insert": 3.7203250619425163,
+        "seat_and_latch": 2.604969808404067,
+        "release_gripper": 0
+      },
+      "peak_time_s": 6.224999999999967,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/LeftJaw/LowerGuideLand"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.0010686188470572233,
+      "peak_pair_contact_force_n": 0.9728862681389397,
+      "phase_peaks_n": {
+        "grasp": 0.4481937002881203,
+        "release_latch": 0.6575027683268757,
+        "withdraw": 0.0037275482561171616,
+        "separate": 0.8729708523530559,
+        "realign": 0.8571583738782244,
+        "insert": 0.9728862681389397,
+        "seat_and_latch": 0.04863243929205139,
+        "release_gripper": 0.43755523024223636
+      },
+      "peak_time_s": 12.254166666666292,
+      "peak_phase": "insert"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/LeftJaw/Pad"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.0005413375329226255,
+      "peak_pair_contact_force_n": 9.522659849185715,
+      "phase_peaks_n": {
+        "grasp": 9.522659849185715,
+        "release_latch": 0.8524971526389397,
+        "withdraw": 0.8910559643866349,
+        "separate": 0.9673349347778136,
+        "realign": 0.8868676074236367,
+        "insert": 0.9995107726523431,
+        "seat_and_latch": 0.37809090875812196,
+        "release_gripper": 0
+      },
+      "peak_time_s": 5.512500000000007,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/LeftJaw/Finger"
+      ],
+      "reports": 2477,
+      "minimum_separation_m": -0.000540733861271292,
+      "peak_pair_contact_force_n": 10.693503508656185,
+      "phase_peaks_n": {
+        "grasp": 10.693503508656185,
+        "release_latch": 10.454645504178737,
+        "withdraw": 8.679925144130783,
+        "separate": 10.347725944670339,
+        "realign": 10.243689256392788,
+        "insert": 10.228945983780422,
+        "seat_and_latch": 10.3115191167748,
+        "release_gripper": 0
+      },
+      "peak_time_s": 5.8833333333333195,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link27",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 202,
+      "minimum_separation_m": -1.305481418967247e-06,
+      "peak_pair_contact_force_n": 0.11211053374794976,
+      "phase_peaks_n": {
+        "grasp": 0.11211053374794976,
+        "release_latch": 0.009734042105264962,
+        "withdraw": 0.005086101737106219,
+        "release_gripper": 0
+      },
+      "peak_time_s": 5.512500000000007,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/RightJaw/UpperGuideLand"
+      ],
+      "reports": 2476,
+      "minimum_separation_m": -6.498398579424247e-05,
+      "peak_pair_contact_force_n": 4.204321150434737,
+      "phase_peaks_n": {
+        "grasp": 0.3450375483575432,
+        "release_latch": 0.5766570518148448,
+        "withdraw": 0.2748730869289101,
+        "separate": 4.055561258316458,
+        "realign": 4.204321150434737,
+        "insert": 0.31063214156157276,
+        "seat_and_latch": 0.30405961976810714,
+        "release_gripper": 0.0032089219471334264
+      },
+      "peak_time_s": 11.437499999999671,
+      "peak_phase": "realign"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/RightJaw/UpperGuide"
+      ],
+      "reports": 2476,
+      "minimum_separation_m": -6.49911817163229e-05,
+      "peak_pair_contact_force_n": 10.236183884581795,
+      "phase_peaks_n": {
+        "grasp": 5.205988291192504,
+        "release_latch": 10.236183884581795,
+        "withdraw": 1.886132702360714,
+        "separate": 6.7504657379154915,
+        "realign": 6.685768136621031,
+        "insert": 1.8284139819307028,
+        "seat_and_latch": 1.6472997517690333,
+        "release_gripper": 0.7077883699212334
+      },
+      "peak_time_s": 6.224999999999967,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/LeftJaw/UpperGuide"
+      ],
+      "reports": 2476,
+      "minimum_separation_m": -6.51930458843708e-05,
+      "peak_pair_contact_force_n": 3.55783598489243,
+      "phase_peaks_n": {
+        "grasp": 2.0115280718257917,
+        "release_latch": 3.55783598489243,
+        "withdraw": 2.6089807330037327,
+        "separate": 2.991142192857413,
+        "realign": 2.401325555733864,
+        "insert": 2.567599066342449,
+        "seat_and_latch": 2.210810172569957,
+        "release_gripper": 0.12256360957828202
+      },
+      "peak_time_s": 6.229166666666633,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/Robot/LeftJaw/UpperGuideLand"
+      ],
+      "reports": 2476,
+      "minimum_separation_m": -6.520187162095681e-05,
+      "peak_pair_contact_force_n": 7.216309334479955,
+      "phase_peaks_n": {
+        "grasp": 4.226645363346287,
+        "release_latch": 7.216309334479955,
+        "withdraw": 3.0958638828704883,
+        "separate": 3.113442507514987,
+        "realign": 2.3975953921222177,
+        "insert": 2.3952131763913354,
+        "seat_and_latch": 2.023434867356427,
+        "release_gripper": 0.0945441359075711
+      },
+      "peak_time_s": 6.224999999999967,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Arm",
+        "/World/PortRow/Port01/LatchLip"
+      ],
+      "reports": 421,
+      "minimum_separation_m": -0.00047047491534613073,
+      "peak_pair_contact_force_n": 0.39563610252940096,
+      "phase_peaks_n": {
+        "grasp": 0.39563610252940096,
+        "release_latch": 0.09171632520083481,
+        "seat_and_latch": 0.08166301403245717,
+        "release_gripper": 0.07437617071793372
+      },
+      "peak_time_s": 5.516666666666674,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link01",
+        "/World/Robot/ToolMount/Housing"
+      ],
+      "reports": 5,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.07007436070772267,
+      "phase_peaks_n": {
+        "grasp": 0.07007436070772267
+      },
+      "peak_time_s": 5.537500000000006,
+      "peak_phase": "grasp"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link21",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 99,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.005596378681785109,
+      "phase_peaks_n": {
+        "grasp": 0,
+        "withdraw": 2.873387074942002e-06,
+        "insert": 0.005596378681785109
+      },
+      "peak_time_s": 14.024999999999524,
+      "peak_phase": "insert"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Arm",
+        "/World/Robot/LatchTongue/Neck"
+      ],
+      "reports": 2068,
+      "minimum_separation_m": -7.073220331221819e-06,
+      "peak_pair_contact_force_n": 0.7041289202481672,
+      "phase_peaks_n": {
+        "release_latch": 0.7041289202481672,
+        "withdraw": 0,
+        "separate": 0,
+        "realign": 0,
+        "insert": 0,
+        "seat_and_latch": 0
+      },
+      "peak_time_s": 6.2208333333333,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Arm",
+        "/World/Robot/LatchTongue/Tip"
+      ],
+      "reports": 2067,
+      "minimum_separation_m": -3.48341345670633e-05,
+      "peak_pair_contact_force_n": 0.1950792256923355,
+      "phase_peaks_n": {
+        "release_latch": 0.1950792256923355,
+        "withdraw": 0.17974278765400886,
+        "separate": 0.17964089422411425,
+        "realign": 0.179651253983499,
+        "insert": 0.1793015996272723,
+        "seat_and_latch": 0
+      },
+      "peak_time_s": 6.229166666666633,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Boot",
+        "/World/Robot/LatchTongue/Neck"
+      ],
+      "reports": 2065,
+      "minimum_separation_m": -0.0002320317435078323,
+      "peak_pair_contact_force_n": 31.301888036738934,
+      "phase_peaks_n": {
+        "release_latch": 31.301888036738934,
+        "withdraw": 6.1533729358559235,
+        "separate": 7.488101373370221,
+        "realign": 7.509634278780707,
+        "insert": 6.94330513600131,
+        "seat_and_latch": 0
+      },
+      "peak_time_s": 6.224999999999967,
+      "peak_phase": "release_latch"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link23",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 175,
+      "minimum_separation_m": -4.561152309179306e-07,
+      "peak_pair_contact_force_n": 0.0006840163405286148,
+      "phase_peaks_n": {
+        "release_latch": 0,
+        "withdraw": 0.0006840163405286148,
+        "insert": 0,
+        "seat_and_latch": 0
+      },
+      "peak_time_s": 7.4916666666665614,
+      "peak_phase": "withdraw"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link22",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 161,
+      "minimum_separation_m": -6.088521331548691e-07,
+      "peak_pair_contact_force_n": 0.0008056405931711197,
+      "phase_peaks_n": {
+        "release_latch": 0,
+        "withdraw": 0.0007153415208449587,
+        "insert": 0.0008056405931711197
+      },
+      "peak_time_s": 14.024999999999524,
+      "peak_phase": "insert"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link20",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 125,
+      "minimum_separation_m": -4.337634891271591e-07,
+      "peak_pair_contact_force_n": 0.001624244214326609,
+      "phase_peaks_n": {
+        "release_latch": 0,
+        "withdraw": 0.001624244214326609,
+        "insert": 0
+      },
+      "peak_time_s": 7.487499999999895,
+      "peak_phase": "withdraw"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link17",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 104,
+      "minimum_separation_m": -7.19679519534111e-07,
+      "peak_pair_contact_force_n": 0.0015780842659296468,
+      "phase_peaks_n": {
+        "withdraw": 0.0015780842659296468,
+        "insert": 0.00023693801267654635
+      },
+      "peak_time_s": 7.51666666666656,
+      "peak_phase": "withdraw"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link18",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 95,
+      "minimum_separation_m": -1.832377165555954e-07,
+      "peak_pair_contact_force_n": 0.0007605905921082012,
+      "phase_peaks_n": {
+        "withdraw": 0.0007605905921082012,
+        "insert": 0
+      },
+      "peak_time_s": 7.508333333333227,
+      "peak_phase": "withdraw"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link19",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 93,
+      "minimum_separation_m": -8.351635187864304e-07,
+      "peak_pair_contact_force_n": 0.006992655762587674,
+      "phase_peaks_n": {
+        "withdraw": 0.0034528741525718942,
+        "insert": 0.006992655762587674
+      },
+      "peak_time_s": 14.024999999999524,
+      "peak_phase": "insert"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Arm",
+        "/World/PortRow/Port01/KeyShoulder1"
+      ],
+      "reports": 2,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.033713231919768896,
+      "phase_peaks_n": {
+        "release_gripper": 0.033713231919768896
+      },
+      "peak_time_s": 15.829166666666088,
+      "peak_phase": "release_gripper"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Key",
+        "/World/PortRow/Port01/KeyShoulder1"
+      ],
+      "reports": 2,
+      "minimum_separation_m": -6.1141327023506165e-06,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "release_gripper": 0
+      }
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/Right"
+      ],
+      "reports": 126,
+      "minimum_separation_m": -0.00045739999040961266,
+      "peak_pair_contact_force_n": 0.4226418770849705,
+      "phase_peaks_n": {
+        "release_gripper": 0.4226418770849705
+      },
+      "peak_time_s": 15.833333333332755,
+      "peak_phase": "release_gripper"
+    }
+  ],
+  "scope": "Contact impulse magnitude sum per collider pair divided by dt; no friction-anchor impulses; not motor force or a safety certification."
+}

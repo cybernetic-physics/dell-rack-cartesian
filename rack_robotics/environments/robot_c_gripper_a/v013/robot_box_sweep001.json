@@ -1,0 +1,897 @@
+{
+  "passed": false,
+  "parts": 73,
+  "distinct_body_pairs_checked": 1842,
+  "joints": [
+    {
+      "name": "Lift",
+      "parent": "/World/Robot/Frame",
+      "child": "/World/Robot/Bridge",
+      "axis": "Z",
+      "dimension": 2,
+      "sign": 1,
+      "initial_m": 4.768371586472142e-08,
+      "limits_m": [
+        -0.699999988079071,
+        0.0
+      ]
+    },
+    {
+      "name": "Traverse",
+      "parent": "/World/Robot/Bridge",
+      "child": "/World/Robot/Carriage",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.15,
+      "limits_m": [
+        -0.20999999344348907,
+        0.20999999344348907
+      ]
+    },
+    {
+      "name": "Insertion",
+      "parent": "/World/Robot/Carriage",
+      "child": "/World/Robot/ToolMount",
+      "axis": "Y",
+      "dimension": 1,
+      "sign": 1,
+      "initial_m": 0.0,
+      "limits_m": [
+        -0.125,
+        0.0
+      ]
+    }
+  ],
+  "mount_parts": 0,
+  "include_robot_boxes": true,
+  "all_robot_box_pairs": true,
+  "omitted_geometry": [
+    {
+      "path": "/World/Robot/Frame/RackBolt0_0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt0_1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/RackBolt1_1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/MotorShaft0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/MotorShaft1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley0_0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley0_0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley0_1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley0_1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley1_0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley1_0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley1_1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Pulley1_1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/Housing",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/OutputShaft",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/M8ConnectorEnvelope",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor0/MountBolt1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/Housing",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/OutputShaft",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/M8ConnectorEnvelope",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt0_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt0_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt1_0",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Frame/Brakes/Motor1/MountBolt1_1",
+      "owner": "/World/Robot/Frame",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Bridge/MovingPulley0_0",
+      "owner": "/World/Robot/Bridge",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Bridge/MovingPulley0_1",
+      "owner": "/World/Robot/Bridge",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Bridge/MovingPulley1_0",
+      "owner": "/World/Robot/Bridge",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Bridge/MovingPulley1_1",
+      "owner": "/World/Robot/Bridge",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthScrew",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthCoupler",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthSupportBearing",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt0",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt1",
+      "owner": "/World/Robot/Carriage",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/Belt0",
+      "owner": null,
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/Belt1",
+      "owner": null,
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/ToolMount/MountBolt0",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/MountBolt1",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthNut",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt0",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt1",
+      "owner": "/World/Robot/ToolMount",
+      "reason": "non-box geometry"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/Finger",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/Pad",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/UpperGuideLand",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/UpperGuide",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/LowerGuideLand",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LeftJaw/LowerGuide",
+      "owner": "/World/Robot/LeftJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/Finger",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/Pad",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/UpperGuideLand",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/UpperGuide",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/LowerGuideLand",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/RightJaw/LowerGuide",
+      "owner": "/World/Robot/RightJaw",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/Tip",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/Neck",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    },
+    {
+      "path": "/World/Robot/LatchTongue/RaisedArm",
+      "owner": "/World/Robot/LatchTongue",
+      "reason": "unsupported rigid owner"
+    }
+  ],
+  "possible_overlaps": [
+    {
+      "parts": [
+        "/World/Robot/Frame/Upright0",
+        "/World/Robot/Bridge/Beam"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.26,
+          0.26
+        ],
+        [
+          -0.015000000000000013,
+          -0.015000000000000013
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.2900000102818012,
+        0.036000000312924385,
+        0.5100000090897083
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Upright0",
+        "/World/Robot/Bridge/GuideBlock0"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.026000000000000023,
+          -0.026000000000000023
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.03349999990314245,
+        0.026499999687075615,
+        0.5127000100910664
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Guide0",
+        "/World/Robot/Bridge/Beam"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.26,
+          0.26
+        ],
+        [
+          0.010000000000000009,
+          0.010000000000000009
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.2760000107809901,
+        0.020000000949949026,
+        0.48000000789761543
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Guide0",
+        "/World/Robot/Bridge/GuideBlock0"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0010000000000000009,
+          -0.0010000000000000009
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.019500000402331352,
+        0.010500000324100256,
+        0.48270000889897346
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Standoff0_1",
+        "/World/Robot/ToolMount/DepthBlock0"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/ToolMount"
+      ],
+      "varying_joints": [
+        "Lift",
+        "Traverse",
+        "Insertion"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.020000006556510908,
+          0.43999999344348906
+        ],
+        [
+          -0.14,
+          -0.015000000000000013
+        ],
+        [
+          -0.7095000357627868,
+          -0.009500047683715707
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.03850000072270632,
+        0.10269999876618385,
+        0.010500000324100256
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Standoff0_1",
+        "/World/Robot/ToolMount/DepthBearingPlate"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/ToolMount"
+      ],
+      "varying_joints": [
+        "Lift",
+        "Traverse",
+        "Insertion"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.050000006556510934,
+          0.4699999934434891
+        ],
+        [
+          -0.14,
+          -0.015000000000000013
+        ],
+        [
+          -0.6995000357627867,
+          0.0004999523162843023
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.07000000216066837,
+        0.10399999842047691,
+        0.00849999999627471
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Stop0_0",
+        "/World/Robot/Bridge/GuideBlock0"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.01100000000000001,
+          0.01100000000000001
+        ],
+        [
+          0.02499996423721318,
+          0.7249999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.02500000037252903,
+        0.014500000514090061,
+        0.026700000744313
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Upright1",
+        "/World/Robot/Bridge/Beam"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.26,
+          -0.26
+        ],
+        [
+          -0.015000000000000013,
+          -0.015000000000000013
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.2900000102818012,
+        0.036000000312924385,
+        0.5100000090897083
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Upright1",
+        "/World/Robot/Bridge/GuideBlock1"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.026000000000000023,
+          -0.026000000000000023
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.03349999990314245,
+        0.026499999687075615,
+        0.5127000100910664
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Guide1",
+        "/World/Robot/Bridge/Beam"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.26,
+          -0.26
+        ],
+        [
+          0.010000000000000009,
+          0.010000000000000009
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.2760000107809901,
+        0.020000000949949026,
+        0.48000000789761543
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Guide1",
+        "/World/Robot/Bridge/GuideBlock1"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0010000000000000009,
+          -0.0010000000000000009
+        ],
+        [
+          -0.3500000357627868,
+          0.3499999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.019500000402331352,
+        0.010500000324100256,
+        0.48270000889897346
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Standoff1_1",
+        "/World/Robot/ToolMount/DepthBlock1"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/ToolMount"
+      ],
+      "varying_joints": [
+        "Lift",
+        "Traverse",
+        "Insertion"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.4399999934434891,
+          -0.020000006556510935
+        ],
+        [
+          -0.14,
+          -0.015000000000000013
+        ],
+        [
+          -0.7095000357627868,
+          -0.009500047683715707
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.03850000072270632,
+        0.10269999876618385,
+        0.010500000324100256
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Standoff1_1",
+        "/World/Robot/ToolMount/DepthBearingPlate"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/ToolMount"
+      ],
+      "varying_joints": [
+        "Lift",
+        "Traverse",
+        "Insertion"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.4699999934434891,
+          -0.050000006556510934
+        ],
+        [
+          -0.14,
+          -0.015000000000000013
+        ],
+        [
+          -0.6995000357627867,
+          0.0004999523162843023
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.07000000216066837,
+        0.10399999842047691,
+        0.00849999999627471
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Frame/Stop1_0",
+        "/World/Robot/Bridge/GuideBlock1"
+      ],
+      "owners": [
+        "/World/Robot/Frame",
+        "/World/Robot/Bridge"
+      ],
+      "varying_joints": [
+        "Lift"
+      ],
+      "relative_center_intervals_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.01100000000000001,
+          0.01100000000000001
+        ],
+        [
+          0.02499996423721318,
+          0.7249999523162842
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.02500000037252903,
+        0.014500000514090061,
+        0.026700000744313
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Bridge/XGuide",
+        "/World/Robot/Carriage/TraverseBlock0"
+      ],
+      "owners": [
+        "/World/Robot/Bridge",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "Traverse"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.2349999934434891,
+          0.18499999344348908
+        ],
+        [
+          -0.00649999999999995,
+          -0.00649999999999995
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.28269999101758003,
+        0.010500000324100256,
+        0.019500000402331352
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/Bridge/XGuide",
+        "/World/Robot/Carriage/TraverseBlock1"
+      ],
+      "owners": [
+        "/World/Robot/Bridge",
+        "/World/Robot/Carriage"
+      ],
+      "varying_joints": [
+        "Traverse"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.1849999934434891,
+          0.23499999344348907
+        ],
+        [
+          -0.00649999999999995,
+          -0.00649999999999995
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.28269999101758003,
+        0.010500000324100256,
+        0.019500000402331352
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "All independent Cartesian joint limits, all supported Cartesian-body robot box pairs; no pose writes, irrespective of collision filtering. Not dynamic links, rack, non-box or omitted geometry, deflection, fastener or strength acceptance.",
+  "scene": "/workspace/rack_robotics/experiments/c_a_insertion002/scene.usda",
+  "scene_sha256": "d0396bff4bfdb4f5b7b8543dc95a7ef8a017729a3fa5a956f3a1a537c846dd74",
+  "source_sha256": {
+    "rack_robotics/scripts/audit_carrier_mounts.py": "32bff4872d94818e8f482481848c693d72a928a52184d6a5213e38d410aaa19b",
+    "rack_robotics/carrier_mount_screen.py": "06f82c674229ff94fc921a6964dab51b651e37af5322b86ea5271331b774c56f"
+  },
+  "source_directory": "robot_box_sweep001_sources"
+}

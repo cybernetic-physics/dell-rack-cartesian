@@ -1,0 +1,386 @@
+{
+  "robot": "A_dual_supported_screw",
+  "gripper": "B_rg2_linkage",
+  "architecture": "A",
+  "baseline": "../../../assets/shared_rack/baseline-001",
+  "scene": "scene.usda",
+  "physics_dt": 0.004166666666666667,
+  "recording_fps": 30,
+  "target_port": 1,
+  "initialization": "Physical pre-seat using baseline hand drive; remove it before robot trial",
+  "camera_paths": {
+    "wide": "/World/Cameras/wide",
+    "rear": "/World/Cameras/rear",
+    "macro": "/World/Cameras/macro",
+    "side": "/World/Cameras/side"
+  },
+  "status": "failed_feasibility",
+  "reload_verified": false,
+  "randomized_trials": 0,
+  "limitations": [
+    "Development prototype, not a calibrated commercial digital twin.",
+    "Controller uses simulator pose feedback, not modeled perception.",
+    "No randomized reliability or complete rack collision audit yet.",
+    "Bounded recovery implemented; randomized physical fault-injection validation pending.",
+    "Full-size vendor RG2 with numerical mimic/drive assumptions, not calibrated motor or pad-force behavior.",
+    "Vendor internal-link filtered pairs preserved; custom shoes remain collision-enabled.",
+    "Rigid custom offset shoes; attachment stiffness, fasteners and strength remain unvalidated.",
+    "Full rack still runs at baseline 240 Hz; loaded 480 Hz sensitivity comparison is pending."
+  ],
+  "joint_parameters": {
+    "/World/Robot/Joints/RackMount": {
+      "bodies": {
+        "physics:body1": [
+          "/World/Robot/Frame"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Lift": {
+      "drive:linear:physics:damping": 500.0,
+      "drive:linear:physics:maxForce": 100.0,
+      "drive:linear:physics:stiffness": 100000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Z",
+      "physics:lowerLimit": -0.699999988079071,
+      "physics:upperLimit": 0.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Frame"
+        ],
+        "physics:body1": [
+          "/World/Robot/Bridge"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Traverse": {
+      "drive:linear:physics:damping": 150.0,
+      "drive:linear:physics:maxForce": 50.0,
+      "drive:linear:physics:stiffness": 40000.0,
+      "drive:linear:physics:targetPosition": 0.15000000596046448,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": -0.20999999344348907,
+      "physics:upperLimit": 0.20999999344348907,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Bridge"
+        ],
+        "physics:body1": [
+          "/World/Robot/Carriage"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Insertion": {
+      "drive:linear:physics:damping": 35.0,
+      "drive:linear:physics:maxForce": 8.0,
+      "drive:linear:physics:stiffness": 15000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Y",
+      "physics:lowerLimit": -0.125,
+      "physics:upperLimit": 0.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Carriage"
+        ],
+        "physics:body1": [
+          "/World/Robot/ToolMount"
+        ]
+      }
+    },
+    "/World/Robot/Joints/LeftShoe": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/left_finger_tip_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/LeftJaw"
+        ]
+      }
+    },
+    "/World/Robot/Joints/RightShoe": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/right_finger_tip_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RightJaw"
+        ]
+      }
+    },
+    "/World/Robot/Joints/LatchPress": {
+      "drive:linear:physics:damping": 8.0,
+      "drive:linear:physics:maxForce": 4.0,
+      "drive:linear:physics:stiffness": 12000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Z",
+      "physics:lowerLimit": -0.005499999970197678,
+      "physics:upperLimit": 0.0010000000474974513,
+      "physxJoint:maxJointVelocity": 0.019999999552965164,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/LatchTongue"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/root_joint": {
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/base_link"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/body_joint": {
+      "physics:axis": "Z",
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/base_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/body_link"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/finger_joint": {
+      "drive:angular:physics:damping": 0.13962633907794952,
+      "drive:angular:physics:maxForce": 1.5,
+      "drive:angular:physics:stiffness": 1.7453292608261108,
+      "drive:angular:physics:targetPosition": 60.0,
+      "drive:angular:physics:targetVelocity": 0.0,
+      "drive:angular:physics:type": "force",
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 70.05999755859375,
+      "physxJoint:armature": 0.2943499982357025,
+      "physxJoint:maxJointVelocity": 67.3499984741211,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/body_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/right_outer_proximal_finger_link"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/right_finger_cover_arm_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/right_outer_proximal_finger_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/right_finger_cover_arm_link"
+        ],
+        "physxMimicJoint:rotZ:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/right_finger_cover_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/right_finger_cover_arm_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/right_finger_cover_link"
+        ],
+        "physxMimicJoint:rotZ:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/right_finger_base_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/right_outer_proximal_finger_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/right_finger_base_link"
+        ],
+        "physxMimicJoint:rotZ:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/right_finger_tip_joint": {
+      "physics:axis": "Z",
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/right_finger_base_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/right_finger_tip_link"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/left_outer_proximal_finger_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": 0.0,
+      "physics:upperLimit": 70.05999755859375,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/body_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/left_outer_proximal_finger_link"
+        ],
+        "physxMimicJoint:rotZ:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/left_finger_cover_arm_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/left_outer_proximal_finger_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/left_finger_cover_arm_link"
+        ],
+        "physxMimicJoint:rotZ:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/left_finger_cover_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/left_finger_cover_arm_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/left_finger_cover_link"
+        ],
+        "physxMimicJoint:rotZ:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/left_finger_base_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/left_outer_proximal_finger_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/left_finger_base_link"
+        ],
+        "physxMimicJoint:rotZ:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/left_finger_tip_joint": {
+      "physics:axis": "Z",
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/left_finger_base_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/left_finger_tip_link"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/right_inner_proximal_finger_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/body_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link"
+        ],
+        "physxMimicJoint:rotX:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    },
+    "/World/Robot/RG2/Physics/left_inner_proximal_finger_joint": {
+      "physics:axis": "Z",
+      "physics:lowerLimit": -180.0,
+      "physics:upperLimit": 180.0,
+      "physxJoint:armature": 9.999999747378752e-05,
+      "physxJoint:maxJointVelocity": 100.44999694824219,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/RG2/Geometry/body_link"
+        ],
+        "physics:body1": [
+          "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link"
+        ],
+        "physxMimicJoint:rotX:referenceJoint": [
+          "/World/Robot/RG2/Physics/finger_joint"
+        ]
+      }
+    }
+  },
+  "body_masses_kg": {
+    "/World/Robot/Frame": 5.0,
+    "/World/Robot/Bridge": 1.2999999523162842,
+    "/World/Robot/Carriage": 0.3799999952316284,
+    "/World/Robot/ToolMount": 0.47999998927116394,
+    "/World/Robot/RG2/Geometry/base_link": 0.19345200061798096,
+    "/World/Robot/RG2/Geometry/body_link": 0.46383658051490784,
+    "/World/Robot/RG2/Geometry/right_outer_proximal_finger_link": 0.0009498254512436688,
+    "/World/Robot/RG2/Geometry/right_finger_cover_arm_link": 0.0002753784938249737,
+    "/World/Robot/RG2/Geometry/right_finger_cover_link": 0.002385962288826704,
+    "/World/Robot/RG2/Geometry/right_finger_base_link": 0.01134354155510664,
+    "/World/Robot/RG2/Geometry/right_finger_tip_link": 0.004350525792688131,
+    "/World/Robot/RG2/Geometry/left_outer_proximal_finger_link": 0.0009498254512436688,
+    "/World/Robot/RG2/Geometry/left_finger_cover_arm_link": 0.0002753784938249737,
+    "/World/Robot/RG2/Geometry/left_finger_cover_link": 0.001192982541397214,
+    "/World/Robot/RG2/Geometry/left_finger_base_link": 0.01134354155510664,
+    "/World/Robot/RG2/Geometry/left_finger_tip_link": 0.004350525792688131,
+    "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link": 0.011052513495087624,
+    "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link": 0.011052513495087624,
+    "/World/Robot/LeftJaw": 0.035999998450279236,
+    "/World/Robot/RightJaw": 0.035999998450279236,
+    "/World/Robot/LatchTongue": 0.004000000189989805
+  },
+  "parameter_scope": "Authored simulator joint settings and lumped masses; not calibrated hardware ratings."
+}

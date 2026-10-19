@@ -1,0 +1,187 @@
+{
+  "revision": "drive_connections_v3",
+  "architecture": "C",
+  "parts": [
+    {
+      "path": "/World/Robot/Carriage/TraverseBlock0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/TraverseBlock1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/TraverseBackPlate",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 4e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.10800000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBlock0",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBlock1",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBearingPlate",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 3.1967999999999996e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.08631359999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthNut",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 1.484968015498824e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.011656998921665768,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/U0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.72e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010043999999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/V0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 8.37e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0022599,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/U2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.72e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010043999999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/V2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 8.37e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0022599,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthCoupler",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 7.735857750199508e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.006072648333906613,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthSupportBearing",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 9.89978676999216e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.007771332614443845,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingHanger",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.0160000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0054432000000000005,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingCrossbar",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.0400000000000004e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.005508000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPost0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.6800000000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.004536000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPost1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.6800000000000002e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.004536000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 8.482300164692441e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0006658605629283566,
+      "collision": false
+    }
+  ],
+  "added_mass_kg_by_body": {
+    "/World/Robot/Carriage": 0.2758067020742071,
+    "/World/Robot/ToolMount": 0.20597059892166575
+  },
+  "scope": "Dimensioned motor/guide/screw connections with additive geometric mass estimates; prismatic joint drive abstraction unchanged",
+  "remaining": [
+    "Thread contact, bearing races, screw rotation and motor torque-speed dynamics unmodeled",
+    "No certified fastener/rack ratings",
+    "Cable carriers and powered-off brakes not yet implemented"
+  ]
+}

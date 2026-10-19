@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "scope": "full_rack",
+  "robot": "B_side_telescoping",
+  "gripper": "B_rg2_linkage",
+  "loaded_scene": null,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/scripts/run_reference.py\", line 178, in <module>\n    task.tick(CFG.physics_dt)\n  File \"/workspace/rack_robotics/experiments/b_b_attempt002_extended_park/source/rack_robotics/controllers/rj45_task.py\", line 73, in tick\n    self.robot.command([a+(b-a)*u for a,b in zip(self.start,self.target)])\n  File \"/workspace/rack_robotics/experiments/b_b_attempt002_extended_park/source/rack_robotics/controllers/cartesian_interface.py\", line 58, in command\n    raise RuntimeError(f'RG2 shoe displacement exceeded the calibrated narrow-angle range: nominal={nominal}, measured={actual}')\nRuntimeError: RG2 shoe displacement exceeded the calibrated narrow-angle range: nominal=(-0.1940000206232071, 0.5439997863769531, 1.7998296022415161), measured=(-0.1939999759197235, 0.5539897978305817, 1.7998296022415161)\n",
+  "failure_stage": "runner_exception",
+  "limitations": [
+    "Runner exception; no successful task outcome is claimed."
+  ]
+}

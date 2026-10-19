@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "parts": 16,
+  "distinct_body_pairs_checked": 91,
+  "joints": [
+    {
+      "name": "Lift",
+      "parent": "/World/Robot/Frame",
+      "child": "/World/Robot/Bridge",
+      "axis": "Z",
+      "dimension": 2,
+      "sign": 1,
+      "initial_m": 4.768371586472142e-08,
+      "limits_m": [
+        -0.699999988079071,
+        0.0
+      ]
+    },
+    {
+      "name": "Traverse",
+      "parent": "/World/Robot/Bridge",
+      "child": "/World/Robot/Carriage",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.15,
+      "limits_m": [
+        -0.20999999344348907,
+        0.20999999344348907
+      ]
+    },
+    {
+      "name": "Insertion",
+      "parent": "/World/Robot/Carriage",
+      "child": "/World/Robot/ToolMount",
+      "axis": "Y",
+      "dimension": 1,
+      "sign": 1,
+      "initial_m": 0.0,
+      "limits_m": [
+        -0.125,
+        0.0
+      ]
+    }
+  ],
+  "possible_overlaps": [],
+  "errors": [],
+  "scope": "All independent Cartesian joint limits, axis-aligned carrier mount cubes only; no pose writes, irrespective of collision filtering. Not dynamic links, rack, deflection, fastener or strength acceptance.",
+  "scene": "/workspace/rack_robotics/experiments/c_a_carriers004/scene.usda",
+  "scene_sha256": "66b46362c6e8733909e24ec8aa9fef2dc6552b0c7b0ef897c4ac2de9bf68b097",
+  "source_sha256": {
+    "rack_robotics/scripts/audit_carrier_mounts.py": "05c16406ad7a5cd499811979514c7b695ef5c80b75809ce0fac82a3e90db16f5",
+    "rack_robotics/carrier_mount_screen.py": "c62fc6b5f51b6dbb5e3d586c4fb2aab270c89de482c7b1d69e053c2e30321ba2"
+  },
+  "source_directory": "mount_swept_clearance_audit_sources"
+}

@@ -1,0 +1,67 @@
+{
+  "revision": "rearward_insertion_front_support_v1",
+  "changes": [
+    {
+      "path": "/World/Robot/Carriage/DepthSupportBearing",
+      "translation_delta_m": [
+        0,
+        0.006,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingHanger",
+      "translation_delta_m": [
+        0,
+        0.006,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingCrossbar",
+      "translation_delta_m": [
+        0,
+        0.006,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPost0",
+      "translation_delta_m": [
+        0,
+        0.006,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPost1",
+      "translation_delta_m": [
+        0,
+        0.006,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt0",
+      "translation_delta_m": [
+        0,
+        0.006,
+        0
+      ]
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt1",
+      "translation_delta_m": [
+        0,
+        0.006,
+        0
+      ]
+    }
+  ],
+  "mass_delta_kg": 0.0,
+  "scope": "Entire front bearing/support shifted aft6 mm; all physical travel and other geometry retained",
+  "limitations": [
+    "Custom interface; bearing axial retention and shaft machining remain engineering assumptions.",
+    "Corrects the measured GPUFan10 interference locally; full-rack travel must be retested."
+  ]
+}

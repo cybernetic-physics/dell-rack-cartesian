@@ -1,0 +1,412 @@
+{
+  "reporting_errors": [],
+  "pair_count": 29,
+  "physics_dt": 0.004166666666666667,
+  "pairs": [
+    {
+      "colliders": [
+        "/World/Robot/LeftJaw/Finger",
+        "/World/Robot/RightJaw/Finger"
+      ],
+      "reports": 1,
+      "minimum_separation_m": -0.001999999862164259,
+      "peak_pair_contact_force_n": 1294.503545502523,
+      "phase_peaks_n": {
+        "initialization": 1294.503545502523
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/LeftJaw/Pad",
+        "/World/Robot/RightJaw/Finger"
+      ],
+      "reports": 1,
+      "minimum_separation_m": -0.001999999862164259,
+      "peak_pair_contact_force_n": 1.743426993764568e-05,
+      "phase_peaks_n": {
+        "initialization": 1.743426993764568e-05
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/LeftJaw/Finger",
+        "/World/Robot/RightJaw/Pad"
+      ],
+      "reports": 1,
+      "minimum_separation_m": -0.001999999862164259,
+      "peak_pair_contact_force_n": 4.8301853646350466e-11,
+      "phase_peaks_n": {
+        "initialization": 4.8301853646350466e-11
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/LeftJaw/Pad",
+        "/World/Robot/RightJaw/Pad"
+      ],
+      "reports": 1,
+      "minimum_separation_m": -0.001999999862164259,
+      "peak_pair_contact_force_n": 1.788084986742436e-06,
+      "phase_peaks_n": {
+        "initialization": 1.788084986742436e-06
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/LeftJaw/LowerGuideLand",
+        "/World/Robot/RightJaw/LowerGuideLand"
+      ],
+      "reports": 1,
+      "minimum_separation_m": -0.001599999493919313,
+      "peak_pair_contact_force_n": 2.4196552964386758e-11,
+      "phase_peaks_n": {
+        "initialization": 2.4196552964386758e-11
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/LeftJaw/UpperGuideLand",
+        "/World/Robot/RightJaw/UpperGuideLand"
+      ],
+      "reports": 1,
+      "minimum_separation_m": -0.001599999493919313,
+      "peak_pair_contact_force_n": 2.4152768267177732e-11,
+      "phase_peaks_n": {
+        "initialization": 2.4152768267177732e-11
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Bridge/XGuide",
+        "/World/Robot/ToolMount/DepthBlock1"
+      ],
+      "reports": 97,
+      "minimum_separation_m": -0.0019999705255031586,
+      "peak_pair_contact_force_n": 121753.38844299353,
+      "phase_peaks_n": {
+        "initialization": 121753.38844299353
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Bridge/XGuide",
+        "/World/Robot/ToolMount/DepthBlock0"
+      ],
+      "reports": 97,
+      "minimum_separation_m": -0.0019999686628580093,
+      "peak_pair_contact_force_n": 121753.38835001028,
+      "phase_peaks_n": {
+        "initialization": 121753.38835001028
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Bridge/Beam",
+        "/World/Robot/ToolMount/DepthBlock1"
+      ],
+      "reports": 97,
+      "minimum_separation_m": -0.0036999492440372705,
+      "peak_pair_contact_force_n": 84531.10199432838,
+      "phase_peaks_n": {
+        "initialization": 84531.10199432838
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Bridge/Beam",
+        "/World/Robot/ToolMount/DepthBlock0"
+      ],
+      "reports": 97,
+      "minimum_separation_m": -0.0036999473813921213,
+      "peak_pair_contact_force_n": 50046.489661540945,
+      "phase_peaks_n": {
+        "initialization": 50046.489661540945
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Robot/Bridge/Beam",
+        "/World/Robot/ToolMount/DepthBearingPlate"
+      ],
+      "reports": 97,
+      "minimum_separation_m": -0.0029999518301337957,
+      "peak_pair_contact_force_n": 121753.38231325186,
+      "phase_peaks_n": {
+        "initialization": 121753.38231325186
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link17",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 16,
+      "minimum_separation_m": -0.0007672288920730352,
+      "peak_pair_contact_force_n": 0.15243398607708514,
+      "phase_peaks_n": {
+        "initialization": 0.15243398607708514
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link16",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 599,
+      "minimum_separation_m": -0.001173023832961917,
+      "peak_pair_contact_force_n": 0.7399933040142059,
+      "phase_peaks_n": {
+        "initialization": 0.7399933040142059
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link18",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 16,
+      "minimum_separation_m": -0.0003355329390615225,
+      "peak_pair_contact_force_n": 0.3727032523602247,
+      "phase_peaks_n": {
+        "initialization": 0.3727032523602247
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link19",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 25,
+      "minimum_separation_m": -0.0002535616513341665,
+      "peak_pair_contact_force_n": 0.09136523120105267,
+      "phase_peaks_n": {
+        "initialization": 0.09136523120105267
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link20",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 40,
+      "minimum_separation_m": -0.0003100528847426176,
+      "peak_pair_contact_force_n": 0.39497955702245235,
+      "phase_peaks_n": {
+        "initialization": 0.39497955702245235
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link21",
+        "/World/Servers/XE9680_4/GPUFan10/Housing"
+      ],
+      "reports": 27,
+      "minimum_separation_m": -0.00023546232841908932,
+      "peak_pair_contact_force_n": 0.08074112003669143,
+      "phase_peaks_n": {
+        "initialization": 0.08074112003669143
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link22",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 99,
+      "minimum_separation_m": -0.00040095741860568523,
+      "peak_pair_contact_force_n": 0.23259415584881749,
+      "phase_peaks_n": {
+        "initialization": 0.23259415584881749
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link23",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 107,
+      "minimum_separation_m": -0.00035255192779004574,
+      "peak_pair_contact_force_n": 0.07073842221871018,
+      "phase_peaks_n": {
+        "initialization": 0.07073842221871018
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link24",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 121,
+      "minimum_separation_m": -0.0006814317312091589,
+      "peak_pair_contact_force_n": 0.44209711253643036,
+      "phase_peaks_n": {
+        "initialization": 0.44209711253643036
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link25",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 168,
+      "minimum_separation_m": -8.251401595771313e-05,
+      "peak_pair_contact_force_n": 0.036415618378669024,
+      "phase_peaks_n": {
+        "initialization": 0.036415618378669024
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link26",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 203,
+      "minimum_separation_m": -0.00024079508148133755,
+      "peak_pair_contact_force_n": 0.35464536398649216,
+      "phase_peaks_n": {
+        "initialization": 0.35464536398649216
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Tooth",
+        "/World/PortRow/Port01/LatchLip"
+      ],
+      "reports": 308,
+      "minimum_separation_m": -2.4303793907165527e-05,
+      "peak_pair_contact_force_n": 0.5576529214158654,
+      "phase_peaks_n": {
+        "initialization": 0.5576529214158654
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Latch/Arm",
+        "/World/PortRow/Port01/LatchLip"
+      ],
+      "reports": 249,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.03563516950886729,
+      "phase_peaks_n": {
+        "initialization": 0.03563516950886729
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link27",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 134,
+      "minimum_separation_m": -1.35018490254879e-06,
+      "peak_pair_contact_force_n": 0.021657707984559238,
+      "phase_peaks_n": {
+        "initialization": 0.021657707984559238
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/Floor"
+      ],
+      "reports": 238,
+      "minimum_separation_m": -5.0961930355697405e-06,
+      "peak_pair_contact_force_n": 3.593322500313344,
+      "phase_peaks_n": {
+        "initialization": 3.593322500313344
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShoulder1"
+      ],
+      "reports": 235,
+      "minimum_separation_m": -1.0067597031593323e-06,
+      "peak_pair_contact_force_n": 1.6008703038096428,
+      "phase_peaks_n": {
+        "initialization": 1.6008703038096428
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Plug/Body",
+        "/World/PortRow/Port01/KeyShouldern1"
+      ],
+      "reports": 235,
+      "minimum_separation_m": -1.0253861546516418e-06,
+      "peak_pair_contact_force_n": 0.7269498764435411,
+      "phase_peaks_n": {
+        "initialization": 0.7269498764435411
+      },
+      "peak_time_s": 0.0,
+      "peak_phase": "initialization"
+    },
+    {
+      "colliders": [
+        "/World/Cable/Link21",
+        "/World/Servers/XE9680_4/GPUFan5/Housing"
+      ],
+      "reports": 16,
+      "minimum_separation_m": 0.0,
+      "peak_pair_contact_force_n": 0.0,
+      "phase_peaks_n": {
+        "initialization": 0
+      }
+    }
+  ],
+  "scope": "Contact impulse magnitude sum per collider pair divided by dt; no friction-anchor impulses; not motor force or a safety certification."
+}

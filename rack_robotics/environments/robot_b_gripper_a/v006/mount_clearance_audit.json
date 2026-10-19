@@ -1,0 +1,46 @@
+{
+  "passed": false,
+  "parts": 26,
+  "distinct_body_pairs_checked": 255,
+  "overlaps": [
+    {
+      "parts": [
+        "/World/Robot/LiftCarriage/CarrierMounts/OuterFixed0",
+        "/World/Robot/MiddleBoom/CarrierMounts/InnerFixed1"
+      ],
+      "owners": [
+        "/World/Robot/LiftCarriage",
+        "/World/Robot/MiddleBoom"
+      ],
+      "overlap_depths_m": [
+        0.003000000379979606,
+        0.00800000037997961,
+        0.00800000037997961
+      ]
+    },
+    {
+      "parts": [
+        "/World/Robot/MiddleBoom/CarrierMounts/OuterMoving0",
+        "/World/Robot/Carriage/CarrierMounts/InnerMoving1"
+      ],
+      "owners": [
+        "/World/Robot/MiddleBoom",
+        "/World/Robot/Carriage"
+      ],
+      "overlap_depths_m": [
+        0.003000000379979606,
+        0.00800000037997961,
+        0.00800000037997961
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "Initial axis-aligned carrier mount solids only, regardless of collision filters; not full-stroke, carrier-link, rack, fastener or strength acceptance",
+  "scene": "/workspace/rack_robotics/experiments/b_a_carriers003/scene.usda",
+  "scene_sha256": "6a473b00bc77f3d2dab04d9bd23c33fb5ae18f68c86e8e44a6b42a2044a99a79",
+  "source_sha256": {
+    "rack_robotics/scripts/audit_carrier_mounts.py": "4582a01e628be09c4116a77ad16da5a26e2b0a6c7d2c97705b1741b7ef5736dd",
+    "rack_robotics/carrier_mount_screen.py": "177823c083349eac4034649540b2e6721eea276c520adf065fc7d0ad6c293a0c"
+  },
+  "source_directory": "mount_clearance_audit_sources"
+}

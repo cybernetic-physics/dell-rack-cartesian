@@ -1,0 +1,453 @@
+#usda 1.0
+(
+    subLayers = [
+        @../v009/scene.usda@,
+        @cameras.usda@
+    ]
+)
+
+over "Render"
+{
+    over "OmniverseKit"
+    {
+        over "HydraTextures"
+        {
+            over "omni_kit_widget_viewport_ViewportTexture_0"
+            {
+                rel camera = </OmniverseKit_Persp>
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 800)
+            }
+        }
+    }
+}
+
+over "World"
+{
+    over "HandDrive" (
+        prepend apiSchemas = ["PhysicsDriveAPI:transX", "PhysicsDriveAPI:transY", "PhysicsDriveAPI:transZ", "PhysicsDriveAPI:rotX", "PhysicsDriveAPI:rotY", "PhysicsDriveAPI:rotZ"]
+    )
+    {
+        float drive:rotX:physics:damping = 0.01
+        float drive:rotX:physics:maxForce = 0.08
+        float drive:rotX:physics:stiffness = 0.15
+        float drive:rotX:physics:targetPosition = 0
+        uniform token drive:rotX:physics:type = "force"
+        float drive:rotY:physics:damping = 0.01
+        float drive:rotY:physics:maxForce = 0.08
+        float drive:rotY:physics:stiffness = 0.15
+        float drive:rotY:physics:targetPosition = 0
+        uniform token drive:rotY:physics:type = "force"
+        float drive:rotZ:physics:damping = 0.01
+        float drive:rotZ:physics:maxForce = 0.08
+        float drive:rotZ:physics:stiffness = 0.15
+        float drive:rotZ:physics:targetPosition = 0
+        uniform token drive:rotZ:physics:type = "force"
+        float drive:transX:physics:damping = 10
+        float drive:transX:physics:maxForce = 5
+        float drive:transX:physics:stiffness = 4000
+        float drive:transX:physics:targetPosition = 0
+        uniform token drive:transX:physics:type = "force"
+        float drive:transY:physics:damping = 10
+        float drive:transY:physics:maxForce = 5
+        float drive:transY:physics:stiffness = 4000
+        float drive:transY:physics:targetPosition = 0.05
+        uniform token drive:transY:physics:type = "force"
+        float drive:transZ:physics:damping = 10
+        float drive:transZ:physics:maxForce = 5
+        float drive:transZ:physics:stiffness = 4000
+        float drive:transZ:physics:targetPosition = 0
+        uniform token drive:transZ:physics:type = "force"
+        rel physics:body1 = </World/Plug>
+        point3f physics:localPos0 = (0.1875, 0.429, 1.66)
+    }
+
+    over "Robot" (
+        customData = {
+            string brake_revision = "passive_motor_brakes_v1"
+        }
+    )
+    {
+        over "Frame"
+        {
+            float physics:mass = 6.222644
+
+            over "LiftMotorPlate0" (
+                active = false
+            )
+            {
+            }
+
+            def "Brakes"
+            {
+                def "Lift0"
+                {
+                    def "MountPlate"
+                    {
+                        def Cube "U0" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.021, 0.065, 0.006)
+                            double3 xformOp:translate = (-0.264, 0.704, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+
+                        def Cube "V0" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.023, 0.021, 0.006)
+                            double3 xformOp:translate = (-0.242, 0.6819999999999999, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+
+                        def Cube "U2" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.021, 0.065, 0.006)
+                            double3 xformOp:translate = (-0.22, 0.704, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+
+                        def Cube "V2" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.023, 0.021, 0.006)
+                            double3 xformOp:translate = (-0.242, 0.726, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+                    }
+
+                    def Mesh "Housing" (
+                        prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        int[] faceVertexCounts = [8, 8, 4, 4, 4, 4, 4, 4, 4, 4]
+                        int[] faceVertexIndices = [7, 6, 5, 4, 3, 2, 1, 0, 8, 9, 10, 11, 12, 13, 14, 15, 0, 1, 9, 8, 1, 2, 10, 9, 2, 3, 11, 10, 3, 4, 12, 11, 4, 5, 13, 12, 5, 6, 14, 13, 6, 7, 15, 14, 7, 0, 8, 15]
+                        rel material:binding = </World/Materials/RobotSteel>
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.00005
+                        float physxCollision:restOffset = 0
+                        point3f[] points = [(-0.221, 0.7209706, 1.892), (-0.22502944, 0.725, 1.892), (-0.25897056, 0.725, 1.892), (-0.263, 0.7209706, 1.892), (-0.263, 0.6870294, 1.892), (-0.25897056, 0.683, 1.892), (-0.22502944, 0.683, 1.892), (-0.221, 0.6870294, 1.892), (-0.221, 0.7209706, 1.9375), (-0.22502944, 0.725, 1.9375), (-0.25897056, 0.725, 1.9375), (-0.263, 0.7209706, 1.9375), (-0.263, 0.6870294, 1.9375), (-0.25897056, 0.683, 1.9375), (-0.22502944, 0.683, 1.9375), (-0.221, 0.6870294, 1.9375)]
+                        uniform token subdivisionScheme = "none"
+                    }
+
+                    def Cylinder "OutputShaft" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.024
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0025
+                        double3 xformOp:translate = (-0.242, 0.704, 1.88)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "M8ConnectorEnvelope" (
+                        prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token axis = "Y"
+                        double height = 0.012
+                        rel material:binding = </World/Materials/RobotSteel>
+                        float physxCollision:contactOffset = 0.00005
+                        float physxCollision:restOffset = 0
+                        double radius = 0.006
+                        double3 xformOp:translate = (-0.242, 0.731, 1.91475)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt0_0" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (-0.2575, 0.6885, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt0_1" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (-0.2575, 0.7194999999999999, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt1_0" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (-0.22649999999999998, 0.6885, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt1_1" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (-0.22649999999999998, 0.7194999999999999, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Mesh "CouplerReducer" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+                        int[] faceVertexIndices = [0, 1, 65, 64, 33, 32, 96, 97, 1, 0, 32, 33, 64, 65, 97, 96, 1, 2, 66, 65, 34, 33, 97, 98, 2, 1, 33, 34, 65, 66, 98, 97, 2, 3, 67, 66, 35, 34, 98, 99, 3, 2, 34, 35, 66, 67, 99, 98, 3, 4, 68, 67, 36, 35, 99, 100, 4, 3, 35, 36, 67, 68, 100, 99, 4, 5, 69, 68, 37, 36, 100, 101, 5, 4, 36, 37, 68, 69, 101, 100, 5, 6, 70, 69, 38, 37, 101, 102, 6, 5, 37, 38, 69, 70, 102, 101, 6, 7, 71, 70, 39, 38, 102, 103, 7, 6, 38, 39, 70, 71, 103, 102, 7, 8, 72, 71, 40, 39, 103, 104, 8, 7, 39, 40, 71, 72, 104, 103, 8, 9, 73, 72, 41, 40, 104, 105, 9, 8, 40, 41, 72, 73, 105, 104, 9, 10, 74, 73, 42, 41, 105, 106, 10, 9, 41, 42, 73, 74, 106, 105, 10, 11, 75, 74, 43, 42, 106, 107, 11, 10, 42, 43, 74, 75, 107, 106, 11, 12, 76, 75, 44, 43, 107, 108, 12, 11, 43, 44, 75, 76, 108, 107, 12, 13, 77, 76, 45, 44, 108, 109, 13, 12, 44, 45, 76, 77, 109, 108, 13, 14, 78, 77, 46, 45, 109, 110, 14, 13, 45, 46, 77, 78, 110, 109, 14, 15, 79, 78, 47, 46, 110, 111, 15, 14, 46, 47, 78, 79, 111, 110, 15, 16, 80, 79, 48, 47, 111, 112, 16, 15, 47, 48, 79, 80, 112, 111, 16, 17, 81, 80, 49, 48, 112, 113, 17, 16, 48, 49, 80, 81, 113, 112, 17, 18, 82, 81, 50, 49, 113, 114, 18, 17, 49, 50, 81, 82, 114, 113, 18, 19, 83, 82, 51, 50, 114, 115, 19, 18, 50, 51, 82, 83, 115, 114, 19, 20, 84, 83, 52, 51, 115, 116, 20, 19, 51, 52, 83, 84, 116, 115, 20, 21, 85, 84, 53, 52, 116, 117, 21, 20, 52, 53, 84, 85, 117, 116, 21, 22, 86, 85, 54, 53, 117, 118, 22, 21, 53, 54, 85, 86, 118, 117, 22, 23, 87, 86, 55, 54, 118, 119, 23, 22, 54, 55, 86, 87, 119, 118, 23, 24, 88, 87, 56, 55, 119, 120, 24, 23, 55, 56, 87, 88, 120, 119, 24, 25, 89, 88, 57, 56, 120, 121, 25, 24, 56, 57, 88, 89, 121, 120, 25, 26, 90, 89, 58, 57, 121, 122, 26, 25, 57, 58, 89, 90, 122, 121, 26, 27, 91, 90, 59, 58, 122, 123, 27, 26, 58, 59, 90, 91, 123, 122, 27, 28, 92, 91, 60, 59, 123, 124, 28, 27, 59, 60, 91, 92, 124, 123, 28, 29, 93, 92, 61, 60, 124, 125, 29, 28, 60, 61, 92, 93, 125, 124, 29, 30, 94, 93, 62, 61, 125, 126, 30, 29, 61, 62, 93, 94, 126, 125, 30, 31, 95, 94, 63, 62, 126, 127, 31, 30, 62, 63, 94, 95, 127, 126, 31, 0, 64, 95, 32, 63, 127, 96, 0, 31, 63, 32, 95, 64, 96, 127]
+                        rel material:binding = </World/Materials/RobotSteel>
+                        point3f[] points = [(-0.2379, 0.704, 1.874), (-0.23797879, 0.7047999, 1.874), (-0.2382121, 0.705569, 1.874), (-0.23859097, 0.70627785, 1.874), (-0.23910086, 0.70689917, 1.874), (-0.23972216, 0.707409, 1.874), (-0.240431, 0.70778793, 1.874), (-0.24120013, 0.7080212, 1.874), (-0.242, 0.7081, 1.874), (-0.24279986, 0.7080212, 1.874), (-0.243569, 0.70778793, 1.874), (-0.24427783, 0.707409, 1.874), (-0.24489914, 0.70689917, 1.874), (-0.24540903, 0.70627785, 1.874), (-0.2457879, 0.705569, 1.874), (-0.24602123, 0.7047999, 1.874), (-0.2461, 0.704, 1.874), (-0.24602123, 0.7032001, 1.874), (-0.2457879, 0.702431, 1.874), (-0.24540903, 0.70172215, 1.874), (-0.24489914, 0.7011009, 1.874), (-0.24427783, 0.70059097, 1.874), (-0.243569, 0.7002121, 1.874), (-0.24279986, 0.69997877, 1.874), (-0.242, 0.6999, 1.874), (-0.24120013, 0.69997877, 1.874), (-0.240431, 0.7002121, 1.874), (-0.23972216, 0.70059097, 1.874), (-0.23910086, 0.7011009, 1.874), (-0.23859097, 0.70172215, 1.874), (-0.2382121, 0.702431, 1.874), (-0.23797879, 0.7032001, 1.874), (-0.23945, 0.704, 1.874), (-0.239499, 0.70449746, 1.874), (-0.23964411, 0.70497584, 1.874), (-0.23987976, 0.7054167, 1.874), (-0.24019688, 0.7058031, 1.874), (-0.2405833, 0.70612025, 1.874), (-0.24102415, 0.70635587, 1.874), (-0.24150252, 0.706501, 1.874), (-0.242, 0.70655, 1.874), (-0.24249747, 0.706501, 1.874), (-0.24297585, 0.70635587, 1.874), (-0.2434167, 0.70612025, 1.874), (-0.24380313, 0.7058031, 1.874), (-0.24412024, 0.7054167, 1.874), (-0.24435589, 0.70497584, 1.874), (-0.24450101, 0.70449746, 1.874), (-0.24455, 0.704, 1.874), (-0.24450101, 0.70350254, 1.874), (-0.24435589, 0.70302415, 1.874), (-0.24412024, 0.7025833, 1.874), (-0.24380313, 0.7021969, 1.874), (-0.2434167, 0.70187974, 1.874), (-0.24297585, 0.7016441, 1.874), (-0.24249747, 0.701499, 1.874), (-0.242, 0.70145, 1.874), (-0.24150252, 0.701499, 1.874), (-0.24102415, 0.7016441, 1.874), (-0.2405833, 0.70187974, 1.874), (-0.24019688, 0.7021969, 1.874), (-0.23987976, 0.7025833, 1.874), (-0.23964411, 0.70302415, 1.874), (-0.239499, 0.70350254, 1.874), (-0.2379, 0.704, 1.884), (-0.23797879, 0.7047999, 1.884), (-0.2382121, 0.705569, 1.884), (-0.23859097, 0.70627785, 1.884), (-0.23910086, 0.70689917, 1.884), (-0.23972216, 0.707409, 1.884), (-0.240431, 0.70778793, 1.884), (-0.24120013, 0.7080212, 1.884), (-0.242, 0.7081, 1.884), (-0.24279986, 0.7080212, 1.884), (-0.243569, 0.70778793, 1.884), (-0.24427783, 0.707409, 1.884), (-0.24489914, 0.70689917, 1.884), (-0.24540903, 0.70627785, 1.884), (-0.2457879, 0.705569, 1.884), (-0.24602123, 0.7047999, 1.884), (-0.2461, 0.704, 1.884), (-0.24602123, 0.7032001, 1.884), (-0.2457879, 0.702431, 1.884), (-0.24540903, 0.70172215, 1.884), (-0.24489914, 0.7011009, 1.884), (-0.24427783, 0.70059097, 1.884), (-0.243569, 0.7002121, 1.884), (-0.24279986, 0.69997877, 1.884), (-0.242, 0.6999, 1.884), (-0.24120013, 0.69997877, 1.884), (-0.240431, 0.7002121, 1.884), (-0.23972216, 0.70059097, 1.884), (-0.23910086, 0.7011009, 1.884), (-0.23859097, 0.70172215, 1.884), (-0.2382121, 0.702431, 1.884), (-0.23797879, 0.7032001, 1.884), (-0.23945, 0.704, 1.884), (-0.239499, 0.70449746, 1.884), (-0.23964411, 0.70497584, 1.884), (-0.23987976, 0.7054167, 1.884), (-0.24019688, 0.7058031, 1.884), (-0.2405833, 0.70612025, 1.884), (-0.24102415, 0.70635587, 1.884), (-0.24150252, 0.706501, 1.884), (-0.242, 0.70655, 1.884), (-0.24249747, 0.706501, 1.884), (-0.24297585, 0.70635587, 1.884), (-0.2434167, 0.70612025, 1.884), (-0.24380313, 0.7058031, 1.884), (-0.24412024, 0.7054167, 1.884), (-0.24435589, 0.70497584, 1.884), (-0.24450101, 0.70449746, 1.884), (-0.24455, 0.704, 1.884), (-0.24450101, 0.70350254, 1.884), (-0.24435589, 0.70302415, 1.884), (-0.24412024, 0.7025833, 1.884), (-0.24380313, 0.7021969, 1.884), (-0.2434167, 0.70187974, 1.884), (-0.24297585, 0.7016441, 1.884), (-0.24249747, 0.701499, 1.884), (-0.242, 0.70145, 1.884), (-0.24150252, 0.701499, 1.884), (-0.24102415, 0.7016441, 1.884), (-0.2405833, 0.70187974, 1.884), (-0.24019688, 0.7021969, 1.884), (-0.23987976, 0.7025833, 1.884), (-0.23964411, 0.70302415, 1.884), (-0.239499, 0.70350254, 1.884)]
+                        uniform token subdivisionScheme = "none"
+                    }
+                }
+
+                def "Lift1"
+                {
+                    def "MountPlate"
+                    {
+                        def Cube "U0" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.021, 0.065, 0.006)
+                            double3 xformOp:translate = (0.256, 0.704, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+
+                        def Cube "V0" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.023, 0.021, 0.006)
+                            double3 xformOp:translate = (0.278, 0.6819999999999999, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+
+                        def Cube "U2" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.021, 0.065, 0.006)
+                            double3 xformOp:translate = (0.30000000000000004, 0.704, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+
+                        def Cube "V2" (
+                            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                        )
+                        {
+                            rel material:binding = </World/Materials/RobotSteel>
+                            float physxCollision:contactOffset = 0.00005
+                            float physxCollision:restOffset = 0
+                            double size = 1
+                            float3 xformOp:scale = (0.023, 0.021, 0.006)
+                            double3 xformOp:translate = (0.278, 0.726, 1.889)
+                            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                        }
+                    }
+
+                    def Mesh "Housing" (
+                        prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        int[] faceVertexCounts = [8, 8, 4, 4, 4, 4, 4, 4, 4, 4]
+                        int[] faceVertexIndices = [7, 6, 5, 4, 3, 2, 1, 0, 8, 9, 10, 11, 12, 13, 14, 15, 0, 1, 9, 8, 1, 2, 10, 9, 2, 3, 11, 10, 3, 4, 12, 11, 4, 5, 13, 12, 5, 6, 14, 13, 6, 7, 15, 14, 7, 0, 8, 15]
+                        rel material:binding = </World/Materials/RobotSteel>
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.00005
+                        float physxCollision:restOffset = 0
+                        point3f[] points = [(0.299, 0.7209706, 1.892), (0.29497057, 0.725, 1.892), (0.26102945, 0.725, 1.892), (0.257, 0.7209706, 1.892), (0.257, 0.6870294, 1.892), (0.26102945, 0.683, 1.892), (0.29497057, 0.683, 1.892), (0.299, 0.6870294, 1.892), (0.299, 0.7209706, 1.9375), (0.29497057, 0.725, 1.9375), (0.26102945, 0.725, 1.9375), (0.257, 0.7209706, 1.9375), (0.257, 0.6870294, 1.9375), (0.26102945, 0.683, 1.9375), (0.29497057, 0.683, 1.9375), (0.299, 0.6870294, 1.9375)]
+                        uniform token subdivisionScheme = "none"
+                    }
+
+                    def Cylinder "OutputShaft" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.024
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0025
+                        double3 xformOp:translate = (0.278, 0.704, 1.88)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "M8ConnectorEnvelope" (
+                        prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token axis = "Y"
+                        double height = 0.012
+                        rel material:binding = </World/Materials/RobotSteel>
+                        float physxCollision:contactOffset = 0.00005
+                        float physxCollision:restOffset = 0
+                        double radius = 0.006
+                        double3 xformOp:translate = (0.278, 0.731, 1.91475)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt0_0" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (0.2625, 0.6885, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt0_1" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (0.2625, 0.7194999999999999, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt1_0" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (0.29350000000000004, 0.6885, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Cylinder "MountBolt1_1" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform token axis = "Z"
+                        double height = 0.014
+                        rel material:binding = </World/Materials/RobotSteel>
+                        double radius = 0.0015
+                        double3 xformOp:translate = (0.29350000000000004, 0.7194999999999999, 1.888)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Mesh "CouplerReducer" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        uniform bool doubleSided = 1
+                        int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+                        int[] faceVertexIndices = [0, 1, 65, 64, 33, 32, 96, 97, 1, 0, 32, 33, 64, 65, 97, 96, 1, 2, 66, 65, 34, 33, 97, 98, 2, 1, 33, 34, 65, 66, 98, 97, 2, 3, 67, 66, 35, 34, 98, 99, 3, 2, 34, 35, 66, 67, 99, 98, 3, 4, 68, 67, 36, 35, 99, 100, 4, 3, 35, 36, 67, 68, 100, 99, 4, 5, 69, 68, 37, 36, 100, 101, 5, 4, 36, 37, 68, 69, 101, 100, 5, 6, 70, 69, 38, 37, 101, 102, 6, 5, 37, 38, 69, 70, 102, 101, 6, 7, 71, 70, 39, 38, 102, 103, 7, 6, 38, 39, 70, 71, 103, 102, 7, 8, 72, 71, 40, 39, 103, 104, 8, 7, 39, 40, 71, 72, 104, 103, 8, 9, 73, 72, 41, 40, 104, 105, 9, 8, 40, 41, 72, 73, 105, 104, 9, 10, 74, 73, 42, 41, 105, 106, 10, 9, 41, 42, 73, 74, 106, 105, 10, 11, 75, 74, 43, 42, 106, 107, 11, 10, 42, 43, 74, 75, 107, 106, 11, 12, 76, 75, 44, 43, 107, 108, 12, 11, 43, 44, 75, 76, 108, 107, 12, 13, 77, 76, 45, 44, 108, 109, 13, 12, 44, 45, 76, 77, 109, 108, 13, 14, 78, 77, 46, 45, 109, 110, 14, 13, 45, 46, 77, 78, 110, 109, 14, 15, 79, 78, 47, 46, 110, 111, 15, 14, 46, 47, 78, 79, 111, 110, 15, 16, 80, 79, 48, 47, 111, 112, 16, 15, 47, 48, 79, 80, 112, 111, 16, 17, 81, 80, 49, 48, 112, 113, 17, 16, 48, 49, 80, 81, 113, 112, 17, 18, 82, 81, 50, 49, 113, 114, 18, 17, 49, 50, 81, 82, 114, 113, 18, 19, 83, 82, 51, 50, 114, 115, 19, 18, 50, 51, 82, 83, 115, 114, 19, 20, 84, 83, 52, 51, 115, 116, 20, 19, 51, 52, 83, 84, 116, 115, 20, 21, 85, 84, 53, 52, 116, 117, 21, 20, 52, 53, 84, 85, 117, 116, 21, 22, 86, 85, 54, 53, 117, 118, 22, 21, 53, 54, 85, 86, 118, 117, 22, 23, 87, 86, 55, 54, 118, 119, 23, 22, 54, 55, 86, 87, 119, 118, 23, 24, 88, 87, 56, 55, 119, 120, 24, 23, 55, 56, 87, 88, 120, 119, 24, 25, 89, 88, 57, 56, 120, 121, 25, 24, 56, 57, 88, 89, 121, 120, 25, 26, 90, 89, 58, 57, 121, 122, 26, 25, 57, 58, 89, 90, 122, 121, 26, 27, 91, 90, 59, 58, 122, 123, 27, 26, 58, 59, 90, 91, 123, 122, 27, 28, 92, 91, 60, 59, 123, 124, 28, 27, 59, 60, 91, 92, 124, 123, 28, 29, 93, 92, 61, 60, 124, 125, 29, 28, 60, 61, 92, 93, 125, 124, 29, 30, 94, 93, 62, 61, 125, 126, 30, 29, 61, 62, 93, 94, 126, 125, 30, 31, 95, 94, 63, 62, 126, 127, 31, 30, 62, 63, 94, 95, 127, 126, 31, 0, 64, 95, 32, 63, 127, 96, 0, 31, 63, 32, 95, 64, 96, 127]
+                        rel material:binding = </World/Materials/RobotSteel>
+                        point3f[] points = [(0.2821, 0.704, 1.874), (0.28202122, 0.7047999, 1.874), (0.2817879, 0.705569, 1.874), (0.28140903, 0.70627785, 1.874), (0.28089914, 0.70689917, 1.874), (0.28027785, 0.707409, 1.874), (0.279569, 0.70778793, 1.874), (0.27879986, 0.7080212, 1.874), (0.278, 0.7081, 1.874), (0.27720013, 0.7080212, 1.874), (0.276431, 0.70778793, 1.874), (0.27572218, 0.707409, 1.874), (0.27510086, 0.70689917, 1.874), (0.27459097, 0.70627785, 1.874), (0.2742121, 0.705569, 1.874), (0.27397877, 0.7047999, 1.874), (0.2739, 0.704, 1.874), (0.27397877, 0.7032001, 1.874), (0.2742121, 0.702431, 1.874), (0.27459097, 0.70172215, 1.874), (0.27510086, 0.7011009, 1.874), (0.27572218, 0.70059097, 1.874), (0.276431, 0.7002121, 1.874), (0.27720013, 0.69997877, 1.874), (0.278, 0.6999, 1.874), (0.27879986, 0.69997877, 1.874), (0.279569, 0.7002121, 1.874), (0.28027785, 0.70059097, 1.874), (0.28089914, 0.7011009, 1.874), (0.28140903, 0.70172215, 1.874), (0.2817879, 0.702431, 1.874), (0.28202122, 0.7032001, 1.874), (0.28055, 0.704, 1.874), (0.280501, 0.70449746, 1.874), (0.2803559, 0.70497584, 1.874), (0.28012025, 0.7054167, 1.874), (0.27980313, 0.7058031, 1.874), (0.2794167, 0.70612025, 1.874), (0.27897584, 0.70635587, 1.874), (0.2784975, 0.706501, 1.874), (0.278, 0.70655, 1.874), (0.2775025, 0.706501, 1.874), (0.27702415, 0.70635587, 1.874), (0.27658328, 0.70612025, 1.874), (0.27619687, 0.7058031, 1.874), (0.27587974, 0.7054167, 1.874), (0.2756441, 0.70497584, 1.874), (0.275499, 0.70449746, 1.874), (0.27545, 0.704, 1.874), (0.275499, 0.70350254, 1.874), (0.2756441, 0.70302415, 1.874), (0.27587974, 0.7025833, 1.874), (0.27619687, 0.7021969, 1.874), (0.27658328, 0.70187974, 1.874), (0.27702415, 0.7016441, 1.874), (0.2775025, 0.701499, 1.874), (0.278, 0.70145, 1.874), (0.2784975, 0.701499, 1.874), (0.27897584, 0.7016441, 1.874), (0.2794167, 0.70187974, 1.874), (0.27980313, 0.7021969, 1.874), (0.28012025, 0.7025833, 1.874), (0.2803559, 0.70302415, 1.874), (0.280501, 0.70350254, 1.874), (0.2821, 0.704, 1.884), (0.28202122, 0.7047999, 1.884), (0.2817879, 0.705569, 1.884), (0.28140903, 0.70627785, 1.884), (0.28089914, 0.70689917, 1.884), (0.28027785, 0.707409, 1.884), (0.279569, 0.70778793, 1.884), (0.27879986, 0.7080212, 1.884), (0.278, 0.7081, 1.884), (0.27720013, 0.7080212, 1.884), (0.276431, 0.70778793, 1.884), (0.27572218, 0.707409, 1.884), (0.27510086, 0.70689917, 1.884), (0.27459097, 0.70627785, 1.884), (0.2742121, 0.705569, 1.884), (0.27397877, 0.7047999, 1.884), (0.2739, 0.704, 1.884), (0.27397877, 0.7032001, 1.884), (0.2742121, 0.702431, 1.884), (0.27459097, 0.70172215, 1.884), (0.27510086, 0.7011009, 1.884), (0.27572218, 0.70059097, 1.884), (0.276431, 0.7002121, 1.884), (0.27720013, 0.69997877, 1.884), (0.278, 0.6999, 1.884), (0.27879986, 0.69997877, 1.884), (0.279569, 0.7002121, 1.884), (0.28027785, 0.70059097, 1.884), (0.28089914, 0.7011009, 1.884), (0.28140903, 0.70172215, 1.884), (0.2817879, 0.702431, 1.884), (0.28202122, 0.7032001, 1.884), (0.28055, 0.704, 1.884), (0.280501, 0.70449746, 1.884), (0.2803559, 0.70497584, 1.884), (0.28012025, 0.7054167, 1.884), (0.27980313, 0.7058031, 1.884), (0.2794167, 0.70612025, 1.884), (0.27897584, 0.70635587, 1.884), (0.2784975, 0.706501, 1.884), (0.278, 0.70655, 1.884), (0.2775025, 0.706501, 1.884), (0.27702415, 0.70635587, 1.884), (0.27658328, 0.70612025, 1.884), (0.27619687, 0.7058031, 1.884), (0.27587974, 0.7054167, 1.884), (0.2756441, 0.70497584, 1.884), (0.275499, 0.70449746, 1.884), (0.27545, 0.704, 1.884), (0.275499, 0.70350254, 1.884), (0.2756441, 0.70302415, 1.884), (0.27587974, 0.7025833, 1.884), (0.27619687, 0.7021969, 1.884), (0.27658328, 0.70187974, 1.884), (0.27702415, 0.7016441, 1.884), (0.2775025, 0.701499, 1.884), (0.278, 0.70145, 1.884), (0.2784975, 0.701499, 1.884), (0.27897584, 0.7016441, 1.884), (0.2794167, 0.70187974, 1.884), (0.27980313, 0.7021969, 1.884), (0.28012025, 0.7025833, 1.884), (0.2803559, 0.70302415, 1.884), (0.280501, 0.70350254, 1.884)]
+                        uniform token subdivisionScheme = "none"
+                    }
+                }
+            }
+
+            over "Motor0"
+            {
+                double3 xformOp:translate = (-0.24200000000000002, 0.704, 1.9600000008940697)
+            }
+
+            over "LiftMotorPlate1" (
+                active = false
+            )
+            {
+            }
+
+            over "Motor1"
+            {
+                double3 xformOp:translate = (0.278, 0.704, 1.9600000008940697)
+            }
+        }
+
+        over "Joints"
+        {
+            over "LeftJaw" (
+                prepend apiSchemas = ["PhysicsJointStateAPI:linear"]
+            )
+            {
+                float state:linear:physics:position = -0.0093
+                float state:linear:physics:velocity = 0
+            }
+
+            over "RightJaw" (
+                prepend apiSchemas = ["PhysicsJointStateAPI:linear"]
+            )
+            {
+                float state:linear:physics:position = 0.0093
+                float state:linear:physics:velocity = 0
+            }
+
+            over "LatchPress" (
+                prepend apiSchemas = ["PhysicsJointStateAPI:linear"]
+            )
+            {
+                float state:linear:physics:position = 3.874301e-10
+                float state:linear:physics:velocity = 0
+            }
+        }
+    }
+
+    over "Physics" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        uint physxScene:timeStepsPerSecond = 480
+    }
+}
+

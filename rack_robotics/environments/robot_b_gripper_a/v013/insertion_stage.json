@@ -1,0 +1,325 @@
+{
+  "revision": "open_insertion_stage_v2",
+  "architecture": "B",
+  "changes": [
+    {
+      "path": "/World/Robot/Carriage/ToolSupport",
+      "replaced_by": "OpenInsertionFrame",
+      "mass_delta_kg": -0.16038000689797105
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthRail0",
+      "old_size_m": [
+        0.012000000104308128,
+        0.18000000715255737,
+        0.00800000037997961
+      ],
+      "new_size_m": [
+        0.012,
+        0.2,
+        0.008
+      ],
+      "mass_delta_kg": 0.015071986987799072,
+      "density_kg_m3": 7850.0
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBlock0",
+      "translation_delta_m": [
+        -0.008,
+        -0.03,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthRail1",
+      "old_size_m": [
+        0.012000000104308128,
+        0.18000000715255737,
+        0.00800000037997961
+      ],
+      "new_size_m": [
+        0.012,
+        0.2,
+        0.008
+      ],
+      "mass_delta_kg": 0.015071986987799072,
+      "density_kg_m3": 7850.0
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBlock1",
+      "translation_delta_m": [
+        0.008,
+        -0.03,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBearingPlate",
+      "old_size_m": [
+        0.07400000095367432,
+        0.04800000041723251,
+        0.008999999612569809
+      ],
+      "new_size_m": [
+        0.09,
+        0.048,
+        0.009
+      ],
+      "mass_delta_kg": 0.01866240185297734,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthScrew",
+      "new_length_m": 0.221,
+      "mass_delta_kg": 0.013539164779543252
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthNut",
+      "translation_delta_m": [
+        0,
+        -0.04,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotor",
+      "translation_delta_m": [
+        0,
+        0,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate",
+      "translation_delta_m": [
+        0,
+        0,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthCoupler",
+      "translation_delta_m": [
+        0,
+        0,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthSupportBearing",
+      "translation_delta_m": [
+        0,
+        -0.073,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingHanger",
+      "old_size_m": [
+        0.017999999225139618,
+        0.00800000037997961,
+        0.014000000432133675
+      ],
+      "new_size_m": [
+        0.018,
+        0.008,
+        0.014
+      ],
+      "mass_delta_kg": -1.9223390884486307e-10,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingCrossbar",
+      "old_size_m": [
+        0.06800000369548798,
+        0.004999999888241291,
+        0.006000000052154064
+      ],
+      "new_size_m": [
+        0.09,
+        0.005,
+        0.006
+      ],
+      "mass_delta_kg": 0.001781999775901442,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPost0",
+      "old_size_m": [
+        0.006000000052154064,
+        0.00800000037997961,
+        0.03500000014901161
+      ],
+      "new_size_m": [
+        0.006,
+        0.008,
+        0.048
+      ],
+      "mass_delta_kg": 0.0016847997258111812,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt0",
+      "translation_delta_m": [
+        -0.009000000000000001,
+        -0.07,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPost1",
+      "old_size_m": [
+        0.006000000052154064,
+        0.00800000037997961,
+        0.03500000014901161
+      ],
+      "new_size_m": [
+        0.006,
+        0.008,
+        0.048
+      ],
+      "mass_delta_kg": 0.0016847997258111812,
+      "density_kg_m3": 2700.0
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingBolt1",
+      "translation_delta_m": [
+        0.009000000000000001,
+        -0.07,
+        0.08
+      ],
+      "mass_delta_kg": 0.0
+    }
+  ],
+  "new_parts": [
+    {
+      "path": "/World/Robot/Carriage/OpenInsertionFrame/Side0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.9799999999999997e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.053459999999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/OpenInsertionFrame/Side1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.9799999999999997e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.053459999999999994,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/OpenInsertionFrame/Bottom",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.2679999999999996e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.06123599999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/OpenInsertionFrame/Top",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.2679999999999996e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.06123599999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/OpenInsertionFrame/RailBed0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.3600000000000004e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.09072000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/OpenInsertionFrame/RailBed1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.3600000000000004e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.09072000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/Foot0",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 2.3040000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.006220800000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/Post0",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 3.8400000000000005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010368000000000002,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt0",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/Foot1",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 2.3040000000000003e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.006220800000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/Post1",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 3.8400000000000005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010368000000000002,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/InsertionRiser/PlateBolt1",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 9.896016858807848e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0007768373234164161,
+      "collision": false
+    }
+  ],
+  "mass_delta_kg_by_body": {
+    "/World/Robot/Carriage": 0.2992867308924602,
+    "/World/Robot/ToolMount": 0.05339367649981018
+  },
+  "joint_travel_m": 0.125,
+  "rail_length_m": 0.2,
+  "scope": "Open insertion-stage geometry before physics; unchanged TCP, joints, controllers and connector",
+  "limitations": [
+    "Custom dimensions, not vendor CAD or rated hardware.",
+    "Removed base plate mass uses an aluminum volume proxy against the original lumped mass.",
+    "Bearing blocks remain catalog envelopes; rail raceway and screw thread contact are abstracted.",
+    "Carrier attachments, whole-robot/rack clearance, stiffness and fastener qualification remain separate gates."
+  ]
+}

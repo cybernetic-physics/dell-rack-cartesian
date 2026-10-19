@@ -1,0 +1,12 @@
+{
+  "passed": false,
+  "scope": "full_rack",
+  "robot": "B_side_telescoping",
+  "gripper": "C_rj45_specific",
+  "loaded_scene": null,
+  "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/scripts/run_reference.py\", line 149, in <module>\n    task.tick(CFG.physics_dt)\n  File \"/workspace/rack_robotics/experiments/b_c_attempt001_full_rack/source/rack_robotics/controllers/rj45_task.py\", line 69, in tick\n    self.robot.command([a+(b-a)*u for a,b in zip(self.start,self.target)])\n  File \"/workspace/rack_robotics/experiments/b_c_attempt001_full_rack/source/rack_robotics/controllers/cartesian_interface.py\", line 25, in command\n    offset=self.deflection_filter.update(nominal,actual,1/240)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/rack_robotics/experiments/b_c_attempt001_full_rack/source/rack_robotics/kinematics.py\", line 18, in update\n    raw=compensate_deflection((0,0,0),nominal_tcp,measured_tcp)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/rack_robotics/experiments/b_c_attempt001_full_rack/source/rack_robotics/kinematics.py\", line 8, in compensate_deflection\n    raise ValueError(f'Compliant tool deflection exceeds {limit} m or is invalid: {offset}')\nValueError: Compliant tool deflection exceeds 0.0025 m or is invalid: (6.575670230546393e-09, -1.1126876037603761e-05, 0.0025024053962259263)\n",
+  "failure_stage": "runner_exception",
+  "limitations": [
+    "Runner exception; no successful task outcome is claimed."
+  ]
+}

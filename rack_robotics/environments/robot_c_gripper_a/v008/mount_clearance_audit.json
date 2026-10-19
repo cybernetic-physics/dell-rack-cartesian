@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "parts": 15,
+  "distinct_body_pairs_checked": 80,
+  "overlaps": [],
+  "errors": [],
+  "scope": "Initial axis-aligned carrier mount solids only, regardless of collision filters; not full-stroke, carrier-link, rack, fastener or strength acceptance",
+  "scene": "/workspace/rack_robotics/experiments/c_a_carriers480_001/scene.usda",
+  "scene_sha256": "d4402ecb8dd7c514b5f127037af3e041df6b46230da60408633d431cf52b9f32",
+  "source_sha256": {
+    "rack_robotics/scripts/audit_carrier_mounts.py": "4582a01e628be09c4116a77ad16da5a26e2b0a6c7d2c97705b1741b7ef5736dd",
+    "rack_robotics/carrier_mount_screen.py": "177823c083349eac4034649540b2e6721eea276c520adf065fc7d0ad6c293a0c"
+  },
+  "source_directory": "mount_clearance_audit_sources"
+}

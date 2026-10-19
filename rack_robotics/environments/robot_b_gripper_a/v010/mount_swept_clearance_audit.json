@@ -1,0 +1,102 @@
+{
+  "passed": false,
+  "parts": 31,
+  "distinct_body_pairs_checked": 357,
+  "joints": [
+    {
+      "name": "Lift",
+      "parent": "/World/Robot/Frame",
+      "child": "/World/Robot/LiftCarriage",
+      "axis": "Z",
+      "dimension": 2,
+      "sign": 1,
+      "initial_m": 4.768371586472142e-08,
+      "limits_m": [
+        -0.699999988079071,
+        0.0
+      ]
+    },
+    {
+      "name": "OuterExtension",
+      "parent": "/World/Robot/LiftCarriage",
+      "child": "/World/Robot/MiddleBoom",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.0050000000000000044,
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "name": "InnerExtension",
+      "parent": "/World/Robot/MiddleBoom",
+      "child": "/World/Robot/Carriage",
+      "axis": "X",
+      "dimension": 0,
+      "sign": 1,
+      "initial_m": 0.0050000000000000044,
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "name": "Insertion",
+      "parent": "/World/Robot/Carriage",
+      "child": "/World/Robot/ToolMount",
+      "axis": "Y",
+      "dimension": 1,
+      "sign": 1,
+      "initial_m": 0.0,
+      "limits_m": [
+        -0.125,
+        0.0
+      ]
+    }
+  ],
+  "possible_overlaps": [
+    {
+      "parts": [
+        "/World/Robot/Carriage/CarrierMounts/InsertionFixed0",
+        "/World/Robot/ToolMount/CarrierMounts/InsertionMoving0"
+      ],
+      "owners": [
+        "/World/Robot/Carriage",
+        "/World/Robot/ToolMount"
+      ],
+      "varying_joints": [
+        "Insertion"
+      ],
+      "relative_center_intervals_m": [
+        [
+          -0.01999999999999999,
+          -0.01999999999999999
+        ],
+        [
+          -0.10499999999999998,
+          0.020000000000000018
+        ],
+        [
+          -0.01750000000000007,
+          -0.01750000000000007
+        ]
+      ],
+      "sum_half_extents_m": [
+        0.028000000398606062,
+        0.00800000037997961,
+        0.025500000920146704
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "All independent Cartesian joint limits, axis-aligned carrier mount cubes only; no pose writes, irrespective of collision filtering. Not dynamic links, rack, deflection, fastener or strength acceptance.",
+  "scene": "/workspace/rack_robotics/experiments/b_a_carriers005/scene.usda",
+  "scene_sha256": "03e4f9e1819c2972932cfc1f42240edabd4b0d0c7393c75846311f8e66cab640",
+  "source_sha256": {
+    "rack_robotics/scripts/audit_carrier_mounts.py": "05c16406ad7a5cd499811979514c7b695ef5c80b75809ce0fac82a3e90db16f5",
+    "rack_robotics/carrier_mount_screen.py": "c62fc6b5f51b6dbb5e3d586c4fb2aab270c89de482c7b1d69e053c2e30321ba2"
+  },
+  "source_directory": "mount_swept_clearance_audit_sources"
+}

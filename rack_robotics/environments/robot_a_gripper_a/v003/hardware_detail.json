@@ -1,0 +1,558 @@
+{
+  "revision": "drive_connections_v2",
+  "architecture": "A",
+  "parts": [
+    {
+      "path": "/World/Robot/Frame/DriveUprightExtension0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.5600000000000002e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.06912,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate0/U0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0335000000000002e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.027904500000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate0/V0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.908e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0051516,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate0/U2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0335000000000002e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.027904500000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate0/V2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.908e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0051516,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftCoupler0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 5.258649110990883e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.041280395521278435,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearing0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 5.557603067906488e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.04362718408306593,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearingSupport0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.151999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.024710399999999993,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearing0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 5.557603067906488e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.04362718408306593,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearingSupport0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.151999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.024710399999999993,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/LiftNut0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 2.372028117166437e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.01862042071975653,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/LiftNutBracket0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 5.76e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015552,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt0_0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt0_0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt0_1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt0_1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/DriveUprightExtension1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 2.5600000000000002e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.06912,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate1/U0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0335000000000002e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.027904500000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate1/V0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.908e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0051516,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate1/U2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.0335000000000002e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.027904500000000006,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorPlate1/V2",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 1.908e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0051516,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftCoupler1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 5.258649110990883e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.041280395521278435,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearing1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 5.557603067906488e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.04362718408306593,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearingSupport1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.151999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.024710399999999993,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearing1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 5.557603067906488e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.04362718408306593,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftBearingSupport1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 9.151999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.024710399999999993,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/LiftNut1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 2.372028117166437e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.01862042071975653,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/LiftNutBracket1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 5.76e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.015552,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt1_0_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt1_0_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt1_1_0",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Frame/LiftMotorBolt1_1_1",
+      "rigid_parent": "/World/Robot/Frame",
+      "volume_m3": 7.068583470577035e-08,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0005548838024402972,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseMotorPlate/U0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 7.92e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.021384,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseMotorPlate/V0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.5479999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0041795999999999995,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseMotorPlate/U2",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 7.92e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.021384,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseMotorPlate/V2",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 1.5479999999999998e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0041795999999999995,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseCoupler",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 2.5281966879763865e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.019846344000614635,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseBearing0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 3.896580200100491e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.030588154570788856,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseBearingSupport0",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 7.2000000000000005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.019440000000000002,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseBearing1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 3.896580200100491e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.030588154570788856,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Bridge/TraverseBearingSupport1",
+      "rigid_parent": "/World/Robot/Bridge",
+      "volume_m3": 7.2000000000000005e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.019440000000000002,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/TraverseNut",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 2.6685316318122415e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.020947973309726097,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/TraverseNutBracket",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 7.2e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.01944,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/TraverseBlock0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/TraverseBlock1",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/TraverseBackPlate",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 4e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.10800000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBlock0",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBlock1",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 1.59354e-05,
+      "density_kg_m3": null,
+      "mass_basis": "MGN12H catalog block mass",
+      "estimated_mass_kg": 0.054,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthBearingPlate",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 3.1967999999999996e-05,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.08631359999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/ToolMount/DepthNut",
+      "rigid_parent": "/World/Robot/ToolMount",
+      "volume_m3": 1.484968015498824e-06,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.011656998921665768,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/U0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.72e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010043999999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/V0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 8.37e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0022599,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/U2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.72e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010043999999999999,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthMotorPlate/V2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 8.37e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.0022599,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthCoupler",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 7.735857750199508e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.006072648333906613,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthSupportBearing",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 9.89978676999216e-07,
+      "density_kg_m3": 7850.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.007771332614443845,
+      "collision": false
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPlate/U0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.990000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010773000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPlate/V0",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 4.0000000000000003e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00108,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPlate/U2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 3.990000000000001e-06,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.010773000000000001,
+      "collision": true
+    },
+    {
+      "path": "/World/Robot/Carriage/DepthFrontBearingPlate/V2",
+      "rigid_parent": "/World/Robot/Carriage",
+      "volume_m3": 4.0000000000000003e-07,
+      "density_kg_m3": 2700.0,
+      "mass_basis": "geometric_volume",
+      "estimated_mass_kg": 0.00108,
+      "collision": true
+    }
+  ],
+  "added_mass_kg_by_body": {
+    "/World/Robot/Frame": 0.6308145977943429,
+    "/World/Robot/Bridge": 0.23937469458170546,
+    "/World/Robot/Carriage": 0.3185457542580765,
+    "/World/Robot/ToolMount": 0.20597059892166575
+  },
+  "scope": "Dimensioned motor/guide/screw connections with additive geometric mass estimates; prismatic joint drive abstraction unchanged",
+  "remaining": [
+    "Thread contact, bearing races, screw rotation and motor torque-speed dynamics unmodeled",
+    "No certified fastener/rack ratings",
+    "Cable carriers and powered-off brakes not yet implemented"
+  ]
+}

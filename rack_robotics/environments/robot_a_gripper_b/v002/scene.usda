@@ -1,0 +1,1337 @@
+#usda 1.0
+(
+    subLayers = [
+        @../../../assets/shared_rack/baseline-001/assets/latch-row/dell_rack.usda@,
+        @cameras.usda@
+    ]
+)
+
+over "OmniverseKit_Persp" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+)
+{
+}
+
+over "Render"
+{
+    over "OmniverseKit"
+    {
+        over "HydraTextures"
+        {
+            over "omni_kit_widget_viewport_ViewportTexture_0"
+            {
+                rel camera = </OmniverseKit_Persp>
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 800)
+            }
+        }
+    }
+}
+
+over "World"
+{
+    over "HandDrive" (
+        prepend apiSchemas = ["PhysicsDriveAPI:transX", "PhysicsDriveAPI:transY", "PhysicsDriveAPI:transZ", "PhysicsDriveAPI:rotX", "PhysicsDriveAPI:rotY", "PhysicsDriveAPI:rotZ"]
+    )
+    {
+        float drive:rotX:physics:damping = 0.01
+        float drive:rotX:physics:maxForce = 0.08
+        float drive:rotX:physics:stiffness = 0.15
+        float drive:rotX:physics:targetPosition = 0
+        uniform token drive:rotX:physics:type = "force"
+        float drive:rotY:physics:damping = 0.01
+        float drive:rotY:physics:maxForce = 0.08
+        float drive:rotY:physics:stiffness = 0.15
+        float drive:rotY:physics:targetPosition = 0
+        uniform token drive:rotY:physics:type = "force"
+        float drive:rotZ:physics:damping = 0.01
+        float drive:rotZ:physics:maxForce = 0.08
+        float drive:rotZ:physics:stiffness = 0.15
+        float drive:rotZ:physics:targetPosition = 0
+        uniform token drive:rotZ:physics:type = "force"
+        float drive:transX:physics:damping = 10
+        float drive:transX:physics:maxForce = 5
+        float drive:transX:physics:stiffness = 4000
+        float drive:transX:physics:targetPosition = 0
+        uniform token drive:transX:physics:type = "force"
+        float drive:transY:physics:damping = 10
+        float drive:transY:physics:maxForce = 5
+        float drive:transY:physics:stiffness = 4000
+        float drive:transY:physics:targetPosition = 0.05
+        uniform token drive:transY:physics:type = "force"
+        float drive:transZ:physics:damping = 10
+        float drive:transZ:physics:maxForce = 5
+        float drive:transZ:physics:stiffness = 4000
+        float drive:transZ:physics:targetPosition = 0
+        uniform token drive:transZ:physics:type = "force"
+        rel physics:body1 = </World/Plug>
+        point3f physics:localPos0 = (0.1875, 0.429, 1.66)
+    }
+
+    over "Physics" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        bool physxScene:enableExternalForcesEveryIteration = 1
+    }
+
+    def Xform "Robot"
+    {
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Xform "Frame" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float physics:mass = 5
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Upright0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotAnodized>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.04, 0.89)
+                double3 xformOp:translate = (-0.26, 0.735, 1.425)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Guide0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.012, 0.008, 0.85)
+                double3 xformOp:translate = (-0.26, 0.71, 1.425)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "Screw0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.83
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.004
+                double3 xformOp:translate = (-0.24200000000000002, 0.704, 1.425)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Bracket0_0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.05, 0.16, 0.008)
+                double3 xformOp:translate = (-0.26, 0.655, 1.01)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "PostClamp0_0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.006, 0.05)
+                double3 xformOp:translate = (-0.285, 0.593, 1.01)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "Bolt0_0_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (-0.285, 0.598, 0.994)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "Bolt0_0_1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (-0.285, 0.598, 1.026)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Bracket0_1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.05, 0.16, 0.008)
+                double3 xformOp:translate = (-0.26, 0.655, 1.84)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "PostClamp0_1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.006, 0.05)
+                double3 xformOp:translate = (-0.285, 0.593, 1.84)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "Bolt0_1_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (-0.285, 0.598, 1.824)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "Bolt0_1_1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (-0.285, 0.598, 1.856)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Motor0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotBlue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.042, 0.042, 0.045)
+                double3 xformOp:translate = (-0.26, 0.735, 1.915)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Stop0_0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotTongue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.023, 0.016, 0.008)
+                double3 xformOp:translate = (-0.26, 0.698, 1.03)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Stop0_1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotTongue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.023, 0.016, 0.008)
+                double3 xformOp:translate = (-0.26, 0.698, 1.82)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Upright1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotAnodized>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.04, 0.89)
+                double3 xformOp:translate = (0.26, 0.735, 1.425)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Guide1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.012, 0.008, 0.85)
+                double3 xformOp:translate = (0.26, 0.71, 1.425)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "Screw1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.83
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.004
+                double3 xformOp:translate = (0.278, 0.704, 1.425)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Bracket1_0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.05, 0.16, 0.008)
+                double3 xformOp:translate = (0.26, 0.655, 1.01)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "PostClamp1_0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.006, 0.05)
+                double3 xformOp:translate = (0.285, 0.593, 1.01)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "Bolt1_0_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (0.285, 0.598, 0.994)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "Bolt1_0_1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (0.285, 0.598, 1.026)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Bracket1_1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.05, 0.16, 0.008)
+                double3 xformOp:translate = (0.26, 0.655, 1.84)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "PostClamp1_1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.006, 0.05)
+                double3 xformOp:translate = (0.285, 0.593, 1.84)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "Bolt1_1_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (0.285, 0.598, 1.824)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "Bolt1_1_1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (0.285, 0.598, 1.856)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Motor1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotBlue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.042, 0.042, 0.045)
+                double3 xformOp:translate = (0.26, 0.735, 1.915)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Stop1_0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotTongue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.023, 0.016, 0.008)
+                double3 xformOp:translate = (0.26, 0.698, 1.03)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Stop1_1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotTongue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.023, 0.016, 0.008)
+                double3 xformOp:translate = (0.26, 0.698, 1.82)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def "Joints"
+        {
+            def PhysicsFixedJoint "RackMount" (
+                prepend apiSchemas = ["PhysicsArticulationRootAPI", "PhysxArticulationAPI"]
+            )
+            {
+                rel physics:body1 = </World/Robot/Frame>
+                bool physxArticulation:enabledSelfCollisions = 1
+                int physxArticulation:solverPositionIterationCount = 128
+                int physxArticulation:solverVelocityIterationCount = 4
+            }
+
+            def PhysicsPrismaticJoint "Lift" (
+                prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+            )
+            {
+                float drive:linear:physics:damping = 500
+                float drive:linear:physics:maxForce = 100
+                float drive:linear:physics:stiffness = 100000
+                float drive:linear:physics:targetPosition = 0
+                uniform token drive:linear:physics:type = "force"
+                uniform token physics:axis = "Z"
+                rel physics:body0 = </World/Robot/Frame>
+                rel physics:body1 = </World/Robot/Bridge>
+                bool physics:collisionEnabled = 0
+                point3f physics:localPos0 = (0, 0.72, 1.8)
+                point3f physics:localPos1 = (0, 0, 0)
+                float physics:lowerLimit = -0.7
+                float physics:upperLimit = 0
+            }
+
+            def PhysicsPrismaticJoint "Traverse" (
+                prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+            )
+            {
+                float drive:linear:physics:damping = 150
+                float drive:linear:physics:maxForce = 50
+                float drive:linear:physics:stiffness = 40000
+                float drive:linear:physics:targetPosition = 0.15
+                uniform token drive:linear:physics:type = "force"
+                uniform token physics:axis = "X"
+                rel physics:body0 = </World/Robot/Bridge>
+                rel physics:body1 = </World/Robot/Carriage>
+                bool physics:collisionEnabled = 0
+                point3f physics:localPos0 = (0, -0.04, 0)
+                point3f physics:localPos1 = (0, 0, 0)
+                float physics:lowerLimit = -0.21
+                float physics:upperLimit = 0.21
+            }
+
+            def PhysicsPrismaticJoint "Insertion" (
+                prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+            )
+            {
+                float drive:linear:physics:damping = 35
+                float drive:linear:physics:maxForce = 8
+                float drive:linear:physics:stiffness = 15000
+                float drive:linear:physics:targetPosition = 0
+                uniform token drive:linear:physics:type = "force"
+                uniform token physics:axis = "Y"
+                rel physics:body0 = </World/Robot/Carriage>
+                rel physics:body1 = </World/Robot/ToolMount>
+                bool physics:collisionEnabled = 0
+                point3f physics:localPos0 = (0, 0, 0)
+                point3f physics:localPos1 = (0, 0, 0)
+                float physics:lowerLimit = -0.125
+                float physics:upperLimit = 0
+            }
+
+            def PhysicsFixedJoint "LeftShoe"
+            {
+                rel physics:body0 = </World/Robot/RG2/Geometry/left_finger_tip_link>
+                rel physics:body1 = </World/Robot/LeftJaw>
+                bool physics:collisionEnabled = 0
+                point3f physics:localPos0 = (0.015792076, -0.0653, 0.0040000044)
+                quatf physics:localRot0 = (0.5, 0.49999997, -0.49999997, 0.5)
+            }
+
+            def PhysicsFixedJoint "RightShoe"
+            {
+                rel physics:body0 = </World/Robot/RG2/Geometry/right_finger_tip_link>
+                rel physics:body1 = </World/Robot/RightJaw>
+                bool physics:collisionEnabled = 0
+                point3f physics:localPos0 = (0.015792076, 0.06529999, 0.0040002423)
+                quatf physics:localRot0 = (0.50000095, -0.49999908, 0.49999908, 0.50000095)
+            }
+
+            def PhysicsPrismaticJoint "LatchPress" (
+                prepend apiSchemas = ["PhysicsDriveAPI:linear", "PhysxJointAPI"]
+            )
+            {
+                float drive:linear:physics:damping = 8
+                float drive:linear:physics:maxForce = 4
+                float drive:linear:physics:stiffness = 12000
+                float drive:linear:physics:targetPosition = 0
+                uniform token drive:linear:physics:type = "force"
+                uniform token physics:axis = "Z"
+                rel physics:body0 = </World/Robot/ToolMount>
+                rel physics:body1 = </World/Robot/LatchTongue>
+                bool physics:collisionEnabled = 0
+                point3f physics:localPos0 = (0, -0.124, 0.009)
+                point3f physics:localPos1 = (0, 0, 0)
+                float physics:lowerLimit = -0.0055
+                float physics:upperLimit = 0.001
+                float physxJoint:maxJointVelocity = 0.02
+            }
+        }
+
+        def Xform "Bridge" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float physics:mass = 1.3
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            double3 xformOp:translate = (0, 0.72, 1.8)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Beam" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotAnodized>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.54, 0.032, 0.04)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "XGuide" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.48, 0.008, 0.012)
+                double3 xformOp:translate = (0, -0.021, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "XScrew" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "X"
+                double height = 0.48
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.004
+                double3 xformOp:translate = (0, -0.023, 0.018)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "GuideBlock0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.027, 0.013, 0.0454)
+                double3 xformOp:translate = (-0.26, -0.011, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "GuideBlock1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.027, 0.013, 0.0454)
+                double3 xformOp:translate = (0.26, -0.011, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "XMotor" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotBlue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.045, 0.042, 0.042)
+                double3 xformOp:translate = (0.29, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "Carriage" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float physics:mass = 0.38
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            double3 xformOp:translate = (0.15, 0.68, 1.8)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Plate" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotBlue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.055, 0.012, 0.06)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "DepthRail0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.012, 0.16, 0.008)
+                double3 xformOp:translate = (-0.022, -0.055, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "DepthRail1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.012, 0.16, 0.008)
+                double3 xformOp:translate = (0.022, -0.055, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "DepthScrew" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.16
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.003
+                double3 xformOp:translate = (0, -0.055, 0.014)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "DepthMotor" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotBlue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.028, 0.035, 0.028)
+                double3 xformOp:translate = (0, 0.037, 0.014)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "ToolMount" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float physics:mass = 0.58
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            double3 xformOp:translate = (0.15, 0.68, 1.8)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Flange" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.03, 0.006, 0.033)
+                double3 xformOp:translate = (0, -0.01, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "CrossHead" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.144, 0.008, 0.006)
+                double3 xformOp:translate = (0, -0.01, 0.035)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "SideDrop0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.008, 0.15)
+                double3 xformOp:translate = (-0.066, -0.01, -0.04)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "SideDrop1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.008, 0.15)
+                double3 xformOp:translate = (0.066, -0.01, -0.04)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Cradle" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.144, 0.126, 0.006)
+                double3 xformOp:translate = (0, 0.048, -0.115)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "RearFlange" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.065, 0.008, 0.1)
+                double3 xformOp:translate = (0, 0.107, -0.065)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "FlangeBolt0_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.008
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.0025
+                double3 xformOp:translate = (-0.02, 0.113, -0.085)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "FlangeBolt0_1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.008
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.0025
+                double3 xformOp:translate = (-0.02, 0.113, -0.045)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "FlangeBolt1_0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.008
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.0025
+                double3 xformOp:translate = (0.02, 0.113, -0.085)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cylinder "FlangeBolt1_1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Y"
+                double height = 0.008
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.0025
+                double3 xformOp:translate = (0.02, 0.113, -0.045)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "TongueSupport0" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.004, 0.006, 0.05)
+                double3 xformOp:translate = (-0.01, -0.012, 0.035)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "TongueSupport1" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.004, 0.006, 0.05)
+                double3 xformOp:translate = (0.01, -0.012, 0.035)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "TongueSpine" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotAnodized>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.026, 0.09, 0.005)
+                double3 xformOp:translate = (0, -0.054, 0.057)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "PQ12Envelope" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotBlue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0215, 0.015, 0.0365)
+                double3 xformOp:translate = (0, -0.095, 0.03325)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cylinder "TongueRod" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token axis = "Z"
+                double height = 0.006
+                rel material:binding = </World/Materials/RobotSteel>
+                double radius = 0.0015
+                double3 xformOp:translate = (0, -0.095, 0.012)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+        }
+
+        def Xform "RG2" (
+            delete apiSchemas = ["PhysicsArticulationRootAPI", "PhysxArticulationAPI"]
+            prepend references = @assets/rg2/onrobot_rg2.usda@
+            variants = {
+                string Physics = "physx_parallel_grip"
+            }
+        )
+        {
+            float xformOp:rotateX = 90
+            double3 xformOp:translate = (0.15005, 0.78, 1.735)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateX"]
+
+            over "Physics"
+            {
+                over "root_joint"
+                {
+                    rel physics:body0 = </World/Robot/ToolMount>
+                    bool physics:collisionEnabled = 0
+                    point3f physics:localPos0 = (0.00005, 0.1, -0.065)
+                    quatf physics:localRot0 = (0.70710677, 0.70710677, 0, 0)
+                }
+
+                over "finger_joint"
+                {
+                    float drive:angular:physics:maxForce = 1
+                    float drive:angular:physics:targetPosition = 60
+                }
+            }
+        }
+
+        def Xform "LeftJaw" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float physics:mass = 0.033
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            double3 xformOp:translate = (0.10516796673296575, 0.5747313654533012, 1.7999999988961868)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Riser" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0045, 0.01, 0.0653)
+                double3 xformOp:translate = (-0.001, 0.015792076362668356, -0.03265)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Shoulder" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0085, 0.01, 0.006)
+                double3 xformOp:translate = (-0.003, 0.014, -0.0005)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Finger" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0045, 0.018, 0.006)
+                double3 xformOp:translate = (-0.00125, 0.011, -0.0005)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Pad" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotPad>
+                rel material:binding:physics = </World/Materials/RobotPad>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.008, 0.006)
+                double3 xformOp:translate = (0, 0.006, -0.0005)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "UpperGuideLand" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0026, 0.0065, 0.0016)
+                double3 xformOp:translate = (0.0005, 0.00525, 0.00395)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Mesh "UpperGuide" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [3, 2, 1, 0, 4, 5, 6, 7, 0, 1, 5, 4, 1, 2, 6, 5, 2, 3, 7, 6, 3, 0, 4, 7]
+                rel material:binding = </World/Materials/RobotSteel>
+                uniform token physics:approximation = "convexHull"
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                point3f[] points = [(0.0018, 0.002, 0.00315), (0.003, 0.002, 0.00395), (0.003, 0.002, 0.00475), (0.0018, 0.002, 0.00475), (0.0018, 0.0085, 0.00315), (0.003, 0.0085, 0.00395), (0.003, 0.0085, 0.00475), (0.0018, 0.0085, 0.00475)]
+                uniform token subdivisionScheme = "none"
+            }
+
+            def Cube "LowerGuideLand" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0026, 0.0065, 0.0016)
+                double3 xformOp:translate = (0.0005, 0.00525, -0.00495)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Mesh "LowerGuide" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [3, 2, 1, 0, 4, 5, 6, 7, 0, 1, 5, 4, 1, 2, 6, 5, 2, 3, 7, 6, 3, 0, 4, 7]
+                rel material:binding = </World/Materials/RobotSteel>
+                uniform token physics:approximation = "convexHull"
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                point3f[] points = [(0.0018, 0.002, -0.00415), (0.003, 0.002, -0.00495), (0.003, 0.002, -0.00575), (0.0018, 0.002, -0.00575), (0.0018, 0.0085, -0.00415), (0.003, 0.0085, -0.00495), (0.003, 0.0085, -0.00575), (0.0018, 0.0085, -0.00575)]
+                uniform token subdivisionScheme = "none"
+            }
+        }
+
+        def Xform "RightJaw" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float physics:mass = 0.033
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            double3 xformOp:translate = (0.19483216459804611, 0.57473128908485, 1.7999998808332551)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Riser" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0045, 0.01, 0.0653)
+                double3 xformOp:translate = (0.001, 0.015792076362668356, -0.03265)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Shoulder" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0085, 0.01, 0.006)
+                double3 xformOp:translate = (0.003, 0.014, -0.0005)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Finger" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0045, 0.018, 0.006)
+                double3 xformOp:translate = (0.00125, 0.011, -0.0005)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Pad" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotPad>
+                rel material:binding:physics = </World/Materials/RobotPad>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.008, 0.006)
+                double3 xformOp:translate = (0, 0.006, -0.0005)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "UpperGuideLand" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0026, 0.0065, 0.0016)
+                double3 xformOp:translate = (-0.0005, 0.00525, 0.00395)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Mesh "UpperGuide" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [3, 2, 1, 0, 4, 5, 6, 7, 0, 1, 5, 4, 1, 2, 6, 5, 2, 3, 7, 6, 3, 0, 4, 7]
+                rel material:binding = </World/Materials/RobotSteel>
+                uniform token physics:approximation = "convexHull"
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                point3f[] points = [(-0.0018, 0.002, 0.00315), (-0.003, 0.002, 0.00395), (-0.003, 0.002, 0.00475), (-0.0018, 0.002, 0.00475), (-0.0018, 0.0085, 0.00315), (-0.003, 0.0085, 0.00395), (-0.003, 0.0085, 0.00475), (-0.0018, 0.0085, 0.00475)]
+                uniform token subdivisionScheme = "none"
+            }
+
+            def Cube "LowerGuideLand" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.0026, 0.0065, 0.0016)
+                double3 xformOp:translate = (-0.0005, 0.00525, -0.00495)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Mesh "LowerGuide" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [3, 2, 1, 0, 4, 5, 6, 7, 0, 1, 5, 4, 1, 2, 6, 5, 2, 3, 7, 6, 3, 0, 4, 7]
+                rel material:binding = </World/Materials/RobotSteel>
+                uniform token physics:approximation = "convexHull"
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                point3f[] points = [(-0.0018, 0.002, -0.00415), (-0.003, 0.002, -0.00495), (-0.003, 0.002, -0.00575), (-0.0018, 0.002, -0.00575), (-0.0018, 0.0085, -0.00415), (-0.003, 0.0085, -0.00495), (-0.003, 0.0085, -0.00575), (-0.0018, 0.0085, -0.00575)]
+                uniform token subdivisionScheme = "none"
+            }
+        }
+
+        def Xform "LatchTongue" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float physics:mass = 0.004
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            double3 xformOp:translate = (0.15, 0.556, 1.809)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Tip" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotTongue>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.003, 0.002, 0.001)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Neck" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.003, 0.0015, 0.007)
+                double3 xformOp:translate = (0, 0.0005, 0.003)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "RaisedArm" (
+                prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                rel material:binding = </World/Materials/RobotSteel>
+                float physxCollision:contactOffset = 0.00005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.003, 0.03, 0.002)
+                double3 xformOp:translate = (0, 0.016, 0.006)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "Materials"
+    {
+        def Material "RobotSteel"
+        {
+            token outputs:surface.connect = </World/Materials/RobotSteel/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.48, 0.54, 0.6)
+                float inputs:metallic = 0.85
+                float inputs:roughness = 0.23
+                token outputs:surface
+            }
+        }
+
+        def Material "RobotAnodized"
+        {
+            token outputs:surface.connect = </World/Materials/RobotAnodized/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.07, 0.12, 0.16)
+                float inputs:metallic = 0.7
+                float inputs:roughness = 0.3
+                token outputs:surface
+            }
+        }
+
+        def Material "RobotBlue"
+        {
+            token outputs:surface.connect = </World/Materials/RobotBlue/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.03, 0.21, 0.36)
+                float inputs:metallic = 0.5
+                float inputs:roughness = 0.28
+                token outputs:surface
+            }
+        }
+
+        def Material "RobotTongue"
+        {
+            token outputs:surface.connect = </World/Materials/RobotTongue/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.94, 0.32, 0.03)
+                float inputs:metallic = 0.2
+                float inputs:roughness = 0.3
+                token outputs:surface
+            }
+        }
+
+        def Material "RobotPad" (
+            prepend apiSchemas = ["PhysicsMaterialAPI"]
+        )
+        {
+            token outputs:surface.connect = </World/Materials/RobotPad/Surface.outputs:surface>
+            float physics:dynamicFriction = 0.6
+            float physics:restitution = 0
+            float physics:staticFriction = 0.7
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.03, 0.035, 0.04)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.7
+                token outputs:surface
+            }
+        }
+    }
+}
+

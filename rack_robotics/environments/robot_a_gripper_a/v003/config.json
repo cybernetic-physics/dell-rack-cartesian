@@ -1,0 +1,160 @@
+{
+  "robot": "A_dual_supported_screw",
+  "gripper": "A_precision_parallel",
+  "architecture": "A",
+  "baseline": "../../../assets/shared_rack/baseline-001",
+  "scene": "scene.usda",
+  "physics_dt": 0.004166666666666667,
+  "recording_fps": 30,
+  "target_port": 1,
+  "initialization": "Physical pre-seat using baseline hand drive; remove it before robot trial",
+  "camera_paths": {
+    "wide": "/World/Cameras/wide",
+    "rear": "/World/Cameras/rear",
+    "macro": "/World/Cameras/macro",
+    "side": "/World/Cameras/side"
+  },
+  "status": "failed_feasibility",
+  "reload_verified": false,
+  "randomized_trials": 0,
+  "limitations": [
+    "Development prototype, not a calibrated commercial digital twin.",
+    "Controller uses simulator pose feedback, not modeled perception.",
+    "No randomized reliability or complete rack collision audit yet.",
+    "Bounded recovery implemented; randomized physical fault-injection validation pending."
+  ],
+  "hardware_revision": "drive_connections_v2",
+  "joint_parameters": {
+    "/World/Robot/Joints/RackMount": {
+      "bodies": {
+        "physics:body1": [
+          "/World/Robot/Frame"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Lift": {
+      "drive:linear:physics:damping": 500.0,
+      "drive:linear:physics:maxForce": 100.0,
+      "drive:linear:physics:stiffness": 100000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Z",
+      "physics:lowerLimit": -0.699999988079071,
+      "physics:upperLimit": 0.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Frame"
+        ],
+        "physics:body1": [
+          "/World/Robot/Bridge"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Traverse": {
+      "drive:linear:physics:damping": 150.0,
+      "drive:linear:physics:maxForce": 50.0,
+      "drive:linear:physics:stiffness": 40000.0,
+      "drive:linear:physics:targetPosition": 0.15000000596046448,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": -0.20999999344348907,
+      "physics:upperLimit": 0.20999999344348907,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Bridge"
+        ],
+        "physics:body1": [
+          "/World/Robot/Carriage"
+        ]
+      }
+    },
+    "/World/Robot/Joints/Insertion": {
+      "drive:linear:physics:damping": 35.0,
+      "drive:linear:physics:maxForce": 8.0,
+      "drive:linear:physics:stiffness": 15000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Y",
+      "physics:lowerLimit": -0.125,
+      "physics:upperLimit": 0.0,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/Carriage"
+        ],
+        "physics:body1": [
+          "/World/Robot/ToolMount"
+        ]
+      }
+    },
+    "/World/Robot/Joints/LeftJaw": {
+      "drive:linear:physics:damping": 8.0,
+      "drive:linear:physics:maxForce": 10.0,
+      "drive:linear:physics:stiffness": 20000.0,
+      "drive:linear:physics:targetPosition": -0.00930000003427267,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": -0.00930000003427267,
+      "physics:upperLimit": -0.006300000008195639,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/LeftJaw"
+        ]
+      }
+    },
+    "/World/Robot/Joints/RightJaw": {
+      "drive:linear:physics:damping": 8.0,
+      "drive:linear:physics:maxForce": 10.0,
+      "drive:linear:physics:stiffness": 20000.0,
+      "drive:linear:physics:targetPosition": 0.00930000003427267,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "X",
+      "physics:lowerLimit": 0.006300000008195639,
+      "physics:upperLimit": 0.00930000003427267,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/RightJaw"
+        ]
+      }
+    },
+    "/World/Robot/Joints/LatchPress": {
+      "drive:linear:physics:damping": 8.0,
+      "drive:linear:physics:maxForce": 4.0,
+      "drive:linear:physics:stiffness": 12000.0,
+      "drive:linear:physics:targetPosition": 0.0,
+      "drive:linear:physics:targetVelocity": 0.0,
+      "drive:linear:physics:type": "force",
+      "physics:axis": "Z",
+      "physics:lowerLimit": -0.005499999970197678,
+      "physics:upperLimit": 0.0010000000474974513,
+      "bodies": {
+        "physics:body0": [
+          "/World/Robot/ToolMount"
+        ],
+        "physics:body1": [
+          "/World/Robot/LatchTongue"
+        ]
+      }
+    }
+  },
+  "body_masses_kg": {
+    "/World/Robot/Frame": 5.630814552307129,
+    "/World/Robot/Bridge": 1.539374589920044,
+    "/World/Robot/Carriage": 0.6985457539558411,
+    "/World/Robot/ToolMount": 0.3859705924987793,
+    "/World/Robot/LeftJaw": 0.014000000432133675,
+    "/World/Robot/RightJaw": 0.014000000432133675,
+    "/World/Robot/LatchTongue": 0.004000000189989805
+  },
+  "parameter_scope": "Authored simulator joint settings and lumped masses; not calibrated hardware ratings."
+}

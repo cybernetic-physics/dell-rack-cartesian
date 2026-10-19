@@ -1,0 +1,1541 @@
+{
+  "sample_hz": 30,
+  "checks": {
+    "samples_present": true,
+    "finite_state": true,
+    "sampled_anchor_gap_below_1p5mm": false,
+    "sampled_hinge_limits_within_one_degree": false
+  },
+  "samples": [
+    {
+      "time_s": 4.0,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.043055493403631344,
+      "minimum_hinge_deg": -139.23202034283733,
+      "maximum_hinge_deg": 60.856329491957325,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.033333333333333,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.04709930273183665,
+      "minimum_hinge_deg": -148.53103893936796,
+      "maximum_hinge_deg": 41.10572556097777,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.066666666666666,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.05741780132994897,
+      "minimum_hinge_deg": -155.43117806090115,
+      "maximum_hinge_deg": 122.0723239807239,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.1,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.04650198066343775,
+      "minimum_hinge_deg": -82.93077524887374,
+      "maximum_hinge_deg": 82.68915040978607,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.133333333333333,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.047550570847665334,
+      "minimum_hinge_deg": -81.00605747180448,
+      "maximum_hinge_deg": 100.87940032958308,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.166666666666667,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.05226287746561965,
+      "minimum_hinge_deg": -78.39808612541468,
+      "maximum_hinge_deg": 112.33330980219995,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.2,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.04934087459135666,
+      "minimum_hinge_deg": -81.84796709657621,
+      "maximum_hinge_deg": 92.82460022469094,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.233333333333333,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.04503379300843688,
+      "minimum_hinge_deg": -77.5956384004232,
+      "maximum_hinge_deg": 76.49055651823731,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.266666666666667,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.04870284655697465,
+      "minimum_hinge_deg": -64.2071057448698,
+      "maximum_hinge_deg": 67.27617677959348,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.3,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.04926285691106784,
+      "minimum_hinge_deg": -62.123141306751144,
+      "maximum_hinge_deg": 66.62980277297274,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.333333333333333,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.04944608343517221,
+      "minimum_hinge_deg": -66.86742663517865,
+      "maximum_hinge_deg": 66.42660896725974,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.366666666666666,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.0506836140454353,
+      "minimum_hinge_deg": -99.80033634939764,
+      "maximum_hinge_deg": 96.14520541717981,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.4,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.05338988871592417,
+      "minimum_hinge_deg": -121.53956762835847,
+      "maximum_hinge_deg": 164.26231356855607,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.433333333333334,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.042706099702930274,
+      "minimum_hinge_deg": -88.66256986918268,
+      "maximum_hinge_deg": 65.66959063433409,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.466666666666667,
+      "phase": "initialize",
+      "maximum_anchor_gap_m": 0.05026645800404651,
+      "minimum_hinge_deg": -60.80358182158126,
+      "maximum_hinge_deg": 70.61715386314474,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.5,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.0501146161791258,
+      "minimum_hinge_deg": -66.03195819488839,
+      "maximum_hinge_deg": 71.86036764388268,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.533333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.049732284879234145,
+      "minimum_hinge_deg": -73.69824838332377,
+      "maximum_hinge_deg": 79.6410359634137,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.566666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.048864103858009524,
+      "minimum_hinge_deg": -75.56465333433161,
+      "maximum_hinge_deg": 74.39594303222525,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.6,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.043757289343752,
+      "minimum_hinge_deg": -81.08752177479003,
+      "maximum_hinge_deg": 108.56854528411763,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.633333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.042522589438876046,
+      "minimum_hinge_deg": -79.25274395594205,
+      "maximum_hinge_deg": 62.89807280141238,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.666666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04178126738469303,
+      "minimum_hinge_deg": -82.34559995467878,
+      "maximum_hinge_deg": 139.86856610488684,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.7,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.042189321154369366,
+      "minimum_hinge_deg": -84.44960197511719,
+      "maximum_hinge_deg": 63.830485379698274,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.733333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04254814997089513,
+      "minimum_hinge_deg": -86.0221053780709,
+      "maximum_hinge_deg": 53.01453754448695,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.766666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.040819894695366225,
+      "minimum_hinge_deg": -88.04648594917161,
+      "maximum_hinge_deg": 42.25776038928887,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.8,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04055872982995166,
+      "minimum_hinge_deg": -85.51186719111479,
+      "maximum_hinge_deg": 83.48832209787315,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.833333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04177332730105996,
+      "minimum_hinge_deg": -163.7903897302562,
+      "maximum_hinge_deg": 106.20771534308072,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.866666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.039029929945335204,
+      "minimum_hinge_deg": -82.49210214627828,
+      "maximum_hinge_deg": 71.94888160864173,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.9,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.039328880609831425,
+      "minimum_hinge_deg": -84.09698357951774,
+      "maximum_hinge_deg": 111.05070817228541,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.933333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04847695853625881,
+      "minimum_hinge_deg": -92.35174893677771,
+      "maximum_hinge_deg": 137.99266876819377,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 4.966666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.06152300948553213,
+      "minimum_hinge_deg": -139.1749849689966,
+      "maximum_hinge_deg": 135.24274969273998,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.0,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.061359014415634086,
+      "minimum_hinge_deg": -115.91682715323219,
+      "maximum_hinge_deg": 146.02520880427363,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.033333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.022016190526178182,
+      "minimum_hinge_deg": -171.41514281607414,
+      "maximum_hinge_deg": 160.57694220993537,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.066666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.03106697535606566,
+      "minimum_hinge_deg": -161.9039460403494,
+      "maximum_hinge_deg": 156.98013750474163,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.1,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.01885708878116358,
+      "minimum_hinge_deg": -163.10756718365897,
+      "maximum_hinge_deg": 73.28277931452187,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.133333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04483925748262486,
+      "minimum_hinge_deg": -163.82778048120937,
+      "maximum_hinge_deg": 68.87325137694718,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.166666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04802882242989143,
+      "minimum_hinge_deg": -75.13985462250862,
+      "maximum_hinge_deg": 179.77301518492962,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.2,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.03608138093890932,
+      "minimum_hinge_deg": -170.1923064224089,
+      "maximum_hinge_deg": 80.18279522816434,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.233333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.03621473379674702,
+      "minimum_hinge_deg": -127.06332865341442,
+      "maximum_hinge_deg": 179.28233410752705,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.266666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.03362722475364201,
+      "minimum_hinge_deg": -179.48201530754943,
+      "maximum_hinge_deg": 102.95056413322983,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.3,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04202568677726626,
+      "minimum_hinge_deg": -163.8445128547378,
+      "maximum_hinge_deg": 98.0516700526837,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.333333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.07186706079243342,
+      "minimum_hinge_deg": -159.89091312320113,
+      "maximum_hinge_deg": 177.62231069428668,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.366666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.08316190427672307,
+      "minimum_hinge_deg": -161.75250439396203,
+      "maximum_hinge_deg": 91.9819307548686,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.4,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.07030232745239293,
+      "minimum_hinge_deg": -142.70134665150016,
+      "maximum_hinge_deg": 179.61787932523896,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.433333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.0755174968425915,
+      "minimum_hinge_deg": -131.97711955436205,
+      "maximum_hinge_deg": 145.76347992422487,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.466666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.05703929135511187,
+      "minimum_hinge_deg": -132.3778141470919,
+      "maximum_hinge_deg": 146.17512537579026,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.5,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.05234498837889312,
+      "minimum_hinge_deg": -133.9854214241188,
+      "maximum_hinge_deg": 146.45965029215483,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.533333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04629368931597084,
+      "minimum_hinge_deg": -130.46744472870085,
+      "maximum_hinge_deg": 146.30202410234168,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.566666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.039732588580637024,
+      "minimum_hinge_deg": -148.54684049439723,
+      "maximum_hinge_deg": 178.1818006931097,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.6,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.026954742500710234,
+      "minimum_hinge_deg": -143.1558981480431,
+      "maximum_hinge_deg": 129.04541242410957,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.633333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.04535728986797749,
+      "minimum_hinge_deg": -135.1469245890523,
+      "maximum_hinge_deg": 105.00846924632829,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.666666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009951141458945972,
+      "minimum_hinge_deg": -122.6217357989541,
+      "maximum_hinge_deg": 119.72478324750458,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.7,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010090068509549943,
+      "minimum_hinge_deg": -133.66913544566683,
+      "maximum_hinge_deg": 128.71378272437406,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.733333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.01000537814499231,
+      "minimum_hinge_deg": -144.4984472732215,
+      "maximum_hinge_deg": 126.2873713655716,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.766666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010129843068398106,
+      "minimum_hinge_deg": -144.3598338425454,
+      "maximum_hinge_deg": 132.35208383575997,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.8,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010013020014482033,
+      "minimum_hinge_deg": -144.51942331900332,
+      "maximum_hinge_deg": 134.41317642902962,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.833333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.01015038922049314,
+      "minimum_hinge_deg": -144.47423104364452,
+      "maximum_hinge_deg": 126.5929524941593,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.866666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.01003702775686351,
+      "minimum_hinge_deg": -144.45108398333963,
+      "maximum_hinge_deg": 134.9663075402237,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.9,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010082882864011242,
+      "minimum_hinge_deg": -144.5073093367095,
+      "maximum_hinge_deg": 129.55064895077024,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.933333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010044882106639378,
+      "minimum_hinge_deg": -144.46752165475172,
+      "maximum_hinge_deg": 130.4679392952612,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 5.966666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010030523732050014,
+      "minimum_hinge_deg": -144.49464716913488,
+      "maximum_hinge_deg": 131.7545291419708,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.0,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010042706134896138,
+      "minimum_hinge_deg": -144.49765376103755,
+      "maximum_hinge_deg": 128.78832142097073,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.033333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.01001979205995124,
+      "minimum_hinge_deg": -144.4754617890904,
+      "maximum_hinge_deg": 131.56176651250343,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.066666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010015364660055157,
+      "minimum_hinge_deg": -144.49961522083683,
+      "maximum_hinge_deg": 129.84535953355902,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.1,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.010007060298482875,
+      "minimum_hinge_deg": -144.48476691672755,
+      "maximum_hinge_deg": 130.10362146909947,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.133333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009996367649691956,
+      "minimum_hinge_deg": -144.48630803753926,
+      "maximum_hinge_deg": 130.8841840264434,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.166666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009989446369945889,
+      "minimum_hinge_deg": -144.49757354897264,
+      "maximum_hinge_deg": 129.74377531165936,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.2,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009980408335105951,
+      "minimum_hinge_deg": -144.4840213868425,
+      "maximum_hinge_deg": 130.52186405722867,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.233333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00997063426282836,
+      "minimum_hinge_deg": -144.4939082904004,
+      "maximum_hinge_deg": 130.41759010505493,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.266666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009965485906458746,
+      "minimum_hinge_deg": -144.49276275865904,
+      "maximum_hinge_deg": 129.95973835847488,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.3,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009952140582450954,
+      "minimum_hinge_deg": -144.48429328405493,
+      "maximum_hinge_deg": 130.5763886635553,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.333333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009943513365167014,
+      "minimum_hinge_deg": -144.4923885645138,
+      "maximum_hinge_deg": 130.18605266938775,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.366666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009935842934815513,
+      "minimum_hinge_deg": -144.4897683935304,
+      "maximum_hinge_deg": 130.17340898006879,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.4,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009923692440770748,
+      "minimum_hinge_deg": -144.4897749109819,
+      "maximum_hinge_deg": 130.50030549665283,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.433333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009918575258159777,
+      "minimum_hinge_deg": -144.49384226754387,
+      "maximum_hinge_deg": 130.10227109401094,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.466666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009910772418660231,
+      "minimum_hinge_deg": -144.48831318160597,
+      "maximum_hinge_deg": 130.33669488184773,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.5,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009901368918372963,
+      "minimum_hinge_deg": -144.49151878904394,
+      "maximum_hinge_deg": 130.3620352435077,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.533333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009892571536160187,
+      "minimum_hinge_deg": -144.49168423582216,
+      "maximum_hinge_deg": 130.14361094816672,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.566666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009882193773683826,
+      "minimum_hinge_deg": -144.48722085223088,
+      "maximum_hinge_deg": 130.39569790746407,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.6,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009875472003575098,
+      "minimum_hinge_deg": -144.49234529677702,
+      "maximum_hinge_deg": 130.25554988390607,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.633333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009867711797132346,
+      "minimum_hinge_deg": -144.4903528158732,
+      "maximum_hinge_deg": 130.23408222783243,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.666666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00985990954785536,
+      "minimum_hinge_deg": -144.49012289513632,
+      "maximum_hinge_deg": 130.36903345655875,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.7,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009853159656488707,
+      "minimum_hinge_deg": -144.49222458154748,
+      "maximum_hinge_deg": 130.21793751700338,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.733333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00984711846217022,
+      "minimum_hinge_deg": -144.49005523345994,
+      "maximum_hinge_deg": 130.2991472233246,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.766666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009838228844145414,
+      "minimum_hinge_deg": -144.49187887825025,
+      "maximum_hinge_deg": 130.31925827241758,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.8,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009829421865772875,
+      "minimum_hinge_deg": -144.49170107384828,
+      "maximum_hinge_deg": 130.2305420873722,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.833333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00981941572975019,
+      "minimum_hinge_deg": -144.4902186810271,
+      "maximum_hinge_deg": 130.32577492629065,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.866666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009811159258731888,
+      "minimum_hinge_deg": -144.48950215535254,
+      "maximum_hinge_deg": 130.27611843022154,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.8999999999999995,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009804484469947649,
+      "minimum_hinge_deg": -144.48890465021069,
+      "maximum_hinge_deg": 130.26172906539725,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.933333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009795218097499279,
+      "minimum_hinge_deg": -144.49149880324603,
+      "maximum_hinge_deg": 130.32113956530665,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 6.966666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00978842199944322,
+      "minimum_hinge_deg": -144.49131947641186,
+      "maximum_hinge_deg": 130.25850623300101,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.0,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009779530965283697,
+      "minimum_hinge_deg": -144.49060869715763,
+      "maximum_hinge_deg": 130.29202286847578,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.033333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009767755942754502,
+      "minimum_hinge_deg": -144.49109859447034,
+      "maximum_hinge_deg": 130.3039635584032,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.066666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009761936255913062,
+      "minimum_hinge_deg": -144.4912703387263,
+      "maximum_hinge_deg": 130.2642715615783,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.1,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009749756569969374,
+      "minimum_hinge_deg": -144.4909872069816,
+      "maximum_hinge_deg": 130.3018153254685,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.133333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009741457533177598,
+      "minimum_hinge_deg": -144.49127155577506,
+      "maximum_hinge_deg": 130.2863852761626,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.166666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009735019869694375,
+      "minimum_hinge_deg": -144.48882079600085,
+      "maximum_hinge_deg": 130.27921470093978,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.2,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009726124036663633,
+      "minimum_hinge_deg": -144.49067162861388,
+      "maximum_hinge_deg": 130.29732142309814,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.233333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009717259140309964,
+      "minimum_hinge_deg": -144.4908849336454,
+      "maximum_hinge_deg": 130.28353710785302,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.266666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009707998092792013,
+      "minimum_hinge_deg": -144.49098617829338,
+      "maximum_hinge_deg": 130.28622078619347,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.3,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009700851928045456,
+      "minimum_hinge_deg": -144.49067566809202,
+      "maximum_hinge_deg": 130.2939818149585,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.333333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009693679037000741,
+      "minimum_hinge_deg": -144.49082360191932,
+      "maximum_hinge_deg": 130.280326385461,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.366666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009687407898036042,
+      "minimum_hinge_deg": -144.48886999379243,
+      "maximum_hinge_deg": 130.29153375910593,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.3999999999999995,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009681479761713673,
+      "minimum_hinge_deg": -144.49151940244965,
+      "maximum_hinge_deg": 130.28740364771812,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.433333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009675111490676094,
+      "minimum_hinge_deg": -144.4882300627552,
+      "maximum_hinge_deg": 130.2860894651285,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.466666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009666975721662576,
+      "minimum_hinge_deg": -144.4910885727926,
+      "maximum_hinge_deg": 130.29130589538846,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.5,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009661196093078177,
+      "minimum_hinge_deg": -144.49100085975618,
+      "maximum_hinge_deg": 130.28527355482805,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.533333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00965455542722889,
+      "minimum_hinge_deg": -144.49118239400784,
+      "maximum_hinge_deg": 130.28848765802928,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.566666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009642723850360541,
+      "minimum_hinge_deg": -144.49131356793086,
+      "maximum_hinge_deg": 130.28695238738987,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.6,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009632081312297636,
+      "minimum_hinge_deg": -144.49158020741257,
+      "maximum_hinge_deg": 130.28675680315513,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.633333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009623704941958687,
+      "minimum_hinge_deg": -144.48802840629637,
+      "maximum_hinge_deg": 130.2885187685832,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.666666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009617399632397572,
+      "minimum_hinge_deg": -144.48904751111465,
+      "maximum_hinge_deg": 130.28823302868258,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.7,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009497679211605917,
+      "minimum_hinge_deg": -144.4889464460895,
+      "maximum_hinge_deg": 130.28852902039213,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.733333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00946038812202663,
+      "minimum_hinge_deg": -144.49012998594438,
+      "maximum_hinge_deg": 130.28697913958442,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.766666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009476486536844672,
+      "minimum_hinge_deg": -144.4920249545662,
+      "maximum_hinge_deg": 130.2874836892482,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.8,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009486448171625706,
+      "minimum_hinge_deg": -144.49094564374053,
+      "maximum_hinge_deg": 130.2325549423721,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.833333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009495902444884964,
+      "minimum_hinge_deg": -144.4904216217264,
+      "maximum_hinge_deg": 130.3290064202586,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.866666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009386885897646172,
+      "minimum_hinge_deg": -144.49025848442307,
+      "maximum_hinge_deg": 130.2650021539634,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.8999999999999995,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009388216935388605,
+      "minimum_hinge_deg": -144.4871372042961,
+      "maximum_hinge_deg": 130.54388862258796,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.933333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009381038854083073,
+      "minimum_hinge_deg": -144.48980418143438,
+      "maximum_hinge_deg": 130.36916126516854,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 7.966666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009378077393009896,
+      "minimum_hinge_deg": -144.48815771806667,
+      "maximum_hinge_deg": 130.3451684718142,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.0,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009358953441187206,
+      "minimum_hinge_deg": -144.48856452355122,
+      "maximum_hinge_deg": 130.5339419804901,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.033333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009349885336701178,
+      "minimum_hinge_deg": -144.48949199873124,
+      "maximum_hinge_deg": 130.31683066213947,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.066666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009347196165028075,
+      "minimum_hinge_deg": -144.48825056687377,
+      "maximum_hinge_deg": 130.4601711812564,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.1,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009345032336711636,
+      "minimum_hinge_deg": -144.48989267220665,
+      "maximum_hinge_deg": 130.4232255097165,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.133333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009334858839082902,
+      "minimum_hinge_deg": -144.48955377064019,
+      "maximum_hinge_deg": 130.39503673145012,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.166666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009325411883300622,
+      "minimum_hinge_deg": -144.4891473883716,
+      "maximum_hinge_deg": 130.43144184335011,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.2,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009317486251656026,
+      "minimum_hinge_deg": -144.4893144918173,
+      "maximum_hinge_deg": 130.42527618946974,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.233333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009312487146905968,
+      "minimum_hinge_deg": -144.4888841927161,
+      "maximum_hinge_deg": 130.39850625191968,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.266666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009304084638008695,
+      "minimum_hinge_deg": -144.48918549056233,
+      "maximum_hinge_deg": 130.43894516698194,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.3,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00930073854436251,
+      "minimum_hinge_deg": -144.48928975768237,
+      "maximum_hinge_deg": 130.4096613148973,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.333333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009294792370238497,
+      "minimum_hinge_deg": -144.48876618427508,
+      "maximum_hinge_deg": 130.42036632969757,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.366666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009289180514798646,
+      "minimum_hinge_deg": -144.489193209629,
+      "maximum_hinge_deg": 130.42732824570064,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.4,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009285222695568515,
+      "minimum_hinge_deg": -144.48828172835087,
+      "maximum_hinge_deg": 130.41151777399182,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.433333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009277929149850414,
+      "minimum_hinge_deg": -144.48942358003842,
+      "maximum_hinge_deg": 130.42303597030318,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.466666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009272895672203947,
+      "minimum_hinge_deg": -144.489378532162,
+      "maximum_hinge_deg": 130.42206146475834,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.5,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009268265757990491,
+      "minimum_hinge_deg": -144.48726788207563,
+      "maximum_hinge_deg": 130.41851485881872,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.533333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009287063863546274,
+      "minimum_hinge_deg": -144.48915585902418,
+      "maximum_hinge_deg": 130.4222171396905,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.566666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009313159903905277,
+      "minimum_hinge_deg": -144.4887492738704,
+      "maximum_hinge_deg": 130.43392444592322,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.6,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009340762225471885,
+      "minimum_hinge_deg": -144.48880964860248,
+      "maximum_hinge_deg": 130.42169815926147,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.633333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009365947744033485,
+      "minimum_hinge_deg": -144.48643874896334,
+      "maximum_hinge_deg": 130.43279771466854,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.666666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009391630098010688,
+      "minimum_hinge_deg": -144.4895115014081,
+      "maximum_hinge_deg": 130.4414362678465,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.7,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009428701719983317,
+      "minimum_hinge_deg": -144.4867113803107,
+      "maximum_hinge_deg": 130.4284987571695,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.733333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009454150774959435,
+      "minimum_hinge_deg": -144.48670044043328,
+      "maximum_hinge_deg": 130.43690753689606,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.766666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009470677409154329,
+      "minimum_hinge_deg": -144.4866373744196,
+      "maximum_hinge_deg": 130.44163722072201,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.8,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009498415473341168,
+      "minimum_hinge_deg": -144.48857947767522,
+      "maximum_hinge_deg": 130.43277784982917,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.833333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00952726147370176,
+      "minimum_hinge_deg": -144.48682491388337,
+      "maximum_hinge_deg": 130.44400710781954,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.866666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009553629290014706,
+      "minimum_hinge_deg": -144.48899287791252,
+      "maximum_hinge_deg": 130.43915554534385,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.9,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009582235609830604,
+      "minimum_hinge_deg": -144.48890691155367,
+      "maximum_hinge_deg": 130.4534392867329,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.933333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009612303524605143,
+      "minimum_hinge_deg": -144.4891093368467,
+      "maximum_hinge_deg": 130.45378294348873,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 8.966666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009639827864295585,
+      "minimum_hinge_deg": -144.48943734932564,
+      "maximum_hinge_deg": 130.4561591847251,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.0,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009676476002762367,
+      "minimum_hinge_deg": -144.48665236858432,
+      "maximum_hinge_deg": 130.45778199232646,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.033333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009707874250387901,
+      "minimum_hinge_deg": -144.4886993421281,
+      "maximum_hinge_deg": 130.46620559810248,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.066666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009740637063451062,
+      "minimum_hinge_deg": -144.48916087042602,
+      "maximum_hinge_deg": 130.4620659949775,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.1,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009789644552327741,
+      "minimum_hinge_deg": -144.4886682471942,
+      "maximum_hinge_deg": 130.45912947428235,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.133333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009809017029320842,
+      "minimum_hinge_deg": -144.48885664138484,
+      "maximum_hinge_deg": 130.48150755045035,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.166666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009843244616529604,
+      "minimum_hinge_deg": -144.48934562250787,
+      "maximum_hinge_deg": 130.4666629813258,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.2,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009880559822282,
+      "minimum_hinge_deg": -144.4863731210195,
+      "maximum_hinge_deg": 130.46886373130468,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.233333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009924103448453134,
+      "minimum_hinge_deg": -144.4860143139829,
+      "maximum_hinge_deg": 130.48968901291045,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.266666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.009958923653815217,
+      "minimum_hinge_deg": -144.48919951519176,
+      "maximum_hinge_deg": 130.48240225957386,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.3,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.0069535069177594925,
+      "minimum_hinge_deg": -144.54589648405383,
+      "maximum_hinge_deg": 129.8991188304956,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.333333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.0045019574767865105,
+      "minimum_hinge_deg": -144.49294402860494,
+      "maximum_hinge_deg": 128.83748809346307,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.366666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.008276889854191326,
+      "minimum_hinge_deg": -144.50748155470967,
+      "maximum_hinge_deg": 130.11238388880886,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.4,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00819905145715219,
+      "minimum_hinge_deg": -144.49924112114647,
+      "maximum_hinge_deg": 133.65661486630248,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.433333333333334,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.008257909275469199,
+      "minimum_hinge_deg": -144.5159237339398,
+      "maximum_hinge_deg": 130.57580141763458,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.466666666666667,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.008232303559121067,
+      "minimum_hinge_deg": -144.49699996765167,
+      "maximum_hinge_deg": 131.06029603812442,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.5,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.008174323192513799,
+      "minimum_hinge_deg": -144.5026817376716,
+      "maximum_hinge_deg": 132.68141239337325,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.533333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.008205435619283665,
+      "minimum_hinge_deg": -144.51853982411114,
+      "maximum_hinge_deg": 130.64374474124978,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.566666666666666,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.008214876426488627,
+      "minimum_hinge_deg": -144.490537749306,
+      "maximum_hinge_deg": 131.6444630971598,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.6,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.00819756524146168,
+      "minimum_hinge_deg": -144.5048014918563,
+      "maximum_hinge_deg": 132.04809222055692,
+      "hinges": 93,
+      "errors": []
+    },
+    {
+      "time_s": 9.633333333333333,
+      "phase": "approach",
+      "maximum_anchor_gap_m": 0.008194746732484715,
+      "minimum_hinge_deg": -144.51276172582814,
+      "maximum_hinge_deg": 130.8857803037906,
+      "hinges": 93,
+      "errors": []
+    }
+  ]
+}
