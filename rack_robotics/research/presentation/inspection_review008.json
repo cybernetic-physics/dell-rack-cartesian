@@ -1,0 +1,168 @@
+{
+  "schema": "failure_diagnostic_review_v1",
+  "review_date": "2026-10-17",
+  "scope": "All four current failed-combination clips accepted only as labeled failure diagnostics. All five sampled sheets personally inspected; full-frame temporal/source checks and natural Mac playback separately verified. These are not successful-cycle presentations or proof of failure cause from images alone.",
+  "products": [
+    {
+      "design": "AB",
+      "directory": "failed-render-campaign001/AB/rear",
+      "label": "A/B v011 · FAILED initial pickup",
+      "video_sha256": "391a37a5596d069467af7eed5b8dd5261b7b16c2b8dcd6a3e56d76421dd4ad7a",
+      "decoded_frames": 16,
+      "source_results": "rack_robotics/experiments/tool-matrix001/AB/results.json",
+      "source_results_sha256": "0b69a5761882dba307a82d9bdfabdaf063193960dc4a9ba5a94083d9434c6887",
+      "source_task_passed": false,
+      "source_error": "Initial measured housing outside bounded pickup alignment",
+      "temporal_report": "artifacts/temporal-review001/26-AB/report.json",
+      "temporal_report_sha256": "43780f7e0fac8b02f95488725543346236a98ce39395450320948d298a7a1005",
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "0018c28f5d0f495274f5b2ca66f54cdee7f37f2cb2f053c5a0034440c6280464",
+          "frames": [
+            0,
+            7,
+            15
+          ]
+        }
+      ],
+      "natural_mac_playback": {
+        "path": "rack_robotics/experiments/failed-render-campaign001/AB/rear/mac_playback001.json",
+        "sha256": "5b7c880167e075b2460650896bb0c8c8ced72034ca92b1ddb2ef803b3c9efdc1"
+      },
+      "accepted_as_failure_diagnostic": true,
+      "accepted_as_working_cycle": false,
+      "observations": "Single three-frame inspection sheet reviewed. Short near-static initial fixture/robot diagnostic is consistent with a pickup-initialization failure, not a demonstration cycle. The full-size gripper and architecture are visible; FAILED PHYSICS TRIAL / RECORDED REPLAY label is visible. Exact failure comes from the bound source result, not visual inference."
+    },
+    {
+      "design": "BB",
+      "directory": "failed-render-campaign001/BB/rear",
+      "label": "B/B v007 · FAILED initial pickup",
+      "video_sha256": "5cda6597a3effbc42d748d54493922613893e5b8c9ad389fd28b9b07d6abbe41",
+      "decoded_frames": 16,
+      "source_results": "rack_robotics/experiments/tool-matrix001/BB/results.json",
+      "source_results_sha256": "72ff3fcd9218e9f2ba4dc9e8fa9cf0c74ce181de0fda749a7e925f06d4ef6d8a",
+      "source_task_passed": false,
+      "source_error": "Initial measured housing outside bounded pickup alignment",
+      "temporal_report": "artifacts/temporal-review001/27-BB/report.json",
+      "temporal_report_sha256": "30667c81b5cdeff4918a0612db5e500bcbfa4d65807122a355e0ce63ea091840",
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "3b3d497c16aeba19623a337ca83640d539dabf74fd030fd4bcc04d168a35ab19",
+          "frames": [
+            0,
+            7,
+            15
+          ]
+        }
+      ],
+      "natural_mac_playback": {
+        "path": "rack_robotics/experiments/failed-render-campaign001/BB/rear/mac_playback001.json",
+        "sha256": "6c3a9a0f6e8ac83f33f51d32be090d3832e1260093bcbfc305be3a124adbdcb0"
+      },
+      "accepted_as_failure_diagnostic": true,
+      "accepted_as_working_cycle": false,
+      "observations": "Single three-frame inspection sheet reviewed. Short near-static initial fixture/robot diagnostic is consistent with a pickup-initialization failure, not a demonstration cycle. The full-size gripper and architecture are visible; FAILED PHYSICS TRIAL / RECORDED REPLAY label is visible. Exact failure comes from the bound source result, not visual inference."
+    },
+    {
+      "design": "CB",
+      "directory": "failed-render-campaign001/CB/rear",
+      "label": "C/B v002 · FAILED initial pickup",
+      "video_sha256": "d320ff6a5a7279a3fda389cb6ea2c32e76fd11d747aeea7b9f3277a9d45f5352",
+      "decoded_frames": 16,
+      "source_results": "rack_robotics/experiments/tool-matrix001/CB/results.json",
+      "source_results_sha256": "9e609a65a6b98224f941506af56080b1fef8af15a64930494d64385a6a335950",
+      "source_task_passed": false,
+      "source_error": "Initial measured housing outside bounded pickup alignment",
+      "temporal_report": "artifacts/temporal-review001/28-CB/report.json",
+      "temporal_report_sha256": "db9f3db79bcc82368cee04dd816a5be3c86a67d826d93b825c2815b2618acd9f",
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "68eb1b8565467d969ed7890528fcdfa77d97c580b5877abdf2b9e8dd2ae1bd71",
+          "frames": [
+            0,
+            7,
+            15
+          ]
+        }
+      ],
+      "natural_mac_playback": {
+        "path": "rack_robotics/experiments/failed-render-campaign001/CB/rear/mac_playback001.json",
+        "sha256": "3435da399c741ed738f69e1b7bafad06c35e273afc934f78330bafd3bb305e1b"
+      },
+      "accepted_as_failure_diagnostic": true,
+      "accepted_as_working_cycle": false,
+      "observations": "Single three-frame inspection sheet reviewed. Short near-static initial fixture/robot diagnostic is consistent with a pickup-initialization failure, not a demonstration cycle. The full-size gripper and architecture are visible; FAILED PHYSICS TRIAL / RECORDED REPLAY label is visible. Exact failure comes from the bound source result, not visual inference."
+    },
+    {
+      "design": "CC",
+      "directory": "failed-render-campaign001/CC/rear",
+      "label": "C/C v003 · FAILED alignment",
+      "video_sha256": "38f306b09842da4452e83a0dc0d654c2c900881e6bc3126898348a242d1a7244",
+      "decoded_frames": 298,
+      "source_results": "rack_robotics/experiments/tool-matrix001/CC/results.json",
+      "source_results_sha256": "ff0d6dd156516f55707590e7272c94000dae6cd842fc69ecee904aaf58eb26b9",
+      "source_task_passed": false,
+      "source_error": "Timeout; robot error=0.001371m; connector=retained; metrics={'depth_m': 0.011142852306365959, 'lateral_m': 0.000489659349833538, 'angle_deg': 4.9971505580043845, 'speed_m_s': 0.0006426165803494321, 'port': 1, 'latch_angle_deg': 8.358033132183898, 'hook_y_m': -0.0014482716078722535, 'hook_z_m': 0.005460408355862478, 'hook_clear': False, 'hook_behind_lip': True}",
+      "temporal_report": "artifacts/temporal-review001/29-CC/report.json",
+      "temporal_report_sha256": "c778d0bdba02202abedfe592c9c592740150de1183579d851f1c8dc0585685cb",
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "f03f2ec0e37d492fd8d9ba92e2e1f474cd37f163bb013362aeb4e2922849330e",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "ffbb91ed35e7aaefd62707c8b985978ec90553b43fec0319cff32eec1d37df69",
+          "frames": [
+            165,
+            166,
+            180,
+            210,
+            231,
+            240,
+            270,
+            297
+          ]
+        }
+      ],
+      "natural_mac_playback": {
+        "path": "rack_robotics/experiments/failed-render-campaign001/CC/rear/mac_playback001.json",
+        "sha256": "60f3a37249fff156c52c5a1c4abc08bccc20c0e93d14af33eb2c252a13e5f396"
+      },
+      "accepted_as_failure_diagnostic": true,
+      "accepted_as_working_cycle": false,
+      "observations": "Both sheets reviewed. Actual approach and alignment motion stops at datum alignment; no withdrawal or completed cycle is shown. The view identifies the rack-mounted CoreXZ mechanism and tool while the source result provides the measured timeout. FAILED PHYSICS TRIAL / RECORDED REPLAY label is visible."
+    }
+  ],
+  "verification_reports": [
+    {
+      "path": "artifacts/temporal-review001/verification_vm001.json",
+      "sha256": "96087adbf1f7ba4b8a9e8b62c0f6292818ddd739cd19686725e028110e928d37"
+    },
+    {
+      "path": "artifacts/temporal-review001/verification_mac001.json",
+      "sha256": "2f7c9b0b8c7f596dd8f9d51d4b907e78578706502564581b2219009a613e9c98"
+    }
+  ]
+}

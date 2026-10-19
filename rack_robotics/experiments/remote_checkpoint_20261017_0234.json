@@ -1,0 +1,24 @@
+{
+  "observed_at_utc": "2026-10-17 02:34:07",
+  "instance": "isaac-g4-rtxpro6000x2-flex",
+  "project": "project-512201fe-6308-4879-83c",
+  "zone": "us-central1-b",
+  "authoritative_instance_status": "REPAIRING",
+  "last_start_timestamp": "2026-10-14T15:25:47.580-07:00",
+  "direct_ssh": "connection timeout before authentication",
+  "iap_ssh": "banner exchange timeout",
+  "local_tunnel": "port 18080 no longer listening",
+  "infrastructure_mutations": [],
+  "last_completed_physics": "a_b_attempt006_bridge_clearance",
+  "last_completed_physics_outcome": "Failed align: vendor base/carriage collision; copied to Mac",
+  "unlaunched_revision": "75 mm base drop, 75.3 mm shoes, lower flange, 36 g shoes; local source only",
+  "attempt007_launch": "SSH connect timed out; no launch confirmation and no physical verdict",
+  "unknown_render": {
+    "output": "/workspace/rack_robotics/experiments/a_b_attempt003_cradle_clearance/replay_startup002",
+    "last_observed_pid": 144136,
+    "log": "/workspace/artifacts/logs/p2-a-b-startup-render002.log",
+    "status": "Previously running; cannot establish completion during VM repair. Inspect on recovery; do not blindly restart."
+  },
+  "local_unit_tests": {"passed": 78, "scope": "Software and static geometry guards, not physical feasibility"},
+  "goal_complete": false
+}

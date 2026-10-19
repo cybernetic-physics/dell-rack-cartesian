@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "scope": "Unloaded linkage geometry and file integrity only; no rack/contact-force/reliability verdict",
+  "model_sha256": "c5c81e063923f03438d59e139b47c88a80a8a32d3d3035bf35009c83ce75b97f",
+  "attempts": [
+    {
+      "attempt": "rack_robotics/experiments/rg2_sweep240_002",
+      "results_sha256": "e51f6d45d35afd47e4ad4dc90690f49e895a7b00192b4eced69eb32d7d80cb07",
+      "hz": 240,
+      "samples": 900,
+      "preserved_hash_errors": [],
+      "max_separation_residual_m": 4.068332381142875e-06,
+      "max_extension_residual_m": 1.8061938984736958e-06,
+      "max_limit_excursion_deg": 0.0,
+      "passed": true
+    },
+    {
+      "attempt": "rack_robotics/experiments/rg2_sweep480_001",
+      "results_sha256": "646eb75d5473ebf431b5085a35bb264c571c290bff24bebdc31543f30181d548",
+      "hz": 480,
+      "samples": 900,
+      "preserved_hash_errors": [],
+      "max_separation_residual_m": 2.8730003287166794e-06,
+      "max_extension_residual_m": 1.127411307644266e-06,
+      "max_limit_excursion_deg": 0.0,
+      "passed": true
+    },
+    {
+      "attempt": "rack_robotics/experiments/rg2_narrow240_001",
+      "results_sha256": "b95e7a73365d1c6107f28b21073043d0ad3f6f8be659f0ad943784a066b6d376",
+      "hz": 240,
+      "samples": 375,
+      "preserved_hash_errors": [],
+      "max_separation_residual_m": 3.890940996759129e-06,
+      "max_extension_residual_m": 4.2396603222583096e-07,
+      "max_limit_excursion_deg": 0.0,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,812 @@
+{
+  "schema": "systematic_visual_inspection_v1",
+  "scope": "Every listed sheet visually inspected across the full measured cycle, with original-resolution macro frames as listed. Full-video metrics/timestamps and natural Mac playback are separate bound evidence. Not every native-resolution frame was manually inspected.",
+  "temporal_manifest_sha256": "958c9ccbf8ff19a7fe9f4ce39d132c0462880f814a7732978271769e6099499c",
+  "products": [
+    {
+      "directory": "render-campaign004/AA/wide",
+      "video_sha256": "a4018d5c4f077b8fbbe99190ca36c1d6ca0b22e32d5d5e3c610e99a443410b7a",
+      "temporal_report": "artifacts/temporal-review001/00-AA/report.json",
+      "temporal_report_sha256": "47c6a669af4782dd9fbb688abf060c2a05ff4d4f9d8d1301eb1ecf623f867c3a",
+      "decoded_frames": 988,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "f33df4c492b2c8f712b33deccb55c49b9fee88012623afbd602f506b67fe2cdf",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "24fba51eb7dd7fc605db1ad0627749b1e2925abacbb5442a05f6a221f934ec69",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "5b0a41177c8f708eb2d4ed74d8563bd9ecf6f97b309496cf6e6fd5f2184bae87",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "c86aa7e3d2df3db9b7e2da6a25fa5bc63fdff9a0693afdab1abc6f6d6cc617f5",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            480,
+            504,
+            510,
+            540,
+            564,
+            565,
+            570
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "ec399cf53b29c860828cbd955ce61698774368f4aabb7003be2bbc43a18ef6a8",
+          "frames": [
+            575,
+            585,
+            586,
+            600,
+            623,
+            630,
+            660,
+            661,
+            678,
+            690,
+            696,
+            697
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "51da4a61fae62ba83fba2c4577042bbcc93943ac0c15e53bc205eb6872a6a151",
+          "frames": [
+            720,
+            741,
+            750,
+            780,
+            786,
+            787,
+            801,
+            810,
+            816,
+            817,
+            827,
+            837
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "f077fa2ea170311db5c48874911c98929aeff228a300debb9eb7820c86290461",
+          "frames": [
+            838,
+            840,
+            870,
+            882,
+            900,
+            927,
+            928,
+            930,
+            957,
+            960,
+            987
+          ]
+        }
+      ],
+      "observations": "Full rack and entire dual-upright gantry remain framed from initialization through parking. Nearby rack frames and floor establish scale. Stable illumination; connector detail is intentionally left to close-up views.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    },
+    {
+      "directory": "a_a_reviewed_edit001",
+      "video_sha256": "25f0c7464a6588e969ade3aaa8ffa2ca58d719a90da69623c4fb9f75da6b3040",
+      "temporal_report": "artifacts/temporal-review001/01-AA/report.json",
+      "temporal_report_sha256": "cb161bf27714f8afe9a7d9463f96a1d83b1ea6b0c372eef837f5f5b7b6d433d4",
+      "decoded_frames": 988,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "8ba13238f6c79727afe83ed2c02fbe72256f7c8958ba0dfefe6873fcece6303b",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "86209d8531c0a9d455f2f644337a53a6c19fd533f1148f23a1656e02301de244",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "7be1eef2b6489b0b0244982e0c9b0074b01cfedc383818c9f1f0da0bfca846c3",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "25cefbcf2ae2e19c7f25222c8a750637ece57e6422b9cd887650c762c1206157",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            480,
+            504,
+            510,
+            540,
+            564,
+            565,
+            570
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "fa5f80a16d2db213cef9077989b668fa3807747780c77d842f2383090976bc48",
+          "frames": [
+            575,
+            585,
+            586,
+            600,
+            623,
+            630,
+            660,
+            661,
+            678,
+            690,
+            696,
+            697
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "74d31771cd6671670b509beda1be36faac1d73d2317dba0d110516bff9f48b73",
+          "frames": [
+            720,
+            741,
+            750,
+            780,
+            786,
+            787,
+            801,
+            810,
+            816,
+            817,
+            827,
+            837
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "42a05d9570dda4a0242dc321c691ccf27691fc35fee82a4576b8f58dd6a2c94d",
+          "frames": [
+            838,
+            840,
+            870,
+            882,
+            900,
+            927,
+            928,
+            930,
+            957,
+            960,
+            987
+          ]
+        }
+      ],
+      "observations": "Phase cuts keep grasp, latch release, withdrawal, insertion and tool opening in macro, with rear approach/alignment and side separation/retraction. The initial unsuccessful seat, release/retreat and second insertion are preserved and labeled; timing is not shortened. The visible socket gap and later reseated plug communicate the full cycle.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    },
+    {
+      "directory": "a_a_rear_underbridge_cycle001",
+      "video_sha256": "cca39e0a3c5fe05ab3c81361845aa4f5fb930202981084003b6b74e5e9ee8c19",
+      "temporal_report": "artifacts/temporal-review001/02-AA/report.json",
+      "temporal_report_sha256": "4233acffe99fa75a59d6db97432f18859d91ec001d226c858e84c4eb4dbb9419",
+      "decoded_frames": 988,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "5107c82174297857b6f2e14031b6f98ca5d092f1663ca8c1e56bc8444352bca9",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "8f6794ea1767be7a014d09e5c1c070716e7a847037af7fe79924c67c60cac2b3",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "b818cd7f6eeaa8b63359ac7014a73a84204300246994ecf89299bd83a35a8955",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "892254aa37d727a8b35d6eed8599ff82aff314b43a376c61d46aea16fee732ed",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            480,
+            504,
+            510,
+            540,
+            564,
+            565,
+            570
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "2d5876280710848608e989c9276a650b33deaa13a7967699a83a2d6ed9fd8101",
+          "frames": [
+            575,
+            585,
+            586,
+            600,
+            623,
+            630,
+            660,
+            661,
+            678,
+            690,
+            696,
+            697
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "86bf64ca56e046af0e909a57f56e3e8c51ecd91ff032ffe6980a6707d62b52e3",
+          "frames": [
+            720,
+            741,
+            750,
+            780,
+            786,
+            787,
+            801,
+            810,
+            816,
+            817,
+            827,
+            837
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "8b33e09a9393b2ba3da3d2a38f280875d91ba23241457cebd36a022d2290ce35",
+          "frames": [
+            838,
+            840,
+            870,
+            882,
+            900,
+            927,
+            928,
+            930,
+            957,
+            960,
+            987
+          ]
+        }
+      ],
+      "observations": "Tool motion and blue cable remain visible under the bridge during the entire sampled cycle, including recovery. Silver foreground framework is prominent but never sweeps across or obscures the connector as in rejected B/C footage. Parking exits the manipulation close-up while the cable stays seated.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    },
+    {
+      "directory": "a_a_macro_latch_cycle003",
+      "video_sha256": "9f7b45198499c69fefa6b1148de60ff8600b526527dc01ac9429d8b6e303b2d6",
+      "temporal_report": "artifacts/temporal-review001/03-AA/report.json",
+      "temporal_report_sha256": "a8b4f5d0c751c9a526d6474e12a3bf8399425abf65d00e9c40d56afcb4506d07",
+      "decoded_frames": 988,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "31e431a084b16631c16cce1a9978e24ef200e2692ca900e95eeb4d52da620be2",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "9140c3ea3175af776570dfc1699d8f45a30fe39b2c6089cc38f9185dfbe1fb08",
+          "frames": [
+            165,
+            166,
+            169,
+            172,
+            175,
+            176,
+            178,
+            180,
+            181,
+            184,
+            186,
+            187
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "d92f5787ec8fcd9c73e44ef08049f2b859c1623d6f61bd17409443b1bee0fec2",
+          "frames": [
+            190,
+            193,
+            196,
+            197,
+            199,
+            202,
+            205,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "03bcf431618e19908d981d7ecc0bcc28b937345267a5e0c1fe5a9162d4cb7324",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "bc8c0e65194bcec5e5b8dc1e5960d1f4572825e4f55c7e66b042064d8f8f3378",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            448,
+            450,
+            451,
+            454,
+            457,
+            460,
+            463,
+            466
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "f7e58e918697ce41ddcf811e78bee18c3a4749c72913da4f755d91f562cd44a3",
+          "frames": [
+            469,
+            472,
+            475,
+            478,
+            480,
+            481,
+            484,
+            487,
+            490,
+            493,
+            496,
+            499
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "a2c96d253199350c050fd108202ee8b7123c9a078f243c4977fe9520c23fccba",
+          "frames": [
+            502,
+            504,
+            505,
+            508,
+            510,
+            511,
+            514,
+            517,
+            520,
+            523,
+            526,
+            529
+          ]
+        },
+        {
+          "file": "sheet-007.png",
+          "sha256": "fe0ff6daf9d793c8a384fc89f27d14a3ca54d22a26dd83fcb6f66424e2b3bd4b",
+          "frames": [
+            532,
+            535,
+            538,
+            540,
+            541,
+            544,
+            547,
+            550,
+            553,
+            556,
+            559,
+            562
+          ]
+        },
+        {
+          "file": "sheet-008.png",
+          "sha256": "8f984795f2b11e7cdf46b1a773f435b029d2dacb997b28c879d1036206b758dd",
+          "frames": [
+            564,
+            565,
+            568,
+            570,
+            571,
+            574,
+            575,
+            577,
+            580,
+            583,
+            585,
+            586
+          ]
+        },
+        {
+          "file": "sheet-009.png",
+          "sha256": "e59a77b5fdb2167929955c87cb0a864338377a9cc081633c1f1912d7636dbcf9",
+          "frames": [
+            600,
+            623,
+            630,
+            660,
+            661,
+            678,
+            690,
+            696,
+            697,
+            720,
+            741,
+            750
+          ]
+        },
+        {
+          "file": "sheet-010.png",
+          "sha256": "684804b4ad6731124556530eafab3a26eab3302738133d7b64bd503ba344c4ea",
+          "frames": [
+            780,
+            786,
+            787,
+            790,
+            793,
+            796,
+            799,
+            801,
+            802,
+            805,
+            808,
+            810
+          ]
+        },
+        {
+          "file": "sheet-011.png",
+          "sha256": "028a1566da31b86e02b2ecd410aa765a9cf93dc3cb9b29e8c1a4ddcb3660a6a3",
+          "frames": [
+            811,
+            814,
+            816,
+            817,
+            820,
+            823,
+            826,
+            827,
+            829,
+            832,
+            835,
+            837
+          ]
+        },
+        {
+          "file": "sheet-012.png",
+          "sha256": "5cec63221ec1817c034b7f1fccddf912bd9cdb35eb6cb39cdcee7d939a91cbc7",
+          "frames": [
+            838,
+            840,
+            870,
+            882,
+            900,
+            927,
+            928,
+            930,
+            957,
+            960,
+            987
+          ]
+        }
+      ],
+      "observations": "White connector housing/tab and yellow press tip stay visible beside the large blue left foreground actuator. Samples show raised/depressed tooling, complete extraction with an air gap, controlled separation, return, initial seating wait, physical recovery, successful reinsertion, opening and retraction. Native186 versus190 clearly shows pressing motion and tab lowering;837 shows raised tooling and open fingers with the housing seated. Earlier native180/242/816 observations remain in review003.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false,
+      "original_frames_inspected": [
+        186,
+        190,
+        837
+      ]
+    },
+    {
+      "directory": "render-campaign004/AA/side",
+      "video_sha256": "94d879dfdecc9d0eb64559eb3819ed041d89bad2f1e766062a8bb285a3533118",
+      "temporal_report": "artifacts/temporal-review001/04-AA/report.json",
+      "temporal_report_sha256": "4c472a1c518e407aeccea54a9312967a694cf4d22699422302b48b5fccb68231",
+      "decoded_frames": 988,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "8d865ccdfd7d829cd604cfd7013c5f4ad812beeb35dfde131468ea52d09616fd",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "4a31c9d6fadfbbbf3ad4d1f6f5f0e88d5204bdb698c87111978d90fa80b48791",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "f3516dfb84be18d017e6e752e0678a4cb2f663742ddc695858b201fbebb9f5f3",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "5bd1f3231f84a1a821826e942488fd11eb0a6b5cf322f75a17cbbf7524f7593e",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            480,
+            504,
+            510,
+            540,
+            564,
+            565,
+            570
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "1037ee63e22993cbb188894303ee1028dbc65b659fafe479c16a04c0834cb29b",
+          "frames": [
+            575,
+            585,
+            586,
+            600,
+            623,
+            630,
+            660,
+            661,
+            678,
+            690,
+            696,
+            697
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "84ed4195234aa3a8c561e79448a6ec76e047a8e4bff47d693b795379506d1c41",
+          "frames": [
+            720,
+            741,
+            750,
+            780,
+            786,
+            787,
+            801,
+            810,
+            816,
+            817,
+            827,
+            837
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "f25966093b7d0f143a84a6ee0a443ab475bcf44d23c29475238b83fbd7aa79cb",
+          "frames": [
+            838,
+            840,
+            870,
+            882,
+            900,
+            927,
+            928,
+            930,
+            957,
+            960,
+            987
+          ]
+        }
+      ],
+      "observations": "The oblique mounting view shows both upright guides, moving crossbeam, insertion-stage depth and the left-projecting carrier loop. All robot hardware stays framed through approach, recovery and parking. This view complements rather than substitutes for macro latch detail.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    }
+  ],
+  "final_visual_acceptance": false,
+  "excluded_additional_candidate": "05-AA is the separate1440p macro candidate; its13 sheets were not inspected in this review and it is not needed for the matching1080p delivery set."
+}

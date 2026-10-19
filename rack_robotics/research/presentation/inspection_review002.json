@@ -1,0 +1,43 @@
+{
+  "scope": "Visual inspection of the listed original PNG frames only; not exhaustive temporal acceptance",
+  "final_visual_acceptance": false,
+  "products": [
+    {
+      "directory": "experiments/b_a_rear_underbridge_cycle001",
+      "video_sha256": "e033b42613d5e81005084138572dfeb1a607156076980f6c253725506e9bf5c2",
+      "original_frames_inspected": [242, 816],
+      "observations": "Withdrawn housing and subsequent seating are visible below the bridge, with the tool and hanging cable readable. Bright left-edge foreground structure remains, but does not obscure the connector action in these frames. Macro is needed for latch details.",
+      "decision": "Useful rear replacement candidate; temporal review remains open."
+    },
+    {
+      "directory": "experiments/a_c_rear_underbridge_cycle001",
+      "video_sha256": "11cd404551a8060a4d4380b39aae4026a3017c6641b9e80e5d532a7a2f84bcf9",
+      "original_frames_inspected": [320, 950],
+      "observations": "Specialized tool, lower datum pads, cable and separation from the socket are visible; the reseated housing and approaching tool release remain distinguishable. Some bright left-edge foreground structure persists.",
+      "decision": "Useful rear replacement candidate; temporal review remains open."
+    },
+    {
+      "directory": "experiments/b_c_macro_latch_cycle001",
+      "video_sha256": "9b6d6d8f637d7d3e67334c9f43c1b0b7288215c4b77c7bdf81ff5891dba4d49f",
+      "original_frames_inspected": [266, 320, 950],
+      "observations": "Yellow pressing tip, white retention tab, withdrawn housing and raised tongue after seating are distinguishable. Foreground blue actuator is large but the latch-contact region is not fully hidden in these frames.",
+      "decision": "Improved macro candidate; no every-frame clipping or flicker claim."
+    },
+    {
+      "directory": "experiments/b_a_macro_latch_probe001",
+      "video_sha256": "7ba985d7e4ee65aa7f608efea07b663dce892e220064029336ef355a6d70fa2c",
+      "original_frames_inspected": [0],
+      "source_trajectory_frame": 242,
+      "observations": "Jaw/housing grasp, yellow tongue tip and separation from socket are readable. Blue actuator occupies the left half; hardware is retained, not hidden for presentation.",
+      "decision": "Selected for a full-cycle candidate; probe is not final acceptance."
+    },
+    {
+      "directory": "experiments/b_c_rear_underbridge_probe001",
+      "video_sha256": "5e9c284f8cf935903b3e9e345fea64e8f3a2009f45cf5d552c34e94ac5ae5450",
+      "original_frames_inspected": [0],
+      "source_trajectory_frame": 320,
+      "observations": "Below-bridge view shows the withdrawn connector, specialized tool and datum pads with the port row and cable. Left-edge foreground remains separate from the action.",
+      "decision": "Selected for a full-cycle candidate; probe is not final acceptance."
+    }
+  ]
+}

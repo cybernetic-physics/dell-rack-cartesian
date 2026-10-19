@@ -1,0 +1,870 @@
+{
+  "evidence_hashes_valid": true,
+  "errors": [],
+  "campaign_complete": false,
+  "minimum_valid_trial_requirement_met": false,
+  "designs": {
+    "AA": {
+      "planned": 10,
+      "finished": 5,
+      "complete_cycles": 5,
+      "unplug_successes": 5,
+      "admissible_manipulation_trials": 5,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 5,
+      "missing": [
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": 21.746666666665753,
+      "port_counts": {
+        "1": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "4": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "8": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "12": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "16": {
+          "trials": 1,
+          "complete_cycles": 1
+        }
+      }
+    },
+    "AC": {
+      "planned": 10,
+      "finished": 3,
+      "complete_cycles": 3,
+      "unplug_successes": 3,
+      "admissible_manipulation_trials": 3,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 3,
+      "missing": [
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": 28.605555555556005,
+      "port_counts": {
+        "1": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "4": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "8": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "BA": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "admissible_manipulation_trials": 0,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "BC": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "admissible_manipulation_trials": 0,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "CA": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "admissible_manipulation_trials": 0,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "CC": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "admissible_manipulation_trials": 0,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "AB": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "admissible_manipulation_trials": 0,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "CB": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "admissible_manipulation_trials": 0,
+      "fixture_failures": 0,
+      "minimum_ten_valid_trials_met": false,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "protocol_success_rate_including_fixture": null,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    }
+  },
+  "controls": {
+    "AA": {
+      "design": "AA",
+      "condition": "control",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AA/control-attempt001",
+      "results_sha256": "1c119da1f25780aa5277a5f4783f921a702718bdba85f5e19e66733327b444c4",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 21.5374999999991,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.3926614480819985,
+      "final_lateral_m": 0.0005051753830524016,
+      "final_depth_m": 0.011071535348892204,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 4.723622752981991e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9332084560802874,
+        "grasp": 13.73365877033424,
+        "release_latch": 32.72695452169465,
+        "withdraw": 10.704446207937329,
+        "insert": 10.709470205704267,
+        "seat_and_latch": 11.237957416331257,
+        "release_gripper": 3.323368587470746,
+        "separate": 10.71452310434396,
+        "realign": 10.71091471726932
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08753815014276216,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    "AC": {
+      "design": "AC",
+      "condition": "control",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AC/control-attempt001",
+      "results_sha256": "0d52fe26943acad703343bc74479c7749468a01fc3186c6eac60065bd915f24e",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 24.345833333332273,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.513961427496474,
+      "final_lateral_m": 0.0004511965793716227,
+      "final_depth_m": 0.011102708578109733,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 5.055796107481223e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9332084560802874,
+        "align_datum": 9.216050942185761,
+        "grasp": 11.27901618129503,
+        "release_latch": 4.5174931017360915,
+        "withdraw": 4.566486441452463,
+        "insert": 4.56419203516702,
+        "seat_and_latch": 4.541216791320294,
+        "release_gripper": 3.0979805812239647,
+        "release_datum": 1.83093656376332,
+        "retract": 8.633040347842588,
+        "separate": 4.8666510585633755,
+        "realign": 4.566649720302442
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08670828788139533,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    "BA": {
+      "status": "not_started"
+    },
+    "BC": {
+      "status": "not_started"
+    },
+    "CA": {
+      "status": "not_started"
+    },
+    "CC": {
+      "status": "not_started"
+    },
+    "AB": {
+      "status": "not_started"
+    },
+    "CB": {
+      "status": "not_started"
+    }
+  },
+  "trials": [
+    {
+      "design": "AA",
+      "condition": "trial-000",
+      "port": 4,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AA/trial-000-attempt001",
+      "results_sha256": "5fb033204a35d85bf4a2ec0f05cf88b143f565bbfc531724a669df9e1a4aaf68",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 22.033333333332404,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.391948497851704,
+      "final_lateral_m": 0.0004968728124229265,
+      "final_depth_m": 0.011075618267059318,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 6.369143425551776e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.0426757042106787,
+        "approach": 1.0111081075310138,
+        "grasp": 14.27071105411334,
+        "release_gripper": 4.223478516541074,
+        "seat_and_latch": 9.856966846218553,
+        "release_latch": 29.642561596584894,
+        "withdraw": 9.505199813280385,
+        "insert": 9.398757156768024,
+        "separate": 9.973238909676631,
+        "realign": 9.472247509091002
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08686689803393437,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AA",
+      "condition": "trial-001",
+      "port": 8,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AA/trial-001-attempt001",
+      "results_sha256": "af0665fa88f6190398407ffcb104d667faad7591bf64e5a1ce2485090e063cd6",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 20.88333333333247,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.392304987425349,
+      "final_lateral_m": 0.0004370275921545124,
+      "final_depth_m": 0.011072727441787712,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 6.948900386466618e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9434058057806649,
+        "approach": 0.9438831960741676,
+        "grasp": 12.039477452418648,
+        "release_latch": 31.93477191167761,
+        "withdraw": 9.298334609107759,
+        "insert": 9.295014935388526,
+        "seat_and_latch": 9.665354008080547,
+        "release_gripper": 3.3052203431140987,
+        "separate": 9.30005402038532,
+        "realign": 9.298281529705685
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08670455367369986,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AA",
+      "condition": "trial-002",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AA/trial-002-attempt001",
+      "results_sha256": "1e358252f9a044c07750ac4816a1e11ece0de5613c2b2fce222d4066b690fd62",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 21.158333333332454,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.388560403319337,
+      "final_lateral_m": 0.00043542705330109407,
+      "final_depth_m": 0.011078240871429435,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 0.0001238898384306017,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "grasp": 12.501978077971012,
+        "release_latch": 34.046568421164764,
+        "withdraw": 6.142252819214117,
+        "separate": 6.139135649573298,
+        "realign": 6.125060873144375,
+        "insert": 6.123568672651712,
+        "seat_and_latch": 6.525268621597674,
+        "release_gripper": 3.4400422156403305
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08437340681749972,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AA",
+      "condition": "trial-003",
+      "port": 16,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AA/trial-003-attempt001",
+      "results_sha256": "6f65b9805a2504ca5210d15be078e321b65fabe5a859164a61dba8e3014aca27",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 21.895833333332412,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.394443317856563,
+      "final_lateral_m": 0.00043786485965237413,
+      "final_depth_m": 0.01106497883796691,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 9.117817592602245e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9726077870275106,
+        "grasp": 12.713497434400937,
+        "release_gripper": 3.3011904138391013,
+        "release_latch": 33.2854364099343,
+        "withdraw": 9.853757354197437,
+        "insert": 9.522011075508741,
+        "seat_and_latch": 9.865600174791938,
+        "separate": 9.842086001145466,
+        "realign": 9.56806442833559
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08439287939762632,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AA",
+      "condition": "trial-004",
+      "port": 12,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AA/trial-004-attempt001",
+      "results_sha256": "e0fd71f5b78cf188d96cbef16b7bc1f1b2011b8c6016a2c46900b8ee4c102ff3",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 22.76249999999903,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.389987287990498,
+      "final_lateral_m": 0.0005001944506908201,
+      "final_depth_m": 0.011077316999435417,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 4.663305831921202e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.013090695337826,
+        "approach": 1.0274168149911904,
+        "grasp": 15.36119907917673,
+        "seat_and_latch": 5.971044605369388,
+        "seat_nudge": 6.062870030042457,
+        "release_gripper": 3.197768119497684,
+        "release_latch": 34.78158901158477,
+        "withdraw": 5.848331183419026,
+        "insert": 5.660010449173356,
+        "separate": 5.598581816307479,
+        "realign": 5.6325843753074984
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08441370271164189,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AC",
+      "condition": "trial-000",
+      "port": 4,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AC/trial-000-attempt001",
+      "results_sha256": "fd8c031c90be0a07f3c94a06daa8b7b7e230a025ddee66970e1d1470eac6a6c5",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 38.158333333336735,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.396402540882223,
+      "final_lateral_m": 0.0004353272573742888,
+      "final_depth_m": 0.011057945489883415,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 3.608376016587925e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.0426757042106787,
+        "approach": 1.0111081075310138,
+        "align_datum": 8.889990743420872,
+        "grasp": 13.247234958940389,
+        "release_datum": 2.994270384190951,
+        "retract": 0.8681706048254281,
+        "seat_and_latch": 4.339947849594429,
+        "seat_nudge": 4.383435230199601,
+        "release_latch": 2.799427594759603,
+        "withdraw": 4.214890525464934,
+        "insert": 4.404102554362328,
+        "recover_insert_release": 4.281918596676592,
+        "recover_insert_retreat": 4.370729552121897,
+        "release_gripper": 3.0789316085429164,
+        "separate": 4.810242355240317,
+        "realign": 4.464920180257859
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 1,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08688550535747337,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AC",
+      "condition": "trial-001",
+      "port": 8,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AC/trial-001-attempt001",
+      "results_sha256": "48beaad2cb48b528194cbda255d23297cca6d0fbdbfaae1e393a3387e85d7879",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 23.691666666665643,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.549893227862428,
+      "final_lateral_m": 0.0004874831547610587,
+      "final_depth_m": 0.011101665496826164,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 3.837251555748632e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9434058057806649,
+        "approach": 0.9438831960741676,
+        "align_datum": 9.365217042150526,
+        "grasp": 11.502991003636522,
+        "release_latch": 4.130536398923673,
+        "withdraw": 4.549805112355453,
+        "insert": 4.594056644392543,
+        "seat_and_latch": 4.531912208321718,
+        "release_gripper": 3.4344008937478065,
+        "release_datum": 1.5669243577308518,
+        "retract": 1.3632091872237762,
+        "separate": 4.933449291621124,
+        "realign": 4.550174922669461
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08666545554013391,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AC",
+      "condition": "trial-002",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign002/AC/trial-002-attempt001",
+      "results_sha256": "a89a13a5b99836c23ddff356a2b5780708b5dbcc859dcef393813dbd42c431b7",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 23.966666666665628,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.518988280769602,
+      "final_lateral_m": 0.0004892924554048638,
+      "final_depth_m": 0.011099758148193351,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 3.0049222141521828e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "align_datum": 8.901099554443022,
+        "grasp": 11.703934086450742,
+        "release_latch": 4.620995447347051,
+        "withdraw": 4.983418156647828,
+        "separate": 5.214947853811288,
+        "realign": 4.744571158678807,
+        "insert": 5.000218212884502,
+        "seat_and_latch": 4.985734589282228,
+        "release_gripper": 3.635604829599776,
+        "release_datum": 2.0216454436877145,
+        "retract": 7.879591810577532
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08428024342769745,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    }
+  ],
+  "ranking": null,
+  "limitations": [
+    "No final ranking: rack load, dense cabling, buildability, cost and \u226520 trials for best are still required.",
+    "All contact peaks are collider-pair impulse/dt estimates, not net insertion force or calibrated safety loads.",
+    "Cable displacement and joint gap are not cable tensile force.",
+    "Retained-state hysteresis does not guarantee the final pose satisfies seating-entry tolerances."
+  ]
+}

@@ -1,0 +1,1868 @@
+{
+  "schema": "saved_environment_preservation_audit_v1",
+  "versions": 74,
+  "independent_scene_loads_verified": 74,
+  "declared_outcomes_verified": 71,
+  "environments": [
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v001",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "0b70c888da4bd36348b56c000895e2f119554c181829105346a7a66b0d08685e",
+      "package_errors": [],
+      "package_hashes_checked": 22,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_a_gripper_a/v001/reload_verification.json",
+          "report_sha256": "31831b1c0e53f9474aa989df8c616b684c5e764c1349c5279dd71fc6c5ad394b",
+          "result": "rack_robotics/experiments/a_a_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": null,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v002",
+      "status": "failed_feasibility",
+      "manifest_sha256": "65213188faf14e9a7b1d46df8d3b8829163823ccd8c81cea6b224f3f09b2f668",
+      "package_errors": [],
+      "package_hashes_checked": 74,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign002/robot_a_gripper_a-v002/asset_validation.json",
+          "report_sha256": "278464dbbe923006ee37d3536fdfae15781c3f6b46be8ece2091d947db665660",
+          "result": "rack_robotics/experiments/reload-campaign002/robot_a_gripper_a-v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v003",
+      "status": "failed_feasibility",
+      "manifest_sha256": "c6629b37290956c524b1cafd730228720a9f85c4e767e8190d5aa0ed6ee6e44b",
+      "package_errors": [],
+      "package_hashes_checked": 74,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign002/robot_a_gripper_a-v003/asset_validation.json",
+          "report_sha256": "c50f065bb48cdbf98ef206c56f8ba982576b76ea5947a914beaf9c65745db9dd",
+          "result": "rack_robotics/experiments/reload-campaign002/robot_a_gripper_a-v003/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v004",
+      "status": "failed_feasibility",
+      "manifest_sha256": "5670c42d174633b7c564094c5f0bda1cc7f2ddf82189d77a2348b8f2de2dec1b",
+      "package_errors": [],
+      "package_hashes_checked": 74,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign003/robot_a_gripper_a-v004/asset_validation.json",
+          "report_sha256": "391c6d3630feaa8ad7c014f51b485142258ee96c00cad4b95c76631d333e329b",
+          "result": "rack_robotics/experiments/reload-campaign003/robot_a_gripper_a-v004/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v005",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "a61f306221b79739303c4ef59aac773a2bea9b4cafdb9565b636c1dd47cf8b48",
+      "package_errors": [],
+      "package_hashes_checked": 75,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign004/robot_a_gripper_a-v005/asset_validation.json",
+          "report_sha256": "609c2ac38f5b41021e8362a585e161483a980674d92f1bba457a7bca9d3fb01e",
+          "result": "rack_robotics/experiments/reload-campaign004/robot_a_gripper_a-v005/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v006",
+      "status": "failed_feasibility",
+      "manifest_sha256": "64b630c4c3ce4aec6e916198b8bb5e95b81d9547b849d9d46beeb48cd59fce46",
+      "package_errors": [],
+      "package_hashes_checked": 83,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign005/robot_a_gripper_a-v006/asset_validation.json",
+          "report_sha256": "b3a174f47312f811ec7022c35110a02ecb5d9a1fb53b15c10a2a821abc09818f",
+          "result": "rack_robotics/experiments/reload-campaign005/robot_a_gripper_a-v006/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": false,
+          "task_passed": false,
+          "declared_outcome_reproduced": false,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": [
+            "Expected failed physical trial was not reproduced in this saved scene"
+          ]
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": false
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v007",
+      "status": "failed_feasibility",
+      "manifest_sha256": "63e0d09cc13397a4a75dbdd0cb454f39b7a88f0fce6f7222dface43c542fd2d3",
+      "package_errors": [],
+      "package_hashes_checked": 84,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign005/robot_a_gripper_a-v007/asset_validation.json",
+          "report_sha256": "0384c2ecd8e20e4b99b8014ff9c8e2aee4c0a16d38273eb59f181fff9206fa4a",
+          "result": "rack_robotics/experiments/reload-campaign005/robot_a_gripper_a-v007/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v008",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "ae44515e85adacf4ee3a75b85d7bd4f0b9d94921e95a5b0b5beb18fc20e0384e",
+      "package_errors": [],
+      "package_hashes_checked": 84,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign006/robot_a_gripper_a-v008/asset_validation.json",
+          "report_sha256": "e13f720d56250d9171974daa0b5dedae22bae233a0a3217de6e63025cdb30636",
+          "result": "rack_robotics/experiments/reload-campaign006/robot_a_gripper_a-v008/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v009",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "a776b6cadcdc6789a6693103dc1a4e6033f64f93d81c81caad87c02bc0b674ca",
+      "package_errors": [],
+      "package_hashes_checked": 85,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign009/robot_a_gripper_a-v009/asset_validation.json",
+          "report_sha256": "b9073b43780993ca83166f3d149dfb3686c19b622b64e41abb1b1be911299c94",
+          "result": "rack_robotics/experiments/reload-campaign009/robot_a_gripper_a-v009/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v010",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "ab205892b6ec8bdb877462181c22981d8baac2e4e5f3f283be8f294b391edb7e",
+      "package_errors": [],
+      "package_hashes_checked": 90,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign010/robot_a_gripper_a-v010/asset_validation.json",
+          "report_sha256": "0e7a44f0e1e9dd0068c2c19dcfc10c3f6b631cafa125d144414db2b3c37235b4",
+          "result": "rack_robotics/experiments/reload-campaign010/robot_a_gripper_a-v010/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v011",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "bc9336e5bf0b6a080005e1c8654ed2d866814f9303907b4d237a2fec266c3548",
+      "package_errors": [],
+      "package_hashes_checked": 92,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign011/robot_a_gripper_a-v011/asset_validation.json",
+          "report_sha256": "c14fa0c32fb381a6536fd0ea637f64b5b13bc843251d114f50a5753ce6e4ff3f",
+          "result": "rack_robotics/experiments/reload-campaign011/robot_a_gripper_a-v011/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v012",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "b29b909d0149b70d35c65a275211719fbccdc25a116bfdaaedb5d6b3d6d5b312",
+      "package_errors": [],
+      "package_hashes_checked": 95,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign012/robot_a_gripper_a-v012/asset_validation.json",
+          "report_sha256": "1b35cc0c45dc571acf539b6fb478463149c32d3c1c3c170e9d394c7b398f1acd",
+          "result": "rack_robotics/experiments/reload-campaign012/robot_a_gripper_a-v012/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v013",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "98356d6da15ef8a6f9692fd4aec9991801490e20dbda1d90e089cc5d2c37f6fb",
+      "package_errors": [],
+      "package_hashes_checked": 94,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign013/robot_a_gripper_a-v013/asset_validation.json",
+          "report_sha256": "16a755c4cbfe0f8fb8edb4566deaf1251b61a989ed4ec5acd6fe984991796a0a",
+          "result": "rack_robotics/experiments/reload-campaign013/robot_a_gripper_a-v013/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v014",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "b3da71ec947c3efaf3e3200ae374e6b39f17aef9548a2392f314210618d87a22",
+      "package_errors": [],
+      "package_hashes_checked": 94,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign014/robot_a_gripper_a-v014/asset_validation.json",
+          "report_sha256": "73a9cc45e3b929be95f59f8244a46a6886d22f2f807244f93ae791e0fdd8d0d5",
+          "result": "rack_robotics/experiments/reload-campaign014/robot_a_gripper_a-v014/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_a/v015",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "d611dd11f3aa6582e6bf563574f41baebf35a754404dd7853b93fecfa98e1328",
+      "package_errors": [],
+      "package_hashes_checked": 107,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign023/robot_a_gripper_a-v015/asset_validation.json",
+          "report_sha256": "78f922cb8c7799ba97cff420ff2690d63085a5e35d83dbf010e5f572b036198a",
+          "result": "rack_robotics/experiments/reload-campaign023/robot_a_gripper_a-v015/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v001",
+      "status": "failed_feasibility",
+      "manifest_sha256": "be160053094abf8a1da72fce3a4ef9751a63ea871bcf05f073c707fcfc5d1317",
+      "package_errors": [],
+      "package_hashes_checked": 51,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_a_gripper_b/v001/reload_verification.json",
+          "report_sha256": "ab804e7433f1c3e4502e95e5cedfed129b89072137da6f6d6498e181e66742c5",
+          "result": "rack_robotics/experiments/a_b_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v002",
+      "status": "failed_feasibility",
+      "manifest_sha256": "b326eeae1cb2f40931b4e48118e35c8d79dd2b3323f3cc73ed4da7bb8b85b4f7",
+      "package_errors": [],
+      "package_hashes_checked": 54,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_a_gripper_b/v002/reload_verification.json",
+          "report_sha256": "faf10c87afbd76aa3ea82701de4533e3e1bf242c1c15aa1b2cade01fc9503dc2",
+          "result": "rack_robotics/experiments/a_b_reload_v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v003",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "268f0aa990978a7fcad25b1fa416f645eeaeab51f6be21e05bdbf454a4fdcd33",
+      "package_errors": [],
+      "package_hashes_checked": 55,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_a_gripper_b/v003/verification.json",
+          "report_sha256": "a7e22bfce3ae5f82ff1c95f3e61c6e74664e0c1156e6ac112568f7063f7dcba3",
+          "result": "rack_robotics/experiments/a_b_reload_v003/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v004",
+      "status": "failed_feasibility",
+      "manifest_sha256": "5a103d4fedbd91131d09dde7767d5981a99091294d0a2ec4009262fc32fe4f8b",
+      "package_errors": [],
+      "package_hashes_checked": 56,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/a_b_reload_v004/asset_validation.json",
+          "report_sha256": "d537270732c88ba02a253964f2c5cb530426a8205d4f401693d6c674cd3d650a",
+          "result": "rack_robotics/experiments/a_b_reload_v004/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v005",
+      "status": "failed_feasibility",
+      "manifest_sha256": "02a0b2d60e859d5236c000678cef2df12e8468c4b7a8334de8fba3481d2350da",
+      "package_errors": [],
+      "package_hashes_checked": 56,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/a_b_reload_v005/asset_validation.json",
+          "report_sha256": "f9b1cc50ccfcf0bb5b3cf9ea6c5831afb78482708190db7c60b8e5763d260dc5",
+          "result": "rack_robotics/experiments/a_b_reload_v005/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v006",
+      "status": "failed_feasibility",
+      "manifest_sha256": "4f1a12f5956f965ecd807cae04288ae8b1079ae9e82f745ce639dbdda12e8a4c",
+      "package_errors": [],
+      "package_hashes_checked": 57,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/a_b_reload_v006/asset_validation.json",
+          "report_sha256": "399e8f76ffced0e41287ee54dc456f9bc991a80074104717cfe79ffc4b01316e",
+          "result": "rack_robotics/experiments/a_b_reload_v006/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v007",
+      "status": "failed_feasibility",
+      "manifest_sha256": "e7a3c36d943266a9ad432c36cd87aeb129c5e3ec9ff03d39899d6c6c4bdcb234",
+      "package_errors": [],
+      "package_hashes_checked": 57,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/a_b_reload_v007/asset_validation.json",
+          "report_sha256": "634e3bb121034caa5470b7ed8e9c68ceab2a4b5d6f28897409964a0acfb79793",
+          "result": "rack_robotics/experiments/a_b_reload_v007/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v008",
+      "status": "failed_feasibility",
+      "manifest_sha256": "9fc37809afb5c23f97d6c16d77a3bf7fd5ed78bd4ccd217ae1b4dec8de79d9b8",
+      "package_errors": [],
+      "package_hashes_checked": 58,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign001/robot_a_gripper_b-v008/asset_validation.json",
+          "report_sha256": "1e0e6ab7ee09d0e73a5efe34d4e2bddceb04c80f3908775ea47d9147d4d0e913",
+          "result": "rack_robotics/experiments/reload-campaign001/robot_a_gripper_b-v008/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v009",
+      "status": "failed_feasibility",
+      "manifest_sha256": "b4254a9bca8ed47cbe9e5a96eade203aa7e27e001f640bac771fde08c9d433dd",
+      "package_errors": [],
+      "package_hashes_checked": 58,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/a_b_reload_v009/asset_validation.json",
+          "report_sha256": "f18925fa161a42ef47ee33e3198b746933e5fd03fb91b6f05b3c4691640fadac",
+          "result": "rack_robotics/experiments/a_b_reload_v009/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_b/v010",
+      "status": "failed_feasibility",
+      "manifest_sha256": "0bc95b97aa4df89a35edd47c7e3ff2c5cdafd3caf9e08d2f07b021540070a4c5",
+      "package_errors": [],
+      "package_hashes_checked": 105,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign015/robot_a_gripper_b-v010/asset_validation.json",
+          "report_sha256": "633f6532d7163dfd3cb401081b4837c70d336cda692d82868f1fa3b8c51ba858",
+          "result": "rack_robotics/experiments/reload-campaign015/robot_a_gripper_b-v010/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_c/v001",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "adb5ceca1a5ae9d9d1484b53d59f7879f7839d05bad890000a8b3e2786cc3d02",
+      "package_errors": [],
+      "package_hashes_checked": 33,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_a_gripper_c/v001/reload_verification.json",
+          "report_sha256": "74523f251299ac27fff9dab48d4c85f618c0ea44cd7d058d7d623100dfe5d8c3",
+          "result": "rack_robotics/experiments/a_c_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_c/v002",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "f7eefe513617f2e34d5107cffe88f8a9f59d86f122713f3ce5e862afacc86245",
+      "package_errors": [],
+      "package_hashes_checked": 36,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_a_gripper_c/v002/reload_verification.json",
+          "report_sha256": "64783e14b78b216debbdd063432cec24514df6e67eba45968683c22b214fec8a",
+          "result": "rack_robotics/experiments/a_c_reload_v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_a_gripper_c/v003",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "64c771ade70347ea3ff61cd363b6b92a8eed0a28b50bc4b66140eccd28719721",
+      "package_errors": [],
+      "package_hashes_checked": 94,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign018/robot_a_gripper_c-v003/asset_validation.json",
+          "report_sha256": "c9730132a4863fb374d0b19a8c89d02313fe8d65462d08fe3674fd04ca57e0d1",
+          "result": "rack_robotics/experiments/reload-campaign018/robot_a_gripper_c-v003/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v001",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "386b2a401e0676f0b471c553f9cfe367fd4fed65987fdbbd64cfd65287581d7e",
+      "package_errors": [],
+      "package_hashes_checked": 28,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/b_a_reload_v001/asset_validation001.json",
+          "report_sha256": "d346efac642d2d9ea22fb0eff31512914da73322ce90b2a3339cd52c29bb36f1",
+          "result": "rack_robotics/experiments/b_a_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": false,
+          "task_passed": false,
+          "declared_outcome_reproduced": false,
+          "original_trial_source_matches": false,
+          "original_trial_source_mismatches": [
+            "rack_robotics/controllers/cartesian_interface.py",
+            "rack_robotics/scripts/package_reference.py"
+          ],
+          "validator_errors": [
+            "Reload evidence does not prove a complete physical cycle in this saved scene"
+          ]
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": false
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v002",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "1f4a097ff7b066c690a3fe28a1a28a21904a112d85d1b6d4aaa399b8d9430461",
+      "package_errors": [],
+      "package_hashes_checked": 31,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_b_gripper_a/v002/reload_verification.json",
+          "report_sha256": "dd49309e213995f59989e0efc6053abbc2388b840e82e7a2c2656337c63854d8",
+          "result": "rack_robotics/experiments/b_a_reload_v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": null,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v003",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "b16b8f008c7ad0368f034a454ad28ec0142cb041491b5ea70b9edf5fff3e0921",
+      "package_errors": [],
+      "package_hashes_checked": 75,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign004/robot_b_gripper_a-v003/asset_validation.json",
+          "report_sha256": "6527fb8ac2738d1c5501db87d8c3e916995ba097b8e8cadbcfb9ab8e056b8f28",
+          "result": "rack_robotics/experiments/reload-campaign004/robot_b_gripper_a-v003/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v004",
+      "status": "failed_feasibility",
+      "manifest_sha256": "de505a2f5f2205dbd37caf901a1eb66c71ab0409dff0bba8e8d14278cefa5a23",
+      "package_errors": [],
+      "package_hashes_checked": 84,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v004/asset_validation.json",
+          "report_sha256": "5e91ac74aea962bd5dc4f53c04d35b21791f3c95c1d705d27419fce55525da72",
+          "result": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v004/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v005",
+      "status": "failed_feasibility",
+      "manifest_sha256": "732aa752ecf011407a5dc527ae49e6524c0d7bb10641b0fa57ebdcca573b2690",
+      "package_errors": [],
+      "package_hashes_checked": 84,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v005/asset_validation.json",
+          "report_sha256": "88ca420defd0487bc98de98468d724c88505a32fe7d60016c1951120964eb7ea",
+          "result": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v005/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v006",
+      "status": "failed_feasibility",
+      "manifest_sha256": "096e805f727c01e187ae9f9fbf886c5274139d4da045e9cab76918b460e12ee9",
+      "package_errors": [],
+      "package_hashes_checked": 87,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v006/asset_validation.json",
+          "report_sha256": "e81c5b296c1f1a203b6a3cf755c60e19d48f96fef770e97dd0b8b493a566bb72",
+          "result": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v006/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v007",
+      "status": "failed_feasibility",
+      "manifest_sha256": "68778bd4aa6b7619468ee764b187bf6e7bafbb528d6d8c2b4b9a0d552bf0cd93",
+      "package_errors": [],
+      "package_hashes_checked": 87,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v007/asset_validation.json",
+          "report_sha256": "bf2f451ddc751e7593fc5dfd29fd6b2b2d0c41e930e47d977374c715129d5df9",
+          "result": "rack_robotics/experiments/reload-campaign007/robot_b_gripper_a-v007/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v008",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "00c3017dcf314154dc56a58b9d8d13f32cbd015d0bab5b08a564158875f50698",
+      "package_errors": [],
+      "package_hashes_checked": 85,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign008/robot_b_gripper_a-v008/asset_validation.json",
+          "report_sha256": "f1ac83b8cde45ff1ec215619b47d1b7a1d1f9221e2a39038b70816a7cb8780d2",
+          "result": "rack_robotics/experiments/reload-campaign008/robot_b_gripper_a-v008/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v009",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "1a409465f84d3bc2a1b8e7797b008cd3f6aa236cbc99740c28ee8b4ad65f7870",
+      "package_errors": [],
+      "package_hashes_checked": 90,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign010/robot_b_gripper_a-v009/asset_validation.json",
+          "report_sha256": "7f7eb5a6e85a63413145f8e6a4f11846b6dd4d30e6eace81fc0cd43acf8be884",
+          "result": "rack_robotics/experiments/reload-campaign010/robot_b_gripper_a-v009/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v010",
+      "status": "failed_feasibility",
+      "manifest_sha256": "df03dd209e56fc4b714bdbb7ae0d57643cc639f62f0f544bae7cb2954619a9dd",
+      "package_errors": [],
+      "package_hashes_checked": 95,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign011/robot_b_gripper_a-v010/asset_validation.json",
+          "report_sha256": "25f0690a4370a6b0fe95ef03549978682741fc4b0bd2b44449e8eda9667c93e6",
+          "result": "rack_robotics/experiments/reload-campaign011/robot_b_gripper_a-v010/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v011",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "34d3c3c2b0a095e20b154e886e1b20b1c337d6d4262f353329bf33e8ed07d1aa",
+      "package_errors": [],
+      "package_hashes_checked": 95,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign012/robot_b_gripper_a-v011/asset_validation.json",
+          "report_sha256": "0db0776ba1de6662f7452d471ff9d0040b0b794634c3dfab4adbee3fc0d30b2e",
+          "result": "rack_robotics/experiments/reload-campaign012/robot_b_gripper_a-v011/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v012",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "e725f3f151b63f039e0efd5b00f7af05710d7693b4de45250ea5af563843bca6",
+      "package_errors": [],
+      "package_hashes_checked": 94,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign013/robot_b_gripper_a-v012/asset_validation.json",
+          "report_sha256": "c70294a4ec437a9982faf5d055fe1cc8f26579a3168a1bfa2c0f6ce2df5b4514",
+          "result": "rack_robotics/experiments/reload-campaign013/robot_b_gripper_a-v012/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_a/v013",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "27842cd798cb8fb16c678b2e3a1f0c8981a5c83a618556c20b100f38b092e992",
+      "package_errors": [],
+      "package_hashes_checked": 94,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign014/robot_b_gripper_a-v013/asset_validation.json",
+          "report_sha256": "52dafb4892728e37e6afea5896c36f62507b163283e80acdac4fde42da2adcba",
+          "result": "rack_robotics/experiments/reload-campaign014/robot_b_gripper_a-v013/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_b/v001",
+      "status": "failed_feasibility",
+      "manifest_sha256": "7b348bcd99573e7a1076113bded5f3a233b74feada2d3f6b4bd0125251958b0a",
+      "package_errors": [],
+      "package_hashes_checked": 55,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_b_gripper_b/v001/verification.json",
+          "report_sha256": "9aa45dc87eaa245298a3cfa29118c8fc617896f2d7c3345fbd12da785097f53c",
+          "result": "rack_robotics/experiments/b_b_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_b/v002",
+      "status": "failed_feasibility",
+      "manifest_sha256": "f453bd5f5c4ce4afed63414651c70cd8f845a800d39af9a7f90544a4cf336d45",
+      "package_errors": [],
+      "package_hashes_checked": 56,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v002/asset_validation.json",
+          "report_sha256": "4c3825d306d3bb79b3b9b7fc8001a7bd8c809e576c51b5298733f7e124456b77",
+          "result": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_b/v003",
+      "status": "failed_feasibility",
+      "manifest_sha256": "2a9e8e80d6ed960c05857a9a6948587acf92cbf53bd65596453e585c6f905f24",
+      "package_errors": [],
+      "package_hashes_checked": 56,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v003/asset_validation.json",
+          "report_sha256": "32cd81d9ad5c7102eb857cc8ffdd116fd49bc0bc150b233789fcae3d6128a8f1",
+          "result": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v003/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_b/v004",
+      "status": "failed_feasibility",
+      "manifest_sha256": "6bb58d63a810cf06449880b34dea916d0c1d76b3e94229eb7cf54315c7c45482",
+      "package_errors": [],
+      "package_hashes_checked": 57,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v004/asset_validation.json",
+          "report_sha256": "8581d6f8d6a3926e36f92c6477217fb2f42cd71b395bab3930ade2ddf1c5fff1",
+          "result": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v004/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_b/v005",
+      "status": "failed_feasibility",
+      "manifest_sha256": "89981435c2258855d1aa72391ff35a8aff155a9f648070e25e06005d336fb1a6",
+      "package_errors": [],
+      "package_hashes_checked": 58,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v005/asset_validation.json",
+          "report_sha256": "39df1af064e2cb880849cc9502d991862ceb5d0afc10601639b327523b1be692",
+          "result": "rack_robotics/experiments/reload-campaign001/robot_b_gripper_b-v005/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_b/v006",
+      "status": "failed_feasibility",
+      "manifest_sha256": "2599e677240468af4f84b67dddba63d36bd7dee254e7e2c2375be3f5e16347fe",
+      "package_errors": [],
+      "package_hashes_checked": 58,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/b_b_reload_v006/asset_validation.json",
+          "report_sha256": "4f4ff8f105630e0497c10e6937ca2fdfd5324e780ddb027c40a942cca8625408",
+          "result": "rack_robotics/experiments/b_b_reload_v006/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_c/v001",
+      "status": "failed_feasibility",
+      "manifest_sha256": "c1b09f53c0bfa4bd65f69f138b38a2097662d6e014c3e83bb09c44af8d95215e",
+      "package_errors": [],
+      "package_hashes_checked": 33,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_b_gripper_c/v001/reload_verification.json",
+          "report_sha256": "f4d9ba14711dd47f84ca3292a7595f449b627ac59fa18dbf01c588a20d51bf92",
+          "result": "rack_robotics/experiments/b_c_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_c/v002",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "a2f736558ea0df7748a406ffae93bd818bb05ac67abc6fc146fdfaed832dddf5",
+      "package_errors": [],
+      "package_hashes_checked": 33,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_b_gripper_c/v002/reload_verification.json",
+          "report_sha256": "55e07397606f52824ec315809cd2508cfd3401e5abd5ee0d0a8d1f163da4a934",
+          "result": "rack_robotics/experiments/b_c_reload_v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_b_gripper_c/v003",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "0c0a406c1b265985d8cda1a03598654abc55a50a16fc2da7376690698c4e2b68",
+      "package_errors": [],
+      "package_hashes_checked": 33,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_b_gripper_c/v003/reload_verification.json",
+          "report_sha256": "dd4402fa9ca8b28c550e10645821273bd3666e34f929027a52960f60bed13c66",
+          "result": "rack_robotics/experiments/b_c_reload_v003/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v001",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "8fbd7cdcedade1bc237cd73f9e727d84b4e78af033dc62ecc67bad6984c7cf4b",
+      "package_errors": [],
+      "package_hashes_checked": 36,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_c_gripper_a/v001/reload_verification.json",
+          "report_sha256": "122c96a95a941a56ea9f8af4a6b403f9285cf88b282afaf67ab1058618d25f52",
+          "result": "rack_robotics/experiments/c_a_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v002",
+      "status": "failed_feasibility",
+      "manifest_sha256": "1cfee0d1587942bd379a46761759180f4b90d7145c34db6c9404cb3db5c9a961",
+      "package_errors": [],
+      "package_hashes_checked": 74,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign002/robot_c_gripper_a-v002/asset_validation.json",
+          "report_sha256": "e9d613786fc347fd077cca0c27b399475454ea316054f19991b00432be1916ac",
+          "result": "rack_robotics/experiments/reload-campaign002/robot_c_gripper_a-v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v003",
+      "status": "failed_feasibility",
+      "manifest_sha256": "46d6adfa4dee46676bb5e060014b7c5be12ff2354aa63244d825b01a4ceb1cc8",
+      "package_errors": [],
+      "package_hashes_checked": 74,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign002/robot_c_gripper_a-v003/asset_validation.json",
+          "report_sha256": "8f246260762568ee6aced9cb58ad9af85c777402ac6b147986984029ff8a1851",
+          "result": "rack_robotics/experiments/reload-campaign002/robot_c_gripper_a-v003/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v004",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "530ea9f35b9e33acb2eb9df441d5d9c522f04954875655d9dd2fd628d0b15d04",
+      "package_errors": [],
+      "package_hashes_checked": 74,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign003/robot_c_gripper_a-v004/asset_validation.json",
+          "report_sha256": "90d68ffbb5968082ccabca4a0910ab7565ef4b7a36b3b9a949e9f602a7f98501",
+          "result": "rack_robotics/experiments/reload-campaign003/robot_c_gripper_a-v004/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v005",
+      "status": "failed_feasibility",
+      "manifest_sha256": "dfb52c4569bcd063f9f6d431824687d8bcdf1a925b21238df07cb59e6e747d9a",
+      "package_errors": [],
+      "package_hashes_checked": 83,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign005/robot_c_gripper_a-v005/asset_validation.json",
+          "report_sha256": "fdc3317bb6293b9f756b2384e497fac0bb2d75a8b385342e1b0e58d63356e7a0",
+          "result": "rack_robotics/experiments/reload-campaign005/robot_c_gripper_a-v005/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": false,
+          "task_passed": false,
+          "declared_outcome_reproduced": false,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": [
+            "Expected failed physical trial was not reproduced in this saved scene"
+          ]
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": false
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v006",
+      "status": "failed_feasibility",
+      "manifest_sha256": "013833988ce4231cfe3d0c74f0ec1cb8fc26e9b052cbdc02a2c40fe8a4fa5eb5",
+      "package_errors": [],
+      "package_hashes_checked": 84,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign005/robot_c_gripper_a-v006/asset_validation.json",
+          "report_sha256": "5ef10d7cab93df23b88570323cdc2e57c260679e100040e2206cc32952a578ca",
+          "result": "rack_robotics/experiments/reload-campaign005/robot_c_gripper_a-v006/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v007",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "a24b400fc2a415ee961d31280fad6b79c4834a17fd1486e62a76af00b37c1f22",
+      "package_errors": [],
+      "package_hashes_checked": 84,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign006/robot_c_gripper_a-v007/asset_validation.json",
+          "report_sha256": "0fe630f712c481562ee3c387acffce70b797d74fd78cd500e8e9a047a2c2bc08",
+          "result": "rack_robotics/experiments/reload-campaign006/robot_c_gripper_a-v007/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v008",
+      "status": "failed_feasibility",
+      "manifest_sha256": "a72e16133647d73f027099967a0e31d6cd1b8cfad2d7f5b98d94af92b72f6e08",
+      "package_errors": [],
+      "package_hashes_checked": 85,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign009/robot_c_gripper_a-v008/asset_validation.json",
+          "report_sha256": "e0883860ded10f6b81d7d534bb63e59d7ac0c12d551f618dfb745f74ca0d25f7",
+          "result": "rack_robotics/experiments/reload-campaign009/robot_c_gripper_a-v008/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v009",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "700e29fca020bfa0c66733a9f1d287f3cc87108880a5a944addf664bb0c78807",
+      "package_errors": [],
+      "package_hashes_checked": 90,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign010/robot_c_gripper_a-v009/asset_validation.json",
+          "report_sha256": "ea81349ac89f5601e07742bb0296f832134fe31dc8ef335534c9c12a071515e8",
+          "result": "rack_robotics/experiments/reload-campaign010/robot_c_gripper_a-v009/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v010",
+      "status": "failed_feasibility",
+      "manifest_sha256": "becd712a81901931e6dd5d05866a7d208b1318e13f390140e732949d7007911b",
+      "package_errors": [],
+      "package_hashes_checked": 92,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign011/robot_c_gripper_a-v010/asset_validation.json",
+          "report_sha256": "5bc0a4fc8538821482b301f6722e72d3c5ef2c23852196f274f140a53ad13cda",
+          "result": "rack_robotics/experiments/reload-campaign011/robot_c_gripper_a-v010/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v011",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "aaa3666e6b0d880fe2c336457cbbe83ac730c702e601785c49096993e1ce49a5",
+      "package_errors": [],
+      "package_hashes_checked": 95,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign012/robot_c_gripper_a-v011/asset_validation.json",
+          "report_sha256": "2ef438d63796cdbf9b400e0de37b69fa0d5233839bcdd2b742183ecc7265ad21",
+          "result": "rack_robotics/experiments/reload-campaign012/robot_c_gripper_a-v011/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v012",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "8e33bc1ca0faa1bc091587dbc9efa017ef78f144eff916b18f4a0936840917e8",
+      "package_errors": [],
+      "package_hashes_checked": 94,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign013/robot_c_gripper_a-v012/asset_validation.json",
+          "report_sha256": "8268f29bc1a5f739ccc63c08149b7fbd39aacfd526104ea30ddfd3a7f1984467",
+          "result": "rack_robotics/experiments/reload-campaign013/robot_c_gripper_a-v012/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v013",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "4e8a1787a9c80c8bd9f0e729500a1e34421cb1be84f0740057ef843abef684cd",
+      "package_errors": [],
+      "package_hashes_checked": 94,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign014/robot_c_gripper_a-v013/asset_validation.json",
+          "report_sha256": "255eecd128f0c4a53f4ceeec0b82c9f2f05056a93dbdc7203983a5743167e08d",
+          "result": "rack_robotics/experiments/reload-campaign014/robot_c_gripper_a-v013/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v014",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "d3908cafc9e19e16763f767fd670570689a224f53fddb9be493230d0a8ef420e",
+      "package_errors": [],
+      "package_hashes_checked": 96,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign016/robot_c_gripper_a-v014/asset_validation.json",
+          "report_sha256": "d178bcb22769080e6fade81dddf335f66df1c76482be8b6427908db0d894b305",
+          "result": "rack_robotics/experiments/reload-campaign016/robot_c_gripper_a-v014/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v015",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "478fed2b4f07f25ccdb9e004245bd8e8dab637c9e8fea6e5d18fde3d0b08eda9",
+      "package_errors": [],
+      "package_hashes_checked": 96,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign016/robot_c_gripper_a-v015/asset_validation.json",
+          "report_sha256": "52bd48d94338f9bb6026ba47053b1d8963a2df87791e5b7d4d4adcd83da0fb0d",
+          "result": "rack_robotics/experiments/reload-campaign016/robot_c_gripper_a-v015/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v016",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "7a3df1d19a3aab1d402c28e3e1bd3fe3ee08da81d8100ed15af7778506adfc3a",
+      "package_errors": [],
+      "package_hashes_checked": 100,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign017/robot_c_gripper_a-v016/asset_validation.json",
+          "report_sha256": "5a8a2f26ed6b0d4814ee3ff5c5f8c407a94b45298b2890e43a698316685bddfa",
+          "result": "rack_robotics/experiments/reload-campaign017/robot_c_gripper_a-v016/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v017",
+      "status": "failed_feasibility",
+      "manifest_sha256": "32cd5ad4e5766f16e235bcf3921edeefa557af865378da4b6eba3478bc0f9d75",
+      "package_errors": [],
+      "package_hashes_checked": 101,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign019/robot_c_gripper_a-v017/asset_validation.json",
+          "report_sha256": "077f5ce7c0dac2f29dc27916c82efdc42f4588866d86bd25f7afc6ece9c682b7",
+          "result": "rack_robotics/experiments/reload-campaign019/robot_c_gripper_a-v017/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v018",
+      "status": "failed_feasibility",
+      "manifest_sha256": "587d244b4e5fdead685b07615030d1426a9e39412172a21f4483056d1d6bcccf",
+      "package_errors": [],
+      "package_hashes_checked": 101,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign020/robot_c_gripper_a-v018/asset_validation.json",
+          "report_sha256": "87f6cb393e907140ceea4db904281af5800aa1b0b7898fffcb0df6995f90e40a",
+          "result": "rack_robotics/experiments/reload-campaign020/robot_c_gripper_a-v018/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v019",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "28fa2fda591a3e8aed2710884e8340a6a5272551e916c253a84931ab5540cb3d",
+      "package_errors": [],
+      "package_hashes_checked": 103,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign021/robot_c_gripper_a-v019/asset_validation.json",
+          "report_sha256": "c092fb6c7d12520856fdf562994fccf8e8262270db1aec1587ed8158a766e080",
+          "result": "rack_robotics/experiments/reload-campaign021/robot_c_gripper_a-v019/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v020",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "d3df11de6cd1dc3309f85e0572dfd00126f1e5447de7b60dbec35af7b5d6abc1",
+      "package_errors": [],
+      "package_hashes_checked": 106,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign022/robot_c_gripper_a-v020/asset_validation.json",
+          "report_sha256": "fdf1447257e175669743e0c8ea682e35d44542cfc8e13458827ccaac5e2812ab",
+          "result": "rack_robotics/experiments/reload-campaign022/robot_c_gripper_a-v020/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_a/v021",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "3ad447e25ab5040a6b29a3a49d25c9c2d536f3575020974fb721692cf9aba0fe",
+      "package_errors": [],
+      "package_hashes_checked": 107,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign024/robot_c_gripper_a-v021/asset_validation.json",
+          "report_sha256": "4a79b826ea0ffa655ec8e220777dd631c1dae575783422e151f018e0f5e8c8e9",
+          "result": "rack_robotics/experiments/reload-campaign024/robot_c_gripper_a-v021/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_b/v001",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "29a9db1bf667d62043ac02c1d831cc1341ce73fb9a25d9a3f851448478d02406",
+      "package_errors": [],
+      "package_hashes_checked": 55,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_c_gripper_b/v001/verification.json",
+          "report_sha256": "e7cd4fd08d83977176cd7adcb2e4654b2ebcd5949228e68d4df213e048ba2854",
+          "result": "rack_robotics/experiments/c_b_reload_v001/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_c/v001",
+      "status": "single_feasibility_pass",
+      "manifest_sha256": "5367ecf673fea72e23479feb927ee4aa7bbb9ce0d922faf5f6a5fa6fa785c685",
+      "package_errors": [],
+      "package_hashes_checked": 36,
+      "evidence": [
+        {
+          "report": "rack_robotics/environments/robot_c_gripper_c/v001/reload_verification.json",
+          "report_sha256": "fa8766e4473bd2762bd4757396dc6cb670a76dd2703ab3d6488732d539ae7351",
+          "result": "rack_robotics/experiments/c_c_reload_v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": true,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    },
+    {
+      "environment": "rack_robotics/environments/robot_c_gripper_c/v002",
+      "status": "failed_feasibility",
+      "manifest_sha256": "7cd41e0992ae88c03d036a4e82dd976c5fb73a3ab816a7c992ced0c2ad3aa250",
+      "package_errors": [],
+      "package_hashes_checked": 100,
+      "evidence": [
+        {
+          "report": "rack_robotics/experiments/reload-campaign019/robot_c_gripper_c-v002/asset_validation.json",
+          "report_sha256": "0c145cbf0546f3b38285151f6d023849d8d7a469941ab9f88cb8f5d01f6d25bc",
+          "result": "rack_robotics/experiments/reload-campaign019/robot_c_gripper_c-v002/results.json",
+          "result_digest_valid": true,
+          "saved_scene_loaded": true,
+          "dependency_report_complete": true,
+          "validator_passed": true,
+          "task_passed": false,
+          "declared_outcome_reproduced": true,
+          "original_trial_source_matches": true,
+          "original_trial_source_mismatches": [],
+          "validator_errors": []
+        }
+      ],
+      "independent_scene_load_verified": true,
+      "declared_outcome_verified": true
+    }
+  ],
+  "scope": "Current package/result hashes and historical fresh-session/dependency evidence; not new physics, reliability, or new local dependency resolution"
+}

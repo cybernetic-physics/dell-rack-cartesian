@@ -1,0 +1,27 @@
+{
+  "scope": "Visual inspection of explicitly listed original PNG frames; not exhaustive temporal acceptance",
+  "final_visual_acceptance": false,
+  "products": [
+    {
+      "directory": "experiments/a_a_macro_latch_cycle003",
+      "video_sha256": "9f7b45198499c69fefa6b1148de60ff8600b526527dc01ac9429d8b6e303b2d6",
+      "original_frames_inspected": [180, 242, 816],
+      "observations": "Native1080p improved angle preserves the readable socket, raised tongue and white tab. Frame242 shows the withdrawn housing with a clear socket gap and lowered yellow tip. The actuator occupies much of the left side without covering the housing in these frames.",
+      "decision": "Improved native1080p macro used for the matching-resolution edit; full temporal acceptance remains separate."
+    },
+    {
+      "directory": "experiments/b_a_macro_latch_cycle001",
+      "video_sha256": "1b160ad8633610d10e90646f9a27cfdd2d1dd78d37baa254aa82c0ae54eb953b",
+      "original_frames_inspected": [180, 242, 816],
+      "observations": "Raised tongue/yellow tip and retention tab are distinguishable around the large blue foreground actuator. The withdrawn housing has a visible socket gap at frame242; seated composition remains readable at816. These samples do not by themselves show the complete latch-press transition.",
+      "decision": "Improved macro candidate included with explicit remaining temporal-review limits."
+    },
+    {
+      "directory": "experiments/b_c_rear_underbridge_cycle001",
+      "video_sha256": "85fab7d4289792d11494516b7e38791c4e93af2f35b38c5632373b0128ec5096",
+      "original_frames_inspected": [320, 950],
+      "observations": "Specialized tool, datum pads, cable and withdrawn/reseated housing are visible below the bridge. Bright foreground hardware at the left edge does not cover the connector region in these two frames; macro is still needed for the latch.",
+      "decision": "Improved rear candidate included with explicit remaining temporal-review limits."
+    }
+  ]
+}

@@ -1,0 +1,1640 @@
+{
+  "schema": "occupied_neighbor_screen_summary_v1",
+  "complete": true,
+  "screen_manifest_sha256": "51333b833fc13da72b90f3049ac2e4b14a354d18d6f069d1db57d46e51962bd9",
+  "screen_state_sha256": "8b91633ba0b11fa3d7d3b625f33b40080b46db3447cda4a8611639e457f433d0",
+  "environment_manifest_sha256": {
+    "AA": "0b70c888da4bd36348b56c000895e2f119554c181829105346a7a66b0d08685e",
+    "AC": "f7eefe513617f2e34d5107cffe88f8a9f59d86f122713f3ce5e862afacc86245",
+    "BA": "1f4a097ff7b066c690a3fe28a1a28a21904a112d85d1b6d4aaa399b8d9430461",
+    "BC": "0c0a406c1b265985d8cda1a03598654abc55a50a16fc2da7376690698c4e2b68",
+    "CA": "8fbd7cdcedade1bc237cd73f9e727d84b4e78af033dc62ecc67bad6984c7cf4b",
+    "CC": "5367ecf673fea72e23479feb927ee4aa7bbb9ce0d922faf5f6a5fa6fa785c685",
+    "AB": "268f0aa990978a7fcad25b1fa416f645eeaeab51f6be21e05bdbf454a4fdcd33",
+    "CB": "29a9db1bf667d62043ac02c1d831cc1341ce73fb9a25d9a3f851448478d02406"
+  },
+  "designs": {
+    "AA": {
+      "cases": 5,
+      "task_passes": 5,
+      "clearance_passes": 5,
+      "cases_with_robot_neighbor_contact": 0,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    },
+    "AC": {
+      "cases": 5,
+      "task_passes": 5,
+      "clearance_passes": 5,
+      "cases_with_robot_neighbor_contact": 0,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    },
+    "BA": {
+      "cases": 5,
+      "task_passes": 5,
+      "clearance_passes": 5,
+      "cases_with_robot_neighbor_contact": 0,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    },
+    "BC": {
+      "cases": 5,
+      "task_passes": 4,
+      "clearance_passes": 4,
+      "cases_with_robot_neighbor_contact": 0,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    },
+    "CA": {
+      "cases": 5,
+      "task_passes": 4,
+      "clearance_passes": 4,
+      "cases_with_robot_neighbor_contact": 0,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    },
+    "CC": {
+      "cases": 5,
+      "task_passes": 2,
+      "clearance_passes": 2,
+      "cases_with_robot_neighbor_contact": 0,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    },
+    "AB": {
+      "cases": 5,
+      "task_passes": 4,
+      "clearance_passes": 0,
+      "cases_with_robot_neighbor_contact": 4,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    },
+    "CB": {
+      "cases": 5,
+      "task_passes": 2,
+      "clearance_passes": 0,
+      "cases_with_robot_neighbor_contact": 4,
+      "cases_without_stable_timed_fixture": 0,
+      "ports": [
+        4,
+        8,
+        1,
+        16,
+        12
+      ]
+    }
+  },
+  "cases": [
+    {
+      "design": "AA",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9808768118003235e-05,
+      "error": null,
+      "results_sha256": "172da92b292058fae427204afa50fa7c0a2f01d97a33759e0755b47c4152008b",
+      "result_relative_to_screen": "AA/trial-000/results.json",
+      "cycle_time_s": 22.033333333332404,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "dcb5a1cc6a564ac27da00f795fb1174b2ffac6fde9a4d0ea2da7e8533d21bc60"
+    },
+    {
+      "design": "AA",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9642523790910848e-05,
+      "error": null,
+      "results_sha256": "d3ea11e1f96fa5c7c776a026220ec099fed8cfaf1395146c49e0a746d1fa7331",
+      "result_relative_to_screen": "AA/trial-001/results.json",
+      "cycle_time_s": 20.88333333333247,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "2fbb213a3c58716e703d111e7cbe2402436ae70330e9feeff3e56f01327bd246"
+    },
+    {
+      "design": "AA",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.808576720573643e-05,
+      "error": null,
+      "results_sha256": "aa894625fc4543b4392461551bf12ee829ba222e5590619eb185e60cf0e5e214",
+      "result_relative_to_screen": "AA/trial-002/results.json",
+      "cycle_time_s": 21.158333333332454,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "700a5cda8c1db46a2bc0d1a01f5ae1cf32a0827dadb36cec39c0b279d42434ce"
+    },
+    {
+      "design": "AA",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9126674420818887e-05,
+      "error": null,
+      "results_sha256": "f21d5e408c0e7402df037b5915b9e8fa753e7b927d5dde2604884633da763272",
+      "result_relative_to_screen": "AA/trial-003/results.json",
+      "cycle_time_s": 21.895833333332412,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "c0d4c41c4ab664c48443515a3093da54ff1de6f46a3158a7c3558a071a3c7c13"
+    },
+    {
+      "design": "AA",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.8527830675743184e-05,
+      "error": null,
+      "results_sha256": "c7cbd93da7d1249b6c7e746cf5b6a118bea7e78d7a52ae245bfe6a39e3ec6fb9",
+      "result_relative_to_screen": "AA/trial-004/results.json",
+      "cycle_time_s": 20.854166666665805,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "5c47918da9ab12a6adcaa83ad15461bbb24341d8a19ac37cee7f8af1d30cdda5"
+    },
+    {
+      "design": "AB",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": true,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 5,
+      "maximum_neighbor_cable_gap_m": 2.636853809652561e-05,
+      "error": null,
+      "results_sha256": "8524359717eccbb5469ebe41a2eaea5d7fd190138e02bf6f8140abf883c0786f",
+      "result_relative_to_screen": "AB/trial-000/results.json",
+      "cycle_time_s": 36.45000000000204,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port03/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_finger_base_link/right_finger_base_link/right_finger_base_link"
+          ],
+          "reports": 3233,
+          "minimum_separation_m": -9.569339454174042e-07,
+          "peak_pair_contact_force_n": 0.03456373842802461,
+          "phase_peaks_n": {
+            "align": 0.03456373842802461,
+            "grasp": 0.015676733131975592,
+            "release_latch": 0.007470182994326757,
+            "withdraw": 0.007152220562079244,
+            "insert": 0.007454125697307082,
+            "seat_and_latch": 0.00756469597500732,
+            "recover_insert_release": 0.006879291870469983,
+            "recover_insert_retreat": 0.006797186973375566,
+            "seat_nudge": 0.006858090746327626,
+            "release_gripper": 0.014609669957042543,
+            "retract": 0.014255950742183937
+          },
+          "peak_time_s": 5.691666666666664,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port05/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 3258,
+          "minimum_separation_m": -5.559343844652176e-05,
+          "peak_pair_contact_force_n": 0.019121514139659946,
+          "phase_peaks_n": {
+            "align": 0.019121514139659946,
+            "grasp": 0.017194423688836894,
+            "release_latch": 0.007999201769867872,
+            "withdraw": 0.008518109902530728,
+            "insert": 0.011929862021890196,
+            "seat_and_latch": 0.011899310517444762,
+            "recover_insert_release": 0.008402270877788965,
+            "recover_insert_retreat": 0.008373826129122783,
+            "seat_nudge": 0.0073052895738078385,
+            "release_gripper": 0.015456526871122589,
+            "retract": 0.014507589091822622
+          },
+          "peak_time_s": 5.837499999999989,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port05/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 319,
+          "minimum_separation_m": -1.0260846465826035e-06,
+          "peak_pair_contact_force_n": 0.023777383749846184,
+          "phase_peaks_n": {
+            "align": 0.023777383749846184,
+            "withdraw": 0.008106808776709601,
+            "insert": 0.005122103154598552,
+            "recover_insert_retreat": 0.005048545347156944,
+            "retract": 0.015705466100592258
+          },
+          "peak_time_s": 5.687499999999997,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port03/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 106,
+          "minimum_separation_m": -5.578622221946716e-07,
+          "peak_pair_contact_force_n": 0.020245730248960227,
+          "phase_peaks_n": {
+            "align": 0.020245730248960227,
+            "withdraw": 0,
+            "retract": 0.013221500253919799
+          },
+          "peak_time_s": 5.508333333333341,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port05/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 168,
+          "minimum_separation_m": -1.0225921869277954e-06,
+          "peak_pair_contact_force_n": 0.020994820491220298,
+          "phase_peaks_n": {
+            "align": 0.020994820491220298,
+            "withdraw": 0,
+            "insert": 0,
+            "recover_insert_retreat": 0,
+            "retract": 0.013646156612455222
+          },
+          "peak_time_s": 5.550000000000005,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "1047f75e3fad8c11efbef9878eaf8d6e189848ca97814ac97e0e842ed854e170"
+    },
+    {
+      "design": "AB",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": true,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 6,
+      "maximum_neighbor_cable_gap_m": 2.7192069415787578e-05,
+      "error": null,
+      "results_sha256": "3b1fbf93377c2600c7003e62eaaf254ee9b5f33927db250fc97d4ff33e346b6c",
+      "result_relative_to_screen": "AB/trial-001/results.json",
+      "cycle_time_s": 29.104166666665336,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port07/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_finger_base_link/right_finger_base_link/right_finger_base_link"
+          ],
+          "reports": 2192,
+          "minimum_separation_m": -1.3764947652816772e-06,
+          "peak_pair_contact_force_n": 0.031879333851076955,
+          "phase_peaks_n": {
+            "align": 0.031879333851076955,
+            "grasp": 0.018904860326206595,
+            "recover_grasp_open": 0.016479010840027623,
+            "recover_grasp_retreat": 0.015786139666666615,
+            "release_latch": 0.006981744111131887,
+            "withdraw": 0.006548350033382752,
+            "insert": 0.007054892146620833,
+            "seat_and_latch": 0.007055941863849117,
+            "release_gripper": 0.014647768415553406,
+            "retract": 0.014169095251280581
+          },
+          "peak_time_s": 4.625000000000058,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port09/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 2225,
+          "minimum_separation_m": -5.186907947063446e-05,
+          "peak_pair_contact_force_n": 0.020819471755354604,
+          "phase_peaks_n": {
+            "align": 0.01950258875029801,
+            "grasp": 0.020819471755354604,
+            "recover_grasp_open": 0.017536244178924344,
+            "recover_grasp_retreat": 0.017420935879681118,
+            "release_latch": 0.008359230211552103,
+            "withdraw": 0.0076213453518219594,
+            "insert": 0.01148266623465067,
+            "seat_and_latch": 0.011149323301565931,
+            "release_gripper": 0.01862929864583803,
+            "retract": 0.015244782804727497
+          },
+          "peak_time_s": 4.9625000000000385,
+          "peak_phase": "grasp"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port09/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 320,
+          "minimum_separation_m": -1.2386590242385864e-07,
+          "peak_pair_contact_force_n": 0.025265419326491203,
+          "phase_peaks_n": {
+            "align": 0.025265419326491203,
+            "recover_grasp_retreat": 0.01915575488266207,
+            "withdraw": 0.005049285128243887,
+            "insert": 0.0031611905646679443,
+            "retract": 0.015494951655347101
+          },
+          "peak_time_s": 11.74166666666632,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port07/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 155,
+          "minimum_separation_m": -4.1513703763484955e-07,
+          "peak_pair_contact_force_n": 0.03216607178557627,
+          "phase_peaks_n": {
+            "align": 0.03216607178557627,
+            "recover_grasp_retreat": 0.0228552392007839,
+            "retract": 0.013732092344698476
+          },
+          "peak_time_s": 4.462500000000067,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port09/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 169,
+          "minimum_separation_m": -7.338821887969971e-07,
+          "peak_pair_contact_force_n": 0.025875505159630562,
+          "phase_peaks_n": {
+            "align": 0.025875505159630562,
+            "recover_grasp_retreat": 0.019842726604032027,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0.014330109511300555
+          },
+          "peak_time_s": 11.616666666666328,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port07/Cable/Link04",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 265,
+          "minimum_separation_m": -1.157168298959732e-07,
+          "peak_pair_contact_force_n": 0.03599089065714151,
+          "phase_peaks_n": {
+            "align": 0.03599089065714151,
+            "recover_grasp_retreat": 0,
+            "grasp": 0,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0
+          },
+          "peak_time_s": 11.758333333332986,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "6b7f7dd3b6f89ad0a2d938c8b30214f92420971be4fa765f574e2bd9653f0a30"
+    },
+    {
+      "design": "AB",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": true,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 3,
+      "maximum_neighbor_cable_gap_m": 2.6043365269025656e-05,
+      "error": null,
+      "results_sha256": "957b6739a273c59d6d38a99dab114a7d2c9e067492941d93fd75bed5e2aeea8a",
+      "result_relative_to_screen": "AB/trial-002/results.json",
+      "cycle_time_s": 22.25833333333239,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port02/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 1440,
+          "minimum_separation_m": -5.642883479595184e-05,
+          "peak_pair_contact_force_n": 0.021752242541747978,
+          "phase_peaks_n": {
+            "align": 0.018916530154756604,
+            "grasp": 0.01660479884094583,
+            "release_latch": 0.007448573880461005,
+            "withdraw": 0.0071959945196361655,
+            "insert": 0.011587068141614162,
+            "seat_and_latch": 0.011507354607723123,
+            "release_gripper": 0.021752242541747978,
+            "retract": 0.015271591028086723
+          },
+          "peak_time_s": 16.74166666666604,
+          "peak_phase": "release_gripper"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port02/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 212,
+          "minimum_separation_m": -6.011687219142914e-07,
+          "peak_pair_contact_force_n": 0.02513123930660536,
+          "phase_peaks_n": {
+            "align": 0.02513123930660536,
+            "withdraw": 0.007374670497328385,
+            "insert": 0.0027572290790395383,
+            "retract": 0.015777627278661232
+          },
+          "peak_time_s": 4.866666666666711,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port02/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 104,
+          "minimum_separation_m": -7.417984306812286e-07,
+          "peak_pair_contact_force_n": 0.01965522930616228,
+          "phase_peaks_n": {
+            "align": 0.01965522930616228,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0.01666626226494737
+          },
+          "peak_time_s": 4.800000000000048,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "dadba7a1e3ced194d3a32a414a2158606b9f24dc6d0a8e4ce054f7c24dcd1041"
+    },
+    {
+      "design": "AB",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 2.144897012544803e-05,
+      "error": "Timeout; robot error=0.109348m; connector=retained; metrics={'depth_m': 0.01091420888900756, 'lateral_m': 5.570642299667763e-05, 'angle_deg': 0.33804091258640406, 'speed_m_s': 0.0, 'port': 16, 'latch_angle_deg': 5.9340768768345, 'hook_y_m': -0.0015683184698867536, 'hook_z_m': 0.005417956884819386, 'hook_clear': False, 'hook_behind_lip': True}",
+      "results_sha256": "f453e3593bb841e953c020e94ef9ba895dff35c8ead2d4c846b119f21f1c7ed1",
+      "result_relative_to_screen": "AB/trial-003/results.json",
+      "cycle_time_s": 8.866666666666484,
+      "final_phase": "align",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "befffdca32fa2961dd6664348132f4d766f881c50cc73d4b1f98776f7afa5653"
+    },
+    {
+      "design": "AB",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": true,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 6,
+      "maximum_neighbor_cable_gap_m": 2.6755468211627852e-05,
+      "error": null,
+      "results_sha256": "04e8d7bcdd94f6b696e475bd58f464cebb599606f43b160596e3f49c4dfad27f",
+      "result_relative_to_screen": "AB/trial-004/results.json",
+      "cycle_time_s": 23.862499999998967,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port11/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_finger_base_link/right_finger_base_link/right_finger_base_link"
+          ],
+          "reports": 1876,
+          "minimum_separation_m": -1.803738996386528e-06,
+          "peak_pair_contact_force_n": 0.024573099898058167,
+          "phase_peaks_n": {
+            "align": 0.020041159962828434,
+            "grasp": 0.024573099898058167,
+            "release_latch": 0.007278330582585375,
+            "withdraw": 0.006692777734767471,
+            "insert": 0.007497842842764707,
+            "seat_and_latch": 0.007690234579811582,
+            "seat_nudge": 0.007641034490932739,
+            "release_gripper": 0.01550103633258262,
+            "retract": 0.015141072952055799
+          },
+          "peak_time_s": 4.9916666666667036,
+          "peak_phase": "grasp"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port13/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 1899,
+          "minimum_separation_m": -5.458272062242031e-05,
+          "peak_pair_contact_force_n": 0.040207269306812815,
+          "phase_peaks_n": {
+            "align": 0.019448843156269092,
+            "grasp": 0.040207269306812815,
+            "release_latch": 0.007616168195402518,
+            "withdraw": 0.009885400332998435,
+            "insert": 0.01212933353902541,
+            "seat_and_latch": 0.008508821884347411,
+            "seat_nudge": 0.008431918786302672,
+            "release_gripper": 0.01658796796183564,
+            "retract": 0.01605666074678141
+          },
+          "peak_time_s": 4.983333333333371,
+          "peak_phase": "grasp"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port13/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 212,
+          "minimum_separation_m": -6.46570697426796e-07,
+          "peak_pair_contact_force_n": 0.029944290857943468,
+          "phase_peaks_n": {
+            "align": 0.029944290857943468,
+            "withdraw": 0.007918700196932764,
+            "insert": 0.005438984382556388,
+            "retract": 0.012772893574036678
+          },
+          "peak_time_s": 4.583333333333393,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port11/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 97,
+          "minimum_separation_m": -7.334165275096893e-07,
+          "peak_pair_contact_force_n": 0.02775845998585392,
+          "phase_peaks_n": {
+            "align": 0.02775845998585392,
+            "withdraw": 0,
+            "retract": 0.013099597493390357
+          },
+          "peak_time_s": 4.433333333333402,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port13/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 115,
+          "minimum_separation_m": -1.6903504729270935e-07,
+          "peak_pair_contact_force_n": 0.021305207981103958,
+          "phase_peaks_n": {
+            "align": 0.021305207981103958,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0.013234083138293858
+          },
+          "peak_time_s": 4.508333333333398,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port11/Cable/Link04",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 143,
+          "minimum_separation_m": 0.0,
+          "peak_pair_contact_force_n": 0.035269054911006216,
+          "phase_peaks_n": {
+            "align": 0.035269054911006216,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0
+          },
+          "peak_time_s": 4.600000000000059,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "59310b6424fbdd4760d9bcdfc8e1b2d0bcd786c2bc3731e84870418ceca9c78b"
+    },
+    {
+      "design": "AC",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9808768118003235e-05,
+      "error": null,
+      "results_sha256": "909f73df8bbb9a8e4fa04c9e40af2ff096efeab2776e5255f24f3a6487e8f7bd",
+      "result_relative_to_screen": "AC/trial-000/results.json",
+      "cycle_time_s": 38.158333333336735,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "0dccfc5879e8a1eb50d551b6f17a9d286249c8511c50e1539812a65bf0e568ff"
+    },
+    {
+      "design": "AC",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9642523790910848e-05,
+      "error": null,
+      "results_sha256": "f497b35a3929e80a8dba7af9fcfb7cba13c78bc1c61cb7dc694116380de9a160",
+      "result_relative_to_screen": "AC/trial-001/results.json",
+      "cycle_time_s": 23.691666666665643,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "066443741c1c332ee667ab56f98db3b6b03d9c2367f59158c0acfd6bbca4da50"
+    },
+    {
+      "design": "AC",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.808576720573643e-05,
+      "error": null,
+      "results_sha256": "5886e14fab6e1b83e7d6c4b19933870abb7d14867a1d98080c4af68927091a02",
+      "result_relative_to_screen": "AC/trial-002/results.json",
+      "cycle_time_s": 23.966666666665628,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "813df878d2a42bc954fca623209b658e73812686d14dde90b34af2a14a90664d"
+    },
+    {
+      "design": "AC",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9126674420818887e-05,
+      "error": null,
+      "results_sha256": "dd921a4617d230cde7c0b4d3487421a3e2317cf27649f3d2f950fc5d542abce2",
+      "result_relative_to_screen": "AC/trial-003/results.json",
+      "cycle_time_s": 39.92916666667148,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "277a153524567813874e57d809848bd04c6412fdb6bbf90d63fa95b33db60f2e"
+    },
+    {
+      "design": "AC",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.8527830675743184e-05,
+      "error": null,
+      "results_sha256": "1ea1cdf24e18d8f14170592b5609d3da408289d173223279b66e6fb42a7eaa5a",
+      "result_relative_to_screen": "AC/trial-004/results.json",
+      "cycle_time_s": 36.97916666666913,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "362be4c6c454213de80a23de1b03481d8ba45cf9fecca69e8c983b3d52de3c83"
+    },
+    {
+      "design": "BA",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9726736032740263e-05,
+      "error": null,
+      "results_sha256": "cee25b4a9a1fb0817dfe6a17654b83a5e6504502c73039dce55fca1499b6b4fd",
+      "result_relative_to_screen": "BA/trial-000/results.json",
+      "cycle_time_s": 22.033333333332404,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "07b7c9c73243c6a65f2cab24c02ba050294e2888308d39bf869d8b3631c8fb42"
+    },
+    {
+      "design": "BA",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9642523790910848e-05,
+      "error": null,
+      "results_sha256": "fa6a2a63966cce89397d25b139235db144d8eeff2eddad360d4e2946569ac817",
+      "result_relative_to_screen": "BA/trial-001/results.json",
+      "cycle_time_s": 20.88333333333247,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "3865b4273611648af21b2717cdc6f67cd2cff068257c31726202df7e1f8c5bf7"
+    },
+    {
+      "design": "BA",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.964884984594065e-05,
+      "error": null,
+      "results_sha256": "e960f0e8b3289951f0beac056c87e07b64fc7f24f2d00889b3065511e01ce072",
+      "result_relative_to_screen": "BA/trial-002/results.json",
+      "cycle_time_s": 21.158333333332454,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "655c223126710387b1d16be1030818484eea76f69fa8c05ac5ac710a3ec82f38"
+    },
+    {
+      "design": "BA",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9126674420818887e-05,
+      "error": null,
+      "results_sha256": "651010c3673e5ad17f6623657ee6e7cfb363f77ad04acf72ede35f291521fc24",
+      "result_relative_to_screen": "BA/trial-003/results.json",
+      "cycle_time_s": 21.895833333332412,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "6b80b5811e8522f3c34923d6dbcbcb07254ce06aefc558c7e7017037a20b2605"
+    },
+    {
+      "design": "BA",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.8527830675743184e-05,
+      "error": null,
+      "results_sha256": "b0fb17eb3ce2dcd23298cdf3a8e458be669b171d7aa6242b7fab6f7c60820120",
+      "result_relative_to_screen": "BA/trial-004/results.json",
+      "cycle_time_s": 22.76249999999903,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "bd75e4c105c2feeed9985bca4653ade13c99146c48ac44a0413e6ce93f46ddde"
+    },
+    {
+      "design": "BC",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9726736032740263e-05,
+      "error": null,
+      "results_sha256": "0fe2c807b4f8ae65da561d13b8c9f022bf634617199067547c63329fc26bc7b0",
+      "result_relative_to_screen": "BC/trial-000/results.json",
+      "cycle_time_s": 38.158333333336735,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "15a5eb29760bf273ed6817b5c4daeec4f91503336ef852be5368bb13a9f73c10"
+    },
+    {
+      "design": "BC",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9642523790910848e-05,
+      "error": null,
+      "results_sha256": "3dcb14d2af9391e1e275d1227b2e57f94ae17120133136fd860a92bfcb9022b5",
+      "result_relative_to_screen": "BC/trial-001/results.json",
+      "cycle_time_s": 23.691666666665643,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "5a5b4bcdad441f76a253aa63a1d8618bb548990b3a4e2a01e9d0ad78cb350194"
+    },
+    {
+      "design": "BC",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.964884984594065e-05,
+      "error": null,
+      "results_sha256": "b2707ed6e65b2b645d1fbc4790236a12b06ba19f9f4b9262969ec015ee311227",
+      "result_relative_to_screen": "BC/trial-002/results.json",
+      "cycle_time_s": 23.966666666665628,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "d92dba2173d029f98ed4d8fdbf70d3edf2c62e218a414dcfcbe09c5570879463"
+    },
+    {
+      "design": "BC",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9126674420818887e-05,
+      "error": null,
+      "results_sha256": "04a20998a6940f33f69a97d875b3df2236d47d0154487278bc5a75a69b084c92",
+      "result_relative_to_screen": "BC/trial-003/results.json",
+      "cycle_time_s": 38.020833333336626,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "b8536eef3318e0d549d2b96cd9cc8c70e1046ab1fbfb1cc2e7c8652cb10b486b"
+    },
+    {
+      "design": "BC",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.8527830675743184e-05,
+      "error": "Timeout; robot error=0.001373m; connector=retained; metrics={'depth_m': 0.011114838123321525, 'lateral_m': 0.0004900896342937182, 'angle_deg': 5.001535544207874, 'speed_m_s': 0.0, 'port': 12, 'latch_angle_deg': 8.457028932563839, 'hook_y_m': -0.0014465519309768138, 'hook_z_m': 0.005468318914934267, 'hook_clear': False, 'hook_behind_lip': True}",
+      "results_sha256": "a9961e26f30fa952247da93e98b6381b9a1d356252a2233a1f364013623b3916",
+      "result_relative_to_screen": "BC/trial-004/results.json",
+      "cycle_time_s": 9.224999999999797,
+      "final_phase": "align_datum",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "f783f6439708f7523deb0633b64691f7899a66ca4b71e40448b9dc38098be566"
+    },
+    {
+      "design": "CA",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9729500405960958e-05,
+      "error": null,
+      "results_sha256": "03782e11563e18dedd2ffc29af06efcc2715805874e3eaef536c96437c364b54",
+      "result_relative_to_screen": "CA/trial-000/results.json",
+      "cycle_time_s": 22.033333333332404,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "4e236dfa5543020271592daee49c18d6d1e2f1177f0bc10e5cd6be3d03c71a66"
+    },
+    {
+      "design": "CA",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9642523790910848e-05,
+      "error": null,
+      "results_sha256": "689ffb216174d6669ed6b96731b692cf1edca056e9fcc08540abf64a0ac510a0",
+      "result_relative_to_screen": "CA/trial-001/results.json",
+      "cycle_time_s": 20.88333333333247,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "9c9a2ecec4673af0fc9338c634c8729f9da8b86190bec5261f3fc08694d06a6b"
+    },
+    {
+      "design": "CA",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.808576720573643e-05,
+      "error": "Timeout; robot error=0.000025m; connector=retained; metrics={'depth_m': 0.010870727300643913, 'lateral_m': 0.00011085253044376422, 'angle_deg': 0.8987391115867797, 'speed_m_s': 0.00023692677605226354, 'port': 1, 'latch_angle_deg': -0.1681484116717839, 'hook_y_m': -0.001294150248174586, 'hook_z_m': 0.00480153098427083, 'hook_clear': False, 'hook_behind_lip': False}",
+      "results_sha256": "3aef9a73db34ee48f8a677251dfad4b19d0ef0ff18b3abfca68aa0a2e7e5e7cb",
+      "result_relative_to_screen": "CA/trial-002/results.json",
+      "cycle_time_s": 17.94166666666597,
+      "final_phase": "release_latch",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "13161f7c432ce275df276fa2d52a92a5b62a36c737deb644a5bc0dbc66400a15"
+    },
+    {
+      "design": "CA",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9126674420818887e-05,
+      "error": null,
+      "results_sha256": "980fb7377e4d4da0c871963fe304630e7e9efaea50392022d1009e5958d0c060",
+      "result_relative_to_screen": "CA/trial-003/results.json",
+      "cycle_time_s": 23.804166666665637,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "e90e3c9f039aa53c58fe94dabac6cdc84c386f57183fa07bd7182df2d5364b45"
+    },
+    {
+      "design": "CA",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.8527830675743184e-05,
+      "error": null,
+      "results_sha256": "f55aae19992e623d6fbe90750ca66e6556011906f01bc541bd6ef6051ebb701d",
+      "result_relative_to_screen": "CA/trial-004/results.json",
+      "cycle_time_s": 31.220833333331882,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "c40973cd7d3e6e9429a0a886c6e55a23e6dd0101bc5640071f5a9bb68aafbb57"
+    },
+    {
+      "design": "CB",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 6,
+      "maximum_neighbor_cable_gap_m": 2.70862644300403e-05,
+      "error": "Unexpected grasp aperture 0.015689049243927",
+      "results_sha256": "1af2593ef3110c8bdfcac147cc93f37c9ad34b3b47586b87c37d69d78ffe60e3",
+      "result_relative_to_screen": "CB/trial-000/results.json",
+      "cycle_time_s": 23.433333333332325,
+      "final_phase": "grasp",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port03/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_finger_base_link/right_finger_base_link/right_finger_base_link"
+          ],
+          "reports": 2112,
+          "minimum_separation_m": -1.0798685252666473e-06,
+          "peak_pair_contact_force_n": 0.027586244217824334,
+          "phase_peaks_n": {
+            "align": 0.027586244217824334,
+            "grasp": 0.020200737774042302,
+            "recover_grasp_open": 0.016166092902123532,
+            "recover_grasp_retreat": 0.015755919458476132
+          },
+          "peak_time_s": 5.691666666666664,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port05/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 2184,
+          "minimum_separation_m": -2.251868136227131e-05,
+          "peak_pair_contact_force_n": 0.020607367775830287,
+          "phase_peaks_n": {
+            "align": 0.019870165511606093,
+            "grasp": 0.020607367775830287,
+            "recover_grasp_open": 0.017293230518632016,
+            "recover_grasp_retreat": 0.017173566183768234
+          },
+          "peak_time_s": 13.91249999999953,
+          "peak_phase": "grasp"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port05/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 345,
+          "minimum_separation_m": -1.8957071006298065e-06,
+          "peak_pair_contact_force_n": 0.02614278981224043,
+          "phase_peaks_n": {
+            "align": 0.02614278981224043,
+            "recover_grasp_retreat": 0.01883569729395341
+          },
+          "peak_time_s": 5.687499999999997,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port03/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 216,
+          "minimum_separation_m": -7.296912372112274e-07,
+          "peak_pair_contact_force_n": 0.024735959247702166,
+          "phase_peaks_n": {
+            "align": 0.024735959247702166,
+            "recover_grasp_retreat": 0.023371211117710608
+          },
+          "peak_time_s": 13.320833333332898,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port05/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 225,
+          "minimum_separation_m": -3.586290404200554e-06,
+          "peak_pair_contact_force_n": 0.024040055431372533,
+          "phase_peaks_n": {
+            "align": 0.024040055431372533,
+            "recover_grasp_retreat": 0.016452250461849158
+          },
+          "peak_time_s": 13.433333333332891,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port03/Cable/Link04",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 272,
+          "minimum_separation_m": -1.6647391021251678e-07,
+          "peak_pair_contact_force_n": 0.030134184652663876,
+          "phase_peaks_n": {
+            "align": 0.030134184652663876,
+            "recover_grasp_retreat": 0
+          },
+          "peak_time_s": 13.51666666666622,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "3577169a4f4f035f8c9336d748952217497eb942ba7b1193a4b9e5d226d17d28"
+    },
+    {
+      "design": "CB",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 6,
+      "maximum_neighbor_cable_gap_m": 2.8369935343847014e-05,
+      "error": "Unexpected grasp aperture 0.015696366179734467",
+      "results_sha256": "11d50786b88615c9a00c2f7a90c2a9f020a693c41a879f35f0482895ab4a2881",
+      "result_relative_to_screen": "CB/trial-001/results.json",
+      "cycle_time_s": 20.899999999999135,
+      "final_phase": "grasp",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port07/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_finger_base_link/right_finger_base_link/right_finger_base_link"
+          ],
+          "reports": 2057,
+          "minimum_separation_m": -1.487554982304573e-06,
+          "peak_pair_contact_force_n": 0.02107365229295109,
+          "phase_peaks_n": {
+            "align": 0.02107365229295109,
+            "grasp": 0.021007337638896267,
+            "recover_grasp_open": 0.01629512107139794,
+            "recover_grasp_retreat": 0.01587662968624585
+          },
+          "peak_time_s": 11.787499999999651,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port09/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 2107,
+          "minimum_separation_m": -2.3295404389500618e-05,
+          "peak_pair_contact_force_n": 0.021809541278324237,
+          "phase_peaks_n": {
+            "align": 0.020306690738854934,
+            "grasp": 0.021809541278324237,
+            "recover_grasp_open": 0.017551410428853883,
+            "recover_grasp_retreat": 0.017235167356895138
+          },
+          "peak_time_s": 19.2041666666659,
+          "peak_phase": "grasp"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port09/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 297,
+          "minimum_separation_m": -4.664529114961624e-06,
+          "peak_pair_contact_force_n": 0.02385765418814557,
+          "phase_peaks_n": {
+            "align": 0.02385765418814557,
+            "recover_grasp_retreat": 0.019961856503366692
+          },
+          "peak_time_s": 18.858333333332585,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port07/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 192,
+          "minimum_separation_m": -1.0121148079633713e-06,
+          "peak_pair_contact_force_n": 0.03219215635675839,
+          "phase_peaks_n": {
+            "align": 0.03219215635675839,
+            "recover_grasp_retreat": 0.024215455287758536
+          },
+          "peak_time_s": 4.462500000000067,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port09/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 188,
+          "minimum_separation_m": -1.1122319847345352e-06,
+          "peak_pair_contact_force_n": 0.026120511988032436,
+          "phase_peaks_n": {
+            "align": 0.026120511988032436,
+            "recover_grasp_retreat": 0.020233421776651182
+          },
+          "peak_time_s": 11.616666666666328,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port07/Cable/Link04",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 286,
+          "minimum_separation_m": -1.5459954738616943e-07,
+          "peak_pair_contact_force_n": 0.036352110453218386,
+          "phase_peaks_n": {
+            "align": 0.036352110453218386,
+            "recover_grasp_retreat": 0,
+            "grasp": 0
+          },
+          "peak_time_s": 4.625000000000058,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "1d7e92b5c12759fa8f66a6bd9a3852839335748d455d45dcbcb1fc53a9829ba4"
+    },
+    {
+      "design": "CB",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": true,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 3,
+      "maximum_neighbor_cable_gap_m": 2.6889780811142233e-05,
+      "error": null,
+      "results_sha256": "3c60b4aa9c01c4a67cdbcfe23c82d445a3e5f26b1a4ff11272e83c00f85db7c0",
+      "result_relative_to_screen": "CB/trial-002/results.json",
+      "cycle_time_s": 22.25833333333239,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port02/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 1440,
+          "minimum_separation_m": -5.617830902338028e-05,
+          "peak_pair_contact_force_n": 0.02112829633653968,
+          "phase_peaks_n": {
+            "align": 0.019114655369890616,
+            "grasp": 0.016566175149912408,
+            "release_latch": 0.007474127709627989,
+            "withdraw": 0.009244945411771014,
+            "insert": 0.01179868830865415,
+            "seat_and_latch": 0.011435376887908456,
+            "release_gripper": 0.02112829633653968,
+            "retract": 0.015390313947162573
+          },
+          "peak_time_s": 16.87916666666603,
+          "peak_phase": "release_gripper"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port02/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 216,
+          "minimum_separation_m": -5.709007382392883e-07,
+          "peak_pair_contact_force_n": 0.02658483046696889,
+          "phase_peaks_n": {
+            "align": 0.02658483046696889,
+            "withdraw": 0.004905252827771072,
+            "insert": 0.004503401596164112,
+            "retract": 0.015144170397236761
+          },
+          "peak_time_s": 4.866666666666711,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port02/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 111,
+          "minimum_separation_m": -3.1674280762672424e-06,
+          "peak_pair_contact_force_n": 0.01917828500487683,
+          "phase_peaks_n": {
+            "align": 0.01917828500487683,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0.013685875799504352
+          },
+          "peak_time_s": 4.795833333333381,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "964dfa48731191c23a9943986cd28ae01728e0eb4e5fe2912648d66589991f3d"
+    },
+    {
+      "design": "CB",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 2.144897012544803e-05,
+      "error": "Timeout; robot error=0.109348m; connector=retained; metrics={'depth_m': 0.01091420888900756, 'lateral_m': 5.570642299667763e-05, 'angle_deg': 0.33804091258640406, 'speed_m_s': 0.0, 'port': 16, 'latch_angle_deg': 5.9340768768345, 'hook_y_m': -0.0015683184698867536, 'hook_z_m': 0.005417956884819386, 'hook_clear': False, 'hook_behind_lip': True}",
+      "results_sha256": "56a8dafab9c3e27f92e305331792a9bd561edf4c11323d4ac276748748033be1",
+      "result_relative_to_screen": "CB/trial-003/results.json",
+      "cycle_time_s": 8.866666666666484,
+      "final_phase": "align",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "3354a6a57575fff0be17ff1165724bbd2c6b9970d8f4f82dbc92997124595d9a"
+    },
+    {
+      "design": "CB",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": true,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 6,
+      "maximum_neighbor_cable_gap_m": 2.7280875030102694e-05,
+      "error": null,
+      "results_sha256": "e5e20e28be95564a06b29e71a044329778fed069b7e15eef3f0def91ea105654",
+      "result_relative_to_screen": "CB/trial-004/results.json",
+      "cycle_time_s": 23.862499999998967,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port11/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_finger_base_link/right_finger_base_link/right_finger_base_link"
+          ],
+          "reports": 1874,
+          "minimum_separation_m": -1.1709053069353104e-06,
+          "peak_pair_contact_force_n": 0.019856184691666327,
+          "phase_peaks_n": {
+            "align": 0.019856184691666327,
+            "grasp": 0.0156661878645537,
+            "release_latch": 0.007310848214579344,
+            "withdraw": 0.006872082159497818,
+            "insert": 0.0076209974737322835,
+            "seat_and_latch": 0.00765509692985772,
+            "seat_nudge": 0.0076427889986087835,
+            "release_gripper": 0.015484917952440197,
+            "retract": 0.015122625009171466
+          },
+          "peak_time_s": 4.612500000000058,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port13/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_finger_base_link/left_finger_base_link/left_finger_base_link"
+          ],
+          "reports": 1899,
+          "minimum_separation_m": -5.278526805341244e-05,
+          "peak_pair_contact_force_n": 0.0196576717304869,
+          "phase_peaks_n": {
+            "align": 0.0196576717304869,
+            "grasp": 0.01679862350202432,
+            "release_latch": 0.008257192444746573,
+            "withdraw": 0.009430269077834962,
+            "insert": 0.011782459551519978,
+            "seat_and_latch": 0.00804194786459043,
+            "seat_nudge": 0.007853582704883696,
+            "release_gripper": 0.016373335910961535,
+            "retract": 0.015692076261030384
+          },
+          "peak_time_s": 4.7000000000000535,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port13/Cable/Link05",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 215,
+          "minimum_separation_m": -1.2095551937818527e-06,
+          "peak_pair_contact_force_n": 0.0283795492715204,
+          "phase_peaks_n": {
+            "align": 0.0283795492715204,
+            "withdraw": 0.00598194921213466,
+            "insert": 0.004918862026668291,
+            "retract": 0.014446566984940472
+          },
+          "peak_time_s": 4.583333333333393,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port11/Cable/Link05",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 97,
+          "minimum_separation_m": -4.5658089220523834e-07,
+          "peak_pair_contact_force_n": 0.027576729329516683,
+          "phase_peaks_n": {
+            "align": 0.027576729329516683,
+            "withdraw": 0,
+            "retract": 0.014014226655457653
+          },
+          "peak_time_s": 4.433333333333402,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port13/Cable/Link04",
+            "/World/Robot/RG2/Geometry/left_inner_proximal_finger_link/left_inner_proximal_finger_link"
+          ],
+          "reports": 119,
+          "minimum_separation_m": -7.89295881986618e-07,
+          "peak_pair_contact_force_n": 0.021913914599851998,
+          "phase_peaks_n": {
+            "align": 0.021913914599851998,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0.013696963266573787
+          },
+          "peak_time_s": 4.504166666666731,
+          "peak_phase": "align"
+        },
+        {
+          "colliders": [
+            "/World/OccupiedNeighbors/Port11/Cable/Link04",
+            "/World/Robot/RG2/Geometry/right_inner_proximal_finger_link/right_inner_proximal_finger_link"
+          ],
+          "reports": 149,
+          "minimum_separation_m": -2.193264663219452e-07,
+          "peak_pair_contact_force_n": 0.032542219516014145,
+          "phase_peaks_n": {
+            "align": 0.032542219516014145,
+            "withdraw": 0,
+            "insert": 0,
+            "retract": 0
+          },
+          "peak_time_s": 4.600000000000059,
+          "peak_phase": "align"
+        }
+      ],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "d1385bad5f51aa5145277d2b1f54b134b6d9fb27498f006800cdac9c6d776519"
+    },
+    {
+      "design": "CC",
+      "condition": "trial-000",
+      "port": 4,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9729500405960958e-05,
+      "error": null,
+      "results_sha256": "aca51b5153f338c52384bf1169e45ae3b57c99db4d8ea4ba2b83deddb6a3ef6a",
+      "result_relative_to_screen": "CC/trial-000/results.json",
+      "cycle_time_s": 38.158333333336735,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "11c8a59459c4667fa2b57bc423c6ccbe5d95185fab35d6c3e2d7c187071f7dba"
+    },
+    {
+      "design": "CC",
+      "condition": "trial-001",
+      "port": 8,
+      "task_passed": true,
+      "clearance_passed": true,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9642523790910848e-05,
+      "error": null,
+      "results_sha256": "d0a61958d7f84be8945da92d17e28be6b5c2ac31a40cb87da3e3ca00d5bd7414",
+      "result_relative_to_screen": "CC/trial-001/results.json",
+      "cycle_time_s": 23.691666666665643,
+      "final_phase": "park",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "67761c8d22ea8dd8f1d4eaf517f3141418e003df09b682ff3529e7fee3eb82cf"
+    },
+    {
+      "design": "CC",
+      "condition": "trial-002",
+      "port": 1,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.808576720573643e-05,
+      "error": "Timeout; robot error=0.001359m; connector=retained; metrics={'depth_m': 0.011138799190521232, 'lateral_m': 0.00048377952721302594, 'angle_deg': 4.986799272813033, 'speed_m_s': 8.256480489217182e-05, 'port': 1, 'latch_angle_deg': 8.370446352067086, 'hook_y_m': -0.0014494013286221463, 'hook_z_m': 0.005472016921449718, 'hook_clear': False, 'hook_behind_lip': True}",
+      "results_sha256": "d46e60b806f6bad0774d7222ee6259c50e6d037e4c66a7afc1d813073a3d3471",
+      "result_relative_to_screen": "CC/trial-002/results.json",
+      "cycle_time_s": 9.529166666666447,
+      "final_phase": "align_datum",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "ca4b124a8945fffb8342b1b149b98a6e3b0db5028fa5d607959bcf890117f768"
+    },
+    {
+      "design": "CC",
+      "condition": "trial-003",
+      "port": 16,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.9126674420818887e-05,
+      "error": "Timeout; robot error=0.000201m; connector=inserting; metrics={'depth_m': 0.01079938054084777, 'lateral_m': 1.1286168998543855e-06, 'angle_deg': 0.07912936529690494, 'speed_m_s': 4.63538696652021e-05, 'port': 16, 'latch_angle_deg': -1.7858299274495772, 'hook_y_m': -0.0012747760130413233, 'hook_z_m': 0.004466318166519878, 'hook_clear': True, 'hook_behind_lip': False}",
+      "results_sha256": "e52d55d18ea85e8f9b36fd349a05edbc731f63e0ad54131e5d3e976168180ac3",
+      "result_relative_to_screen": "CC/trial-003/results.json",
+      "cycle_time_s": 46.92500000001038,
+      "final_phase": "seat_and_latch",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "1aba015daf537369f39841b8784012012487c5d2a9f06b682e27a73f5613de6d"
+    },
+    {
+      "design": "CC",
+      "condition": "trial-004",
+      "port": 12,
+      "task_passed": false,
+      "clearance_passed": false,
+      "timed_trial_started": true,
+      "fixture_stable": true,
+      "robot_neighbor_contact_pair_count": 0,
+      "maximum_neighbor_cable_gap_m": 1.8527830675743184e-05,
+      "error": "Timeout; robot error=0.001368m; connector=retained; metrics={'depth_m': 0.01114064693450927, 'lateral_m': 0.0004841631803225559, 'angle_deg': 4.986799272813033, 'speed_m_s': 3.1987208998200274e-05, 'port': 12, 'latch_angle_deg': 8.31624036435527, 'hook_y_m': -0.0014478828169358082, 'hook_z_m': 0.005464348668488883, 'hook_clear': False, 'hook_behind_lip': True}",
+      "results_sha256": "562c79e7715bbd4d2452c5f240821c0b3d1275a4ec77cb79ef31c69996a12e1b",
+      "result_relative_to_screen": "CC/trial-004/results.json",
+      "cycle_time_s": 9.224999999999797,
+      "final_phase": "align_datum",
+      "robot_neighbor_contacts": [],
+      "target_neighbor_contacts": [],
+      "contacts_sha256": "16ebfe8239daf583f346e8daf9f9cefacb8ec9d02f5ba96a5f4f3a28d1327351"
+    }
+  ],
+  "scope": "Paired five-port restrained-neighbor diagnostic, not randomized reliability, full-density cabling, retention-force or tension certification",
+  "gate": "Task success, stable timed fixture and zero reported robot-neighbor contact; target-neighbor contacts reported separately"
+}

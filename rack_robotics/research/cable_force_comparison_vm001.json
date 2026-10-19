@@ -1,0 +1,320 @@
+{
+  "schema": "nominal_cable_force_comparison_v1",
+  "designs": {
+    "AA": {
+      "directory": "cable-force-aa001",
+      "verification": {
+        "passed": true,
+        "scope": "Recompute every saved cable-force sample from velocities and full impulses.\n\nThis verifies trace arithmetic, completeness and provenance, not manufacturer\nsafe loads or an independent physical force sensor.\n",
+        "samples_verified": 15803,
+        "maximum_recomputation_error_n": 2.220446049250313e-16,
+        "peak_tension_n": 8.750812058865064,
+        "peak_resultant_n": 8.813709761170944,
+        "maximum_compression_n": 2.8590238156462964,
+        "task_completed": true,
+        "trace_sha256": "6eff99f8f3fd323f69b7e2d8206e0e0b072c33060991302a56517828c03354e8",
+        "results_sha256": "ca90c1a2ed03d9a00eaec0a2aacf7888bfb9cfd32abc25d4446c8ca38176aed6",
+        "summary_sha256": "d66025f96dd9f400171c1f352f4e37346fb21e941b5e5651dcf9aae1efaf9f0b",
+        "source_manifest_sha256": "23f6676d8a36a0549e9d460433f59bfc817da58ad99e78ba2fea0a20f4e25628",
+        "calibration_sha256": "b0f53f39ac67a7ef33463b30bd4844f9f56b8b94bf648e14919520d832e8b189",
+        "verifier_sha256": "51cad5204aec7cb212299466ac297bdb8ad733a6956e9ecb5c9ddbd3e10f48e0"
+      },
+      "cycle_time_s": 32.92291666667781,
+      "peak_tension": {
+        "joint_index": 1,
+        "force_n": 8.750812058865064,
+        "time_s": 5.506249999999848,
+        "phase": "grasp"
+      },
+      "plug_joint_peak_tension_n": 6.0523934411436215,
+      "peak_resultant": {
+        "joint_index": 0,
+        "force_n": 8.813709761170944,
+        "time_s": 5.506249999999848,
+        "phase": "grasp"
+      },
+      "exposure_above_n": {
+        "1.0": {
+          "steps": 3,
+          "longest_consecutive_steps": 2,
+          "total_duration_s": 0.00625,
+          "longest_duration_s": 0.004166666666666667
+        },
+        "5.0": {
+          "steps": 1,
+          "longest_consecutive_steps": 1,
+          "total_duration_s": 0.0020833333333333333,
+          "longest_duration_s": 0.0020833333333333333
+        },
+        "10.0": {
+          "steps": 0,
+          "longest_consecutive_steps": 0,
+          "total_duration_s": 0.0,
+          "longest_duration_s": 0.0
+        }
+      },
+      "trajectory_comparison": {
+        "equal_recorded_frames": 988,
+        "body_count": 126,
+        "fps": 30,
+        "measured_sha256": "7655954cde1df25e69857565083671c1d0f4691f0c3d761f5b70c8b06faa7d4a",
+        "reference_sha256": "e3a6614370d91676152ff5dd93d543f446d1b436e8c53db08ea1378cec051e0e",
+        "scope": "Exact recorded frame records for first continuous cycle, not every physics-step pose"
+      },
+      "continuous_boundaries_sha256": "8e00c2e7110358af6fa5b96505236bba65f3894cb7a323eabc14948924eaf739"
+    },
+    "BA": {
+      "directory": "cable-force-ba001",
+      "verification": {
+        "passed": true,
+        "scope": "Recompute every saved cable-force sample from velocities and full impulses.\n\nThis verifies trace arithmetic, completeness and provenance, not manufacturer\nsafe loads or an independent physical force sensor.\n",
+        "samples_verified": 15803,
+        "maximum_recomputation_error_n": 4.440892098500626e-16,
+        "peak_tension_n": 10.035367843396603,
+        "peak_resultant_n": 10.117805158645321,
+        "maximum_compression_n": 3.913665184144028,
+        "task_completed": true,
+        "trace_sha256": "b76357b8596c956cc94afd4261761958c2eb2ab73c29cb5da011337ac424e8f8",
+        "results_sha256": "48adee24c355cdfffddab561be4d70f12d3579ae92453a7cda808988fbe4bf45",
+        "summary_sha256": "a5f6574176e19ff077ad8038553f848068ae6912f9ac7e8bbe5151d74819b43a",
+        "source_manifest_sha256": "23f6676d8a36a0549e9d460433f59bfc817da58ad99e78ba2fea0a20f4e25628",
+        "calibration_sha256": "b0f53f39ac67a7ef33463b30bd4844f9f56b8b94bf648e14919520d832e8b189",
+        "verifier_sha256": "51cad5204aec7cb212299466ac297bdb8ad733a6956e9ecb5c9ddbd3e10f48e0"
+      },
+      "cycle_time_s": 32.92291666667781,
+      "peak_tension": {
+        "joint_index": 3,
+        "force_n": 10.035367843396603,
+        "time_s": 5.506249999999848,
+        "phase": "grasp"
+      },
+      "plug_joint_peak_tension_n": 6.860189561048245,
+      "peak_resultant": {
+        "joint_index": 0,
+        "force_n": 10.117805158645321,
+        "time_s": 5.506249999999848,
+        "phase": "grasp"
+      },
+      "exposure_above_n": {
+        "1.0": {
+          "steps": 3,
+          "longest_consecutive_steps": 2,
+          "total_duration_s": 0.00625,
+          "longest_duration_s": 0.004166666666666667
+        },
+        "5.0": {
+          "steps": 1,
+          "longest_consecutive_steps": 1,
+          "total_duration_s": 0.0020833333333333333,
+          "longest_duration_s": 0.0020833333333333333
+        },
+        "10.0": {
+          "steps": 1,
+          "longest_consecutive_steps": 1,
+          "total_duration_s": 0.0020833333333333333,
+          "longest_duration_s": 0.0020833333333333333
+        }
+      },
+      "trajectory_comparison": {
+        "equal_recorded_frames": 988,
+        "body_count": 143,
+        "fps": 30,
+        "measured_sha256": "5a44dc34ad6260a5d4281cedb59deafdd6054f0e1ce599ec6c834a1f1ec175a6",
+        "reference_sha256": "778128cd0363d4f90ff1354e86090d96db8cd3e850c0ca4b31bb09be649bb0fd",
+        "scope": "Exact recorded frame records for first continuous cycle, not every physics-step pose"
+      },
+      "continuous_boundaries_sha256": "e019d940d59a68e037b9d0cffc3028078748c1d39ecbad6c24c042b96680863d"
+    },
+    "CA": {
+      "directory": "cable-force-ca001",
+      "verification": {
+        "passed": true,
+        "scope": "Recompute every saved cable-force sample from velocities and full impulses.\n\nThis verifies trace arithmetic, completeness and provenance, not manufacturer\nsafe loads or an independent physical force sensor.\n",
+        "samples_verified": 10328,
+        "maximum_recomputation_error_n": 4.440892098500626e-16,
+        "peak_tension_n": 13.435857853845214,
+        "peak_resultant_n": 13.507801978041831,
+        "maximum_compression_n": 7.076972275347017,
+        "task_completed": true,
+        "trace_sha256": "f410c0f9a8826bd638c82783583eb2981b92b1a8c6854a6f6dd807270ad18c6d",
+        "results_sha256": "1ab3a5c49f6d20fef08f2cd60e570744026198ecf4127ae3b7a8103863fde929",
+        "summary_sha256": "55b03acd9dd9fb8625795c11bb464f005c9e0a215f4075321b923b77cc9ea776",
+        "source_manifest_sha256": "e860b61c5fcecbe108876db6bbe4bcc86aa87da909bfcb88a3028c1f261d2e09",
+        "calibration_sha256": "b0f53f39ac67a7ef33463b30bd4844f9f56b8b94bf648e14919520d832e8b189",
+        "verifier_sha256": "51cad5204aec7cb212299466ac297bdb8ad733a6956e9ecb5c9ddbd3e10f48e0"
+      },
+      "cycle_time_s": 21.516666666670307,
+      "peak_tension": {
+        "joint_index": 3,
+        "force_n": 13.435857853845214,
+        "time_s": 5.506249999999848,
+        "phase": "grasp"
+      },
+      "plug_joint_peak_tension_n": 8.895501112388029,
+      "peak_resultant": {
+        "joint_index": 0,
+        "force_n": 13.507801978041831,
+        "time_s": 5.506249999999848,
+        "phase": "grasp"
+      },
+      "exposure_above_n": {
+        "1.0": {
+          "steps": 2,
+          "longest_consecutive_steps": 1,
+          "total_duration_s": 0.004166666666666667,
+          "longest_duration_s": 0.0020833333333333333
+        },
+        "5.0": {
+          "steps": 1,
+          "longest_consecutive_steps": 1,
+          "total_duration_s": 0.0020833333333333333,
+          "longest_duration_s": 0.0020833333333333333
+        },
+        "10.0": {
+          "steps": 1,
+          "longest_consecutive_steps": 1,
+          "total_duration_s": 0.0020833333333333333,
+          "longest_duration_s": 0.0020833333333333333
+        }
+      },
+      "trajectory_comparison": {
+        "equal_recorded_frames": 646,
+        "body_count": 126,
+        "fps": 30,
+        "measured_sha256": "c7d27018023a39f2dcaf07eccadb71fca397d10ed86dab0b13aa5046ec75180c",
+        "reference_sha256": "6cd79b95e12ddc5944efc9806df2f1f408722d3abe1cbbb3c88af0e2f42d145d",
+        "scope": "Exact recorded frame records for first continuous cycle, not every physics-step pose"
+      },
+      "continuous_boundaries_sha256": "26c5cfa34dae09753f91f69baa140bda13f3c388f7989146ab9f75b793c737a4"
+    },
+    "AC": {
+      "directory": "cable-force-ac001",
+      "verification": {
+        "passed": true,
+        "scope": "Recompute every saved cable-force sample from velocities and full impulses.\n\nThis verifies trace arithmetic, completeness and provenance, not manufacturer\nsafe loads or an independent physical force sensor.\n",
+        "samples_verified": 18060,
+        "maximum_recomputation_error_n": 5.551115123125783e-17,
+        "peak_tension_n": 0.8294534918497742,
+        "peak_resultant_n": 0.8360615126161947,
+        "maximum_compression_n": 0.06315003953529026,
+        "task_completed": true,
+        "trace_sha256": "eaefc8e92a31b38081c4fc6030f518d716ed906b7ba1bdb47181a9f51be3af59",
+        "results_sha256": "6a0d8bb83de692e9986deaa51c7afe004af1ec587314d002404eece0372e9236",
+        "summary_sha256": "373dfa76c495caec0437096837f5268cedbe6cd2b8d8e061cb92972931e77413",
+        "source_manifest_sha256": "fe791dda9fb13812f5d8ade3feeb9ae13bcb1d584d89b44ea86d12c75d9726f8",
+        "calibration_sha256": "b0f53f39ac67a7ef33463b30bd4844f9f56b8b94bf648e14919520d832e8b189",
+        "verifier_sha256": "51cad5204aec7cb212299466ac297bdb8ad733a6956e9ecb5c9ddbd3e10f48e0"
+      },
+      "cycle_time_s": 37.625000000006864,
+      "peak_tension": {
+        "joint_index": 1,
+        "force_n": 0.8294534918497742,
+        "time_s": 7.789583333333051,
+        "phase": "grasp"
+      },
+      "plug_joint_peak_tension_n": 0.5994162390356222,
+      "peak_resultant": {
+        "joint_index": 0,
+        "force_n": 0.8360615126161947,
+        "time_s": 7.789583333333051,
+        "phase": "grasp"
+      },
+      "exposure_above_n": {
+        "1.0": {
+          "steps": 0,
+          "longest_consecutive_steps": 0,
+          "total_duration_s": 0.0,
+          "longest_duration_s": 0.0
+        },
+        "5.0": {
+          "steps": 0,
+          "longest_consecutive_steps": 0,
+          "total_duration_s": 0.0,
+          "longest_duration_s": 0.0
+        },
+        "10.0": {
+          "steps": 0,
+          "longest_consecutive_steps": 0,
+          "total_duration_s": 0.0,
+          "longest_duration_s": 0.0
+        }
+      },
+      "trajectory_comparison": {
+        "equal_recorded_frames": 1129,
+        "body_count": 129,
+        "fps": 30,
+        "measured_sha256": "001a578a65d2ad1ed7ac6423467f28810e56d59081f7eda559fae4c5ab5b9700",
+        "reference_sha256": "618cf13e171e643ec39eb4d3f6f59a4af86c5397f58a0b5acc7a51d914ff4983",
+        "scope": "Exact recorded frame records for first continuous cycle, not every physics-step pose"
+      },
+      "continuous_boundaries_sha256": "e5da21d04600f3cdfb25a99e327d7e49329aee8717e79e21a9c69a0c38aad79c"
+    },
+    "BC": {
+      "directory": "cable-force-bc001",
+      "verification": {
+        "passed": true,
+        "scope": "Recompute every saved cable-force sample from velocities and full impulses.\n\nThis verifies trace arithmetic, completeness and provenance, not manufacturer\nsafe loads or an independent physical force sensor.\n",
+        "samples_verified": 18060,
+        "maximum_recomputation_error_n": 1.1102230246251565e-16,
+        "peak_tension_n": 1.1070836545087992,
+        "peak_resultant_n": 1.1246024586096453,
+        "maximum_compression_n": 0.3068150261986737,
+        "task_completed": true,
+        "trace_sha256": "fa799599cf07faa239e6ecc0a0700fdf5c66221f55a40364068b142a6a7553db",
+        "results_sha256": "07e2a0805fc0ac82a908767d3be9171e2c142667c38f942376e868a85cb6228f",
+        "summary_sha256": "86dfd5cae410c75a6efc79b60ff9b92724d307e6f551c051c94701c8cd7a98f2",
+        "source_manifest_sha256": "aba31e79f8815c7cd252308bbee09b1118b0f575437f8357d4de1b99f74d5650",
+        "calibration_sha256": "b0f53f39ac67a7ef33463b30bd4844f9f56b8b94bf648e14919520d832e8b189",
+        "verifier_sha256": "51cad5204aec7cb212299466ac297bdb8ad733a6956e9ecb5c9ddbd3e10f48e0"
+      },
+      "cycle_time_s": 37.625000000006864,
+      "peak_tension": {
+        "joint_index": 1,
+        "force_n": 1.1070836545087992,
+        "time_s": 7.695833333333057,
+        "phase": "grasp"
+      },
+      "plug_joint_peak_tension_n": 0.7284077066733706,
+      "peak_resultant": {
+        "joint_index": 0,
+        "force_n": 1.1246024586096453,
+        "time_s": 7.695833333333057,
+        "phase": "grasp"
+      },
+      "exposure_above_n": {
+        "1.0": {
+          "steps": 1,
+          "longest_consecutive_steps": 1,
+          "total_duration_s": 0.0020833333333333333,
+          "longest_duration_s": 0.0020833333333333333
+        },
+        "5.0": {
+          "steps": 0,
+          "longest_consecutive_steps": 0,
+          "total_duration_s": 0.0,
+          "longest_duration_s": 0.0
+        },
+        "10.0": {
+          "steps": 0,
+          "longest_consecutive_steps": 0,
+          "total_duration_s": 0.0,
+          "longest_duration_s": 0.0
+        }
+      },
+      "trajectory_comparison": {
+        "equal_recorded_frames": 1129,
+        "body_count": 146,
+        "fps": 30,
+        "measured_sha256": "9324ae4932ab7a6571a96e9c9789859c33232932534deba8553be6b7a6a5f1f0",
+        "reference_sha256": "844b50b0a4e454e202082c3961f6476ff7ec7f058b08bbaf627358e8c9fa0c59",
+        "scope": "Exact recorded frame records for first continuous cycle, not every physics-step pose"
+      },
+      "continuous_boundaries_sha256": "0f0f5fa3e931036bb2b427635eafaad812b2096379def19191084292f6efc6be"
+    }
+  },
+  "randomized_reliability_samples_added": 0,
+  "historical_scores_changed": false,
+  "thresholds_are_hardware_safety_limits": false,
+  "source_sha256": "7e0dc78027ceb9771326426536d2906ddef794a5bd37ca8e92c95d2bdcc642df",
+  "scope": "Summarize verified nominal cable diagnostics without rescoring reliability.\n\nThresholds describe exposure durations, not manufacturer-approved safe loads.\nRecorded-trajectory equality is a 30 Hz observation, not every-step equality.\n"
+}

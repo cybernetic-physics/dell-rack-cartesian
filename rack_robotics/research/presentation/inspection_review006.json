@@ -1,0 +1,346 @@
+{
+  "schema": "presentation_inspection_v1",
+  "review_date": "2026-10-17",
+  "scope": "B/C replacement rear and revised edit: all18 phase/time-sampled sheets,202 sample frames. This is an actual sampled visual review combined with separately recorded all-frame technical checks; not exhaustive native-frame manual inspection or acceptance of the complete B/C media set.",
+  "correction_to_inspection_review004": "Probe b_c_rear_lowerclear_probe002 source frames310–329 show withdraw, not separate/realign. The full-cycle sheets reviewed here additionally cover actual separate346–381 and realign382–417. The hash-bound earlier record is preserved unchanged.",
+  "products": [
+    {
+      "temporal_report": "artifacts/temporal-review002/00-BC/report.json",
+      "temporal_report_sha256": "841b0a13a2e1735ab306d91a6a99eb9c1777d8eaa553e6b83e300d51aeb1e07f",
+      "video_sha256": "ac4d34bc9293d1e5760e6b6f660e75be6ace19ccf9f0634e82b3f3639c405b96",
+      "decoded_frames": 1129,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "becc990fc37b93f1d3938c7790baf4fcf3ea98f02df4c022fde9622526cdabdc",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "22b80339050d5b9d7e647e83fc92ac0abf57494337efaf8a9d11442baf3ad1e8",
+          "frames": [
+            165,
+            166,
+            180,
+            186,
+            207,
+            208,
+            210,
+            228,
+            240,
+            249,
+            250,
+            260
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "4574e336b68c9a5785070eb16a2315227f49a40c0f5b114ed1ca1640bef909a9",
+          "frames": [
+            270,
+            271,
+            300,
+            308,
+            330,
+            345,
+            346,
+            360,
+            363,
+            381,
+            382,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "cabf80395bb0d5a32f74ff62d2a00f50200477253d7a90e47e4a04791c84fcac",
+          "frames": [
+            399,
+            417,
+            418,
+            420,
+            450,
+            462,
+            480,
+            507,
+            508,
+            510,
+            540,
+            567
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "284a1f2ebb6e97141488cdfc9a10c8ac654e1a97cf7cfe966db466e1e21bbe82",
+          "frames": [
+            570,
+            600,
+            627,
+            628,
+            630,
+            638,
+            648,
+            649,
+            660,
+            686,
+            690,
+            720
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "5a411efd481167e371b6c5987ba83a6500c71cb1d15c1dba3d31a75664ce22e5",
+          "frames": [
+            723,
+            724,
+            741,
+            750,
+            759,
+            760,
+            780,
+            804,
+            810,
+            840,
+            849,
+            850
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "41e3e7be95422c7b5cbab2c42b9fd06dc71a472c1ee7f9c35aa4ad45527d9807",
+          "frames": [
+            869,
+            870,
+            888,
+            889,
+            897,
+            900,
+            906,
+            907,
+            921,
+            930,
+            936,
+            937
+          ]
+        },
+        {
+          "file": "sheet-007.png",
+          "sha256": "9125f1fd17f786957b6bd0bdae52c614c7702df59438797b873c330c85dabf22",
+          "frames": [
+            947,
+            957,
+            958,
+            960,
+            968,
+            978,
+            979,
+            990,
+            1020,
+            1023,
+            1050,
+            1068
+          ]
+        },
+        {
+          "file": "sheet-008.png",
+          "sha256": "5006e3222e379834d00f4076af575f8859170d48d902e973357a9403dc096fd6",
+          "frames": [
+            1069,
+            1080,
+            1098,
+            1110,
+            1128
+          ]
+        }
+      ],
+      "directory": "b_c_rear_lowerclear_cycle001",
+      "observations": "All nine sheets reviewed. The lowered camera keeps the port row, housing/socket separation and return visible below the robot. The blue actuator approaches from above/left without the full-frame crossing seen in the rejected higher camera. First seating wait, recovery, reinsertion, seating nudge, release and parking remain visible. Bright framework occupies the left edge but does not obscure the target. Thumbnail scale is not sufficient for fine latch judgment.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    },
+    {
+      "temporal_report": "artifacts/temporal-review002/01-BC/report.json",
+      "temporal_report_sha256": "93241c0300f3f9fcd761511e1e74a13de615262d946b138fab4c8c6fac3c5abc",
+      "video_sha256": "7615c6b6de9ee626d503118cbf35da60f410ed0a2841e65ea9b4db1e358c9860",
+      "decoded_frames": 1129,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "6cec4dd2293c0343d9ae69e89bf38ed1cd5b82c68d0d4bcf2573e804123b7023",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "7543f45a30e1d832e3d82345cb4c4bd389503db405a58a0d87513597732bf259",
+          "frames": [
+            165,
+            166,
+            180,
+            186,
+            207,
+            208,
+            210,
+            228,
+            240,
+            249,
+            250,
+            260
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "bc9682ebce719cfa6f6b50a0304f44cb2ff35e9076a142a78f2104c2cc14495b",
+          "frames": [
+            270,
+            271,
+            300,
+            308,
+            330,
+            345,
+            346,
+            360,
+            363,
+            381,
+            382,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "eb6c169fb22de04565ec1b19563eb469ce666112fa7cc7d740c26e6650b1bcc6",
+          "frames": [
+            399,
+            417,
+            418,
+            420,
+            450,
+            462,
+            480,
+            507,
+            508,
+            510,
+            540,
+            567
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "5a819ca9e995a0894e41cbd6b36df5e8c2bbff85df8fce1d6a2d3b45ab7a7a0a",
+          "frames": [
+            570,
+            600,
+            627,
+            628,
+            630,
+            638,
+            648,
+            649,
+            660,
+            686,
+            690,
+            720
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "2171a23ced3c7e7bddf579296c23c0be140314546a851c9c379a7e5f03c6ab60",
+          "frames": [
+            723,
+            724,
+            741,
+            750,
+            759,
+            760,
+            780,
+            804,
+            810,
+            840,
+            849,
+            850
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "85e908ad7ca21f4dff16cf9b7348b2fde46b1e4a3b30a21baaa55ebfb79e5b18",
+          "frames": [
+            869,
+            870,
+            888,
+            889,
+            897,
+            900,
+            906,
+            907,
+            921,
+            930,
+            936,
+            937
+          ]
+        },
+        {
+          "file": "sheet-007.png",
+          "sha256": "7001eae9410b9dd94017c8b7e71f07485d809231315f3307ca30ca6fa81ee22d",
+          "frames": [
+            947,
+            957,
+            958,
+            960,
+            968,
+            978,
+            979,
+            990,
+            1020,
+            1023,
+            1050,
+            1068
+          ]
+        },
+        {
+          "file": "sheet-008.png",
+          "sha256": "a3521295b49d41f24a979d4c526e123e16d270f7f26de295483082000aaf4c71",
+          "frames": [
+            1069,
+            1080,
+            1098,
+            1110,
+            1128
+          ]
+        }
+      ],
+      "directory": "b_c_reviewed_edit002",
+      "observations": "All nine sheets reviewed, with sheets003–008 completed after resuming this checkpoint. The chronological edit moves from wide to rear approach, macro grasp/press/withdraw, side separation, rear realignment, macro insertion/seating/release and side/wide retraction/parking. The first seating wait and complete recovery are retained, followed by reinsertion and seating nudge. No foreground sweep in the replacement rear shots. The housing and blue boot stay readable alongside the tool; native macro detail still requires separate review for full B/C set acceptance.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    }
+  ],
+  "final_visual_acceptance": false,
+  "remaining": "Review B/C full wide, macro and side sets plus native fine latch frames before a complete-set presentation decision. B/A and A/C also remain open."
+}

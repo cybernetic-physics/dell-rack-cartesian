@@ -1,0 +1,406 @@
+{
+  "scope": "30 Hz recorded-trajectory geometry and quasi-static gravity only",
+  "sample_count": 1129,
+  "time_range_s": [
+    0,
+    37.60000000000689
+  ],
+  "total_modeled_mass_kg": 9.807416937779635,
+  "moving_mass_kg": 4.965259573888034,
+  "mount_reference_m": [
+    -0.285,
+    0.593,
+    1.4649999999999999
+  ],
+  "mount_reference_definition": "Centroid of authored PostClamp centres",
+  "rigid_geometry_swept_bounds": {
+    "lower_m": [
+      -0.5480000023692846,
+      0.43117313201463037,
+      0.9499994039535522
+    ],
+    "upper_m": [
+      0.25823119487965157,
+      1.064000072479248,
+      2.062499405741691
+    ],
+    "dimensions_m": [
+      0.8062311972489362,
+      0.6328269404646176,
+      1.112500001788139
+    ]
+  },
+  "maximum_sampled_overhang": {
+    "left_m": 0.2480000023692846,
+    "right_m": 0.0,
+    "rear_m": 0.464000072479248
+  },
+  "initial_envelope": {
+    "time_s": 0,
+    "phase": "initialize",
+    "bounds": {
+      "lower_m": [
+        -0.5480000023692846,
+        0.47499994713068006,
+        0.9499994039535522
+      ],
+      "upper_m": [
+        -0.024627172538091404,
+        1.0639999532699584,
+        2.062499405741691
+      ],
+      "dimensions_m": [
+        0.5233728298311932,
+        0.5890000061392784,
+        1.112500001788139
+      ]
+    },
+    "overhang": {
+      "left_m": 0.2480000023692846,
+      "right_m": 0.0,
+      "rear_m": 0.46399995326995847
+    }
+  },
+  "final_envelope": {
+    "time_s": 37.60000000000689,
+    "phase": "park",
+    "bounds": {
+      "lower_m": [
+        -0.5480000023692846,
+        0.47499994713068006,
+        0.9499994039535522
+      ],
+      "upper_m": [
+        -0.02448856833499508,
+        1.0639999532699584,
+        2.062499405741691
+      ],
+      "dimensions_m": [
+        0.5235114340342895,
+        0.5890000061392784,
+        1.112500001788139
+      ]
+    },
+    "overhang": {
+      "left_m": 0.2480000023692846,
+      "right_m": 0.0,
+      "rear_m": 0.46399995326995847
+    }
+  },
+  "largest_sampled_gravity_mount_moment": {
+    "mass_kg": 9.807416937779635,
+    "com_world_m": [
+      -0.1860568453090498,
+      0.7785267682210059,
+      1.6045204285439476
+    ],
+    "force_n": [
+      0.0,
+      0.0,
+      -96.21076015961823
+    ],
+    "moment_nm": [
+      -17.84967140050028,
+      9.519396125407011,
+      0.0
+    ],
+    "time_s": 2.500000000000018,
+    "phase": "approach",
+    "moment_norm_nm": 20.229425886521142
+  },
+  "telescoping_joint_gravity_loads": {
+    "/World/Robot/Joints/OuterExtension": {
+      "mass_kg": 3.5698905042372644,
+      "com_world_m": [
+        -0.01564812036448907,
+        0.6910306274977938,
+        1.7049227623788739
+      ],
+      "force_n": [
+        0.0,
+        0.0,
+        -35.02062584656757
+      ],
+      "moment_nm": [
+        1.3647307858347415,
+        6.456118305196286,
+        0.0
+      ],
+      "time_s": 31.233333333344707,
+      "phase": "release_gripper",
+      "anchor_world_m": [
+        -0.20000000298023224,
+        0.7299999706447124,
+        1.660316824913025
+      ],
+      "moment_norm_nm": 6.598784258368784
+    },
+    "/World/Robot/Joints/InnerExtension": {
+      "mass_kg": 1.9126687874086201,
+      "com_world_m": [
+        0.11322719994969453,
+        0.6352425683128241,
+        1.7153338128585511
+      ],
+      "force_n": [
+        0.0,
+        0.0,
+        -18.763280804478565
+      ],
+      "moment_nm": [
+        0.8397977211138816,
+        2.240398469357676,
+        0.0
+      ],
+      "time_s": 31.933333333345264,
+      "phase": "release_datum",
+      "anchor_world_m": [
+        -0.0061761438846588135,
+        0.680000077933073,
+        1.6603169441223145
+      ],
+      "moment_norm_nm": 2.392623144978809
+    }
+  },
+  "telescoping_supported_bodies": {
+    "/World/Robot/Joints/OuterExtension": [
+      "/World/Robot/Carriage",
+      "/World/Robot/JawPinion",
+      "/World/Robot/LatchTongue",
+      "/World/Robot/LeftJaw",
+      "/World/Robot/MiddleBoom",
+      "/World/Robot/RightJaw",
+      "/World/Robot/ServiceCarriers/Inner/Link000",
+      "/World/Robot/ServiceCarriers/Inner/Link001",
+      "/World/Robot/ServiceCarriers/Inner/Link002",
+      "/World/Robot/ServiceCarriers/Inner/Link003",
+      "/World/Robot/ServiceCarriers/Inner/Link004",
+      "/World/Robot/ServiceCarriers/Inner/Link005",
+      "/World/Robot/ServiceCarriers/Inner/Link006",
+      "/World/Robot/ServiceCarriers/Inner/Link007",
+      "/World/Robot/ServiceCarriers/Inner/Link008",
+      "/World/Robot/ServiceCarriers/Inner/Link009",
+      "/World/Robot/ServiceCarriers/Inner/Link010",
+      "/World/Robot/ServiceCarriers/Inner/Link011",
+      "/World/Robot/ServiceCarriers/Inner/Link012",
+      "/World/Robot/ServiceCarriers/Inner/Link013",
+      "/World/Robot/ServiceCarriers/Inner/Link014",
+      "/World/Robot/ServiceCarriers/Inner/Link015",
+      "/World/Robot/ServiceCarriers/Inner/Link016",
+      "/World/Robot/ServiceCarriers/Inner/Link017",
+      "/World/Robot/ServiceCarriers/Inner/Link018",
+      "/World/Robot/ServiceCarriers/Inner/Link019",
+      "/World/Robot/ServiceCarriers/Inner/Link020",
+      "/World/Robot/ServiceCarriers/Inner/Link021",
+      "/World/Robot/ServiceCarriers/Insertion/Link000",
+      "/World/Robot/ServiceCarriers/Insertion/Link001",
+      "/World/Robot/ServiceCarriers/Insertion/Link002",
+      "/World/Robot/ServiceCarriers/Insertion/Link003",
+      "/World/Robot/ServiceCarriers/Insertion/Link004",
+      "/World/Robot/ServiceCarriers/Insertion/Link005",
+      "/World/Robot/ServiceCarriers/Insertion/Link006",
+      "/World/Robot/ServiceCarriers/Insertion/Link007",
+      "/World/Robot/ServiceCarriers/Insertion/Link008",
+      "/World/Robot/ServiceCarriers/Insertion/Link009",
+      "/World/Robot/ServiceCarriers/Insertion/Link010",
+      "/World/Robot/ServiceCarriers/Insertion/Link011",
+      "/World/Robot/ServiceCarriers/Insertion/Link012",
+      "/World/Robot/ServiceCarriers/Insertion/Link013",
+      "/World/Robot/ServiceCarriers/Insertion/Link014",
+      "/World/Robot/ToolFrame",
+      "/World/Robot/ToolMount",
+      "/World/Robot/WristSlide"
+    ],
+    "/World/Robot/Joints/InnerExtension": [
+      "/World/Robot/Carriage",
+      "/World/Robot/JawPinion",
+      "/World/Robot/LatchTongue",
+      "/World/Robot/LeftJaw",
+      "/World/Robot/RightJaw",
+      "/World/Robot/ServiceCarriers/Insertion/Link000",
+      "/World/Robot/ServiceCarriers/Insertion/Link001",
+      "/World/Robot/ServiceCarriers/Insertion/Link002",
+      "/World/Robot/ServiceCarriers/Insertion/Link003",
+      "/World/Robot/ServiceCarriers/Insertion/Link004",
+      "/World/Robot/ServiceCarriers/Insertion/Link005",
+      "/World/Robot/ServiceCarriers/Insertion/Link006",
+      "/World/Robot/ServiceCarriers/Insertion/Link007",
+      "/World/Robot/ServiceCarriers/Insertion/Link008",
+      "/World/Robot/ServiceCarriers/Insertion/Link009",
+      "/World/Robot/ServiceCarriers/Insertion/Link010",
+      "/World/Robot/ServiceCarriers/Insertion/Link011",
+      "/World/Robot/ServiceCarriers/Insertion/Link012",
+      "/World/Robot/ServiceCarriers/Insertion/Link013",
+      "/World/Robot/ServiceCarriers/Insertion/Link014",
+      "/World/Robot/ToolFrame",
+      "/World/Robot/ToolMount",
+      "/World/Robot/WristSlide"
+    ]
+  },
+  "prismatic_joint_limits": [
+    {
+      "path": "/World/Robot/Joints/Lift",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/Frame"
+      ],
+      "body1": [
+        "/World/Robot/LiftCarriage"
+      ],
+      "anchor_in_body0_m": [
+        -0.20000000298023224,
+        0.7799999713897705,
+        1.7999999523162842
+      ],
+      "axis": "Z",
+      "limits_m": [
+        -0.699999988079071,
+        0.0
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/OuterExtension",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/LiftCarriage"
+      ],
+      "body1": [
+        "/World/Robot/MiddleBoom"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.05000000074505806,
+        0.0
+      ],
+      "axis": "X",
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/InnerExtension",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/MiddleBoom"
+      ],
+      "body1": [
+        "/World/Robot/Carriage"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.05000000074505806,
+        0.0
+      ],
+      "axis": "X",
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/Insertion",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/Carriage"
+      ],
+      "body1": [
+        "/World/Robot/ToolMount"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "Y",
+      "limits_m": [
+        -0.125,
+        0.0
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/WristComplianceZ",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/ToolMount"
+      ],
+      "body1": [
+        "/World/Robot/WristSlide"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "Z",
+      "limits_m": [
+        -0.0007999999797903001,
+        0.0007999999797903001
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/MovingJaw",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/ToolFrame"
+      ],
+      "body1": [
+        "/World/Robot/RightJaw"
+      ],
+      "anchor_in_body0_m": [
+        0.012000000104308128,
+        -0.12999999523162842,
+        0.0
+      ],
+      "axis": "X",
+      "limits_m": [
+        -0.00570000009611249,
+        0.0
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/LatchPress",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/ToolFrame"
+      ],
+      "body1": [
+        "/World/Robot/LatchTongue"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.12399999797344208,
+        0.008999999612569809
+      ],
+      "axis": "Z",
+      "limits_m": [
+        -0.005499999970197678,
+        0.0010000000474974513
+      ]
+    }
+  ],
+  "rated_load_pass": null,
+  "dense_cable_clearance_pass": null,
+  "rear_door_clearance_pass": null,
+  "limitations": [
+    "Not continuous swept-volume collision checking; gaps between 30 Hz samples remain.",
+    "Bounding boxes conservatively bound authored visual/collision geometry, not exact surfaces.",
+    "Gravity only: no inertial, plug/cable, external contact or fault/braking loads.",
+    "Modeled lumped masses and cooked COMs are not weighed or certified hardware properties.",
+    "Nominal 600 mm rack width and rear Y=600 mm are model references, not a door survey.",
+    "Root fixed joint is an ideal mount; bolt reactions, stiffness and rack ratings remain unverified.",
+    "Unowned decorative geometry and absent cable carriers are not included in rigid-body bounds."
+  ],
+  "robot": "B_side_telescoping",
+  "gripper": "C_rj45_specific",
+  "source_task_passed": true,
+  "trajectory_identity_mode": "manifest_verified_packaged_trajectory",
+  "motion_scope": "Completed recorded task cycle",
+  "environment_manifest_sha256": "c63da8aa2e666e8569da10b697270573620b116c22ece72bb9d320a742278e89",
+  "evidence_sha256": {
+    "properties": "6daafdeac00c1e40896adf86f7da3d0df396d17488b5f3fd8306cf64fd121415",
+    "trajectory": "9324ae4932ab7a6571a96e9c9789859c33232932534deba8553be6b7a6a5f1f0",
+    "results": "26dce41730a7e98bb75fb495c32bba02085ab15dfd720ecf464e2d859e753117"
+  },
+  "analysis_sha256": "d1d13d07e5c19456ffa6b06c48d1d35b88189734f8b4f01dd6a347f556cef2a5"
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "Human visual inspection of explicitly listed original frames; not exhaustive temporal acceptance",
+  "final_visual_acceptance": false,
+  "products": [
+    {
+      "directory": "experiments/a_a_rear_underbridge_cycle001",
+      "video_sha256": "cca39e0a3c5fe05ab3c81361845aa4f5fb930202981084003b6b74e5e9ee8c19",
+      "original_frames_inspected": [816],
+      "observations": "Below-bridge camera exposes tool housing, cable and socket row; seating composition readable. Latch is too small for this rear view alone to prove latch mechanics.",
+      "decision": "Useful rear replacement candidate; full-cycle temporal review still required."
+    },
+    {
+      "directory": "experiments/a_c_macro_latch_cycle001",
+      "video_sha256": "ab8a8089cf1f20b91115ab31e3798257ed679680f636ebd8788bfb8451a9536c",
+      "original_frames_inspected": [266, 320, 950],
+      "observations": "Pressing tongue/yellow tip, withdrawn housing and raised latch are distinguishable across the three frames. Blue actuator occupies much of the upper left but does not fully hide the latch contact area.",
+      "decision": "Improved macro candidate; not a claim of every-frame absence of clipping or flicker."
+    },
+    {
+      "directory": "experiments/showcase-campaign001/CA/wide",
+      "video_sha256": "ed2ddfe98658c5df399e219f8b731ed013c61018d18a0d65609fc4216865234b",
+      "original_frames_inspected": [242],
+      "observations": "Full rack, mounting frame, carriers and adjacent rack scale are visible. Connector action is intentionally small at this establishing angle."
+    },
+    {
+      "directory": "experiments/showcase-campaign001/CA/rear",
+      "video_sha256": "ee0bba5bd4a7f51af3d890b754833f1c3f7ebff345a5c2894fde591f84e09d42",
+      "original_frames_inspected": [242],
+      "observations": "Below-bridge angle exposes the manipulation region, socket bank, tool and hanging cable. Macro remains needed for latch detail."
+    },
+    {
+      "directory": "experiments/showcase-campaign001/CA/macro",
+      "video_sha256": "f1c78c82728ed1c75a52ad4769cb3c05f5a46df35525db7bcaea819b9e3d8dc1",
+      "original_frames_inspected": [242],
+      "observations": "Withdrawn housing is visibly separated from socket; jaws, blue boot and yellow latch tongue are readable. Actuator remains prominent in the foreground."
+    },
+    {
+      "directory": "experiments/showcase-campaign001/CA/side",
+      "video_sha256": "c1d1b023f52751c7482a032df030494ca9e081c759a8049c3a17662dde9ea960",
+      "original_frames_inspected": [242],
+      "observations": "Oblique full-frame angle shows rail/carriage layout, depth offset and service carriers. Connector mechanics require companion close-ups."
+    }
+  ]
+}

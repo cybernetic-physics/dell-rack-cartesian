@@ -1,0 +1,612 @@
+{
+  "schema": "systematic_visual_inspection_v1",
+  "scope": "Agent visual inspection of every listed contact sheet across the full cycle, plus listed original macro frames; not a claim that every native-resolution frame was visually inspected. All-frame low-resolution temporal metrics, encoded timestamps, source verification and prior natural Mac playback are separate evidence.",
+  "temporal_manifest": "artifacts/temporal-review001/manifest.json",
+  "temporal_manifest_sha256": "958c9ccbf8ff19a7fe9f4ce39d132c0462880f814a7732978271769e6099499c",
+  "final_visual_acceptance": false,
+  "products": [
+    {
+      "directory": "showcase-campaign001/CA/wide",
+      "video_sha256": "ed2ddfe98658c5df399e219f8b731ed013c61018d18a0d65609fc4216865234b",
+      "temporal_report": "artifacts/temporal-review001/11-CA/report.json",
+      "temporal_report_sha256": "7cacada76ff560c1d594b07422dc34bbb5889b7d7ed2a6da0aa6e893db206059",
+      "decoded_frames": 646,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "fd1f99ff4463d63fe5bace005c282d37f7e60d85fead4d439a92bfa4e4a96ddd",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "a0e0f143cd46955e351dfbd9f3f8721c4ab6f7d8224f1bfba44c11d9b2444f84",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "e059af15e34025e5ce9c18a5a5c4bdbc2e9a0c94df7842a38167da4a910c12d4",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "daa5497bb650fc6ff0a584b4cfd0cc006ae10ffc191feac4bc7be3411764db76",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            459,
+            474,
+            475,
+            480,
+            485,
+            495,
+            496
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "7a7f3af7c95028e27b4c47afa631f520406c2ff22db2e0fead946aee935d7660",
+          "frames": [
+            510,
+            540,
+            570,
+            585,
+            586,
+            600,
+            615,
+            630,
+            645
+          ]
+        }
+      ],
+      "observations": "The full rack, attachment frame, adjacent racks and floor communicate installation and scale throughout the sampled cycle. The robot stays framed; connector detail intentionally belongs to the macro view.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    },
+    {
+      "directory": "showcase-campaign001/CA/multi_angle",
+      "video_sha256": "c1eb5c1a4287fd82c40d5b90147ee7ed5eadc4ec31e59f89c6b39c1f999f26a1",
+      "temporal_report": "artifacts/temporal-review001/12-CA/report.json",
+      "temporal_report_sha256": "102f37b89fabf02c1cfd1b34b3c14114daba7fbc9c1826d70ffe2a930dacfc00",
+      "decoded_frames": 646,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "7ed92c5fa8086b45464451a88906daea71bce3a1c513b7c0e8f0cd32e25fb727",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "3f55fd9c7363d543c8faf00fec0c0f3db9468056496e56f81773a36008a0f5f2",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "af727a695336f20f415492a2e2281417dde7ad2d5aa8a306e76023239c057f3a",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "ca08ce0670223aeb6391dae74abf50989497000df5190b0e166a433bd61316e5",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            459,
+            474,
+            475,
+            480,
+            485,
+            495,
+            496
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "f16ca883c6740533dae19e9821b252969a5b2d5098a1595cdc56e533a9df495d",
+          "frames": [
+            510,
+            540,
+            570,
+            585,
+            586,
+            600,
+            615,
+            630,
+            645
+          ]
+        }
+      ],
+      "observations": "All task phases appear chronologically with measured timing preserved. Wide, rear, macro and side cuts communicate approach, press/withdrawal, separate/return, insertion, opening and parked retraction. Labels are readable in the inspected sheets.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    },
+    {
+      "directory": "showcase-campaign001/CA/rear",
+      "video_sha256": "ee0bba5bd4a7f51af3d890b754833f1c3f7ebff345a5c2894fde591f84e09d42",
+      "temporal_report": "artifacts/temporal-review001/13-CA/report.json",
+      "temporal_report_sha256": "af956fff609a37a83a64cd504ad29684cb0e4a431c14f1d99c585780afa30ae9",
+      "decoded_frames": 646,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "ffc1f3d5696245f461f395ac8c60982b93ef783a8cc03523bffaa66a225d761e",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "0aeeefa07f76c2ece6ded8d9acf6b1e70c44e627cce645882a8d06d0b303ad99",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "4a4d3ba7e566d06eaadbcf6f97b1ac437f97f4747c3ef6fcf47d196e7cc35048",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "19a66fb76ca590d9a7b7ad6fc5f5e8a1fb7046d911083a9f7bb86768178c7023",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            459,
+            474,
+            475,
+            480,
+            485,
+            495,
+            496
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "ba2df96c8fa9fa451a595b199814e8f2e39112b40874d8df7105a3d56f2e9753",
+          "frames": [
+            510,
+            540,
+            570,
+            585,
+            586,
+            600,
+            615,
+            630,
+            645
+          ]
+        }
+      ],
+      "observations": "The tool and connector remain visible below the upper bridge in all inspected phase/time samples. The left foreground rack structure is prominent but does not cover the manipulation. Fine latch mechanics need the macro view.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    },
+    {
+      "directory": "showcase-campaign001/CA/macro",
+      "video_sha256": "f1c78c82728ed1c75a52ad4769cb3c05f5a46df35525db7bcaea819b9e3d8dc1",
+      "temporal_report": "artifacts/temporal-review001/14-CA/report.json",
+      "temporal_report_sha256": "57794b47d6ed6bbff7302deb4d484b9db91055fb2da4627aab4d895ef61061df",
+      "decoded_frames": 646,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "e8a96381bdd17e073bebf606a2c38db545a10dfe3935add7145339b12e72ef9d",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "b5f565254811fb1755ff5d010103cdc15fbdf0ab4eda8f7f242fa66695281500",
+          "frames": [
+            165,
+            166,
+            169,
+            172,
+            175,
+            176,
+            178,
+            180,
+            181,
+            184,
+            186,
+            187
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "0c66071ad97d40a17328c6a57066eca45ed13e6ae9cbada4befc70e0948fe22c",
+          "frames": [
+            190,
+            193,
+            196,
+            197,
+            199,
+            202,
+            205,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "7fa73b94ff7966db90c7d4167668e762c555f9f1b1ffd2cc1db76b7283b654dc",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "6dc93d6debf51c2db910f813dfbd634d99e812c34e2a086e7f055165ddd423db",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            448,
+            450,
+            451,
+            454,
+            457,
+            459,
+            460,
+            463
+          ]
+        },
+        {
+          "file": "sheet-005.png",
+          "sha256": "3219522e0f8b52c4ba5858d1972a826ce7b301f85732f697fb9a24090c693c56",
+          "frames": [
+            466,
+            469,
+            472,
+            474,
+            475,
+            478,
+            480,
+            481,
+            484,
+            485,
+            487,
+            490
+          ]
+        },
+        {
+          "file": "sheet-006.png",
+          "sha256": "a97a6a9d7401c79e82bed94108d34d0ac307a36c2153a255c23ced7cdb01eb06",
+          "frames": [
+            493,
+            495,
+            496,
+            510,
+            540,
+            570,
+            585,
+            586,
+            600,
+            615,
+            630,
+            645
+          ]
+        }
+      ],
+      "observations": "The actuator occupies much of the left side but leaves the white housing/tab, blue boot and yellow latch tip readable. Native frames186 and190 show raised then lowered pressing tooling and tab deflection;207 remains depressed. Withdrawn242 shows a clear housing/socket gap. Reseated474 has raised tooling/tab;485/495 show opened jaws with the connector remaining seated. These images support visible mechanics, not independent physical causality.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false,
+      "original_frames_inspected": [
+        186,
+        190,
+        207,
+        242,
+        474,
+        485,
+        495
+      ]
+    },
+    {
+      "directory": "showcase-campaign001/CA/side",
+      "video_sha256": "c1d1b023f52751c7482a032df030494ca9e081c759a8049c3a17662dde9ea960",
+      "temporal_report": "artifacts/temporal-review001/15-CA/report.json",
+      "temporal_report_sha256": "12fdce8abcce45dac804319be6155785b67ed53ca2fa280f97f49bd45afe9e6f",
+      "decoded_frames": 646,
+      "review_flags": [],
+      "visually_inspected_sheets": [
+        {
+          "file": "sheet-000.png",
+          "sha256": "75c2936c6c878a9040f2434099c027c757abff6c99b00dc430c2ab95c843aee3",
+          "frames": [
+            0,
+            7,
+            15,
+            16,
+            30,
+            45,
+            60,
+            75,
+            76,
+            90,
+            120,
+            150
+          ]
+        },
+        {
+          "file": "sheet-001.png",
+          "sha256": "eff8e3740b17fdde259bb9e328608f6833d923b782f417ac1b8414ff56ca1744",
+          "frames": [
+            165,
+            166,
+            176,
+            180,
+            186,
+            187,
+            197,
+            207,
+            208,
+            210,
+            240,
+            245
+          ]
+        },
+        {
+          "file": "sheet-002.png",
+          "sha256": "a8f506ab767e16b0f97a2f44cfb31f6ca7845e2f71403235966e7e1a3e04d1b5",
+          "frames": [
+            270,
+            282,
+            283,
+            300,
+            318,
+            319,
+            330,
+            336,
+            354,
+            355,
+            360,
+            390
+          ]
+        },
+        {
+          "file": "sheet-003.png",
+          "sha256": "5c1c0d1485648f6b3b32bbac91e0197c9b68ce1d2376c03344be75d7e517aa4f",
+          "frames": [
+            399,
+            420,
+            444,
+            445,
+            450,
+            459,
+            474,
+            475,
+            480,
+            485,
+            495,
+            496
+          ]
+        },
+        {
+          "file": "sheet-004.png",
+          "sha256": "302b5d07077ea10db982b52a41352b551c2710c7bc7e4b637e3c4818d7b1c75b",
+          "frames": [
+            510,
+            540,
+            570,
+            585,
+            586,
+            600,
+            615,
+            630,
+            645
+          ]
+        }
+      ],
+      "observations": "The full mounting rectangle, linear stages, insertion depth and carrier loop remain visible through the sampled cycle. The oblique view communicates motion relative to the rack, not fine latch detail.",
+      "systematic_sample_review_passed": true,
+      "final_visual_acceptance": false
+    }
+  ],
+  "rejections": [
+    {
+      "directory": "b_c_rear_underbridge_cycle001",
+      "video_sha256": "85fab7d4289792d11494516b7e38791c4e93af2f35b38c5632373b0128ec5096",
+      "original_frames_inspected": [
+        36,
+        37,
+        38,
+        39
+      ],
+      "temporal_flagged_frames": [
+        37,
+        39,
+        1106,
+        1108
+      ],
+      "decision": "Reject current rear view and its dependent b_c_reviewed_edit001 for final delivery; preserve both.",
+      "observations": "Blue actuator crosses very close to the camera during approach, filling much of the frame and obscuring the scene. Temporal screen also flags the return/parking interval; this is not merely an encoding failure."
+    }
+  ],
+  "repair_probes": [
+    {
+      "directory": "b_c_rear_lowerclear_probe001",
+      "video_sha256": "0626c7c46114acf455e3dbdcd2008a3b8164b72fca8afd48ef40f35730a26dfa",
+      "source_start_frame": 30,
+      "original_output_frames_inspected": [
+        0,
+        7,
+        9,
+        19
+      ],
+      "observations": "Lower camera keeps port row/plug clear across the previously obstructed approach interval."
+    },
+    {
+      "directory": "b_c_rear_lowerclear_probe002",
+      "video_sha256": "cf9559bae2e5f902258ae05c7158f1193c282856327e218e232ef8a6752fe638",
+      "source_start_frame": 310,
+      "original_output_frames_inspected": [
+        0,
+        19
+      ],
+      "observations": "Held white housing, blue cable, extended fingers and socket gap visible during separate/realign; entire local action remains framed."
+    },
+    {
+      "directory": "b_c_rear_lowerclear_probe003",
+      "video_sha256": "54bf48b9a7455bed4d7c140d702fda0f6dc6f00d5f0fbb5779f075d3b49e522d",
+      "source_start_frame": 1098,
+      "original_output_frames_inspected": [
+        8,
+        19
+      ],
+      "observations": "Reseated connector and port row remain unobstructed during parking. Tool exits the top of this manipulation close-up; full mechanism/parking are covered by wide/side views."
+    }
+  ],
+  "repair_decision": "Render full B/C rear cycle with eye[-.08,.66,1.60], target[.16,.45,1.67], focal18mm, fill4000, native1920x1080 and16 subframes. Full-cycle verification/review must follow before replacing final media."
+}

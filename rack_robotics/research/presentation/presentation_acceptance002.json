@@ -1,0 +1,151 @@
+{
+  "schema": "presentation_acceptance_v1",
+  "review_date": "2026-10-17",
+  "scope": "Presentation acceptance of the five explicitly identified B/C1080p clips. Does not accept the rejected higher rear camera or its old edit, and does not change task reliability or physical safety conclusions.",
+  "method": {
+    "full_timeline": "All frames decode and undergo coarse temporal screening; every encoded presentation timestamp verified at30fps. All five clips preserve1,129 samples of the same successful measured trial, including the first seating wait, recovery and seating nudge.",
+    "visual_coverage": "All53 phase/time-sampled sheets (17 macro,9 each other view/edit) personally inspected across review006/007. Macro critical phases sampled10Hz; eight original native-resolution macro frames separately inspected.",
+    "limitations": "Systematic samples and coarse all-frame metrics are not exhaustive manual native-frame review. Native port-lip highlights show mild stippling; the mechanism remains readable. Mac playback drops are recorded separately from encoded frame completeness. Rendered media do not establish real-hardware safety."
+  },
+  "decision": "Accept the corrected B/C five-clip presentation set on combined visual, full-frame technical, source and natural Mac-playback evidence.",
+  "verification_reports": [
+    {
+      "path": "artifacts/temporal-review001/verification_vm001.json",
+      "sha256": "96087adbf1f7ba4b8a9e8b62c0f6292818ddd739cd19686725e028110e928d37"
+    },
+    {
+      "path": "artifacts/temporal-review001/verification_mac001.json",
+      "sha256": "2f7c9b0b8c7f596dd8f9d51d4b907e78578706502564581b2219009a613e9c98"
+    },
+    {
+      "path": "artifacts/temporal-review002/verification_vm002.json",
+      "sha256": "21365aed515b5f396f10a5c50b0075cc012f3a38d930a23f7cd4859429b33596"
+    },
+    {
+      "path": "artifacts/temporal-review002/verification_mac001.json",
+      "sha256": "3bba84c30db14d5fbe4ff0caf8edeae1ed19a00d07c4705481dd5fafe4f97c9d"
+    }
+  ],
+  "products": [
+    {
+      "design": "BC",
+      "directory": "render-campaign004/BC/wide",
+      "video_sha256": "537c6fec544693816bf8808800baea6427e5071d5645fa12b142ba5e467257fc",
+      "visual_review": "rack_robotics/research/presentation/inspection_review007.json",
+      "visual_review_sha256": "5522f70dd939ecb44865a87f0729651c7b8e8924cb72223949bdd14ea015b978",
+      "temporal_report": "artifacts/temporal-review001/21-BC/report.json",
+      "temporal_report_sha256": "50abc2d08b0f4444dcff4b5d4b4084bced831dd9ad4fc5fbc28c3d62d4da644e",
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "frames": 1129,
+      "inspected_sheets": 9,
+      "visually_inspected_sample_frames": 101,
+      "natural_mac_playback": [
+        {
+          "path": "rack_robotics/experiments/render-campaign004/BC/wide/mac_playback001.json",
+          "sha256": "46ffd563b7622a7bff1ac9d4bef174e18f0d1b9bfa3b3fa12452f74a2b64dd87",
+          "dropped_video_frames": 0
+        }
+      ],
+      "presentation_accepted": true
+    },
+    {
+      "design": "BC",
+      "directory": "b_c_macro_latch_cycle001",
+      "video_sha256": "9b6d6d8f637d7d3e67334c9f43c1b0b7288215c4b77c7bdf81ff5891dba4d49f",
+      "visual_review": "rack_robotics/research/presentation/inspection_review007.json",
+      "visual_review_sha256": "5522f70dd939ecb44865a87f0729651c7b8e8924cb72223949bdd14ea015b978",
+      "temporal_report": "artifacts/temporal-review001/24-BC/report.json",
+      "temporal_report_sha256": "b1c38fdfef72cb479aa92fdbc68806101bf38cb223118960bdb3d84f14f80aa9",
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "frames": 1129,
+      "inspected_sheets": 17,
+      "visually_inspected_sample_frames": 197,
+      "natural_mac_playback": [
+        {
+          "path": "rack_robotics/experiments/b_c_macro_latch_cycle001/mac_playback001.json",
+          "sha256": "c0a4cef113813c484316ef3ecb5e4448060ab9549c21faeec258712218f6715d",
+          "dropped_video_frames": 0
+        }
+      ],
+      "presentation_accepted": true
+    },
+    {
+      "design": "BC",
+      "directory": "render-campaign004/BC/side",
+      "video_sha256": "f17f26ff8c5a0cffea5206193ac1162054a1e8ec5918cf96c94010c62d968785",
+      "visual_review": "rack_robotics/research/presentation/inspection_review007.json",
+      "visual_review_sha256": "5522f70dd939ecb44865a87f0729651c7b8e8924cb72223949bdd14ea015b978",
+      "temporal_report": "artifacts/temporal-review001/25-BC/report.json",
+      "temporal_report_sha256": "d1ff275dd06533106ffb63f56ad49df8568eeee8eda94437bf4496719fae665c",
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "frames": 1129,
+      "inspected_sheets": 9,
+      "visually_inspected_sample_frames": 101,
+      "natural_mac_playback": [
+        {
+          "path": "rack_robotics/experiments/render-campaign004/BC/side/mac_playback001.json",
+          "sha256": "bd173e069460f8d13a8a7be4e9c54168437f5ab83eff3407d0280477c73f67c1",
+          "dropped_video_frames": 1
+        }
+      ],
+      "presentation_accepted": true
+    },
+    {
+      "design": "BC",
+      "directory": "b_c_rear_lowerclear_cycle001",
+      "video_sha256": "ac4d34bc9293d1e5760e6b6f660e75be6ace19ccf9f0634e82b3f3639c405b96",
+      "visual_review": "rack_robotics/research/presentation/inspection_review006.json",
+      "visual_review_sha256": "9bb2edea144c888ed2febea772c1dd2cfffa465441320984e1598fcc98e22e42",
+      "temporal_report": "artifacts/temporal-review002/00-BC/report.json",
+      "temporal_report_sha256": "841b0a13a2e1735ab306d91a6a99eb9c1777d8eaa553e6b83e300d51aeb1e07f",
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "frames": 1129,
+      "inspected_sheets": 9,
+      "visually_inspected_sample_frames": 101,
+      "natural_mac_playback": [
+        {
+          "path": "rack_robotics/experiments/b_c_rear_lowerclear_cycle001/mac_playback001.json",
+          "sha256": "bd8a00fc8065db9a53f1b0bd3966310bf89651b4cd321d182292fc61b42d2642",
+          "dropped_video_frames": 1
+        }
+      ],
+      "presentation_accepted": true
+    },
+    {
+      "design": "BC",
+      "directory": "b_c_reviewed_edit002",
+      "video_sha256": "7615c6b6de9ee626d503118cbf35da60f410ed0a2841e65ea9b4db1e358c9860",
+      "visual_review": "rack_robotics/research/presentation/inspection_review006.json",
+      "visual_review_sha256": "9bb2edea144c888ed2febea772c1dd2cfffa465441320984e1598fcc98e22e42",
+      "temporal_report": "artifacts/temporal-review002/01-BC/report.json",
+      "temporal_report_sha256": "93241c0300f3f9fcd761511e1e74a13de615262d946b138fab4c8c6fac3c5abc",
+      "native_resolution": [
+        1920,
+        1080
+      ],
+      "frames": 1129,
+      "inspected_sheets": 9,
+      "visually_inspected_sample_frames": 101,
+      "natural_mac_playback": [
+        {
+          "path": "rack_robotics/experiments/b_c_reviewed_edit002/mac_playback001.json",
+          "sha256": "7ec36bda664abfb3e767b2f3525bb0948f80801905e2a634d8707c33be492322",
+          "dropped_video_frames": 0
+        }
+      ],
+      "presentation_accepted": true
+    }
+  ]
+}

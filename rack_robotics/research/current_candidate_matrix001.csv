@@ -1,0 +1,10 @@
+design,version,architecture,tool,nominal_outcome,complete_cycles,valid_trials,planned_starts,fixture_failures,mean_successful_cycle_s,score_100,cohort,main_limit
+AA,v016,dual_supported_screw,precision_parallel,passed,22,22,24,2,32.54270833334406,70.52335047903232,benchmark-campaign007,"Practical tie with CA; heavier bridge; carrier-angle failure in power-loss recovery"
+AB,v011,dual_supported_screw,full_size_RG2,failed,,,,,,,none,"Initial measured housing outside bounded pickup alignment"
+AC,v005,dual_supported_screw,specialized_RJ45,passed,21,22,24,2,37.88482142857813,67.6432325153031,benchmark-campaign009,"One withdrawal-clearance timeout; separately changed seating harness; carrier-angle fault failure"
+BA,v014,independent_telescoping_booms,precision_parallel,passed,22,22,24,2,26.839583333340432,69.40095362455665,benchmark-campaign007,"Greater side/rear overhang and cantilever load; boot/bearing contact in power-loss probe"
+BB,v007,independent_telescoping_booms,full_size_RG2,failed,,,,,,,none,"Initial measured housing outside bounded pickup alignment"
+BC,v004,independent_telescoping_booms,specialized_RJ45,passed,17,22,24,2,29.921200980396995,55.25194657590977,benchmark-campaign008,"Five seating failures; greater overhang; bearing/tool contact in power-loss probe"
+CA,v021,coupled_CoreXZ,precision_parallel,passed,22,22,24,2,22.94289772727718,70.52338859569339,benchmark-campaign007,"Practical tie with AA; coupled-belt assumptions; carrier-angle fault failure"
+CB,v002,coupled_CoreXZ,full_size_RG2,failed,,,,,,,none,"Initial measured housing outside bounded pickup alignment"
+CC,v003,coupled_CoreXZ,specialized_RJ45,failed,,,,,,,none,"Datum alignment fails in nominal trial"

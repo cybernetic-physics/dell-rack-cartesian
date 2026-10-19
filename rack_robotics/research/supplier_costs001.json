@@ -1,0 +1,65 @@
+{
+  "schema": "hardware_supplier_candidates_v1",
+  "checked_date": "2026-10-17",
+  "currency": "USD",
+  "quantity_basis": "single unit; excludes shipping, tax and integration",
+  "scope": "Candidate catalog components, not a qualified complete robot or gripper BOM",
+  "components": [
+    {
+      "id": "pq12",
+      "part": "Actuonix PQ12-30-12-P",
+      "unit_price": 65.0,
+      "source": "https://www.actuonix.com/pq12-30-12-p",
+      "role": "Candidate latch actuator",
+      "drop_in_verified": false,
+      "cad_redistribution_permission": null
+    },
+    {
+      "id": "lac",
+      "part": "Actuonix LAC",
+      "unit_price": 30.0,
+      "source": "https://www.actuonix.com/lac",
+      "role": "Controller for one P-series actuator; external supply required",
+      "drop_in_verified": false,
+      "cad_redistribution_permission": null
+    },
+    {
+      "id": "hs422",
+      "part": "Hitec HS-422 / 31422S",
+      "unit_price": 20.99,
+      "source": "https://hitecrcd.com/hs-422-deluxe-standard-servo/",
+      "role": "Candidate C-tool rack-and-pinion actuator",
+      "drop_in_verified": false,
+      "cad_redistribution_permission": null
+    },
+    {
+      "id": "17hs15",
+      "part": "StepperOnline 17HS15-1504S1",
+      "unit_price": 9.13,
+      "source": "https://www.omc-stepperonline.com/nema-17-bipolar-45ncm-63-74oz-in-1-5a-42x42x39mm-4-wires-w-1m-cable-connector-17hs15-1504s1",
+      "role": "Larger-axis motor candidate, not a matched Nanotec brake assembly; exceeds B horizontal motor envelope by 1 mm",
+      "drop_in_verified": false,
+      "cad_redistribution_permission": null
+    },
+    {
+      "id": "dm542t",
+      "part": "StepperOnline DM542T V4",
+      "unit_price": 19.65,
+      "source": "https://www.omc-stepperonline.com/digital-stepper-driver-1-0-4-2a-20-50vdc-for-nema-17-23-24-stepper-motor-dm542t",
+      "role": "Candidate axis driver; no encoder or brake output, separate controller/supply needed",
+      "drop_in_verified": false,
+      "cad_redistribution_permission": null
+    }
+  ],
+  "partial_candidate_subtotals": [
+    {"parts": {"pq12": 1, "lac": 1}, "usd": 95.0, "complete_tool": false},
+    {"parts": {"pq12": 1, "lac": 1, "hs422": 1}, "usd": 115.99, "complete_tool": false}
+  ],
+  "complete_purchase_cost_usd": {"AA_v016": null, "BA_v014": null, "CA_v021": null, "AC_v005": null, "BC_v004": null},
+  "unknown_cost_categories": [
+    "matched brake motors", "rails and guide blocks", "machined screws, nuts and bearings",
+    "frame and rack clamps", "custom adapters, jaws and compliant tooling",
+    "carrier chains and cabling", "commercial complete grippers", "machining and assembly",
+    "power, enclosure, sensing, homing, perception and motion/safety controls"
+  ]
+}

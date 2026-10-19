@@ -1,0 +1,65 @@
+{
+  "paired_setup_verified": true,
+  "errors": [],
+  "trials": [
+    {
+      "attempt": "rack_robotics/experiments/a_b_attempt010_gravity_preload",
+      "passed": false,
+      "physics_hz": 240,
+      "cycle_time_s": 24.53749999999893,
+      "error": "Unexpected grasp aperture 0.015667308449745176",
+      "recoveries": [
+        {
+          "time": 7.312499999999905,
+          "failure_phase": "grasp",
+          "reason": "Unexpected grasp aperture 0.013273571014404297",
+          "attempt": 1
+        },
+        {
+          "time": 15.924999999999416,
+          "failure_phase": "grasp",
+          "reason": "Unexpected grasp aperture 0.015667219042778013",
+          "attempt": 2
+        }
+      ],
+      "phase_peak_pair_contact_estimate_n": {
+        "grasp": 14.759775336554691,
+        "recover_grasp_open": 30.17912323693443
+      },
+      "final_aperture_m": 0.015667308449745176,
+      "results_sha256": "59c6b4716050b746873d841a344bf5c99c3c4a7d152fc00a3f945c1a21c254fd"
+    },
+    {
+      "attempt": "rack_robotics/experiments/a_b_attempt011_gravity_preload480",
+      "passed": false,
+      "physics_hz": 480,
+      "cycle_time_s": 24.508333333339355,
+      "error": "Unexpected grasp aperture 0.015679005861282347",
+      "recoveries": [
+        {
+          "time": 7.304166666666412,
+          "failure_phase": "grasp",
+          "reason": "Unexpected grasp aperture 0.015678678035736082",
+          "attempt": 1
+        },
+        {
+          "time": 15.906249999999257,
+          "failure_phase": "grasp",
+          "reason": "Unexpected grasp aperture 0.01567894625663757",
+          "attempt": 2
+        }
+      ],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9529279081264453,
+        "approach": 0.9556703454414021,
+        "align": 0.950531959627593,
+        "grasp": 18.19566319585402,
+        "recover_grasp_open": 9.34373195481655
+      },
+      "final_aperture_m": 0.015679035663604735,
+      "results_sha256": "3c91c9f6336ae62bf50ae48d6cd628d16f24ee6ef3adc6d29fcb50711810e48d"
+    }
+  ],
+  "convergence_established": false,
+  "scope": "One matched-source solver-rate sensitivity pair, not reliability or convergence. Impulse/dt peaks are timestep-dependent, uncalibrated contact estimates."
+}

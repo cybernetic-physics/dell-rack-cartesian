@@ -1,0 +1,12 @@
+{
+  "accepted_as_final_video": false,
+  "camera_direction_candidate": [-0.085, 0.040, 0.015],
+  "focal_length_mm": 35,
+  "reviews": [
+    {"attempt": "c_a_neck_macro_press001", "frame": "frames/00000.png", "source_frame": 200, "observation": "Depressed clip and pressing neck/tip are visible near the socket; actuator bulk fills the upper-left image and lighting is dark."},
+    {"attempt": "c_a_neck_macro_separate001", "frame": "frames/00000.png", "source_frame": 320, "observation": "Held connector and open socket are both in frame with visible separation; adaptive framing zooms out and retains the cable."},
+    {"attempt": "c_a_neck_macro_seat001", "frame": "frames/00000.png", "source_frame": 570, "observation": "Reinserted housing and raised latch are unobstructed after tool withdrawal; image remains dark."}
+  ],
+  "scope": "Three original RTX frame inspections only. Each probe has three measured-replay frames; no full-cycle temporal or final visual acceptance.",
+  "next": "Improve inspection fill lighting without hiding geometry, then review full-cycle motion/composition before final rendering."
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "exact_version_comparison_plan_v1",
+  "method": "rack_robotics/research/scoring_method.md",
+  "notes": [
+    "All five nominally working designs are conservatively treated as leading candidates requiring20 admissible trials.",
+    "Campaign009's changed A/C task harness is retained as a system-level confound, not pooled with007/008.",
+    "Current visual score is partial-media evidence only. This does not complete the required final demonstrations or showcase.",
+    "Power-loss/load judgment is derived from each exact-version probe, never copied across grippers."
+  ],
+  "buildability": {
+    "parts_interfaces": {"score": 2.5, "rationale": "Dimensioned model inventories exist; screw machining, matched brake motors, tolerances and purchased interfaces are not fully selected.", "evidence": ["rack_robotics/research/buildability_and_bom.md"]},
+    "assembly_service": {"score": 2.5, "rationale": "A plausible assembly sequence and rear-door-open service envelope are documented; technician access and airflow are not demonstrated.", "evidence": ["rack_robotics/research/buildability_and_bom.md"]},
+    "power_loss_loads": {"score": 0, "rationale": "Placeholder replaced only by verified exact-version brake probe; missing probe leaves scoring pending.", "evidence": ["rack_robotics/research/powered_off_brakes.md"]}
+  },
+  "physics": {
+    "manipulation_causality": {"score": 1, "rationale": "Contact-driven robot/tool motion and topology are verified. Baseline latch negative controls exist, but the current robot/tool combinations lack their own complete actuator-disabled causal-control series.", "evidence": ["rack_robotics/research/rj45_mechanisms.md"]},
+    "transmission": {"score": 1, "rationale": "Bounded articulated drives, including coupled CoreXZ, retain uncalibrated motor, efficiency, backlash and belt-slack abstractions.", "evidence": ["rack_robotics/research/buildability_and_bom.md"]},
+    "cable_contact": {"score": 1, "rationale": "Dynamic segmented cable and contact evidence exist; gap/displacement is not calibrated tensile force or a validated material response.", "evidence": ["rack_robotics/research/mechanical_screening.md"]},
+    "initial_state_observation": {"score": 1, "rationale": "Physical pre-seating and measured task gates use simulator ground truth, not a deployable perception/calibration system.", "evidence": ["rack_robotics/research/buildability_and_bom.md"]}
+  },
+  "visual": {"score": 1, "rationale": "Verified complete measured-motion replay exists, but the full required camera/edit set is incomplete or fine latch mechanics remain obstructed; no final-quality score is claimed.", "evidence": ["rack_robotics/research/scoring_method.md"]},
+  "designs": {
+    "AA": {"environment": "rack_robotics/environments/robot_a_gripper_a/v016", "leading_candidate": true, "campaign": "rack_robotics/experiments/benchmark-campaign007", "occupied_screen": "rack_robotics/experiments/occupied-screen002", "properties": "rack_robotics/experiments/mechanical_aa005/properties.json", "mechanical_screen": "rack_robotics/experiments/mechanical-screen-aa003.json", "workspace": "rack_robotics/experiments/a_a_workspace002", "brake": "rack_robotics/experiments/a_a_frame_brake001", "media": "rack_robotics/experiments/render-campaign004/AA/wide"},
+    "AB": {"environment": "rack_robotics/environments/robot_a_gripper_b/v011"},
+    "AC": {"environment": "rack_robotics/environments/robot_a_gripper_c/v005", "leading_candidate": true, "campaign": "rack_robotics/experiments/benchmark-campaign009", "occupied_screen": "rack_robotics/experiments/occupied-screen002", "properties": "rack_robotics/experiments/mechanical_ac002/properties.json", "mechanical_screen": "rack_robotics/experiments/mechanical-screen-ac002.json", "workspace": "rack_robotics/experiments/a_c_workspace001", "brake": "rack_robotics/experiments/a_c_frame_brake001", "media": "rack_robotics/experiments/render-campaign004/AC/wide"},
+    "BA": {"environment": "rack_robotics/environments/robot_b_gripper_a/v014", "leading_candidate": true, "campaign": "rack_robotics/experiments/benchmark-campaign007", "occupied_screen": "rack_robotics/experiments/occupied-screen002", "properties": "rack_robotics/experiments/mechanical_ba003/properties.json", "mechanical_screen": "rack_robotics/experiments/mechanical-screen-ba003.json", "workspace": "rack_robotics/experiments/b_a_workspace001", "brake": "rack_robotics/experiments/b_a_frame_brake001", "media": "rack_robotics/experiments/render-campaign004/BA/wide"},
+    "BB": {"environment": "rack_robotics/environments/robot_b_gripper_b/v007"},
+    "BC": {"environment": "rack_robotics/environments/robot_b_gripper_c/v004", "leading_candidate": true, "campaign": "rack_robotics/experiments/benchmark-campaign008", "occupied_screen": "rack_robotics/experiments/occupied-screen002", "properties": "rack_robotics/experiments/mechanical_bc002/properties.json", "mechanical_screen": "rack_robotics/experiments/mechanical-screen-bc002.json", "workspace": "rack_robotics/experiments/b_c_workspace001", "brake": "rack_robotics/experiments/b_c_frame_brake001", "media": "rack_robotics/experiments/render-campaign004/BC/wide"},
+    "CA": {"environment": "rack_robotics/environments/robot_c_gripper_a/v021", "leading_candidate": true, "campaign": "rack_robotics/experiments/benchmark-campaign007", "occupied_screen": "rack_robotics/experiments/occupied-screen002", "properties": "rack_robotics/experiments/mechanical_ca003/properties.json", "mechanical_screen": "rack_robotics/experiments/mechanical-screen-ca003.json", "workspace": "rack_robotics/experiments/c_a_workspace003", "brake": "rack_robotics/experiments/c_a_frame_brake002", "media": "rack_robotics/experiments/render-campaign003/CA/wide"},
+    "CB": {"environment": "rack_robotics/environments/robot_c_gripper_b/v002"},
+    "CC": {"environment": "rack_robotics/environments/robot_c_gripper_c/v003"}
+  }
+}

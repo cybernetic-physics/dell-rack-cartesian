@@ -1,0 +1,853 @@
+{
+  "evidence_hashes_valid": true,
+  "errors": [],
+  "campaign_complete": false,
+  "designs": {
+    "AA": {
+      "planned": 10,
+      "finished": 6,
+      "complete_cycles": 3,
+      "unplug_successes": 3,
+      "replug_successes": 3,
+      "missing": [
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": 21.447222222221328,
+      "port_counts": {
+        "1": {
+          "trials": 1,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "8": {
+          "trials": 2,
+          "complete_cycles": 2
+        },
+        "12": {
+          "trials": 1,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 1,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "AC": {
+      "planned": 10,
+      "finished": 5,
+      "complete_cycles": 2,
+      "unplug_successes": 2,
+      "replug_successes": 2,
+      "missing": [
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": 30.92500000000119,
+      "port_counts": {
+        "1": {
+          "trials": 1,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "8": {
+          "trials": 1,
+          "complete_cycles": 1
+        },
+        "12": {
+          "trials": 1,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 1,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "BA": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "BC": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "CA": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "CC": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "AB": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    },
+    "CB": {
+      "planned": 10,
+      "finished": 0,
+      "complete_cycles": 0,
+      "unplug_successes": 0,
+      "replug_successes": 0,
+      "missing": [
+        "trial-000",
+        "trial-001",
+        "trial-002",
+        "trial-003",
+        "trial-004",
+        "trial-005",
+        "trial-006",
+        "trial-007",
+        "trial-008",
+        "trial-009"
+      ],
+      "complete": false,
+      "complete_cycle_rate": null,
+      "wilson_95_interval": null,
+      "mean_successful_cycle_s": null,
+      "port_counts": {
+        "1": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "4": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "8": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "12": {
+          "trials": 0,
+          "complete_cycles": 0
+        },
+        "16": {
+          "trials": 0,
+          "complete_cycles": 0
+        }
+      }
+    }
+  },
+  "controls": {
+    "AA": {
+      "design": "AA",
+      "condition": "control",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AA/control-attempt001",
+      "results_sha256": "60c4ecaf9b04807dfd92217eb873e582b5eb87a6d6bd57608e8fe7bd807687ea",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 21.5374999999991,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.392483221367858,
+      "final_lateral_m": 0.00043479014746061544,
+      "final_depth_m": 0.011068644523620597,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 4.84810903189024e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.0118127759546942,
+        "approach": 0.9976698369939154,
+        "grasp": 11.63648135396911,
+        "release_latch": 32.11037412791029,
+        "withdraw": 8.989619541217412,
+        "insert": 8.985554033463712,
+        "seat_and_latch": 7.850323944568889,
+        "release_gripper": 3.216344377967375,
+        "separate": 9.043212166440584,
+        "realign": 9.039813112189801
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08677234404028804,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    "AC": {
+      "design": "AC",
+      "condition": "control",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AC/control-attempt001",
+      "results_sha256": "e6d8cf2ca791f25afd0b260f47a5fb25403a746f4dc2a2120ebfae788606b5fe",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 24.345833333332273,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.630735301690547,
+      "final_lateral_m": 0.0004925165024078873,
+      "final_depth_m": 0.011113407611846916,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 3.5555814959619084e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.0222085704447508,
+        "approach": 1.000822980908512,
+        "align_datum": 8.926331086659834,
+        "grasp": 11.289180009065173,
+        "release_latch": 4.525662962592158,
+        "withdraw": 4.945914022686226,
+        "insert": 5.76422857943178,
+        "seat_and_latch": 4.648009246577145,
+        "release_gripper": 3.6846439465508753,
+        "release_datum": 1.960789808568834,
+        "retract": 2.2116716813341077,
+        "separate": 5.231836642953552,
+        "realign": 5.432639578266451
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08679494115114585,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    "BA": {
+      "status": "not_started"
+    },
+    "BC": {
+      "status": "not_started"
+    },
+    "CA": {
+      "status": "not_started"
+    },
+    "CC": {
+      "status": "not_started"
+    },
+    "AB": {
+      "status": "not_started"
+    },
+    "CB": {
+      "status": "not_started"
+    }
+  },
+  "trials": [
+    {
+      "design": "AA",
+      "condition": "trial-000",
+      "port": 4,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AA/trial-000-attempt001",
+      "results_sha256": "2d4ff855a8a1182e24214b8439dc10147120b9d43f6c7a16c8cfadf448560350",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 22.033333333332404,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.395512093167409,
+      "final_lateral_m": 0.0004355023870597117,
+      "final_depth_m": 0.011062892675399772,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 6.401697431634998e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9362819260190172,
+        "approach": 0.9238117064805699,
+        "grasp": 12.956453378054167,
+        "release_latch": 32.295642772871695,
+        "withdraw": 10.480281626629438,
+        "insert": 10.477993942456392,
+        "seat_and_latch": 10.596991634522837,
+        "release_gripper": 3.59025131576737,
+        "separate": 10.50672608718634,
+        "realign": 10.493911747100597
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08679153678583355,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AA",
+      "condition": "trial-001",
+      "port": 8,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AA/trial-001-attempt001",
+      "results_sha256": "6d2f773204fa8a303d059270f73b604eefbbe252d9d2f249557ef8a73d3a70c5",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 20.88333333333247,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.385883743964361,
+      "final_lateral_m": 0.0004325488057232453,
+      "final_depth_m": 0.011086078882217399,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 7.028575979993224e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 0.9223134564888272,
+        "approach": 0.8959378202144875,
+        "grasp": 11.840036751125867,
+        "release_latch": 29.393267406783732,
+        "withdraw": 10.046433917595976,
+        "insert": 9.830759840128762,
+        "seat_and_latch": 9.174040044240888,
+        "release_gripper": 3.4553854821945236,
+        "separate": 9.497845190989606,
+        "realign": 9.777964585497239
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08676145922308784,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AA",
+      "condition": "trial-002",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AA/trial-002-attempt001",
+      "results_sha256": "05351868f1fcef1c6298a46623c8064e1088b43922ff010e32a733d705340881",
+      "reported_pass": false,
+      "complete_cycle": false,
+      "initial_retained": false,
+      "unplug_success": false,
+      "replug_success": false,
+      "cycle_time_s": null,
+      "latch_clear_observed": false,
+      "final_angle_deg": null,
+      "final_lateral_m": null,
+      "final_depth_m": null,
+      "final_hook_behind_lip": null,
+      "cable_max_gap_m": null,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/experiments/benchmark-campaign001/harness/run_benchmark_trial.py\", line 153, in <module>\n    if initialization.connected_port!=port: raise RuntimeError('Physical pre-seat did not retain the intended port')\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Physical pre-seat did not retain the intended port\n",
+      "failure_stage": "initialization_exception",
+      "recoveries": 0
+    },
+    {
+      "design": "AA",
+      "condition": "trial-003",
+      "port": 16,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AA/trial-003-attempt001",
+      "results_sha256": "e6a25b782af30278bf92dbad6a1464c15f32eaf6ee75f2bc94efeca2784f5907",
+      "reported_pass": false,
+      "complete_cycle": false,
+      "initial_retained": false,
+      "unplug_success": false,
+      "replug_success": false,
+      "cycle_time_s": null,
+      "latch_clear_observed": false,
+      "final_angle_deg": null,
+      "final_lateral_m": null,
+      "final_depth_m": null,
+      "final_hook_behind_lip": null,
+      "cable_max_gap_m": null,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/experiments/benchmark-campaign001/harness/run_benchmark_trial.py\", line 153, in <module>\n    if initialization.connected_port!=port: raise RuntimeError('Physical pre-seat did not retain the intended port')\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Physical pre-seat did not retain the intended port\n",
+      "failure_stage": "initialization_exception",
+      "recoveries": 0
+    },
+    {
+      "design": "AA",
+      "condition": "trial-004",
+      "port": 12,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AA/trial-004-attempt001",
+      "results_sha256": "aacde7216f13245afaad1193b57542e9a936e8aa7b768c15a87005bc8fbed273",
+      "reported_pass": false,
+      "complete_cycle": false,
+      "initial_retained": false,
+      "unplug_success": false,
+      "replug_success": false,
+      "cycle_time_s": null,
+      "latch_clear_observed": false,
+      "final_angle_deg": null,
+      "final_lateral_m": null,
+      "final_depth_m": null,
+      "final_hook_behind_lip": null,
+      "cable_max_gap_m": null,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/experiments/benchmark-campaign001/harness/run_benchmark_trial.py\", line 153, in <module>\n    if initialization.connected_port!=port: raise RuntimeError('Physical pre-seat did not retain the intended port')\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Physical pre-seat did not retain the intended port\n",
+      "failure_stage": "initialization_exception",
+      "recoveries": 0
+    },
+    {
+      "design": "AA",
+      "condition": "trial-005",
+      "port": 8,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AA/trial-005-attempt001",
+      "results_sha256": "50115824c4451cb128dfc14173f8d892d76b5205a01f58fa9b5ea56150bf44a0",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 21.424999999999105,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.389095539405004,
+      "final_lateral_m": 0.0004395205827140089,
+      "final_depth_m": 0.01107934355735778,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 0.00011849720531312846,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.0260464890276464,
+        "approach": 1.0027218550810624,
+        "grasp": 11.287091580663684,
+        "release_latch": 33.61273312890955,
+        "withdraw": 9.44102649000584,
+        "insert": 9.428987625086583,
+        "seat_and_latch": 9.873448254301442,
+        "release_gripper": 3.303220861159955,
+        "separate": 9.411137283361509,
+        "realign": 9.374361305010448
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08752886631619358,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AC",
+      "condition": "trial-000",
+      "port": 4,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AC/trial-000-attempt001",
+      "results_sha256": "5d49f0196095ade02f8761da42f9aff64936c4045c2617554d5d11f68b5a0625",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 38.158333333336735,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.4665377826813675,
+      "final_lateral_m": 0.0004610957576445258,
+      "final_depth_m": 0.011107059717178337,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 6.407316635286927e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.1838255947350258,
+        "approach": 1.195080455880355,
+        "align_datum": 7.4424301533004105,
+        "grasp": 13.925687760219128,
+        "retract": 9.253815876854496,
+        "seat_and_latch": 4.655756248016389,
+        "seat_nudge": 4.756728879175387,
+        "release_latch": 4.694989904832414,
+        "withdraw": 4.7784540116748255,
+        "insert": 4.878345791044628,
+        "recover_insert_release": 4.571649365867592,
+        "recover_insert_retreat": 4.721131665613598,
+        "release_gripper": 3.0812980234622955,
+        "release_datum": 1.9773260467466336,
+        "separate": 5.177935886303909,
+        "realign": 4.873380141800768
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 1,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08705596626747474,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AC",
+      "condition": "trial-001",
+      "port": 8,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AC/trial-001-attempt001",
+      "results_sha256": "00bb1c3ea0935aaf8e6817282bd7b5d6f148a2606eed8e84b460530a1c00a245",
+      "reported_pass": true,
+      "complete_cycle": true,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 23.691666666665643,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.396402540882223,
+      "final_lateral_m": 0.0004934670756014199,
+      "final_depth_m": 0.011052283048629753,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 4.094429548442379e-05,
+      "contact_reporting_errors": [],
+      "phase_peak_pair_contact_estimate_n": {
+        "initialize": 1.041575250863387,
+        "approach": 1.0935825475499075,
+        "align_datum": 9.562978224483054,
+        "grasp": 9.891383579377125,
+        "release_latch": 4.247137868505896,
+        "withdraw": 4.605729227104397,
+        "insert": 4.531392084578262,
+        "seat_and_latch": 4.482518884027241,
+        "release_gripper": 3.088397327810526,
+        "release_datum": 3.0643684400661093,
+        "retract": 1.2570848447623675,
+        "separate": 4.952563271702727,
+        "realign": 4.562106954351749
+      },
+      "robot_rack_contact_pair_count": 0,
+      "robot_self_contact_pair_count": 0,
+      "robot_rack_peak_pair_estimate_n": 0.0,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0,
+      "cable_displacement": {
+        "max_segment_centre_displacement_m": 0.08680421967385964,
+        "scope": "30 Hz measured segment-centre displacement from trial start, not tensile force or continuous-time maximum"
+      }
+    },
+    {
+      "design": "AC",
+      "condition": "trial-002",
+      "port": 1,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AC/trial-002-attempt001",
+      "results_sha256": "72dae3d7c8ef566380eafc2844c0b7d383577511a7742747f3ddcb2e818d5e99",
+      "reported_pass": false,
+      "complete_cycle": false,
+      "initial_retained": false,
+      "unplug_success": false,
+      "replug_success": false,
+      "cycle_time_s": null,
+      "latch_clear_observed": false,
+      "final_angle_deg": null,
+      "final_lateral_m": null,
+      "final_depth_m": null,
+      "final_hook_behind_lip": null,
+      "cable_max_gap_m": null,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/experiments/benchmark-campaign001/harness/run_benchmark_trial.py\", line 153, in <module>\n    if initialization.connected_port!=port: raise RuntimeError('Physical pre-seat did not retain the intended port')\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Physical pre-seat did not retain the intended port\n",
+      "failure_stage": "initialization_exception",
+      "recoveries": 0
+    },
+    {
+      "design": "AC",
+      "condition": "trial-003",
+      "port": 16,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AC/trial-003-attempt001",
+      "results_sha256": "bc41d92b465aea8b9fdb60aa34c84a034ee9f95e07e69541614d10646472065c",
+      "reported_pass": false,
+      "complete_cycle": false,
+      "initial_retained": false,
+      "unplug_success": false,
+      "replug_success": false,
+      "cycle_time_s": null,
+      "latch_clear_observed": false,
+      "final_angle_deg": null,
+      "final_lateral_m": null,
+      "final_depth_m": null,
+      "final_hook_behind_lip": null,
+      "cable_max_gap_m": null,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/experiments/benchmark-campaign001/harness/run_benchmark_trial.py\", line 153, in <module>\n    if initialization.connected_port!=port: raise RuntimeError('Physical pre-seat did not retain the intended port')\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Physical pre-seat did not retain the intended port\n",
+      "failure_stage": "initialization_exception",
+      "recoveries": 0
+    },
+    {
+      "design": "AC",
+      "condition": "trial-004",
+      "port": 12,
+      "directory": "rack_robotics/experiments/benchmark-campaign001/AC/trial-004-attempt001",
+      "results_sha256": "275efa693e50fbbeff69536f96e56cd025f6f7f246ee711b830d660d986e2690",
+      "reported_pass": false,
+      "complete_cycle": false,
+      "initial_retained": false,
+      "unplug_success": false,
+      "replug_success": false,
+      "cycle_time_s": null,
+      "latch_clear_observed": false,
+      "final_angle_deg": null,
+      "final_lateral_m": null,
+      "final_depth_m": null,
+      "final_hook_behind_lip": null,
+      "cable_max_gap_m": null,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/experiments/benchmark-campaign001/harness/run_benchmark_trial.py\", line 153, in <module>\n    if initialization.connected_port!=port: raise RuntimeError('Physical pre-seat did not retain the intended port')\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Physical pre-seat did not retain the intended port\n",
+      "failure_stage": "initialization_exception",
+      "recoveries": 0
+    }
+  ],
+  "ranking": null,
+  "limitations": [
+    "No final ranking: rack load, dense cabling, buildability, cost and \u226520 trials for best are still required.",
+    "All contact peaks are collider-pair impulse/dt estimates, not net insertion force or calibrated safety loads.",
+    "Cable displacement and joint gap are not cable tensile force.",
+    "Retained-state hysteresis does not guarantee the final pose satisfies seating-entry tolerances."
+  ]
+}

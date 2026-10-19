@@ -1,0 +1,316 @@
+{
+  "same_conditions": true,
+  "same_saved_environment": true,
+  "condition": {
+    "schema": "rack_benchmark_conditions_v1",
+    "role": "randomized",
+    "seed": 20261017,
+    "index": 2,
+    "port": 1,
+    "initial_robot_offset_m": [
+      -0.0007897059259405191,
+      -0.00042943593150859675,
+      -0.00163104676955986
+    ],
+    "calibration_offset_m": [
+      1.1644005729760483e-05,
+      0.0,
+      5.528202245893523e-05
+    ],
+    "connector_offset_m": [
+      -2.7840448353600778e-05,
+      -3.2260935678664174e-05,
+      6.925238988351446e-05
+    ],
+    "connector_angles_deg": [
+      -0.30650707376491326,
+      0.025207800933754465,
+      -0.34814016033802775
+    ],
+    "cable_yaw_deg": 1.653332261886714,
+    "cable_bend_start": 6,
+    "approach_time_scale": 0.9248547145278483,
+    "friction_scale": 1.0339916175873056,
+    "contact_offset_scale": 0.9470461759078582
+  },
+  "before": {
+    "directory": "rack_robotics/experiments/benchmark-campaign001/AA/trial-002-attempt001",
+    "runner": "benchmark_harness_v1",
+    "evidence_sha256": {
+      "results.json": "05351868f1fcef1c6298a46623c8064e1088b43922ff010e32a733d705340881",
+      "source_manifest.json": "d635097bf285c639c3b9e102a6956dfd52ae4ba5be1de6ee20c68ebda92ac65e",
+      "initialization_contacts.json": "75de170ced9b7fe0032193f429be77abeeb8dee040b24301ad6e1c59b3b8907c",
+      "authored_conditions.json": "43c62ed743b0755ad09dcaf1fe79d154582a413df973af13aa234e23aabc917b"
+    },
+    "metrics": {
+      "reported_pass": false,
+      "complete_cycle": false,
+      "admissible_initial_state": false,
+      "fixture_failure": true,
+      "initial_retained": false,
+      "unplug_success": false,
+      "replug_success": false,
+      "cycle_time_s": null,
+      "latch_clear_observed": false,
+      "final_angle_deg": null,
+      "final_lateral_m": null,
+      "final_depth_m": null,
+      "final_hook_behind_lip": null,
+      "cable_max_gap_m": null,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/rack_robotics/experiments/benchmark-campaign001/harness/run_benchmark_trial.py\", line 153, in <module>\n    if initialization.connected_port!=port: raise RuntimeError('Physical pre-seat did not retain the intended port')\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Physical pre-seat did not retain the intended port\n",
+      "failure_stage": "initialization_exception",
+      "recoveries": 0
+    },
+    "initial_robot_joint_states": [],
+    "initialization_adjustments": [],
+    "initial_self_contact_pairs": [
+      {
+        "colliders": [
+          "/World/Robot/LeftJaw/Pad",
+          "/World/Robot/RightJaw/Pad"
+        ],
+        "reports": 1,
+        "minimum_separation_m": -0.0020000000949949026,
+        "peak_pair_contact_force_n": 0.0,
+        "phase_peaks_n": {
+          "initialization": 0
+        }
+      },
+      {
+        "colliders": [
+          "/World/Robot/LeftJaw/Pad",
+          "/World/Robot/RightJaw/Finger"
+        ],
+        "reports": 1,
+        "minimum_separation_m": -0.0020000000949949026,
+        "peak_pair_contact_force_n": 0.0,
+        "phase_peaks_n": {
+          "initialization": 0
+        }
+      },
+      {
+        "colliders": [
+          "/World/Robot/LeftJaw/Finger",
+          "/World/Robot/RightJaw/Pad"
+        ],
+        "reports": 1,
+        "minimum_separation_m": -0.0020000000949949026,
+        "peak_pair_contact_force_n": 0.0,
+        "phase_peaks_n": {
+          "initialization": 0
+        }
+      },
+      {
+        "colliders": [
+          "/World/Robot/LeftJaw/Finger",
+          "/World/Robot/RightJaw/Finger"
+        ],
+        "reports": 1,
+        "minimum_separation_m": -0.0020000000949949026,
+        "peak_pair_contact_force_n": 0.0,
+        "phase_peaks_n": {
+          "initialization": 0
+        }
+      },
+      {
+        "colliders": [
+          "/World/Robot/LeftJaw/UpperGuideLand",
+          "/World/Robot/RightJaw/UpperGuideLand"
+        ],
+        "reports": 1,
+        "minimum_separation_m": -0.0015999998431652784,
+        "peak_pair_contact_force_n": 1294.335478528592,
+        "phase_peaks_n": {
+          "initialization": 1294.335478528592
+        },
+        "peak_time_s": 0.0,
+        "peak_phase": "initialization"
+      },
+      {
+        "colliders": [
+          "/World/Robot/LeftJaw/LowerGuideLand",
+          "/World/Robot/RightJaw/LowerGuideLand"
+        ],
+        "reports": 1,
+        "minimum_separation_m": -0.0015999998431652784,
+        "peak_pair_contact_force_n": 3.0944304312274795e-05,
+        "phase_peaks_n": {
+          "initialization": 3.0944304312274795e-05
+        },
+        "peak_time_s": 0.0,
+        "peak_phase": "initialization"
+      }
+    ],
+    "initial_peak_pair_estimate_n": 1294.335478528592,
+    "initial_contact_reporting_errors": [],
+    "source_sha256": {
+      "source/rack_robotics/integrity.py": "2bedef0c7a1b50c1c2649035ef431d4a43190428f177ee836f7a116312dcfec6",
+      "source/rack_robotics/mechanics.py": "dbd01109371ed5e70b1e70e64ffa3970e7e73c3e7168a1f875013785443ca10e",
+      "source/rack_robotics/recording.py": "dd0fe4874060f62529a353df9cc52bd3f05d3597190d0d7aa776c6416a1b33ee",
+      "source/rack_robotics/__init__.py": "ab29cc80db41b652502cd8787e970ac115e12f1d5f146c23313efa641eb38891",
+      "source/rack_robotics/controllers/cartesian_interface.py": "ece9b787ae7b3a3bf5d812044b7ddddf628358fe93e1b1cfebff6be8f9e02a1f",
+      "source/rack_robotics/controllers/gripper_interface.py": "6b440fac77c0b0194bbbdc376e6485e0349785db00efbaea565079cde47b98e0",
+      "source/rack_robotics/controllers/connector_observer.py": "c730c8b62bd5824c16458079ce86c1c3ab98f43c2e29708ebdf83a0549b9c357",
+      "source/rack_robotics/controllers/__init__.py": "9960549ce08203870495216528451bf630b9b92c98cf23c2c1fe11db8b5c6f47",
+      "source/rack_robotics/controllers/rj45_task.py": "8e6fa147609ebd328b4205154380ac62e86c8db318425c989eeb51922f5e08b8",
+      "source/rack_robotics/scripts/freeze_baseline.py": "cfa4de51031df2f3de8feb1af3ca386a16bdd1ec8165b43943b2e2bda066bc57",
+      "source/rack_robotics/scripts/package_reference.py": "06da470607ad560717e9eb64f7a08843ce6a579c8ecc6f81a7a81cb26c4becd9",
+      "source/rack_robotics/scripts/run_reference.py": "c85e12b99ffe1707889cf2bbf543ed1257bab878a98f16dfc6aa181a72f01d59",
+      "source/rack_robotics/scripts/render_replay.py": "5a150f3578d7d248bc743945352b231bffd4a6dbd90f34c4ed4777c793645110",
+      "source/rack_robotics/scripts/check_baseline.py": "307ba3838119cd9e6085b9b6d9ea13fba03620a9b121cab6fcc8a2ebb1b20f21",
+      "harness/run_benchmark_trial.py": "d36e32db50c0aa77d7f4d3f9d93f5044226c4646739362c2ce99f828eed0d56a",
+      "harness/benchmarking/spec.py": "af137e5793d941b0f1fb0927d6c593b9b56e26e4c35fa6f7e2f9d08560542e7b",
+      "harness/benchmarking/integrity.py": "2bedef0c7a1b50c1c2649035ef431d4a43190428f177ee836f7a116312dcfec6",
+      "harness/benchmarking/contacts.py": "3f7e5cde1bbc920b40097d287bba08c18279f1e404f2da436272c16afbe8de7c",
+      "harness/benchmarking/recording.py": "0735c18e89ba8c90a49a2071b6be82b6b3225bd0b2fc7e189dcee9a7e3f32795",
+      "harness/benchmarking/__init__.py": "fcf1c6b1e020ff0c19fbf9bdcbf3de58c0242de5866af9b54b78095c14bb35a7",
+      "harness/benchmarking/adapters.py": "9869b1f40baf336eb625b67607736f17d41b225fdca9b0ad98abe59fb65c9365",
+      "harness/benchmarking/observer.py": "c730c8b62bd5824c16458079ce86c1c3ab98f43c2e29708ebdf83a0549b9c357",
+      "harness/benchmarking/task.py": "04d0034f48891662232b2f9226afa637ddf8a64e11f68f47f5287ee1b7733b6d",
+      "harness/benchmarking/initialization.py": "fac320bbfad660c32727b3022c8e434629b84e8a5463fec96d0611d67bd49eb7"
+    }
+  },
+  "after": {
+    "directory": "rack_robotics/experiments/benchmark_aa_fixture002",
+    "runner": "benchmark_harness_v2",
+    "evidence_sha256": {
+      "results.json": "af94d74564cbf5265535fb466d9c9f660786a50495af408d2b78bd239b7cf6cb",
+      "source_manifest.json": "d74d73fa90364675e630c94e4f645030f56fb37147f7da371bf0ce284649b589",
+      "initialization_contacts.json": "266d8b4f1d16944255d7b10cfcbcf5c40d177c491d524285e3000b05cf995f0a",
+      "authored_conditions.json": "82335c609961b870266059afcf42a27e2e86664c35940ea90e2e23fba06ca8e0"
+    },
+    "metrics": {
+      "reported_pass": true,
+      "complete_cycle": true,
+      "admissible_initial_state": true,
+      "fixture_failure": false,
+      "initial_retained": true,
+      "unplug_success": true,
+      "replug_success": true,
+      "cycle_time_s": 21.158333333332454,
+      "latch_clear_observed": true,
+      "final_angle_deg": 4.388560403319337,
+      "final_lateral_m": 0.00043542705330109407,
+      "final_depth_m": 0.011078240871429435,
+      "final_hook_behind_lip": true,
+      "cable_max_gap_m": 0.0001238898384306017,
+      "contact_reporting_errors": null,
+      "phase_peak_pair_contact_estimate_n": null,
+      "robot_rack_contact_pair_count": null,
+      "robot_self_contact_pair_count": null,
+      "robot_rack_peak_pair_estimate_n": null,
+      "error": null,
+      "failure_stage": null,
+      "recoveries": 0
+    },
+    "initial_robot_joint_states": [
+      {
+        "joint": "/World/Robot/Joints/Lift",
+        "position_m": 0.0,
+        "velocity_m_s": 0.0
+      },
+      {
+        "joint": "/World/Robot/Joints/Traverse",
+        "position_m": 0.15000000596046448,
+        "velocity_m_s": 0.0
+      },
+      {
+        "joint": "/World/Robot/Joints/Insertion",
+        "position_m": 0.0,
+        "velocity_m_s": 0.0
+      },
+      {
+        "joint": "/World/Robot/Joints/LeftJaw",
+        "position_m": -0.00930000003427267,
+        "velocity_m_s": 0.0
+      },
+      {
+        "joint": "/World/Robot/Joints/RightJaw",
+        "position_m": 0.00930000003427267,
+        "velocity_m_s": 0.0
+      },
+      {
+        "joint": "/World/Robot/Joints/LatchPress",
+        "position_m": 0.0,
+        "velocity_m_s": 0.0
+      }
+    ],
+    "initialization_adjustments": [
+      {
+        "kind": "force_limited_preseat_nudge",
+        "advance_m": 0.00015,
+        "target_y_offset_m": 1.7739064321335842e-05,
+        "before": {
+          "depth_m": 0.010830196142196647,
+          "lateral_m": 7.651857364605845e-05,
+          "angle_deg": 0.5020199351376388,
+          "speed_m_s": 1.430511474609375e-05,
+          "port": 1,
+          "latch_angle_deg": 1.3471448399657602,
+          "hook_y_m": -0.0013268977105737045,
+          "hook_z_m": 0.004804698167429677,
+          "hook_clear": false,
+          "hook_behind_lip": false
+        },
+        "after": {
+          "depth_m": 0.010978760719299308,
+          "lateral_m": 3.8534293299920125e-05,
+          "angle_deg": 0.5051284524297757,
+          "speed_m_s": 0.00014745374771181325,
+          "port": 1,
+          "latch_angle_deg": 5.778223731439524,
+          "hook_y_m": -0.00159240083907497,
+          "hook_z_m": 0.005432152152827108,
+          "hook_clear": false,
+          "hook_behind_lip": true
+        }
+      }
+    ],
+    "initial_self_contact_pairs": [],
+    "initial_peak_pair_estimate_n": 4.453253351493315,
+    "initial_contact_reporting_errors": [],
+    "source_sha256": {
+      "source/rack_robotics/integrity.py": "2bedef0c7a1b50c1c2649035ef431d4a43190428f177ee836f7a116312dcfec6",
+      "source/rack_robotics/mechanics.py": "dbd01109371ed5e70b1e70e64ffa3970e7e73c3e7168a1f875013785443ca10e",
+      "source/rack_robotics/recording.py": "dd0fe4874060f62529a353df9cc52bd3f05d3597190d0d7aa776c6416a1b33ee",
+      "source/rack_robotics/__init__.py": "ab29cc80db41b652502cd8787e970ac115e12f1d5f146c23313efa641eb38891",
+      "source/rack_robotics/controllers/cartesian_interface.py": "ece9b787ae7b3a3bf5d812044b7ddddf628358fe93e1b1cfebff6be8f9e02a1f",
+      "source/rack_robotics/controllers/gripper_interface.py": "6b440fac77c0b0194bbbdc376e6485e0349785db00efbaea565079cde47b98e0",
+      "source/rack_robotics/controllers/connector_observer.py": "c730c8b62bd5824c16458079ce86c1c3ab98f43c2e29708ebdf83a0549b9c357",
+      "source/rack_robotics/controllers/__init__.py": "9960549ce08203870495216528451bf630b9b92c98cf23c2c1fe11db8b5c6f47",
+      "source/rack_robotics/controllers/rj45_task.py": "8e6fa147609ebd328b4205154380ac62e86c8db318425c989eeb51922f5e08b8",
+      "source/rack_robotics/scripts/freeze_baseline.py": "cfa4de51031df2f3de8feb1af3ca386a16bdd1ec8165b43943b2e2bda066bc57",
+      "source/rack_robotics/scripts/package_reference.py": "06da470607ad560717e9eb64f7a08843ce6a579c8ecc6f81a7a81cb26c4becd9",
+      "source/rack_robotics/scripts/run_reference.py": "c85e12b99ffe1707889cf2bbf543ed1257bab878a98f16dfc6aa181a72f01d59",
+      "source/rack_robotics/scripts/render_replay.py": "5a150f3578d7d248bc743945352b231bffd4a6dbd90f34c4ed4777c793645110",
+      "source/rack_robotics/scripts/check_baseline.py": "307ba3838119cd9e6085b9b6d9ea13fba03620a9b121cab6fcc8a2ebb1b20f21",
+      "harness/run_benchmark_trial.py": "3f5e134f6173c99ba913ffb131f86bcb8743af576eb9399ac291267c2ebd3a21",
+      "harness/benchmarking/metrics.py": "73f49ff15941813e9bb1d15d870de26233a539f591c71c55038337369cffd4c2",
+      "harness/benchmarking/spec.py": "cd3f8ebd9cdf11930a8000e6e83044f308c6873107e4b8e555e9c8a72652d2d5",
+      "harness/benchmarking/integrity.py": "2bedef0c7a1b50c1c2649035ef431d4a43190428f177ee836f7a116312dcfec6",
+      "harness/benchmarking/contacts.py": "3f7e5cde1bbc920b40097d287bba08c18279f1e404f2da436272c16afbe8de7c",
+      "harness/benchmarking/recording.py": "0735c18e89ba8c90a49a2071b6be82b6b3225bd0b2fc7e189dcee9a7e3f32795",
+      "harness/benchmarking/__init__.py": "fcf1c6b1e020ff0c19fbf9bdcbf3de58c0242de5866af9b54b78095c14bb35a7",
+      "harness/benchmarking/adapters.py": "9869b1f40baf336eb625b67607736f17d41b225fdca9b0ad98abe59fb65c9365",
+      "harness/benchmarking/observer.py": "c730c8b62bd5824c16458079ce86c1c3ab98f43c2e29708ebdf83a0549b9c357",
+      "harness/benchmarking/task.py": "04d0034f48891662232b2f9226afa637ddf8a64e11f68f47f5287ee1b7733b6d",
+      "harness/benchmarking/initialization.py": "0b63f421165c71403f365d49b6f02ca46ea8ecaab761809d2c98e28537491bfb"
+    }
+  },
+  "changed_source_files": [
+    "harness/benchmarking/initialization.py",
+    "harness/benchmarking/metrics.py",
+    "harness/benchmarking/spec.py",
+    "harness/run_benchmark_trial.py"
+  ],
+  "limitations": [
+    "Single-seed development comparison, not a reliability estimate.",
+    "Multiple fixture changes; no isolated causal attribution between those changes.",
+    "Pair impulse/dt is not a calibrated load; final retention does not prove pose precision."
+  ]
+}

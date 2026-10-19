@@ -1,0 +1,348 @@
+{
+  "scope": "30 Hz recorded-trajectory geometry and quasi-static gravity only",
+  "sample_count": 647,
+  "time_range_s": [
+    0,
+    21.533333333332433
+  ],
+  "total_modeled_mass_kg": 6.677777317818254,
+  "moving_mass_kg": 2.6777773178182542,
+  "mount_reference_m": [
+    -0.285,
+    0.593,
+    1.4649999999999999
+  ],
+  "mount_reference_definition": "Centroid of authored PostClamp centres",
+  "rigid_geometry_swept_bounds": {
+    "lower_m": [
+      -0.548000032171607,
+      0.4311646180637181,
+      0.9499998807907104
+    ],
+    "upper_m": [
+      0.22450724244117737,
+      0.8354998226761818,
+      2.00249988168478
+    ],
+    "dimensions_m": [
+      0.7725072746127843,
+      0.40433520461246375,
+      1.0525000008940697
+    ]
+  },
+  "maximum_sampled_overhang": {
+    "left_m": 0.248000032171607,
+    "right_m": 0.0,
+    "rear_m": 0.23549982267618186
+  },
+  "initial_envelope": {
+    "time_s": 0,
+    "phase": "initialize",
+    "bounds": {
+      "lower_m": [
+        -0.5480000023692846,
+        0.519999943971634,
+        0.9499998807907104
+      ],
+      "upper_m": [
+        -0.15299992263317108,
+        0.8354998226761818,
+        2.00249988168478
+      ],
+      "dimensions_m": [
+        0.3950000797361135,
+        0.3154998787045479,
+        1.0525000008940697
+      ]
+    },
+    "overhang": {
+      "left_m": 0.2480000023692846,
+      "right_m": 0.0,
+      "rear_m": 0.23549982267618186
+    }
+  },
+  "final_envelope": {
+    "time_s": 21.533333333332433,
+    "phase": "park",
+    "bounds": {
+      "lower_m": [
+        -0.5480000023692846,
+        0.519999943971634,
+        0.9499998807907104
+      ],
+      "upper_m": [
+        -0.15301166474819183,
+        0.8354998226761818,
+        2.00249988168478
+      ],
+      "dimensions_m": [
+        0.39498833762109276,
+        0.3154998787045479,
+        1.0525000008940697
+      ]
+    },
+    "overhang": {
+      "left_m": 0.2480000023692846,
+      "right_m": 0.0,
+      "rear_m": 0.23549982267618186
+    }
+  },
+  "largest_sampled_gravity_mount_moment": {
+    "mass_kg": 6.677777317818254,
+    "com_world_m": [
+      -0.20015818983422282,
+      0.7674020003997511,
+      1.5661221721985408
+    ],
+    "force_n": [
+      0.0,
+      0.0,
+      -65.50899548779708
+    ],
+    "moment_nm": [
+      -11.424899857250084,
+      5.557901759326432,
+      0.0
+    ],
+    "time_s": 2.500000000000019,
+    "phase": "approach",
+    "moment_norm_nm": 12.705062326274392
+  },
+  "telescoping_joint_gravity_loads": {
+    "/World/Robot/Joints/OuterExtension": {
+      "mass_kg": 1.8777773058973253,
+      "com_world_m": [
+        -0.009907071544973335,
+        0.6630243654496658,
+        1.6997353757895715
+      ],
+      "force_n": [
+        0.0,
+        0.0,
+        -18.42099537085276
+      ],
+      "moment_nm": [
+        1.2337573132580162,
+        3.5017015589891782,
+        0.0
+      ],
+      "time_s": 15.833333333332755,
+      "phase": "release_gripper",
+      "anchor_world_m": [
+        -0.20000003278255463,
+        0.7299999706447124,
+        1.659860610961914
+      ],
+      "moment_norm_nm": 3.7126905225516547
+    },
+    "/World/Robot/Joints/InnerExtension": {
+      "mass_kg": 1.1277773058973253,
+      "com_world_m": [
+        0.11179298475530892,
+        0.6201433925574193,
+        1.6899411746746393
+      ],
+      "force_n": [
+        0.0,
+        0.0,
+        -11.063495370852761
+      ],
+      "moment_nm": [
+        0.6622228426967117,
+        1.3059631685495234,
+        0.0
+      ],
+      "time_s": 5.533333333333339,
+      "phase": "grasp",
+      "anchor_world_m": [
+        -0.006249561905860901,
+        0.6799999587237835,
+        1.6598825454711914
+      ],
+      "moment_norm_nm": 1.4642673563926858
+    }
+  },
+  "telescoping_supported_bodies": {
+    "/World/Robot/Joints/OuterExtension": [
+      "/World/Robot/Carriage",
+      "/World/Robot/LatchTongue",
+      "/World/Robot/LeftJaw",
+      "/World/Robot/MiddleBoom",
+      "/World/Robot/RightJaw",
+      "/World/Robot/ToolMount"
+    ],
+    "/World/Robot/Joints/InnerExtension": [
+      "/World/Robot/Carriage",
+      "/World/Robot/LatchTongue",
+      "/World/Robot/LeftJaw",
+      "/World/Robot/RightJaw",
+      "/World/Robot/ToolMount"
+    ]
+  },
+  "prismatic_joint_limits": [
+    {
+      "path": "/World/Robot/Joints/Lift",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/Frame"
+      ],
+      "body1": [
+        "/World/Robot/LiftCarriage"
+      ],
+      "anchor_in_body0_m": [
+        -0.20000000298023224,
+        0.7799999713897705,
+        1.7999999523162842
+      ],
+      "axis": "Z",
+      "limits_m": [
+        -0.699999988079071,
+        0.0
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/OuterExtension",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/LiftCarriage"
+      ],
+      "body1": [
+        "/World/Robot/MiddleBoom"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.05000000074505806,
+        0.0
+      ],
+      "axis": "X",
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/InnerExtension",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/MiddleBoom"
+      ],
+      "body1": [
+        "/World/Robot/Carriage"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.05000000074505806,
+        0.0
+      ],
+      "axis": "X",
+      "limits_m": [
+        0.0,
+        0.20000000298023224
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/Insertion",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/Carriage"
+      ],
+      "body1": [
+        "/World/Robot/ToolMount"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis": "Y",
+      "limits_m": [
+        -0.125,
+        0.0
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/LeftJaw",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/ToolMount"
+      ],
+      "body1": [
+        "/World/Robot/LeftJaw"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.12999999523162842,
+        0.0
+      ],
+      "axis": "X",
+      "limits_m": [
+        -0.00930000003427267,
+        -0.006300000008195639
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/RightJaw",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/ToolMount"
+      ],
+      "body1": [
+        "/World/Robot/RightJaw"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.12999999523162842,
+        0.0
+      ],
+      "axis": "X",
+      "limits_m": [
+        0.006300000008195639,
+        0.00930000003427267
+      ]
+    },
+    {
+      "path": "/World/Robot/Joints/LatchPress",
+      "type": "PhysicsPrismaticJoint",
+      "body0": [
+        "/World/Robot/ToolMount"
+      ],
+      "body1": [
+        "/World/Robot/LatchTongue"
+      ],
+      "anchor_in_body0_m": [
+        0.0,
+        -0.12399999797344208,
+        0.008999999612569809
+      ],
+      "axis": "Z",
+      "limits_m": [
+        -0.005499999970197678,
+        0.0010000000474974513
+      ]
+    }
+  ],
+  "rated_load_pass": null,
+  "dense_cable_clearance_pass": null,
+  "rear_door_clearance_pass": null,
+  "limitations": [
+    "Not continuous swept-volume collision checking; gaps between 30 Hz samples remain.",
+    "Bounding boxes conservatively bound authored visual/collision geometry, not exact surfaces.",
+    "Gravity only: no inertial, plug/cable, external contact or fault/braking loads.",
+    "Modeled lumped masses and cooked COMs are not weighed or certified hardware properties.",
+    "Nominal 600 mm rack width and rear Y=600 mm are model references, not a door survey.",
+    "Root fixed joint is an ideal mount; bolt reactions, stiffness and rack ratings remain unverified.",
+    "Unowned decorative geometry and absent cable carriers are not included in rigid-body bounds."
+  ],
+  "robot": "B_side_telescoping",
+  "gripper": "A_precision_parallel",
+  "source_task_passed": true,
+  "trajectory_identity_mode": "manifest_verified_packaged_trajectory",
+  "motion_scope": "Completed recorded task cycle",
+  "environment_manifest_sha256": "b16b8f008c7ad0368f034a454ad28ec0142cb041491b5ea70b9edf5fff3e0921",
+  "evidence_sha256": {
+    "properties": "ee2c5ad2405aec1a495b8c60e75309833c7694ae4217193f0359eb0a117df565",
+    "trajectory": "c13c5d1953a210b91b06db663889962ad0b40f17d7f5ff7f29b1f7be5da9bf96",
+    "results": "7b5f9e4544c0f497216025ad58d186ed730b6cadf7ca599432796d3c1288e5da"
+  },
+  "analysis_sha256": "d1d13d07e5c19456ffa6b06c48d1d35b88189734f8b4f01dd6a347f556cef2a5"
+}
