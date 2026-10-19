@@ -1,0 +1,525 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def "Materials"
+    {
+        def Material "steel"
+        {
+            token outputs:surface.connect = </World/Materials/steel/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.39, 0.43, 0.48)
+                float inputs:metallic = 0.85
+                float inputs:roughness = 0.28
+                token outputs:surface
+            }
+        }
+
+        def Material "black"
+        {
+            token outputs:surface.connect = </World/Materials/black/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.019, 0.023, 0.028)
+                float inputs:metallic = 0.35
+                float inputs:roughness = 0.36
+                token outputs:surface
+            }
+        }
+
+        def Material "dark"
+        {
+            token outputs:surface.connect = </World/Materials/dark/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.055, 0.065, 0.078)
+                float inputs:metallic = 0.65
+                float inputs:roughness = 0.4
+                token outputs:surface
+            }
+        }
+
+        def Material "blue"
+        {
+            token outputs:surface.connect = </World/Materials/blue/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.018, 0.17, 0.46)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.35
+                token outputs:surface
+            }
+        }
+
+        def Material "orange"
+        {
+            token outputs:surface.connect = </World/Materials/orange/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.94, 0.19, 0.025)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.4
+                token outputs:surface
+            }
+        }
+
+        def Material "gold"
+        {
+            token outputs:surface.connect = </World/Materials/gold/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.75, 0.48, 0.12)
+                float inputs:metallic = 0.9
+                float inputs:roughness = 0.22
+                token outputs:surface
+            }
+        }
+
+        def Material "rubber"
+        {
+            token outputs:surface.connect = </World/Materials/rubber/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.015, 0.018, 0.023)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.68
+                token outputs:surface
+            }
+        }
+
+        def Material "plug"
+        {
+            token outputs:surface.connect = </World/Materials/plug/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.55, 0.68, 0.72)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.18
+                token outputs:surface
+            }
+        }
+
+        def Material "green"
+        {
+            token outputs:surface.connect = </World/Materials/green/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.02, 0.8, 0.16)
+                color3f inputs:emissiveColor = (0.04, 1, 0.15)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.28
+                token outputs:surface
+            }
+        }
+
+        def Material "tile"
+        {
+            token outputs:surface.connect = </World/Materials/tile/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.25, 0.28, 0.32)
+                float inputs:metallic = 0.1
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+
+        def Material "Label_d7bc4f057e942c29"
+        {
+            token outputs:surface.connect = </World/Materials/Label_d7bc4f057e942c29/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_d7bc4f057e942c29/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/d7bc4f057e942c29.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_d7bc4f057e942c29/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_81c353e3a5aaca44"
+        {
+            token outputs:surface.connect = </World/Materials/Label_81c353e3a5aaca44/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_81c353e3a5aaca44/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/81c353e3a5aaca44.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_81c353e3a5aaca44/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_d5f46de581846200"
+        {
+            token outputs:surface.connect = </World/Materials/Label_d5f46de581846200/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_d5f46de581846200/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/d5f46de581846200.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_d5f46de581846200/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_1c422c845659b69e"
+        {
+            token outputs:surface.connect = </World/Materials/Label_1c422c845659b69e/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_1c422c845659b69e/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/1c422c845659b69e.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_1c422c845659b69e/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_3da945f6f1b853f3"
+        {
+            token outputs:surface.connect = </World/Materials/Label_3da945f6f1b853f3/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_3da945f6f1b853f3/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/3da945f6f1b853f3.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_3da945f6f1b853f3/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_b23fed7a91917beb"
+        {
+            token outputs:surface.connect = </World/Materials/Label_b23fed7a91917beb/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_b23fed7a91917beb/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/b23fed7a91917beb.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_b23fed7a91917beb/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Xform "Socket"
+    {
+        double3 xformOp:translate = (0.066, 0.3585, 1.121)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "Left" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/steel>
+            float physxCollision:contactOffset = 0.00005
+            float physxCollision:restOffset = 0
+            double size = 1
+            float3 xformOp:scale = (0.002, 0.012, 0.0131)
+            double3 xformOp:translate = (-0.0071, -0.006, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Right" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/steel>
+            float physxCollision:contactOffset = 0.00005
+            float physxCollision:restOffset = 0
+            double size = 1
+            float3 xformOp:scale = (0.002, 0.012, 0.0131)
+            double3 xformOp:translate = (0.0071, -0.006, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Floor" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/steel>
+            float physxCollision:contactOffset = 0.00005
+            float physxCollision:restOffset = 0
+            double size = 1
+            float3 xformOp:scale = (0.0122, 0.012, 0.002)
+            double3 xformOp:translate = (0, -0.006, -0.00555)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Ceiling" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/steel>
+            float physxCollision:contactOffset = 0.00005
+            float physxCollision:restOffset = 0
+            double size = 1
+            float3 xformOp:scale = (0.0122, 0.012, 0.002)
+            double3 xformOp:translate = (0, -0.006, 0.00555)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Back" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/steel>
+            float physxCollision:contactOffset = 0.00005
+            float physxCollision:restOffset = 0
+            double size = 1
+            float3 xformOp:scale = (0.0162, 0.002, 0.0131)
+            double3 xformOp:translate = (0, -0.013000000000000001, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "KeyShouldern1" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/dark>
+            float physxCollision:contactOffset = 0.00005
+            float physxCollision:restOffset = 0
+            double size = 1
+            float3 xformOp:scale = (0.0034, 0.012, 0.001)
+            double3 xformOp:translate = (-0.0044, -0.006, 0.004)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "KeyShoulder1" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/dark>
+            float physxCollision:contactOffset = 0.00005
+            float physxCollision:restOffset = 0
+            double size = 1
+            float3 xformOp:scale = (0.0034, 0.012, 0.001)
+            double3 xformOp:translate = (0.0044, -0.006, 0.004)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact0" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (-0.0035700000000000003, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (-0.00255, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact2" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (-0.0015300000000000001, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact3" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (-0.00051, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact4" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (0.00051, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact5" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (0.0015300000000000001, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact6" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (0.00255, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "Contact7" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/gold>
+            double size = 1
+            float3 xformOp:scale = (0.00045, 0.008, 0.00025)
+            double3 xformOp:translate = (0.0035700000000000003, -0.007, -0.0037)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+
+        def Cube "LinkLED" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </World/Materials/green>
+            double size = 1
+            token visibility = "invisible"
+            float3 xformOp:scale = (0.0015, 0.001, 0.001)
+            double3 xformOp:translate = (-0.0069, 0.0005, 0.006)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+        }
+    }
+}
+

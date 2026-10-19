@@ -1,0 +1,36 @@
+# Local tools, credentials, caches and OS metadata.
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.agents/
+.codex/
+/cache/
+/run-*/
+/latch-probe-*/
+
+# Generated galleries, videos, logs and downloaded NVIDIA asset packs.
+/artifacts/
+/assets/vendor/
+
+# Raw experiments are archived separately. Keep the small audit/index records
+# and the dependency closure needed to recover all 83 saved environments.
+/rack_robotics/experiments/*
+!/rack_robotics/experiments/*.json
+!/rack_robotics/experiments/*.csv
+!/rack_robotics/experiments/dependency-inventory002/
+
+# Research downloads retain their upstream provenance, not redistribution rights.
+/research/
+/rack_robotics/research/*.pdf
+/rack_robotics/research/sources/*
+!/rack_robotics/research/sources/onrobot-isaacsim
+!/rack_robotics/research/sources/robotiq-isaacsim
+!/rack_robotics/research/sources/openbuildsParts
+!/rack_robotics/research/sources/schunk_description

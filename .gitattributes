@@ -1,0 +1,10 @@
+# Frozen files are byte-hashed. Do not normalize their line endings.
+/rack_robotics/environments/** -text
+/rack_robotics/assets/** -text
+/rack_robotics/experiments/** -text
+/assets/** -text
+*.usd binary
+*.usdc binary
+*.png binary
+*.jpg binary
+*.mp4 binary

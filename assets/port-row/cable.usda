@@ -1,0 +1,2755 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def "Materials"
+    {
+        def Material "steel"
+        {
+            token outputs:surface.connect = </World/Materials/steel/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.39, 0.43, 0.48)
+                float inputs:metallic = 0.85
+                float inputs:roughness = 0.28
+                token outputs:surface
+            }
+        }
+
+        def Material "black"
+        {
+            token outputs:surface.connect = </World/Materials/black/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.019, 0.023, 0.028)
+                float inputs:metallic = 0.35
+                float inputs:roughness = 0.36
+                token outputs:surface
+            }
+        }
+
+        def Material "dark"
+        {
+            token outputs:surface.connect = </World/Materials/dark/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.055, 0.065, 0.078)
+                float inputs:metallic = 0.65
+                float inputs:roughness = 0.4
+                token outputs:surface
+            }
+        }
+
+        def Material "blue"
+        {
+            token outputs:surface.connect = </World/Materials/blue/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.018, 0.17, 0.46)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.35
+                token outputs:surface
+            }
+        }
+
+        def Material "orange"
+        {
+            token outputs:surface.connect = </World/Materials/orange/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.94, 0.19, 0.025)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.4
+                token outputs:surface
+            }
+        }
+
+        def Material "gold"
+        {
+            token outputs:surface.connect = </World/Materials/gold/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.75, 0.48, 0.12)
+                float inputs:metallic = 0.9
+                float inputs:roughness = 0.22
+                token outputs:surface
+            }
+        }
+
+        def Material "rubber"
+        {
+            token outputs:surface.connect = </World/Materials/rubber/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.015, 0.018, 0.023)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.68
+                token outputs:surface
+            }
+        }
+
+        def Material "plug"
+        {
+            token outputs:surface.connect = </World/Materials/plug/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.55, 0.68, 0.72)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.18
+                token outputs:surface
+            }
+        }
+
+        def Material "green"
+        {
+            token outputs:surface.connect = </World/Materials/green/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.02, 0.8, 0.16)
+                color3f inputs:emissiveColor = (0.04, 1, 0.15)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.28
+                token outputs:surface
+            }
+        }
+
+        def Material "tile"
+        {
+            token outputs:surface.connect = </World/Materials/tile/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.25, 0.28, 0.32)
+                float inputs:metallic = 0.1
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+
+        def Material "Label_d7bc4f057e942c29"
+        {
+            token outputs:surface.connect = </World/Materials/Label_d7bc4f057e942c29/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_d7bc4f057e942c29/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/d7bc4f057e942c29.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_d7bc4f057e942c29/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_81c353e3a5aaca44"
+        {
+            token outputs:surface.connect = </World/Materials/Label_81c353e3a5aaca44/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_81c353e3a5aaca44/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/81c353e3a5aaca44.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_81c353e3a5aaca44/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_d5f46de581846200"
+        {
+            token outputs:surface.connect = </World/Materials/Label_d5f46de581846200/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_d5f46de581846200/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/d5f46de581846200.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_d5f46de581846200/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_1c422c845659b69e"
+        {
+            token outputs:surface.connect = </World/Materials/Label_1c422c845659b69e/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_1c422c845659b69e/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/1c422c845659b69e.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_1c422c845659b69e/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_3da945f6f1b853f3"
+        {
+            token outputs:surface.connect = </World/Materials/Label_3da945f6f1b853f3/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_3da945f6f1b853f3/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/3da945f6f1b853f3.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_3da945f6f1b853f3/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_b23fed7a91917beb"
+        {
+            token outputs:surface.connect = </World/Materials/Label_b23fed7a91917beb/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_b23fed7a91917beb/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/b23fed7a91917beb.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_b23fed7a91917beb/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_938db8c9f82c8cb5"
+        {
+            token outputs:surface.connect = </World/Materials/Label_938db8c9f82c8cb5/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_938db8c9f82c8cb5/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/938db8c9f82c8cb5.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_938db8c9f82c8cb5/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_a953f09a1b6b6725"
+        {
+            token outputs:surface.connect = </World/Materials/Label_a953f09a1b6b6725/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_a953f09a1b6b6725/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/a953f09a1b6b6725.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_a953f09a1b6b6725/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_0b8efa5a3bf10441"
+        {
+            token outputs:surface.connect = </World/Materials/Label_0b8efa5a3bf10441/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_0b8efa5a3bf10441/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/0b8efa5a3bf10441.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_0b8efa5a3bf10441/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_6cd5b6e51936a442"
+        {
+            token outputs:surface.connect = </World/Materials/Label_6cd5b6e51936a442/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_6cd5b6e51936a442/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/6cd5b6e51936a442.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_6cd5b6e51936a442/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_c97550ce8213ef5c"
+        {
+            token outputs:surface.connect = </World/Materials/Label_c97550ce8213ef5c/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_c97550ce8213ef5c/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/c97550ce8213ef5c.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_c97550ce8213ef5c/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_aacd834b5cdc64a3"
+        {
+            token outputs:surface.connect = </World/Materials/Label_aacd834b5cdc64a3/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_aacd834b5cdc64a3/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/aacd834b5cdc64a3.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_aacd834b5cdc64a3/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_19b100ab7725c612"
+        {
+            token outputs:surface.connect = </World/Materials/Label_19b100ab7725c612/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_19b100ab7725c612/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/19b100ab7725c612.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_19b100ab7725c612/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_323783be9a53a31e"
+        {
+            token outputs:surface.connect = </World/Materials/Label_323783be9a53a31e/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_323783be9a53a31e/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/323783be9a53a31e.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_323783be9a53a31e/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_3514acf61732f662"
+        {
+            token outputs:surface.connect = </World/Materials/Label_3514acf61732f662/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_3514acf61732f662/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/3514acf61732f662.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_3514acf61732f662/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_4a44dc15364204a8"
+        {
+            token outputs:surface.connect = </World/Materials/Label_4a44dc15364204a8/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_4a44dc15364204a8/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/4a44dc15364204a8.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_4a44dc15364204a8/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_4fc82b26aecb47d2"
+        {
+            token outputs:surface.connect = </World/Materials/Label_4fc82b26aecb47d2/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_4fc82b26aecb47d2/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/4fc82b26aecb47d2.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_4fc82b26aecb47d2/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_6b51d431df5d7f14"
+        {
+            token outputs:surface.connect = </World/Materials/Label_6b51d431df5d7f14/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_6b51d431df5d7f14/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/6b51d431df5d7f14.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_6b51d431df5d7f14/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_3fdba35f04dc8c46"
+        {
+            token outputs:surface.connect = </World/Materials/Label_3fdba35f04dc8c46/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_3fdba35f04dc8c46/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/3fdba35f04dc8c46.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_3fdba35f04dc8c46/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_8527a891e2241369"
+        {
+            token outputs:surface.connect = </World/Materials/Label_8527a891e2241369/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_8527a891e2241369/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/8527a891e2241369.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_8527a891e2241369/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_e629fa6598d73276"
+        {
+            token outputs:surface.connect = </World/Materials/Label_e629fa6598d73276/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_e629fa6598d73276/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/e629fa6598d73276.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_e629fa6598d73276/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+
+        def Material "Label_b17ef6d19c7a5b1e"
+        {
+            token outputs:surface.connect = </World/Materials/Label_b17ef6d19c7a5b1e/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </World/Materials/Label_b17ef6d19c7a5b1e/Texture.outputs:rgb>
+                float inputs:roughness = 0.65
+                token outputs:surface
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @/workspace/assets/labels/b17ef6d19c7a5b1e.png@
+                token inputs:sourceColorSpace = "sRGB"
+                float2 inputs:st.connect = </World/Materials/Label_b17ef6d19c7a5b1e/UV.outputs:result>
+                color3f outputs:rgb
+            }
+
+            def Shader "UV"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+        }
+    }
+
+    def Xform "Cable"
+    {
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Capsule "Link00" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.1875, 0.5055, 1.66)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint00" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Plug>
+            rel physics:body1 = </World/Cable/Link00>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.019, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link01" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.1875, 0.5205, 1.66)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint01" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link00>
+            rel physics:body1 = </World/Cable/Link01>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link02" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.1875, 0.5355, 1.66)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint02" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link01>
+            rel physics:body1 = </World/Cable/Link02>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link03" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.1875, 0.5505, 1.66)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint03" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link02>
+            rel physics:body1 = </World/Cable/Link03>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link04" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.1875, 0.5655, 1.66)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint04" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link03>
+            rel physics:body1 = </World/Cable/Link04>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link05" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.1875, 0.5805, 1.66)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint05" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link04>
+            rel physics:body1 = </World/Cable/Link05>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link06" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.9914449, -0.13052619, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.5952444436971681, 1.658058857161731)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint06" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link05>
+            rel physics:body1 = </World/Cable/Link06>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link07" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.9659258, -0.25881904, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6089840779227195, 1.6523677143234623)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint07" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link06>
+            rel physics:body1 = </World/Cable/Link07>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link08" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.9238795, -0.38268343, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6207825693100018, 1.643314413464563)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint08" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link07>
+            rel physics:body1 = </World/Cable/Link08>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link09" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.8660254, -0.5, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.629835870168901, 1.6315159220772808)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint09" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link08>
+            rel physics:body1 = </World/Cable/Link09>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link10" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.7933533, -0.6087614, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6355270130071697, 1.6177762878517294)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint10" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link09>
+            rel physics:body1 = </World/Cable/Link10>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link11" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.6030318441545612)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint11" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link10>
+            rel physics:body1 = </World/Cable/Link11>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link12" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.5880318441545613)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint12" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link11>
+            rel physics:body1 = </World/Cable/Link12>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link13" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.5730318441545614)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint13" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link12>
+            rel physics:body1 = </World/Cable/Link13>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link14" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.5580318441545615)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint14" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link13>
+            rel physics:body1 = </World/Cable/Link14>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link15" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.5430318441545616)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint15" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link14>
+            rel physics:body1 = </World/Cable/Link15>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link16" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.5280318441545617)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint16" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link15>
+            rel physics:body1 = </World/Cable/Link16>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link17" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.5130318441545618)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint17" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link16>
+            rel physics:body1 = </World/Cable/Link17>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link18" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.498031844154562)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint18" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link17>
+            rel physics:body1 = </World/Cable/Link18>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link19" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.483031844154562)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint19" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link18>
+            rel physics:body1 = </World/Cable/Link19>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link20" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.4680318441545621)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint20" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link19>
+            rel physics:body1 = </World/Cable/Link20>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link21" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.4530318441545622)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint21" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link20>
+            rel physics:body1 = </World/Cable/Link21>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link22" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.4380318441545623)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint22" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link21>
+            rel physics:body1 = </World/Cable/Link22>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link23" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.4230318441545624)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint23" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link22>
+            rel physics:body1 = </World/Cable/Link23>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link24" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.4080318441545625)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint24" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link23>
+            rel physics:body1 = </World/Cable/Link24>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link25" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.3930318441545626)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint25" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link24>
+            rel physics:body1 = </World/Cable/Link25>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link26" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.3780318441545627)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint26" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link25>
+            rel physics:body1 = </World/Cable/Link26>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link27" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.3630318441545628)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint27" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link26>
+            rel physics:body1 = </World/Cable/Link27>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link28" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.348031844154563)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint28" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link27>
+            rel physics:body1 = </World/Cable/Link28>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link29" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.333031844154563)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint29" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link28>
+            rel physics:body1 = </World/Cable/Link29>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link30" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.318031844154563)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint30" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link29>
+            rel physics:body1 = </World/Cable/Link30>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link31" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.3030318441545632)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint31" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link30>
+            rel physics:body1 = </World/Cable/Link31>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link32" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.2880318441545633)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint32" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link31>
+            rel physics:body1 = </World/Cable/Link32>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link33" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.2730318441545634)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint33" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link32>
+            rel physics:body1 = </World/Cable/Link33>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link34" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.2580318441545635)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint34" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link33>
+            rel physics:body1 = </World/Cable/Link34>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def Capsule "Link35" (
+            prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            uniform token axis = "Y"
+            double height = 0.0098
+            rel material:binding = </World/Materials/blue>
+            float physics:mass = 0.0007
+            float physxCollision:contactOffset = 0.0001
+            float physxCollision:restOffset = 0
+            float physxRigidBody:angularDamping = 0.15
+            bool physxRigidBody:enableCCD = 1
+            float physxRigidBody:linearDamping = 0.15
+            int physxRigidBody:solverPositionIterationCount = 128
+            int physxRigidBody:solverVelocityIterationCount = 8
+            uniform token purpose = "guide"
+            double radius = 0.0026
+            quatf xformOp:orient = (0.70710677, -0.70710677, -0, -0)
+            double3 xformOp:translate = (0.1875, 0.6374681558454387, 1.2430318441545636)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+        }
+
+        def PhysicsJoint "Joint35" (
+            prepend apiSchemas = ["PhysicsLimitAPI:transX", "PhysicsLimitAPI:transY", "PhysicsLimitAPI:transZ", "PhysicsLimitAPI:rotX", "PhysicsDriveAPI:rotX", "PhysicsLimitAPI:rotY", "PhysicsDriveAPI:rotY", "PhysicsLimitAPI:rotZ", "PhysicsDriveAPI:rotZ"]
+        )
+        {
+            float drive:rotX:physics:damping = 0.00008
+            float drive:rotX:physics:stiffness = 0.0002
+            uniform token drive:rotX:physics:type = "force"
+            float drive:rotY:physics:damping = 0.00008
+            float drive:rotY:physics:stiffness = 0.0002
+            uniform token drive:rotY:physics:type = "force"
+            float drive:rotZ:physics:damping = 0.00008
+            float drive:rotZ:physics:stiffness = 0.0002
+            uniform token drive:rotZ:physics:type = "force"
+            float limit:rotX:physics:high = 40
+            float limit:rotX:physics:low = -40
+            float limit:rotY:physics:high = 40
+            float limit:rotY:physics:low = -40
+            float limit:rotZ:physics:high = 40
+            float limit:rotZ:physics:low = -40
+            float limit:transX:physics:high = -1
+            float limit:transX:physics:low = 1
+            float limit:transY:physics:high = -1
+            float limit:transY:physics:low = 1
+            float limit:transZ:physics:high = -1
+            float limit:transZ:physics:low = 1
+            rel physics:body0 = </World/Cable/Link34>
+            rel physics:body1 = </World/Cable/Link35>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0.0075, 0)
+            point3f physics:localPos1 = (0, -0.0075, 0)
+        }
+
+        def BasisCurves "Jacket" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            int[] curveVertexCounts = [37]
+            rel material:binding = </World/Materials/blue>
+            point3f[] points = [(0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0)]
+            uniform token type = "linear"
+            float[] widths = [0.0052] (
+                interpolation = "constant"
+            )
+        }
+    }
+}
+
